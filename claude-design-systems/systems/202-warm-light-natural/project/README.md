@@ -93,7 +93,7 @@ Timing values: `--transition-fast` 150ms ease-out, `--transition-base` 250ms eas
 
 - `page-text` on `page-bg` measures 14.2:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
-- Measured on `page-bg`, these text colours fall short of 4.5:1: `color-text-tertiary` 3.7:1, `color-primary` 3.9:1, `color-success` 3.5:1, `color-error` 4.2:1, `color-terracotta` 3.9:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `color-text-tertiary` 3.7:1, `color-primary` 3.9:1, `color-success` 3.5:1, `color-error` 4.2:1, `color-terracotta` 3.9:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
 
 From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 

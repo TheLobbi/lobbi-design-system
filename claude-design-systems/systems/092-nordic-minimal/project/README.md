@@ -60,7 +60,8 @@ Timing values: `--transition-fast` 150ms ease, `--transition-base` 250ms ease, `
 
 - `page-text` on `page-bg` measures 10.0:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
-- Measured on `page-bg`, these text colours fall short of 4.5:1: `color-white` 1.0:1, `color-gray-300` 1.9:1, `color-gray-400` 2.9:1, `color-success` 3.4:1, `color-warning` 2.2:1, `color-info` 3.0:1, `color-error` 3.4:1, `category-tag-bg` 1.1:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `color-success` 3.4:1, `color-error` 3.4:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `color-white` 1.0:1, `color-gray-300` 1.9:1, `color-gray-400` 2.9:1, `color-warning` 2.2:1, `color-info` 3.0:1, `category-tag-bg` 1.1:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Further guidance
 

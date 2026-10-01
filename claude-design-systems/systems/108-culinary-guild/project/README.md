@@ -49,7 +49,8 @@ The reference page names Playfair Display without loading it, so it shows a fall
 
 - `page-text` on `page-bg` measures 15.2:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
-- Measured on `page-bg`, these text colours fall short of 4.5:1: `cream-light` 1.1:1, `cream-medium` 1.1:1, `copper-primary` 3.4:1, `copper-dark` 4.3:1, `gold-accent` 1.9:1, `gold-light` 2.0:1, `text-light` 3.8:1, `recipe-difficulty-bg` 1.1:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `copper-primary` 3.4:1, `copper-dark` 4.3:1, `text-light` 3.8:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `cream-light` 1.1:1, `cream-medium` 1.1:1, `gold-accent` 1.9:1, `gold-light` 2.0:1, `recipe-difficulty-bg` 1.1:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Not synced
 

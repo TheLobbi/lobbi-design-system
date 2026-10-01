@@ -41,7 +41,8 @@ Healthcare Network: Medical Professional 60% + Continuing Education 25% + Peer C
 
 - `page-text` on `page-bg` measures 14.6:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
-- Measured on `page-bg`, these text colours fall short of 4.5:1: `medical-green` 3.0:1, `warning-amber` 1.5:1, `white` 1.1:1, `medium-gray` 4.4:1, `verified-badge` 3.0:1, `pending-status` 1.5:1, `expired-status` 4.3:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `medical-green` 3.0:1, `medium-gray` 4.4:1, `verified-badge` 3.0:1, `expired-status` 4.3:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `warning-amber` 1.5:1, `white` 1.1:1, `pending-status` 1.5:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Not synced
 

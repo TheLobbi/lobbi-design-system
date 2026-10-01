@@ -96,7 +96,8 @@ Timing values: `--transition-fast` all 150ms cubic-bezier(0.4, 0, 0.2, 1), `--tr
 
 - `page-text` on `page-bg` measures 6.7:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
-- Measured on `page-bg`, these text colours fall short of 4.5:1: `wifi-green` 2.0:1, `wifi-green-dark` 2.9:1, `luggage-gray` 4.2:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `luggage-gray` 4.2:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `wifi-green` 2.0:1, `wifi-green-dark` 2.9:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 

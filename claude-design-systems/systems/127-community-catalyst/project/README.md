@@ -71,7 +71,7 @@ Timing values: `--transition-fast` 200ms ease-out, `--transition-base` 300ms eas
 
 - `page-text` on `page-bg` measures 4.5:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
-- Measured on `page-bg`, these text colours fall short of 4.5:1: `linen-beige` 1.0:1, `community-coral` 2.6:1, `peach-soft` 1.3:1, `blush-pink` 1.1:1, `sage-muted` 2.1:1, `category-tag-bg` 1.1:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `linen-beige` 1.0:1, `community-coral` 2.6:1, `peach-soft` 1.3:1, `blush-pink` 1.1:1, `sage-muted` 2.1:1, `category-tag-bg` 1.1:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Further guidance
 

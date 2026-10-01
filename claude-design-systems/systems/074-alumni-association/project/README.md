@@ -67,7 +67,8 @@ Faces are hosted on Google Fonts (Playfair Display, Open Sans); load them with:
 
 - `page-text` on `page-bg` measures 13.9:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
-- Measured on `page-bg`, these text colours fall short of 4.5:1: `gold` 2.1:1, `gold-light` 1.6:1, `gold-dark` 2.9:1, `white` 1.0:1, `stat-change-bg` 4.2:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `stat-change-bg` 4.2:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `gold` 2.1:1, `gold-light` 1.6:1, `gold-dark` 2.9:1, `white` 1.0:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Further guidance
 

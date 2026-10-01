@@ -104,7 +104,7 @@ Timing values: `--transition-base` 300ms ease, `--transition-slow` 500ms ease.
 
 - `page-text` on `page-bg` measures 8.9:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
-- Measured on `page-bg`, these text colours fall short of 4.5:1: `fairway-cream` 1.0:1, `tournament-gold` 2.2:1, `aged-brass` 3.0:1, `morning-mist` 1.2:1, `category-tag-bg` 1.1:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `fairway-cream` 1.0:1, `tournament-gold` 2.2:1, `aged-brass` 3.0:1, `morning-mist` 1.2:1, `category-tag-bg` 1.1:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 

@@ -465,8 +465,11 @@ function buildReadme(raw, meta, doc, T) {
   L.push('## Accessibility', '');
   L.push(`- ${code('page-text')} on ${code('page-bg')} measures ${contrast(over(T.pageText, T.pageBg), T.pageBg).toFixed(1)}:1.`);
   L.push('- Every interactive element shows a visible focus state at 3:1 or better against its surface.');
-  const weak = T.colorTokens.filter((t) => t._lowText).map((t) => `${code(t.name)} ${t._cr.toFixed(1)}:1`);
-  if (weak.length) L.push(`- Measured on ${code('page-bg')}, these text colours fall short of 4.5:1: ${weak.join(', ')}. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.`);
+  const low = T.colorTokens.filter((t) => t._lowText);
+  const fmtT = (t) => `${code(t.name)} ${t._cr.toFixed(1)}:1`;
+  const large = low.filter((t) => t._cr >= 3), never = low.filter((t) => t._cr < 3);
+  if (large.length) L.push(`- Measured on ${code('page-bg')}, these text colours reach 3:1 but not 4.5:1: ${large.map(fmtT).join(', ')}. Use them on ${code('page-bg')} only for large text (24px+, or bold 19px+), whatever the design notes below claim.`);
+  if (never.length) L.push(`- These fall under 3:1 on ${code('page-bg')}: ${never.map(fmtT).join(', ')}. Never set text in them on ${code('page-bg')}, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).`);
   const a11y = findSection(doc, /ACCESSIB|WCAG|A11Y/);
   if (a11y) { L.push('', 'From the style\'s design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):', ''); pushLines(L, a11y); }
   L.push('');
