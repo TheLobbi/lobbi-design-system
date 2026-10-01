@@ -15,7 +15,7 @@ Retro-futuristic engineering meets Victorian elegance in this alternate- history
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is light.
-- Identity colours: `color-brass-gold`, `color-leather-brown`, `color-aged-cream`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `color-brass-gold`, `color-leather-brown`. Lead with the first; use the rest for accents and emphasis.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
 ## Typography
@@ -73,13 +73,17 @@ Timing values: `--transition-base` 400ms cubic-bezier(0.4, 0, 0.2, 1), `--transi
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 11.0:1.
+- `page-text` on `page-bg` measures 11.8:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `color-aged-copper` 3.1:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `color-brass-gold` 2.7:1, `color-aged-cream` 1.0:1, `color-steam-white` 1.1:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - Leather on Cream: 11.2:1 (AAA) - Excellent readability
-- Bronze on Cream: 10.5:1 (AAA) - Strong hierarchy
-- Brass on Leather: 4.8:1 (AA) - Accent emphasis
-- Copper on Cream: 5.2:1 (AA Large) - Secondary text
+- Bronze on Cream: ~~10.5:1~~ (AAA) - Strong hierarchy — **measured 11.8:1**
+- Brass on Leather: ~~4.8:1~~ (AA) - Accent emphasis — **measured 4.1:1** (not for body text)
+- Copper on Cream: ~~5.2:1~~ (AA Large) - Secondary text — **measured 3.1:1** (not for body text)
 
 ## Component inventory
 

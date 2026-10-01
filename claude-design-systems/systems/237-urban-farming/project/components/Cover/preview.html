@@ -6,30 +6,30 @@
 body{margin:0;background:var(--page-bg);color:var(--page-text);}
 .cover{position:relative;width:960px;height:288px;overflow:hidden;background:var(--page-bg);}
 svg{position:absolute;inset:0;}
-.c-earth-beige{fill:var(--earth-beige);stroke:var(--earth-beige);stroke-width:0;}
 .c-harvest-gold-light{fill:var(--harvest-gold-light);stroke:var(--harvest-gold-light);stroke-width:0;}
+.c-harvest-gold-dark{fill:var(--harvest-gold-dark);stroke:var(--harvest-gold-dark);stroke-width:0;}
 .c-sky-blue{fill:var(--sky-blue);stroke:var(--sky-blue);stroke-width:0;}
-.c-soil-brown{fill:var(--soil-brown);stroke:var(--soil-brown);stroke-width:0;}
+.c-leaf-green{fill:var(--leaf-green);stroke:var(--leaf-green);stroke-width:0;}
 .c-page-bg{fill:var(--page-bg);stroke:var(--page-bg);stroke-width:0;}
 .blk{rx:var(--radius-sm);}
 .rule{stroke-width:1px;fill:none;}
 .name{position:absolute;left:40px;bottom:40px;max-width:440px;}
 .name h1 span{display:inline-block;white-space:nowrap;}
 .name h1{margin:0;font-family:var(--font-display);font-weight:700;font-size:95px;line-height:0.95;color:var(--page-text);letter-spacing:0;}
-.name p{margin:16px 0 0;font-family:var(--font-body);font-size:14px;line-height:1.5;color:var(--page-text);}
+.name p{margin:16px 0 0;font-family:var(--font-body);font-size:14px;line-height:1.5;color:var(--urban-gray);}
 </style></head>
 <body><div class="cover">
 <svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
 <!--
-  blocks: earth-beige 8×13 steps, harvest-gold-light 9×4 steps, sky-blue 9×3 steps, soil-brown 9×4 steps
+  blocks: harvest-gold-light 8×13 steps, harvest-gold-dark 9×4 steps, sky-blue 9×3 steps, leaf-green 9×4 steps
   arrangement: one tall slab with satellites
   pattern: discs — soft, large-radius shapes → discs and pills cut from the radius scale
   scales: step space-md (24px), gap 8px, radius radius-sm (6px)
 -->
-<rect class="c-earth-beige blk" x="552" y="-24" width="192" height="312"/>
-<rect class="c-harvest-gold-light blk" x="752" y="24" width="208" height="96"/>
+<rect class="c-harvest-gold-light blk" x="552" y="-24" width="192" height="312"/>
+<rect class="c-harvest-gold-dark blk" x="752" y="24" width="208" height="96"/>
 <rect class="c-sky-blue blk" x="752" y="128" width="208" height="72"/>
-<rect class="c-soil-brown blk" x="752" y="208" width="208" height="96"/>
+<rect class="c-leaf-green blk" x="752" y="208" width="208" height="96"/>
 <circle class="c-page-bg" cx="582" cy="30" r="18"/>
 <circle class="c-page-bg" cx="630" cy="30" r="18"/>
 <circle class="c-page-bg" cx="678" cy="30" r="18"/>

@@ -24,6 +24,14 @@ Legal Summit: Law Firm Premium 60% + Conference Platform 25% + Knowledge Base 15
 - `display` — "Crimson Text", Georgia, serif
 - `body` — Inter, -apple-system, BlinkMacSystemFont, sans-serif
 
+Faces are hosted on Google Fonts (Crimson Text, Inter); load them with:
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Inter&display=swap">
+```
+
+The reference page names Crimson Text, Inter without loading them, so it shows a fallback face; the last link above loads the intended face.
+
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
 - Uppercase is reserved for small labels (`label`), always with the letter-spacing given.
 
@@ -40,8 +48,9 @@ Legal Summit: Law Firm Premium 60% + Conference Platform 25% + Knowledge Base 15
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 17.1:1.
+- `page-text` on `page-bg` measures 5.0:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `gold-light` 1.2:1, `white` 1.1:1, `gray-light` 1.2:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Not synced
 

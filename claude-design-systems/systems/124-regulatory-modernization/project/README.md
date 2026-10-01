@@ -22,6 +22,14 @@ Regulatory Modernization: Corporate Refinement 35% + Government Civic 30% + Fint
 
 - `display` — -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, "Helvetica Neue", sans-serif
 
+Faces are hosted on Google Fonts (Inter); load them with:
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+```
+
+The reference page names Inter without loading it, so it shows a fallback face; the last link above loads the intended face.
+
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
 - Uppercase is reserved for small labels (`label`), always with the letter-spacing given.
 
@@ -44,8 +52,10 @@ Timing values: `--transition` 200ms ease.
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 17.1:1.
+- `page-text` on `page-bg` measures 7.2:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `modern-teal` 3.5:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `category-tag-bg` 1.0:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Not synced
 

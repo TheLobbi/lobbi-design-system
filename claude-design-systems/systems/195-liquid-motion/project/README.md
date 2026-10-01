@@ -15,7 +15,7 @@ Embrace organic, fluid motion inspired by natural liquids and morphing shapes. E
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is light.
-- Identity colours: `color-purple`, `color-pink`, `color-mint`, `color-blue`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `color-purple`, `color-pink`, `color-mint`. Lead with the first; use the rest for accents and emphasis.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
 ### Palette rationale
@@ -74,8 +74,11 @@ Timing values: `--transition-fast` 0.2s, `--transition-base` 0.5s, `--transition
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 14.0:1.
+- `page-text` on `page-bg` measures 4.5:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `color-purple` 2.6:1, `color-pink` 1.7:1, `color-white` 1.0:1, `color-gray-light` 1.4:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - prefers-reduced-motion stops morphing animations
 - High contrast mode adjusts blob visibility

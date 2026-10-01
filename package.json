@@ -10,7 +10,8 @@
     "ds:extract": "node claude-design-systems/scripts/extract.mjs",
     "ds:build": "node claude-design-systems/scripts/build.mjs",
     "ds:validate": "node claude-design-systems/scripts/validate.mjs",
-    "ds:covers": "node claude-design-systems/scripts/render-check.mjs"
+    "ds:covers": "node claude-design-systems/scripts/render-check.mjs",
+    "ds:lobbi": "node claude-design-systems/scripts/build-lobbi.mjs"
   },
   "keywords": [
     "design-system",

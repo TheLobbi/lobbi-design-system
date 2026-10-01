@@ -33,6 +33,14 @@ CULTIVATING BELONGING TOGETHER. Core Principle: "Everyone belongs, everyone cont
 
 - `display` — -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, "Helvetica Neue", sans-serif
 
+Faces are hosted on Google Fonts (Inter, Roboto); load them with:
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap">
+```
+
+The reference page names Inter, Roboto without loading them, so it shows a fallback face; the last link above loads the intended face.
+
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
 
 ### Type rationale
@@ -61,8 +69,9 @@ Timing values: `--transition-fast` 200ms ease-out, `--transition-base` 300ms eas
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 7.2:1.
+- `page-text` on `page-bg` measures 4.5:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `linen-beige` 1.0:1, `community-coral` 2.6:1, `peach-soft` 1.3:1, `blush-pink` 1.1:1, `sage-muted` 2.1:1, `category-tag-bg` 1.1:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Further guidance
 

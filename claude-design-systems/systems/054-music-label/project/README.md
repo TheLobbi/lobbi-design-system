@@ -122,7 +122,7 @@ Faces are hosted on Google Fonts (Bebas Neue, Inter); load them with:
 
 - ACCESSIBILITY CONSIDERATIONS
 
-- WCAG 2.1 AA: Gold (#d4af37) on vinyl black exceeds 7:1 contrast
+- WCAG 2.1 AA: Gold (#d4af37) on vinyl black exceeds ~~7:1~~ contrast — **measured 9.4:1**
 - Keyboard Navigation: Tab order follows release chronology
 - Screen Readers: ARIA labels for album artwork, streaming metrics
 - Reduced Motion: Respects prefers-reduced-motion (static waveforms)
@@ -166,6 +166,7 @@ Timing values: `--transition-smooth` 300ms cubic-bezier(0.4, 0, 0.2, 1), `--tran
 
 - `page-text` on `page-bg` measures 18.3:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `vinyl-black` 1.0:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Further guidance
 

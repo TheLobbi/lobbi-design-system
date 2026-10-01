@@ -33,6 +33,14 @@ AMPLIFYING VOICES FOR POLICY CHANGE. Core Principle: "Bold voices demand bold de
 
 - `display` — -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, "Helvetica Neue", Arial, sans-serif
 
+Faces are hosted on Google Fonts (Inter); load them with:
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+```
+
+The reference page names Inter without loading it, so it shows a fallback face; the last link above loads the intended face.
+
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
 - Uppercase is reserved for small labels (`label`, `button`), always with the letter-spacing given.
 
@@ -65,8 +73,9 @@ Timing values: `--transition-fast` 150ms cubic-bezier(0.4, 0, 0.2, 1), `--transi
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 14.1:1.
+- `page-text` on `page-bg` measures 7.3:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `pure-white` 1.0:1, `slate-lighter` 1.4:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Further guidance
 

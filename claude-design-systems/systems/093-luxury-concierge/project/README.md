@@ -22,9 +22,16 @@ Luxury Concierge: Five-Star Hospitality 60% + Art Deco 25% + Editorial 15%.
 
 - `display` — Cinzel, "Times New Roman", serif
 - `body` — Montserrat, "Helvetica Neue", sans-serif
+- `playfair-display` — "Playfair Display", serif
+
+Faces are hosted on Google Fonts (Playfair Display, Montserrat, Cinzel); load them with:
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&family=Cinzel:wght@400;500;600;700&display=swap">
+```
 
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
-- Uppercase is reserved for small labels (`display`, `body`, `label`), always with the letter-spacing given.
+- Uppercase is reserved for small labels (`display`, `label`), always with the letter-spacing given.
 
 ## Spacing, shape and elevation
 
@@ -39,8 +46,10 @@ Luxury Concierge: Five-Star Hospitality 60% + Art Deco 25% + Editorial 15%.
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 16.2:1.
+- `page-text` on `page-bg` measures 7.7:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `text-light` 4.1:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `cream-lightest` 1.1:1, `cream-light` 1.0:1, `cream` 1.1:1, `gold-light` 1.5:1, `gold` 1.9:1, `gold-dark` 3.0:1, `text-muted` 2.6:1, `btn-bg` 1.1:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Not synced
 

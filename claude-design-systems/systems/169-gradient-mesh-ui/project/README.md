@@ -15,7 +15,7 @@ Hover States: Transition Timing: RESPONSIVE BEHAVIOR Breakpoint Strategy: Mobile
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is dark.
-- Identity colours: `color-purple`, `color-blue`, `color-pink`, `color-orange`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `color-purple`, `color-blue`, `color-pink`. Lead with the first; use the rest for accents and emphasis.
 - Status colours (`badge-success-bg`, `badge-warning-bg`, `badge-error-bg`, `badge-info-bg`) always travel with a word or icon; never signal state by hue alone.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
@@ -315,8 +315,10 @@ Timing values: `--transition-fast` 0.2s cubic-bezier(0.4, 0, 0.2, 1), `--transit
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 1.0:1.
+- `page-text` on `page-bg` measures 8.1:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `color-pink` 4.3:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `glass-white` 1.4:1, `glass-border` 2.6:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Not synced
 

@@ -96,8 +96,11 @@ Timing values: `--transition-fast` 250ms ease, `--transition-base` 400ms ease.
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 13.4:1.
+- `page-text` on `page-bg` measures 7.2:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `color-trust-blue` 2.6:1, `color-lavender` 1.3:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AAA compliant (7:1 contrast minimum)
 - Minimum 18px body text, 24px for headings

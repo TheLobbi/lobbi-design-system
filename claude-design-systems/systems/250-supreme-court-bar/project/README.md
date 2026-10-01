@@ -45,7 +45,7 @@ Faces are hosted on Google Fonts (Lora, Source Serif Pro, Inter); load them with
 ```
 
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
-- Uppercase is reserved for small labels (`body`, `label`), always with the letter-spacing given.
+- Uppercase is reserved for small labels (`label`), always with the letter-spacing given.
 
 ### Type rationale
 
@@ -58,7 +58,7 @@ Faces are hosted on Google Fonts (Lora, Source Serif Pro, Inter); load them with
 
 ## Spacing, shape and elevation
 
-- Spacing steps: `space-6` 6px, `space-7.2` 7.2px, `space-14` 14px, `space-16` 16px, `space-24` 24px, `space-32` 32px. Pad cards and sections from these steps only.
+- Spacing steps: `space-6` 6px, `space-7-2` 7.2px, `space-14` 14px, `space-16` 16px, `space-24` 24px, `space-32` 32px. Pad cards and sections from these steps only.
 - Corners: `radius-4` 4px.
 
 - Base unit: 0.5rem (8px) - Constitutional grid system
@@ -84,12 +84,15 @@ Faces are hosted on Google Fonts (Lora, Source Serif Pro, Inter); load them with
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 16.0:1.
+- `page-text` on `page-bg` measures 15.0:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `chamber-gray` 2.1:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AAA compliance (highest standard for legal systems)
-- Marble white on justice black: 18.5:1 contrast ratio
-- Seal gold on stone: 8.4:1 contrast ratio
+- Marble white on justice black: ~~18.5:1~~ contrast ratio — **measured 16.0:1**
+- Seal gold on stone: ~~8.4:1~~ contrast ratio — **measured 5.2:1**
 - Focus indicators: 3px visible borders on all interactive elements
 - Semantic HTML with ARIA labels for screen readers
 - Keyboard navigation: Full tab order for legal professionals

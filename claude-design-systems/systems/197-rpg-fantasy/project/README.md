@@ -15,7 +15,7 @@ Epic Adventure Interface: This design system captures the essence of classic fan
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is light.
-- Identity colours: `color-parchment`, `color-purple`, `color-green`, `color-gold`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `color-purple`, `color-green`, `color-gold`. Lead with the first; use the rest for accents and emphasis.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
 ## Typography
@@ -99,8 +99,9 @@ Timing values: `--transition-fast` 0.2s ease, `--transition-medium` 0.3s ease.
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 9.5:1.
+- `page-text` on `page-bg` measures 10.2:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `color-parchment` 1.1:1, `color-gold` 1.7:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Not synced
 

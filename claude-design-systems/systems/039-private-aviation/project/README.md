@@ -14,7 +14,7 @@
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is dark.
-- Identity colours: `midnight-blue`, `champagne-gold`, `white-soft`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `champagne-gold`, `white-soft`. Lead with the first; use the rest for accents and emphasis.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
 ## Typography
@@ -104,8 +104,9 @@ Timing values: `--transition-fast` 0.15s ease, `--transition-base` 0.3s ease, `-
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 14.4:1.
+- `page-text` on `page-bg` measures 13.1:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `midnight-blue` 1.1:1, `gold-muted` 1.2:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Further guidance
 

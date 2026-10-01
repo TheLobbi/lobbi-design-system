@@ -15,7 +15,7 @@ TEMPERATURE & FORMALITY RATINGS.
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is light.
-- Identity colours: `spice-gold`, `silk-red`, `caravanserai-blue`, `desert-sand`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `spice-gold`, `silk-red`, `desert-sand`. Lead with the first; use the rest for accents and emphasis.
 - Status colours (`badge-warning-bg`) always travel with a word or icon; never signal state by hue alone.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
@@ -68,7 +68,7 @@ Faces are hosted on Google Fonts (Cormorant Garamond, Manrope); load them with:
 
 ## Spacing, shape and elevation
 
-- Spacing steps: `space-6.4` 6.4px, `space-8` 8px, `space-14` 14px, `space-16` 16px, `space-24` 24px, `space-32` 32px. Pad cards and sections from these steps only.
+- Spacing steps: `space-6-4` 6.4px, `space-8` 8px, `space-14` 14px, `space-16` 16px, `space-24` 24px, `space-32` 32px. Pad cards and sections from these steps only.
 - Corners: `radius-4` 4px, `radius-8` 8px, `radius-16` 16px.
 - Elevation: `shadow-1`, `shadow-2`, lowest first for resting cards, higher for hover and overlays.
 
@@ -90,8 +90,11 @@ Faces are hosted on Google Fonts (Cormorant Garamond, Manrope); load them with:
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 9.3:1.
+- `page-text` on `page-bg` measures 9.5:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `spice-gold` 2.9:1, `desert-sand` 1.0:1, `cream` 1.0:1, `footer-section-text` 1.3:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - Respects prefers-reduced-motion
 - Pattern animations optional/stoppable

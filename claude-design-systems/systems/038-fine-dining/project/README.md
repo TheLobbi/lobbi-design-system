@@ -27,7 +27,7 @@ Inspired by world-renowned Michelin-starred establishments like French Laundry a
 ## Typography
 
 - `display` — "Cormorant Garamond", serif
-- `montserrat` — "Montserrat", sans-serif
+- `body` — Montserrat, sans-serif
 
 Faces are hosted on Google Fonts (Cormorant Garamond, Montserrat); load them with:
 
@@ -76,6 +76,9 @@ Timing values: `--transition-smooth` all 0.4s cubic-bezier(0.4, 0, 0.2, 1), `--t
 
 - `page-text` on `page-bg` measures 17.2:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `rich-black` 1.0:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - Semantic HTML5 structure (header, nav, main, section, footer)
 - ARIA labels for screen reader context

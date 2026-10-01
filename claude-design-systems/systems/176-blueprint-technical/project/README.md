@@ -95,18 +95,18 @@ Faces are hosted on Google Fonts (IBM Plex Mono, IBM Plex Sans); load them with:
 - COLOR PSYCHOLOGY & SEMANTICS
 
 - Primary Palette - Blueprint Core:
-- Blueprint Blue (#0D47A1)       - Primary background (20:1 with white)
-- Technical White (#FFFFFF)      - Lines, text, borders (21:1)
-- Cyan Lines (#00E5FF)           - Accent lines, highlights (14.2:1)
-- Grid Gray (#3D5A80)            - Background grid, subtle elements (8.5:1)
-- Specification Blue (#1976D2)   - Interactive elements (7.8:1)
-- Measurement Yellow (#FFD600)   - Callouts, dimensions (12.5:1)
+- Blueprint Blue (#0D47A1)       - Primary background (~~20:1~~ with white) — **measured 1.0:1** (not for body text)
+- Technical White (#FFFFFF)      - Lines, text, borders (~~21:1~~) — **measured 8.6:1**
+- Cyan Lines (#00E5FF)           - Accent lines, highlights (~~14.2:1~~) — **measured 5.6:1**
+- Grid Gray (#3D5A80)            - Background grid, subtle elements (~~8.5:1~~) — **measured 1.2:1** (not for body text)
+- Specification Blue (#1976D2)   - Interactive elements (~~7.8:1~~) — **measured 1.9:1** (not for body text)
+- Measurement Yellow (#FFD600)   - Callouts, dimensions (~~12.5:1~~) — **measured 6.1:1**
 
 - Secondary Palette - Status Indicators:
-- Success Cyan (#00E676)         - Approvals, confirmations (9.2:1)
-- Warning Amber (#FFC107)        - Alerts, pending items (10.8:1)
-- Error Red (#FF5252)            - Issues, critical items (6.5:1)
-- Info Blue (#2196F3)            - Information, notes (7.2:1)
+- Success Cyan (#00E676)         - Approvals, confirmations (~~9.2:1~~) — **measured 5.2:1**
+- Warning Amber (#FFC107)        - Alerts, pending items (~~10.8:1~~) — **measured 5.3:1**
+- Error Red (#FF5252)            - Issues, critical items (~~6.5:1~~) — **measured 2.7:1** (not for body text)
+- Info Blue (#2196F3)            - Information, notes (~~7.2:1~~) — **measured 2.8:1** (not for body text)
 
 - Technical Effects:
 - Dashed lines: border-style dashed (2px 4px)
@@ -388,6 +388,7 @@ Timing values: `--transition-fast` 0.15s linear, `--transition-base` 0.2s ease-o
 
 - `page-text` on `page-bg` measures 8.6:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `color-blueprint` 1.0:1, `color-error` 2.7:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Not synced
 

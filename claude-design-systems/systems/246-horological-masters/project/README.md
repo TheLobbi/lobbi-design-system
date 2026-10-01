@@ -61,7 +61,7 @@ Faces are hosted on Google Fonts (Fraunces, DM Mono); load them with:
 ```
 
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
-- Uppercase is reserved for small labels (`body`, `label`), always with the letter-spacing given.
+- Uppercase is reserved for small labels (`label`), always with the letter-spacing given.
 
 ### Type rationale
 
@@ -121,13 +121,16 @@ Timing values: `--transition-base` 280ms cubic-bezier(0.4, 0, 0.2, 1).
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 9.4:1.
+- `page-text` on `page-bg` measures 7.1:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `color-movement-gold` 2.8:1, `color-bright-gold` 1.8:1, `color-dial-white` 1.0:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - Movement gold (#ca8a04) on dial white (#fafafa): 4.6:1 contrast (AA large)
 - Steel silver (#6b7280) on white: 4.7:1 contrast (AA standard)
 - Complication blue (#1e40af) on white: 8.2:1 contrast (AAA)
-- Anthracite gray (#374151) on white: 10.8:1 contrast (AAA)
+- Anthracite gray (#374151) on white: ~~10.8:1~~ contrast (AAA) — **measured 9.7:1**
 - Watch images include alt text with brand, model, reference number, complications
 - Technical abbreviations expanded on hover (COSC = Contrôle Officiel Suisse...)
 - Catalog tables with proper headers and scope for screen reader navigation

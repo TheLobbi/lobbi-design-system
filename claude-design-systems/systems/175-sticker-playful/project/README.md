@@ -92,20 +92,20 @@ Faces are hosted on Google Fonts (Quicksand, Nunito); load them with:
 - COLOR PSYCHOLOGY & SEMANTICS
 
 - Primary Palette - Pastel Rainbow:
-- Cotton Candy Pink (#FFB6D9)    - Primary actions, warmth (3.2:1 on white)
-- Sky Blue (#A0D8F1)             - Information, calm (2.8:1, large text)
-- Mint Green (#B4E7CE)           - Success, growth (3.1:1)
-- Lavender Purple (#D4B5F0)      - Premium, creative (3.4:1)
-- Peach Orange (#FFCBA4)         - Attention, friendly (2.9:1)
-- Lemon Yellow (#FFF6B6)         - Highlights, joy (1.8:1, decorative only)
-- Cloud White (#FFFFFF)          - Backgrounds, space (21:1)
-- Charcoal Gray (#4A4A4A)        - Text, contrast (9.7:1)
+- Cotton Candy Pink (#FFB6D9)    - Primary actions, warmth (~~3.2:1~~ on white) — **measured 1.5:1** (not for body text)
+- Sky Blue (#A0D8F1)             - Information, calm (~~2.8:1~~, large text) — **measured 1.4:1** (not for body text)
+- Mint Green (#B4E7CE)           - Success, growth (~~3.1:1~~) — **measured 1.3:1** (not for body text)
+- Lavender Purple (#D4B5F0)      - Premium, creative (~~3.4:1~~) — **measured 1.7:1** (not for body text)
+- Peach Orange (#FFCBA4)         - Attention, friendly (~~2.9:1~~) — **measured 1.4:1** (not for body text)
+- Lemon Yellow (#FFF6B6)         - Highlights, joy (~~1.8:1~~, decorative only) — **measured 1.0:1** (not for body text)
+- Cloud White (#FFFFFF)          - Backgrounds, space (~~21:1~~) — **measured 1.1:1** (not for body text)
+- Charcoal Gray (#4A4A4A)        - Text, contrast (~~9.7:1~~) — **measured 8.3:1**
 
 - Secondary Palette - Deeper Accents:
-- Berry Pink (#FF6B9D)           - Hover states, CTAs (4.8:1)
-- Ocean Blue (#4FC3F7)           - Links, interactive (4.2:1)
-- Forest Green (#66BB6A)         - Success confirmation (4.9:1)
-- Plum Purple (#9C27B0)          - Special elements (6.5:1)
+- Berry Pink (#FF6B9D)           - Hover states, CTAs (~~4.8:1~~) — **measured 2.5:1** (not for body text)
+- Ocean Blue (#4FC3F7)           - Links, interactive (~~4.2:1~~) — **measured 1.9:1** (not for body text)
+- Forest Green (#66BB6A)         - Success confirmation (~~4.9:1~~) — **measured 2.2:1** (not for body text)
+- Plum Purple (#9C27B0)          - Special elements (~~6.5:1~~) — **measured 5.9:1**
 
 - Sticker Effects:
 - White borders: 3-5px solid white (always present)
@@ -391,6 +391,7 @@ Timing values: `--transition-fast` 0.2s ease-out, `--transition-base` 0.25s cubi
 
 - `page-text` on `page-bg` measures 8.3:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `color-pink` 1.5:1, `color-white` 1.1:1, `color-berry` 2.5:1, `color-ocean` 1.9:1, `color-forest` 2.2:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Not synced
 

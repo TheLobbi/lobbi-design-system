@@ -14,7 +14,7 @@ Quantum Technology Platforms. ━━━━━━━━━━━━━━━━�
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is dark.
-- Identity colours: `deep-space`, `quantum-blue`, `entanglement-purple`, `cold-white`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `quantum-blue`, `entanglement-purple`, `cold-white`. Lead with the first; use the rest for accents and emphasis.
 - Status colours (`success-green`, `error-red`, `warning-amber`) always travel with a word or icon; never signal state by hue alone.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
@@ -32,12 +32,15 @@ Quantum Technology Platforms. ━━━━━━━━━━━━━━━━�
 
 - `display` — "Space Grotesk", Inter, -apple-system, BlinkMacSystemFont, sans-serif
 
-Faces are hosted on Google Fonts (Space Grotesk); load them with:
+Faces are hosted on Google Fonts (Space Grotesk, Inter); load them with:
 
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
 ```
+
+The reference page names Inter without loading it, so it shows a fallback face; the last link above loads the intended face.
 
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
 - Uppercase is reserved for small labels (`label`), always with the letter-spacing given.
@@ -81,8 +84,11 @@ Timing values: `--transition-smooth` all 200ms cubic-bezier(0.4, 0, 0.2, 1).
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 18.1:1.
+- `page-text` on `page-bg` measures 16.9:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `quantum-blue-light` 4.3:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 - ARIA labels on all quantum visualizations

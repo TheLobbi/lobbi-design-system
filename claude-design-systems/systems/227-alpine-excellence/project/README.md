@@ -74,8 +74,8 @@ Faces are hosted on Google Fonts (Figtree, Fraunces); load them with:
 - CONTRAST RATIOS (WCAG 2.1 AAA Compliance):
 - Primary text on white: 16.2:1 (AAA+)
 - White text on mountain blue: 10.3:1 (AAA)
-- Text on pine green: 8.9:1 (AAA)
-- Mountain blue on alpine white: 10.3:1 (AAA)
+- Text on pine green: ~~8.9:1~~ (AAA) — **measured 1.5:1** (not for body text)
+- Mountain blue on alpine white: ~~10.3:1~~ (AAA) — **measured 3.5–9.9:1** (under 4.5:1, so not for body text: `mountain-blue-light`)
 - All interactive elements exceed 7:1 (AAA minimum)
 
 ## States and motion
@@ -98,8 +98,12 @@ Timing values: `--transition-fast` 150ms cubic-bezier(0.4, 0, 0.2, 1), `--transi
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 14.0:1.
+- `page-text` on `page-bg` measures 9.7:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `mountain-blue-light` 3.5:1, `metal-gray` 4.5:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `alpine-white` 1.0:1, `pure-white` 1.1:1, `glacier-silver` 1.2:1, `pine-light` 2.1:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - Exceptionally high contrast ratios throughout (AAA+)
 - Clear focus indicators with 3px high-contrast outline
@@ -126,8 +130,8 @@ The reference page composes these patterns from the tokens above:
 - CONTRAST RATIOS (WCAG 2.1 AAA Compliance):
 - Primary text on white: 16.2:1 (AAA+)
 - White text on mountain blue: 10.3:1 (AAA)
-- Text on pine green: 8.9:1 (AAA)
-- Mountain blue on alpine white: 10.3:1 (AAA)
+- Text on pine green: ~~8.9:1~~ (AAA) — **measured 1.5:1** (not for body text)
+- Mountain blue on alpine white: ~~10.3:1~~ (AAA) — **measured 3.5–9.9:1** (under 4.5:1, so not for body text: `mountain-blue-light`)
 - All interactive elements exceed 7:1 (AAA minimum)
 
 ## Further guidance

@@ -131,14 +131,18 @@ Timing values: `--transition` all 200ms ease-in-out.
 
 - `page-text` on `page-bg` measures 7.2:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `policy-blue-light` 3.5:1, `stat-change-text` 3.6:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `slate-lighter` 2.4:1, `social-link-bg` 1.1:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AAA
 - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 - Color Contrast:
-- Policy Blue on White: 9.7:1 (AAA compliant)
-- Slate on White: 8.2:1 (AAA compliant)
-- Red on White: 7.1:1 (AAA compliant for large text)
+- Policy Blue on White: ~~9.7:1~~ (AAA compliant) — **measured 3.5–9.8:1** (under 4.5:1, so not for body text: `policy-blue-light`)
+- Slate on White: ~~8.2:1~~ (AAA compliant) — **measured 2.4–7.2:1** (under 4.5:1, so not for body text: `slate-lighter`)
+- Red on White: ~~7.1:1~~ (AAA compliant for large text) — **measured 4.6–6.1:1**
 
 - Keyboard Navigation:
 - All interactive elements keyboard accessible (tab order logical)

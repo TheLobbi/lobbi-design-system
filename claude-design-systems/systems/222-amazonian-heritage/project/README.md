@@ -15,7 +15,7 @@ The Amazonian Heritage Council design system honors the rich indigenous cultures
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is dark.
-- Identity colours: `forest-emerald`, `river-brown`, `parrot-orange`, `deep-forest`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `forest-emerald`, `river-brown`, `parrot-orange`. Lead with the first; use the rest for accents and emphasis.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
 ### Palette rationale
@@ -57,7 +57,7 @@ Faces are hosted on Google Fonts (Bitter, Work Sans); load them with:
 
 ## Spacing, shape and elevation
 
-- Spacing steps: `space-6` 6px, `space-7.5` 7.5px, `space-10` 10px, `space-14` 14px, `space-18` 18px, `space-20` 20px. Pad cards and sections from these steps only.
+- Spacing steps: `space-6` 6px, `space-7-5` 7.5px, `space-10` 10px, `space-14` 14px, `space-18` 18px, `space-20` 20px. Pad cards and sections from these steps only.
 - Corners: `radius-6` 6px, `radius-8` 8px, `radius-12` 12px.
 - Elevation: `shadow-1`, `shadow-2`, `shadow-3`, lowest first for resting cards, higher for hover and overlays.
 
@@ -84,8 +84,12 @@ Faces are hosted on Google Fonts (Bitter, Work Sans); load them with:
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 9.3:1.
+- `page-text` on `page-bg` measures 8.5:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `sunset-gold` 4.5:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `parrot-orange` 2.7:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG AA minimum contrast ratios (4.5:1 for body, 3:1 for large text)
 - Colorblind-safe palette (orange/green are distinguishable by pattern/icon)

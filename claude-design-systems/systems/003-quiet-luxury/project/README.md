@@ -75,10 +75,14 @@ Faces are hosted on Google Fonts (Cormorant Garamond, Inter); load them with:
 
 - `page-text` on `page-bg` measures 12.3:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `camel-600` 3.2:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `camel-300` 1.4:1, `category-tag-bg` 1.0:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA contrast ratios maintained
 - Navy (#1a365d) on cream (#fdfbf7): 8.2:1
-- Charcoal (#2d3436) on cream: 10.1:1
+- Charcoal (#2d3436) on cream: ~~10.1:1~~ — **measured 12.3:1**
 - Focus states with subtle underlines
 - Semantic structure with ARIA labels
 

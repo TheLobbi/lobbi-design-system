@@ -157,8 +157,9 @@ Timing values: `--transition-fast` 200ms ease, `--transition-base` 250ms ease-ou
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 17.0:1.
+- `page-text` on `page-bg` measures 13.4:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `color-naval-navy` 1.0:1, `color-white-10` 1.3:1, `color-white-05` 1.1:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Further guidance
 

@@ -123,8 +123,11 @@ Timing values: `--transition-standard` 200ms cubic-bezier(0.4, 0, 0.2, 1), `--tr
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 20.4:1.
+- `page-text` on `page-bg` measures 9.8:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `nebula-purple` 3.6:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - Universal Mission Access
 - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -137,9 +140,9 @@ Timing values: `--transition-standard` 200ms cubic-bezier(0.4, 0, 0.2, 1), `--tr
 - Motion: Respects prefers-reduced-motion
 
 - Color Contrast Ratios:
-- Star white on void black: 21:1 (AAA)
-- Nebula purple on void black: 8.2:1 (AA Large)
-- Rocket orange on void black: 9.1:1 (AA)
+- Star white on void black: ~~21:1~~ (AAA) — **measured 20.4:1**
+- Nebula purple on void black: ~~8.2:1~~ (AA Large) — **measured 3.6:1** (not for body text)
+- Rocket orange on void black: ~~9.1:1~~ (AA) — **measured 7.3:1**
 
 ## Component inventory
 

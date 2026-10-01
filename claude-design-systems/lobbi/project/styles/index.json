@@ -1,0 +1,5843 @@
+{
+ "default": "009-dark-academia",
+ "count": 255,
+ "styles": [
+  {
+   "id": "001-byzantine-luxury",
+   "num": 1,
+   "name": "Byzantine Luxury",
+   "tags": [
+    "premium",
+    "heritage"
+   ],
+   "temperature": 5,
+   "formality": 9,
+   "perfectFor": [
+    "Heritage Organizations",
+    "Religious Institutions",
+    "Museums"
+   ],
+   "blend": "Byzantine 80% + Luxury Dark 20%",
+   "swatch": [
+    "#1c1917",
+    "#fbbf24",
+    "#b8860b",
+    "#cecbc9"
+   ]
+  },
+  {
+   "id": "002-streamline-moderne",
+   "num": 2,
+   "name": "Streamline Moderne",
+   "tags": [
+    "creative"
+   ],
+   "temperature": 5,
+   "formality": 7,
+   "perfectFor": [
+    "Design Studios",
+    "Creative Agencies",
+    "Architecture Firms"
+   ],
+   "blend": "Art Deco 80% + Streamline 20%",
+   "swatch": [
+    "#edf1f6",
+    "#3b82f6",
+    "#14b8a6",
+    "#1e293b"
+   ]
+  },
+  {
+   "id": "003-quiet-luxury",
+   "num": 3,
+   "name": "Quiet Luxury",
+   "tags": [
+    "premium"
+   ],
+   "temperature": 6,
+   "formality": 8,
+   "perfectFor": [
+    "Luxury Brands",
+    "Premium Services",
+    "Private Wealth"
+   ],
+   "blend": "Quiet Luxury 80% + Minimal 20%",
+   "swatch": [
+    "#faf6f1",
+    "#1a365d",
+    "#c4a77d",
+    "#2d3436"
+   ]
+  },
+  {
+   "id": "004-japandi-glass",
+   "num": 4,
+   "name": "Japandi + Glass",
+   "tags": [
+    "creative"
+   ],
+   "temperature": 5,
+   "formality": 6,
+   "perfectFor": [
+    "Wellness Brands",
+    "Design Studios",
+    "Lifestyle Products"
+   ],
+   "blend": "Japandi 80% + Glassmorphism 20%",
+   "swatch": [
+    "#e5dfd5",
+    "#c67d4d",
+    "#7c9a5c",
+    "#44403c"
+   ]
+  },
+  {
+   "id": "005-swiss-aurora",
+   "num": 5,
+   "name": "Swiss + Aurora",
+   "tags": [
+    "professional"
+   ],
+   "temperature": 3,
+   "formality": 8,
+   "perfectFor": [
+    "Consulting Firms",
+    "Professional Services",
+    "Corporate"
+   ],
+   "blend": "Swiss 80% + Aurora UI 20%",
+   "swatch": [
+    "#ffffff",
+    "#06b6d4",
+    "#8b5cf6",
+    "#374151"
+   ]
+  },
+  {
+   "id": "006-art-deco-cyberpunk",
+   "num": 6,
+   "name": "Art Deco Cyberpunk",
+   "tags": [
+    "creative"
+   ],
+   "temperature": 3,
+   "formality": 7,
+   "perfectFor": [
+    "Tech Startups",
+    "Gaming Companies",
+    "Creative Agencies"
+   ],
+   "blend": "Art Deco 60% + Cyberpunk 40%",
+   "swatch": [
+    "#0a0a0f",
+    "#00f0ff",
+    "#ff00ff",
+    "#f7e7ce"
+   ]
+  },
+  {
+   "id": "007-neubrutalism-memphis",
+   "num": 7,
+   "name": "Neubrutalism Memphis",
+   "tags": [
+    "creative"
+   ],
+   "temperature": 6,
+   "formality": 4,
+   "perfectFor": [
+    "Design Studios",
+    "Creative Agencies",
+    "Modern Brands"
+   ],
+   "blend": "Neubrutalism 75% + Memphis 25%",
+   "swatch": [
+    "#ffffff",
+    "#ff00ff",
+    "#0066ff",
+    "#000000"
+   ]
+  },
+  {
+   "id": "008-scandinavian-bento",
+   "num": 8,
+   "name": "Scandinavian Bento",
+   "tags": [
+    "professional"
+   ],
+   "temperature": 6,
+   "formality": 6,
+   "perfectFor": [
+    "SaaS Companies",
+    "Tech Startups",
+    "Modern Business"
+   ],
+   "blend": "Scandinavian 75% + Bento Grid 25%",
+   "swatch": [
+    "#fafaf8",
+    "#c9a87c",
+    "#2d2d2d",
+    "#2d2d2d"
+   ]
+  },
+  {
+   "id": "009-dark-academia",
+   "num": 9,
+   "name": "Dark Academia",
+   "tags": [
+    "premium",
+    "academic"
+   ],
+   "temperature": 4,
+   "formality": 8,
+   "perfectFor": [
+    "Universities",
+    "Libraries",
+    "Academic Institutions"
+   ],
+   "blend": "Dark Academia 80% + Lobbi Brand 20%",
+   "swatch": [
+    "#23140d",
+    "#c9a227",
+    "#ffbf00",
+    "#d4c5b0"
+   ]
+  },
+  {
+   "id": "010-vaporwave-y2k",
+   "num": 10,
+   "name": "Vaporwave Y2K",
+   "tags": [
+    "creative"
+   ],
+   "temperature": 5,
+   "formality": 3,
+   "perfectFor": [
+    "Creative Agencies",
+    "Entertainment Brands",
+    "Media Companies"
+   ],
+   "blend": "Vaporwave 70% + Y2K 30%",
+   "swatch": [
+    "#6a4148",
+    "#ff00ff",
+    "#ff9d00",
+    "#e1d9da"
+   ]
+  },
+  {
+   "id": "011-solarpunk-biophilic",
+   "num": 11,
+   "name": "Solarpunk Biophilic",
+   "tags": [
+    "tech"
+   ],
+   "temperature": 7,
+   "formality": 5,
+   "perfectFor": [
+    "Sustainability Orgs",
+    "Environmental Groups",
+    "Green Tech"
+   ],
+   "blend": "Solarpunk 70% + Biophilic 30%",
+   "swatch": [
+    "#f0fdf4",
+    "#38bdf8",
+    "#f59e0b",
+    "#44403c"
+   ]
+  },
+  {
+   "id": "012-brutalist-concrete",
+   "num": 12,
+   "name": "Brutalist Concrete",
+   "tags": [
+    "creative"
+   ],
+   "temperature": 3,
+   "formality": 6,
+   "perfectFor": [
+    "Architecture Firms",
+    "Design Studios",
+    "Modern Brands"
+   ],
+   "blend": "Web Brutalism 75% + Concrete 25%",
+   "swatch": [
+    "#f5f5f5",
+    "#ef4444",
+    "#a3a3a3",
+    "#000000"
+   ]
+  },
+  {
+   "id": "013-corporate-refinement",
+   "num": 13,
+   "name": "Corporate Refinement",
+   "tags": [
+    "premium",
+    "professional"
+   ],
+   "temperature": 5,
+   "formality": 9,
+   "perfectFor": [
+    "Executive Services",
+    "Premium Consulting",
+    "Corporate Leaders"
+   ],
+   "blend": "Quiet Luxury 80% + Corporate 20%",
+   "swatch": [
+    "#fdfcfb",
+    "#c4a35a",
+    "#272219",
+    "#5c5347"
+   ]
+  },
+  {
+   "id": "014-editorial-swiss",
+   "num": 14,
+   "name": "Editorial Swiss",
+   "tags": [
+    "professional",
+    "media"
+   ],
+   "temperature": 4,
+   "formality": 8,
+   "perfectFor": [
+    "Publishers",
+    "Media Companies",
+    "News Organizations"
+   ],
+   "blend": "Editorial 65% + Swiss 35%",
+   "swatch": [
+    "#ffffff",
+    "#0066cc",
+    "#000000",
+    "#555555"
+   ]
+  },
+  {
+   "id": "015-private-banking",
+   "num": 15,
+   "name": "Private Banking",
+   "tags": [
+    "premium",
+    "professional"
+   ],
+   "temperature": 4,
+   "formality": 9,
+   "perfectFor": [
+    "Private Banks",
+    "Wealth Management",
+    "Investment Firms"
+   ],
+   "blend": "Private Banking 70% + Classic Editorial 30%",
+   "swatch": [
+    "#faf8f5",
+    "#1a2744",
+    "#b8a369",
+    "#555555"
+   ]
+  },
+  {
+   "id": "016-architect-portfolio",
+   "num": 16,
+   "name": "Architect Portfolio",
+   "tags": [
+    "professional"
+   ],
+   "temperature": 2,
+   "formality": 8,
+   "perfectFor": [
+    "Architecture Firms",
+    "Design Studios",
+    "Creative Professionals"
+   ],
+   "blend": "Architect's Portfolio 75% + Swiss Grid 25%",
+   "swatch": [
+    "#ffffff",
+    "#4a90e2",
+    "#0a0a0a",
+    "#505050"
+   ]
+  },
+  {
+   "id": "017-executive-suite",
+   "num": 17,
+   "name": "Executive Suite",
+   "tags": [
+    "professional"
+   ],
+   "temperature": 5,
+   "formality": 8,
+   "perfectFor": [
+    "Corporate Headquarters",
+    "C-Suite Services",
+    "Executive Firms"
+   ],
+   "blend": "Executive Suite 65% + Material Design 3 35%",
+   "swatch": [
+    "#fafafa",
+    "#047857",
+    "#10b981",
+    "#1e293b"
+   ]
+  },
+  {
+   "id": "018-law-firm-premium",
+   "num": 18,
+   "name": "Law Firm Premium",
+   "tags": [
+    "premium",
+    "professional"
+   ],
+   "temperature": 4,
+   "formality": 10,
+   "perfectFor": [
+    "Law Firms",
+    "Legal Services",
+    "Attorney Associations"
+   ],
+   "blend": "Law Firm Traditional 70% + Modern Conservative 30%",
+   "swatch": [
+    "#fffef5",
+    "#1e3a5f",
+    "#7c2d36",
+    "#1e3a5f"
+   ]
+  },
+  {
+   "id": "019-luxury-hotel",
+   "num": 19,
+   "name": "Luxury Hotel",
+   "tags": [
+    "premium",
+    "hospitality"
+   ],
+   "temperature": 6,
+   "formality": 8,
+   "perfectFor": [
+    "Luxury Hotels",
+    "Premium Resorts",
+    "5-Star Hospitality"
+   ],
+   "blend": "Luxury Hospitality 75% + Minimalist Japanese 25%",
+   "swatch": [
+    "#fdfbf7",
+    "#d9c596",
+    "#8b8378",
+    "#4a4a4a"
+   ]
+  },
+  {
+   "id": "020-investment-fund",
+   "num": 20,
+   "name": "Investment Fund",
+   "tags": [
+    "professional",
+    "tech"
+   ],
+   "temperature": 3,
+   "formality": 8,
+   "perfectFor": [
+    "Investment Firms",
+    "Hedge Funds",
+    "Financial Services"
+   ],
+   "blend": "Investment Fund 70% + Data Visualization 30%",
+   "swatch": [
+    "#18181b",
+    "#06b6d4",
+    "#059669",
+    "#fafafa"
+   ]
+  },
+  {
+   "id": "021-wealth-management",
+   "num": 21,
+   "name": "Wealth Management",
+   "tags": [
+    "premium",
+    "professional"
+   ],
+   "temperature": 5,
+   "formality": 9,
+   "perfectFor": [
+    "Wealth Advisors",
+    "Private Banks",
+    "Asset Management"
+   ],
+   "blend": "Wealth Management 75% + Art Deco Elegance 25%",
+   "swatch": [
+    "#f9f6e8",
+    "#d4af37",
+    "#1a3a2f",
+    "#2c2c2c"
+   ]
+  },
+  {
+   "id": "022-fintech-modern",
+   "num": 22,
+   "name": "Fintech Modern",
+   "tags": [
+    "tech",
+    "professional"
+   ],
+   "temperature": 4,
+   "formality": 7,
+   "perfectFor": [
+    "Digital Banks",
+    "Payment Platforms",
+    "Investment Apps"
+   ],
+   "blend": "Fintech Modern 70% + Gradient Mesh 30%",
+   "swatch": [
+    "#ffffff",
+    "#93c5fd",
+    "#3b82f6",
+    "#334155"
+   ]
+  },
+  {
+   "id": "023-trading-terminal",
+   "num": 23,
+   "name": "Trading Terminal",
+   "tags": [
+    "tech",
+    "professional"
+   ],
+   "temperature": 2,
+   "formality": 8,
+   "perfectFor": [
+    "Trading Platforms",
+    "Financial Tech",
+    "Investment Apps"
+   ],
+   "blend": "Trading Terminal 80% + Neon Accents 20%",
+   "swatch": [
+    "#0a0a0a",
+    "#00ff88",
+    "#00d4ff",
+    "#a0a0a0"
+   ]
+  },
+  {
+   "id": "024-insurance-premium",
+   "num": 24,
+   "name": "Insurance Premium",
+   "tags": [
+    "professional"
+   ],
+   "temperature": 5,
+   "formality": 9,
+   "perfectFor": [
+    "Insurance Companies",
+    "Risk Management",
+    "Financial Security"
+   ],
+   "blend": "Insurance Premium 75% + Corporate Trust 25%",
+   "swatch": [
+    "#faf9f7",
+    "#1e3a5f",
+    "#b8860b",
+    "#475569"
+   ]
+  },
+  {
+   "id": "025-crypto-luxury",
+   "num": 25,
+   "name": "Crypto Luxury",
+   "tags": [
+    "tech",
+    "premium"
+   ],
+   "temperature": 3,
+   "formality": 8,
+   "perfectFor": [
+    "Crypto Exchanges",
+    "Blockchain Startups",
+    "Web3 Projects"
+   ],
+   "blend": "Crypto Luxury 70% + Dark Premium 30%",
+   "swatch": [
+    "#0c0c0c",
+    "#fbbf24",
+    "#a78bfa",
+    "#d4d4d8"
+   ]
+  },
+  {
+   "id": "026-real-estate-luxury",
+   "num": 26,
+   "name": "Real Estate Luxury",
+   "tags": [
+    "premium",
+    "hospitality"
+   ],
+   "temperature": 6,
+   "formality": 8,
+   "perfectFor": [
+    "Luxury Real Estate",
+    "Property Developers",
+    "Estate Agencies"
+   ],
+   "blend": "Real Estate Luxury 75% + Photography Focus 25%",
+   "swatch": [
+    "#faf8f5",
+    "#b76e79",
+    "#2d2d2d",
+    "#2d2d2d"
+   ]
+  },
+  {
+   "id": "027-consulting-elite",
+   "num": 27,
+   "name": "Consulting Elite",
+   "tags": [
+    "professional"
+   ],
+   "temperature": 3,
+   "formality": 9,
+   "perfectFor": [
+    "Strategy Consultants",
+    "Management Firms",
+    "Business Advisors"
+   ],
+   "blend": "Consulting Elite 80% + Minimal Precision 20%",
+   "swatch": [
+    "#ffffff",
+    "#ef4444",
+    "#10b981",
+    "#475569"
+   ]
+  },
+  {
+   "id": "028-medical-premium",
+   "num": 28,
+   "name": "Medical Premium",
+   "tags": [
+    "professional",
+    "tech"
+   ],
+   "temperature": 4,
+   "formality": 8,
+   "perfectFor": [
+    "Medical Practices",
+    "Healthcare Networks",
+    "Clinical Services"
+   ],
+   "blend": "Medical Premium 75% + Clean Technology 25%",
+   "swatch": [
+    "#f3f4f6",
+    "#0ea5e9",
+    "#10b981",
+    "#1f2937"
+   ]
+  },
+  {
+   "id": "029-dental-luxury",
+   "num": 29,
+   "name": "Dental Luxury",
+   "tags": [
+    "hospitality"
+   ],
+   "temperature": 6,
+   "formality": 7,
+   "perfectFor": [
+    "Dental Practices",
+    "Cosmetic Dentistry",
+    "Oral Healthcare"
+   ],
+   "blend": "Dental Luxury 75% + Spa Calm 25%",
+   "swatch": [
+    "#f8f8f8",
+    "#5eadb0",
+    "#2d3e50",
+    "#2d3e50"
+   ]
+  },
+  {
+   "id": "030-pharmaceutical",
+   "num": 30,
+   "name": "Pharmaceutical",
+   "tags": [
+    "professional",
+    "tech"
+   ],
+   "temperature": 3,
+   "formality": 9,
+   "perfectFor": [
+    "Pharma Companies",
+    "Drug Manufacturers",
+    "Medical Research"
+   ],
+   "blend": "Pharmaceutical 80% + Scientific Precision 20%",
+   "swatch": [
+    "#f0f9ff",
+    "#374151",
+    "#374151",
+    "#374151"
+   ]
+  },
+  {
+   "id": "031-engineering-firm",
+   "num": 31,
+   "name": "Engineering Firm",
+   "tags": [
+    "professional",
+    "tech"
+   ],
+   "temperature": 3,
+   "formality": 8,
+   "perfectFor": [
+    "Engineering Firms",
+    "Technical Services",
+    "Infrastructure"
+   ],
+   "blend": "Engineering Firm 75% + Blueprint Technical 25%",
+   "swatch": [
+    "#f3f4f6",
+    "#f97316",
+    "#3b82f6",
+    "#374151"
+   ]
+  },
+  {
+   "id": "032-accounting-premium",
+   "num": 32,
+   "name": "Accounting Premium",
+   "tags": [
+    "professional"
+   ],
+   "temperature": 4,
+   "formality": 9,
+   "perfectFor": [
+    "Accounting Firms",
+    "CPA Services",
+    "Financial Auditing"
+   ],
+   "blend": "Accounting Premium 80% + Conservative Trust 20%",
+   "swatch": [
+    "#fafaf9",
+    "#166534",
+    "#d97706",
+    "#3f3f46"
+   ]
+  },
+  {
+   "id": "033-patent-law",
+   "num": 33,
+   "name": "Patent Law",
+   "tags": [
+    "professional"
+   ],
+   "temperature": 3,
+   "formality": 9,
+   "perfectFor": [
+    "Patent Attorneys",
+    "IP Law Firms",
+    "Tech Legal Services"
+   ],
+   "blend": "Patent Law 75% + Technical Documentation 25%",
+   "swatch": [
+    "#f1f5f9",
+    "#d97706",
+    "#4338ca",
+    "#334155"
+   ]
+  },
+  {
+   "id": "034-hr-enterprise",
+   "num": 34,
+   "name": "HR Enterprise",
+   "tags": [
+    "professional",
+    "tech"
+   ],
+   "temperature": 6,
+   "formality": 7,
+   "perfectFor": [
+    "HR Consulting",
+    "Talent Management",
+    "Workforce Solutions"
+   ],
+   "blend": "HR Enterprise 70% + People First 30%",
+   "swatch": [
+    "#fefefe",
+    "#a78bfa",
+    "#7c3aed",
+    "#1f2937"
+   ]
+  },
+  {
+   "id": "035-yacht-club",
+   "num": 35,
+   "name": "Yacht Club",
+   "tags": [
+    "premium",
+    "hospitality"
+   ],
+   "temperature": 4,
+   "formality": 9,
+   "perfectFor": [
+    "Yacht Clubs",
+    "Sailing Organizations",
+    "Maritime Societies"
+   ],
+   "blend": "Yacht Club 80% + Nautical Heritage 20%",
+   "swatch": [
+    "#0c1a3e",
+    "#0077b6",
+    "#b3d9ff",
+    "#e7e9ec"
+   ]
+  },
+  {
+   "id": "036-golf-resort",
+   "num": 36,
+   "name": "Golf Resort",
+   "tags": [
+    "premium",
+    "hospitality"
+   ],
+   "temperature": 5,
+   "formality": 8,
+   "perfectFor": [
+    "Golf Clubs",
+    "Country Clubs",
+    "Resort Communities"
+   ],
+   "blend": "Golf Resort 75% + Country Club 25%",
+   "swatch": [
+    "#faf6eb",
+    "#c9a227",
+    "#1d4d2b",
+    "#1d4d2b"
+   ]
+  },
+  {
+   "id": "037-spa-wellness",
+   "num": 37,
+   "name": "Spa Wellness",
+   "tags": [
+    "hospitality"
+   ],
+   "temperature": 7,
+   "formality": 6,
+   "perfectFor": [
+    "Spas",
+    "Wellness Centers",
+    "Retreat Centers"
+   ],
+   "blend": "Spa Wellness 80% + Zen Minimalism 20%",
+   "swatch": [
+    "#fcf8ef",
+    "#9caf88",
+    "#8b7355",
+    "#6b6b6b"
+   ]
+  },
+  {
+   "id": "038-fine-dining",
+   "num": 38,
+   "name": "Fine Dining",
+   "tags": [
+    "premium",
+    "hospitality"
+   ],
+   "temperature": 6,
+   "formality": 9,
+   "perfectFor": [
+    "Fine Dining",
+    "Michelin Restaurants",
+    "Culinary Experiences"
+   ],
+   "blend": "Fine Dining 80% + Michelin Star 20%",
+   "swatch": [
+    "#1a1a1a",
+    "#fffef5",
+    "#e6c24f",
+    "#fffef5"
+   ]
+  },
+  {
+   "id": "039-private-aviation",
+   "num": 39,
+   "name": "Private Aviation",
+   "tags": [
+    "premium"
+   ],
+   "temperature": 4,
+   "formality": 9,
+   "perfectFor": [
+    "Private Jet Services",
+    "Aviation Charter",
+    "Executive Travel"
+   ],
+   "blend": "Private Aviation 75% + Jet Set Luxury 25%",
+   "swatch": [
+    "#172033",
+    "#d4af37",
+    "#f8fafc",
+    "#e5e7eb"
+   ]
+  },
+  {
+   "id": "040-watch-luxury",
+   "num": 40,
+   "name": "Watch Luxury",
+   "tags": [
+    "premium"
+   ],
+   "temperature": 5,
+   "formality": 9,
+   "perfectFor": [
+    "Luxury Watchmakers",
+    "Timepiece Boutiques",
+    "Horology Brands"
+   ],
+   "blend": "Watch Luxury 80% + Swiss Precision 20%",
+   "swatch": [
+    "#f5f0e1",
+    "#b76e79",
+    "#1c1c1c",
+    "#1c1c1c"
+   ]
+  },
+  {
+   "id": "041-jewelry-boutique",
+   "num": 41,
+   "name": "Jewelry Boutique",
+   "tags": [
+    "premium"
+   ],
+   "temperature": 6,
+   "formality": 9,
+   "perfectFor": [
+    "Jewelry Brands",
+    "Luxury Boutiques",
+    "Fine Jewelry"
+   ],
+   "blend": "Jewelry Boutique 80% + Glamour 20%",
+   "swatch": [
+    "#fafafa",
+    "#e8b4b8",
+    "#d4a574",
+    "#3c3c3c"
+   ]
+  },
+  {
+   "id": "042-art-gallery",
+   "num": 42,
+   "name": "Art Gallery",
+   "tags": [
+    "creative",
+    "premium"
+   ],
+   "temperature": 5,
+   "formality": 8,
+   "perfectFor": [
+    "Art Galleries",
+    "Museums",
+    "Cultural Institutions"
+   ],
+   "blend": "Art Gallery 80% + Museum Curation 20%",
+   "swatch": [
+    "#fefefe",
+    "#8b4513",
+    "#2c5f2d",
+    "#666666"
+   ]
+  },
+  {
+   "id": "043-ai-research",
+   "num": 43,
+   "name": "AI Research",
+   "tags": [
+    "tech",
+    "academic"
+   ],
+   "temperature": 3,
+   "formality": 8,
+   "perfectFor": [
+    "AI Research Labs",
+    "Tech Research",
+    "ML Companies"
+   ],
+   "blend": "AI Research 75% + Scientific Publication 25%",
+   "swatch": [
+    "#f3f4f6",
+    "#60a5fa",
+    "#7c3aed",
+    "#374151"
+   ]
+  },
+  {
+   "id": "044-biotech-lab",
+   "num": 44,
+   "name": "Biotech Lab",
+   "tags": [
+    "tech",
+    "professional"
+   ],
+   "temperature": 3,
+   "formality": 8,
+   "perfectFor": [
+    "Biotech Firms",
+    "Life Sciences",
+    "Research Labs"
+   ],
+   "blend": "Biotech Lab 75% + Modern Science 25%",
+   "swatch": [
+    "#f8fafc",
+    "#047857",
+    "#38bdf8",
+    "#475569"
+   ]
+  },
+  {
+   "id": "045-aerospace",
+   "num": 45,
+   "name": "Aerospace",
+   "tags": [
+    "tech",
+    "professional"
+   ],
+   "temperature": 2,
+   "formality": 9,
+   "perfectFor": [
+    "Aerospace Companies",
+    "Space Industry",
+    "Aviation Tech"
+   ],
+   "blend": "Aerospace 80% + Mission Control 20%",
+   "swatch": [
+    "#0a0a0f",
+    "#38bdf8",
+    "#a0a0a8",
+    "#c0c0c0"
+   ]
+  },
+  {
+   "id": "046-robotics",
+   "num": 46,
+   "name": "Robotics",
+   "tags": [
+    "tech"
+   ],
+   "temperature": 3,
+   "formality": 8,
+   "perfectFor": [
+    "Robotics Companies",
+    "Automation Tech",
+    "AI Hardware"
+   ],
+   "blend": "Robotics 75% + Industrial Clean 25%",
+   "swatch": [
+    "#18212f",
+    "#f97316",
+    "#06b6d4",
+    "#d1d5db"
+   ]
+  },
+  {
+   "id": "047-quantum-computing",
+   "num": 47,
+   "name": "Quantum Computing",
+   "tags": [
+    "tech",
+    "academic"
+   ],
+   "temperature": 2,
+   "formality": 8,
+   "perfectFor": [
+    "Quantum Computing",
+    "Advanced Research",
+    "Tech Labs"
+   ],
+   "blend": "Quantum Computing 75% + Abstract Science 25%",
+   "swatch": [
+    "#0c0c1d",
+    "#f0f9ff",
+    "#c084fc",
+    "#e0f2fe"
+   ]
+  },
+  {
+   "id": "048-clean-energy",
+   "num": 48,
+   "name": "Clean Energy",
+   "tags": [
+    "tech"
+   ],
+   "temperature": 6,
+   "formality": 7,
+   "perfectFor": [
+    "Clean Energy Firms",
+    "Solar Companies",
+    "Sustainability Tech"
+   ],
+   "blend": "Clean Energy 75% + Sustainable Tech 25%",
+   "swatch": [
+    "#fefefe",
+    "#0284c7",
+    "#fbbf24",
+    "#4b5563"
+   ]
+  },
+  {
+   "id": "049-space-industry",
+   "num": 49,
+   "name": "Space Industry",
+   "tags": [
+    "tech"
+   ],
+   "temperature": 3,
+   "formality": 8,
+   "perfectFor": [
+    "Space Companies",
+    "Aerospace",
+    "Satellite Services"
+   ],
+   "blend": "Space Industry 80% + Cosmic Wonder 20%",
+   "swatch": [
+    "#050505",
+    "#fb923c",
+    "#38bdf8",
+    "#b4b4b4"
+   ]
+  },
+  {
+   "id": "050-cybersecurity",
+   "num": 50,
+   "name": "Cybersecurity",
+   "tags": [
+    "tech",
+    "professional"
+   ],
+   "temperature": 2,
+   "formality": 9,
+   "perfectFor": [
+    "Security Firms",
+    "Cybersecurity",
+    "IT Security Services"
+   ],
+   "blend": "Cybersecurity 80% + Dark Trust 20%",
+   "swatch": [
+    "#0f0f0f",
+    "#3b82f6",
+    "#22c55e",
+    "#e5e5e5"
+   ]
+  },
+  {
+   "id": "051-news-editorial",
+   "num": 51,
+   "name": "News Editorial",
+   "tags": [
+    "media",
+    "professional"
+   ],
+   "temperature": 5,
+   "formality": 8,
+   "perfectFor": [
+    "News Organizations",
+    "Publications",
+    "Media Companies"
+   ],
+   "blend": "News Editorial 80% + Broadsheet Classic 20%",
+   "swatch": [
+    "#faf9f6",
+    "#c41e3a",
+    "#2d7a3e",
+    "#4a4a4a"
+   ]
+  },
+  {
+   "id": "052-fashion-magazine",
+   "num": 52,
+   "name": "Fashion Magazine",
+   "tags": [
+    "media",
+    "creative"
+   ],
+   "temperature": 4,
+   "formality": 8,
+   "perfectFor": [
+    "Fashion Publishers",
+    "Style Magazines",
+    "Luxury Media"
+   ],
+   "blend": "Fashion Magazine 80% + Vogue Elegance 20%",
+   "swatch": [
+    "#ffffff",
+    "#d4af37",
+    "#000000",
+    "#666666"
+   ]
+  },
+  {
+   "id": "053-literary-journal",
+   "num": 53,
+   "name": "Literary Journal",
+   "tags": [
+    "media",
+    "academic"
+   ],
+   "temperature": 5,
+   "formality": 8,
+   "perfectFor": [
+    "Literary Journals",
+    "Publishers",
+    "Writing Organizations"
+   ],
+   "blend": "Literary Journal 80% + Academic Publishing 20%",
+   "swatch": [
+    "#faf8f3",
+    "#b91c1c",
+    "#6b7280",
+    "#1a1a1a"
+   ]
+  },
+  {
+   "id": "054-music-label",
+   "num": 54,
+   "name": "Music Label",
+   "tags": [
+    "media",
+    "creative"
+   ],
+   "temperature": 6,
+   "formality": 7,
+   "perfectFor": [
+    "Record Labels",
+    "Music Publishers",
+    "Audio Brands"
+   ],
+   "blend": "Music Label 75% + Premium Audio 25%",
+   "swatch": [
+    "#0a0a0a",
+    "#b8860b",
+    "#faf6eb",
+    "#faf6eb"
+   ]
+  },
+  {
+   "id": "055-film-studio",
+   "num": 55,
+   "name": "Film Studio",
+   "tags": [
+    "media",
+    "creative"
+   ],
+   "temperature": 6,
+   "formality": 7,
+   "perfectFor": [
+    "Film Studios",
+    "Production Companies",
+    "Entertainment"
+   ],
+   "blend": "Film Studio 80% + Cinematic Drama 20%",
+   "swatch": [
+    "#0c0c0c",
+    "#9f1239",
+    "#c9a227",
+    "#e5e5e5"
+   ]
+  },
+  {
+   "id": "056-photography-pro",
+   "num": 56,
+   "name": "Photography Pro",
+   "tags": [
+    "media",
+    "creative"
+   ],
+   "temperature": 5,
+   "formality": 7,
+   "perfectFor": [
+    "Photographers",
+    "Photography Studios",
+    "Visual Artists"
+   ],
+   "blend": "Photography Professional 80% + Gallery Minimal 20%",
+   "swatch": [
+    "#fefefe",
+    "#6b7280",
+    "#6b7280",
+    "#6b7280"
+   ]
+  },
+  {
+   "id": "057-podcast-premium",
+   "num": 57,
+   "name": "Podcast Premium",
+   "tags": [
+    "media",
+    "tech"
+   ],
+   "temperature": 6,
+   "formality": 6,
+   "perfectFor": [
+    "Podcast Networks",
+    "Audio Productions",
+    "Content Creators"
+   ],
+   "blend": "Podcast Premium 75% + Audio Wave Aesthetic 25%",
+   "swatch": [
+    "#fefefe",
+    "#7dd3fc",
+    "#f97316",
+    "#1e293b"
+   ]
+  },
+  {
+   "id": "058-streaming-platform",
+   "num": 58,
+   "name": "Streaming Platform",
+   "tags": [
+    "media",
+    "tech"
+   ],
+   "temperature": 4,
+   "formality": 5,
+   "perfectFor": [
+    "Streaming Services",
+    "Entertainment Platforms",
+    "Media Tech"
+   ],
+   "blend": "Streaming Platform 80% + Entertainment Premium 20%",
+   "swatch": [
+    "#141414",
+    "#e50914",
+    "#0071eb",
+    "#e5e5e5"
+   ]
+  },
+  {
+   "id": "059-board-room",
+   "num": 59,
+   "name": "Board Room",
+   "tags": [
+    "premium",
+    "professional"
+   ],
+   "temperature": 5,
+   "formality": 10,
+   "perfectFor": [
+    "Corporate Boards",
+    "Executive Councils",
+    "Leadership Groups"
+   ],
+   "blend": "Board Room 80% + Executive Power 20%",
+   "swatch": [
+    "#faf8f5",
+    "#b8860b",
+    "#1e3a5f",
+    "#3d1f1f"
+   ]
+  },
+  {
+   "id": "060-fortune-500",
+   "num": 60,
+   "name": "Fortune 500",
+   "tags": [
+    "professional"
+   ],
+   "temperature": 4,
+   "formality": 9,
+   "perfectFor": [
+    "Fortune 500",
+    "Enterprise Corporations",
+    "Major Businesses"
+   ],
+   "blend": "Fortune 500 80% + Annual Report 20%",
+   "swatch": [
+    "#ffffff",
+    "#3b82f6",
+    "#1e40af",
+    "#374151"
+   ]
+  },
+  {
+   "id": "061-startup-unicorn",
+   "num": 61,
+   "name": "Startup Unicorn",
+   "tags": [
+    "tech",
+    "professional"
+   ],
+   "temperature": 6,
+   "formality": 7,
+   "perfectFor": [
+    "Tech Startups",
+    "VC-Backed Companies",
+    "Innovation Labs"
+   ],
+   "blend": "Startup Unicorn 75% + VC Pitch Deck 25%",
+   "swatch": [
+    "#ffffff",
+    "#3b82f6",
+    "#8b5cf6",
+    "#0f172a"
+   ]
+  },
+  {
+   "id": "062-non-profit-premium",
+   "num": 62,
+   "name": "Non-Profit Premium",
+   "tags": [
+    "professional"
+   ],
+   "temperature": 7,
+   "formality": 8,
+   "perfectFor": [
+    "Nonprofits",
+    "Foundations",
+    "Social Impact Orgs"
+   ],
+   "blend": "Non-Profit Premium 80% + Impact Storytelling 20%",
+   "swatch": [
+    "#f9fafb",
+    "#3b82f6",
+    "#92400e",
+    "#4b5563"
+   ]
+  },
+  {
+   "id": "063-university-ivy",
+   "num": 63,
+   "name": "University Ivy",
+   "tags": [
+    "academic",
+    "premium"
+   ],
+   "temperature": 5,
+   "formality": 9,
+   "perfectFor": [
+    "Universities",
+    "Ivy League Colleges",
+    "Academic Institutions"
+   ],
+   "blend": "University 80% + Ivy League Prestige 20%",
+   "swatch": [
+    "#fffff5",
+    "#a51c30",
+    "#1e3a5f",
+    "#4a5f7f"
+   ]
+  },
+  {
+   "id": "064-think-tank",
+   "num": 64,
+   "name": "Think Tank",
+   "tags": [
+    "academic",
+    "professional"
+   ],
+   "temperature": 4,
+   "formality": 9,
+   "perfectFor": [
+    "Think Tanks",
+    "Research Institutes",
+    "Policy Organizations"
+   ],
+   "blend": "Think Tank 80% + Policy Research 20%",
+   "swatch": [
+    "#faf9f6",
+    "#3b82f6",
+    "#b91c1c",
+    "#475569"
+   ]
+  },
+  {
+   "id": "065-foundation",
+   "num": 65,
+   "name": "Foundation",
+   "tags": [
+    "premium",
+    "professional"
+   ],
+   "temperature": 5,
+   "formality": 9,
+   "perfectFor": [
+    "Foundations",
+    "Philanthropic Orgs",
+    "Charitable Trusts"
+   ],
+   "blend": "Foundation 80% + Philanthropy Heritage 20%",
+   "swatch": [
+    "#faf6eb",
+    "#a87f1a",
+    "#22c55e",
+    "#292524"
+   ]
+  },
+  {
+   "id": "066-government-civic",
+   "num": 66,
+   "name": "Government Civic",
+   "tags": [
+    "professional"
+   ],
+   "temperature": 5,
+   "formality": 8,
+   "perfectFor": [
+    "Government Agencies",
+    "Public Services",
+    "Civic Organizations"
+   ],
+   "blend": "Government 80% + Civic Trust 20%",
+   "swatch": [
+    "#f3f4f6",
+    "#003087",
+    "#003087",
+    "#505a5f"
+   ]
+  },
+  {
+   "id": "067-auction-house",
+   "num": 67,
+   "name": "Auction House",
+   "tags": [
+    "premium"
+   ],
+   "temperature": 4,
+   "formality": 10,
+   "perfectFor": [
+    "Auction Houses",
+    "Fine Art Sales",
+    "Collectibles Markets"
+   ],
+   "blend": "Auction House 80% + Heritage Prestige 20%",
+   "swatch": [
+    "#faf8f3",
+    "#0033a0",
+    "#c9a227",
+    "#1c1c1c"
+   ]
+  },
+  {
+   "id": "068-wine-estate",
+   "num": 68,
+   "name": "Wine Estate",
+   "tags": [
+    "premium",
+    "hospitality"
+   ],
+   "temperature": 6,
+   "formality": 8,
+   "perfectFor": [
+    "Wineries",
+    "Vineyards",
+    "Wine Estates"
+   ],
+   "blend": "Wine Estate 80% + Vineyard Terroir 20%",
+   "swatch": [
+    "#f5f0e3",
+    "#b8860b",
+    "#65a30d",
+    "#722f37"
+   ]
+  },
+  {
+   "id": "069-equestrian",
+   "num": 69,
+   "name": "Equestrian",
+   "tags": [
+    "premium",
+    "hospitality"
+   ],
+   "temperature": 5,
+   "formality": 9,
+   "perfectFor": [
+    "Equestrian Clubs",
+    "Horse Racing",
+    "Riding Organizations"
+   ],
+   "blend": "Equestrian 80% + Racing Heritage 20%",
+   "swatch": [
+    "#faf6eb",
+    "#16391f",
+    "#8b4513",
+    "#16391f"
+   ]
+  },
+  {
+   "id": "070-luxury-auto",
+   "num": 70,
+   "name": "Luxury Auto",
+   "tags": [
+    "premium",
+    "tech"
+   ],
+   "temperature": 4,
+   "formality": 9,
+   "perfectFor": [
+    "Luxury Auto Brands",
+    "Car Dealerships",
+    "Automotive Clubs"
+   ],
+   "blend": "Luxury Auto 80% + Performance Engineering 20%",
+   "swatch": [
+    "#0c0c0c",
+    "#004225",
+    "#dc2626",
+    "#a8a8a8"
+   ]
+  },
+  {
+   "id": "071-chamber-of-commerce",
+   "num": 71,
+   "name": "Chamber of Commerce",
+   "tags": [
+    "association",
+    "professional"
+   ],
+   "temperature": 5,
+   "formality": 8,
+   "perfectFor": [
+    "Local Chambers",
+    "Business Associations",
+    "Regional Councils"
+   ],
+   "blend": "Chamber of Commerce 80% + Civic Authority 20%",
+   "swatch": [
+    "#f5f5f3",
+    "#1e3a5f",
+    "#c9a227",
+    "#2d2d2d"
+   ]
+  },
+  {
+   "id": "072-trade-association",
+   "num": 72,
+   "name": "Trade Association",
+   "tags": [
+    "association",
+    "professional"
+   ],
+   "temperature": 4,
+   "formality": 9,
+   "perfectFor": [
+    "Trade Associations",
+    "Industry Groups",
+    "Sector Councils"
+   ],
+   "blend": "Trade Association 80% + Industry Standards 20%",
+   "swatch": [
+    "#f8f9fa",
+    "#2d4460",
+    "#0d9488",
+    "#212529"
+   ]
+  },
+  {
+   "id": "073-professional-society",
+   "num": 73,
+   "name": "Professional Society",
+   "tags": [
+    "association",
+    "academic"
+   ],
+   "temperature": 4,
+   "formality": 9,
+   "perfectFor": [
+    "Professional Societies",
+    "Industry Associations",
+    "Certification Bodies"
+   ],
+   "blend": "Professional Society 80% + Academic Excellence 20%",
+   "swatch": [
+    "#fffff8",
+    "#1a4d2e",
+    "#b8860b",
+    "#696560"
+   ]
+  },
+  {
+   "id": "074-alumni-association",
+   "num": 74,
+   "name": "Alumni Association",
+   "tags": [
+    "association",
+    "academic"
+   ],
+   "temperature": 6,
+   "formality": 7,
+   "perfectFor": [
+    "Alumni Associations",
+    "University Networks",
+    "Graduate Groups"
+   ],
+   "blend": "Alumni Association 80% + Heritage Pride 20%",
+   "swatch": [
+    "#fdfbf7",
+    "#990000",
+    "#e5c66f",
+    "#2d2926"
+   ]
+  },
+  {
+   "id": "075-bar-association",
+   "num": 75,
+   "name": "Bar Association",
+   "tags": [
+    "association",
+    "professional"
+   ],
+   "temperature": 3,
+   "formality": 10,
+   "perfectFor": [
+    "Bar Associations",
+    "Legal Societies",
+    "Attorney Networks"
+   ],
+   "blend": "Bar Association 80% + Legal Authority 20%",
+   "swatch": [
+    "#f1f5f9",
+    "#7c2d12",
+    "#a0861f",
+    "#0d0d0d"
+   ]
+  },
+  {
+   "id": "076-medical-association",
+   "num": 76,
+   "name": "Medical Association",
+   "tags": [
+    "association",
+    "professional"
+   ],
+   "temperature": 4,
+   "formality": 9,
+   "perfectFor": [
+    "Medical Associations",
+    "Physician Groups",
+    "Healthcare Networks"
+   ],
+   "blend": "Medical Association 80% + Healthcare Authority 20%",
+   "swatch": [
+    "#ffffff",
+    "#0369a1",
+    "#0ea5e9",
+    "#475569"
+   ]
+  },
+  {
+   "id": "077-realtors-association",
+   "num": 77,
+   "name": "Realtors Association",
+   "tags": [
+    "association",
+    "professional"
+   ],
+   "temperature": 6,
+   "formality": 7,
+   "perfectFor": [
+    "Realtor Associations",
+    "Real Estate Boards",
+    "Agent Networks"
+   ],
+   "blend": "Realtors Association 80% + Property Excellence 20%",
+   "swatch": [
+    "#ffffff",
+    "#c41230",
+    "#d4a843",
+    "#333333"
+   ]
+  },
+  {
+   "id": "078-rotary-service-club",
+   "num": 78,
+   "name": "Rotary Service Club",
+   "tags": [
+    "association"
+   ],
+   "temperature": 7,
+   "formality": 6,
+   "perfectFor": [
+    "Rotary Clubs",
+    "Service Organizations",
+    "Community Groups"
+   ],
+   "blend": "Rotary/Service Club 80% + Community Impact 20%",
+   "swatch": [
+    "#f0f7ff",
+    "#003366",
+    "#f5a623",
+    "#4b5563"
+   ]
+  },
+  {
+   "id": "079-credit-union-league",
+   "num": 79,
+   "name": "Credit Union League",
+   "tags": [
+    "association",
+    "professional"
+   ],
+   "temperature": 6,
+   "formality": 7,
+   "perfectFor": [
+    "Credit Unions",
+    "Member-Owned Banks",
+    "Financial Cooperatives"
+   ],
+   "blend": "Credit Union 80% + Member-Owned Trust 20%",
+   "swatch": [
+    "#f0f9ff",
+    "#059669",
+    "#ea580c",
+    "#1e3a5f"
+   ]
+  },
+  {
+   "id": "080-hoa-management",
+   "num": 80,
+   "name": "HOA Management",
+   "tags": [
+    "association"
+   ],
+   "temperature": 6,
+   "formality": 6,
+   "perfectFor": [
+    "HOAs",
+    "Community Associations",
+    "Residential Boards"
+   ],
+   "blend": "Homeowners Association 80% + Community Management 20%",
+   "swatch": [
+    "#faf8f5",
+    "#0ea5e9",
+    "#c2703e",
+    "#6b7280"
+   ]
+  },
+  {
+   "id": "081-teachers-union",
+   "num": 81,
+   "name": "Teachers Union",
+   "tags": [
+    "association",
+    "professional"
+   ],
+   "temperature": 6,
+   "formality": 7,
+   "perfectFor": [
+    "Teachers Unions",
+    "Education Associations",
+    "Faculty Groups"
+   ],
+   "blend": "Teachers Union 80% + Education Advocacy 20%",
+   "swatch": [
+    "#f5f5f4",
+    "#b91c1c",
+    "#65a30d",
+    "#292524"
+   ]
+  },
+  {
+   "id": "082-nonprofit-alliance",
+   "num": 82,
+   "name": "Nonprofit Alliance",
+   "tags": [
+    "association",
+    "professional"
+   ],
+   "temperature": 7,
+   "formality": 6,
+   "perfectFor": [
+    "Nonprofit Networks",
+    "NGO Alliances",
+    "Impact Coalitions"
+   ],
+   "blend": "Nonprofit Alliance 80% + Impact Network 20%",
+   "swatch": [
+    "#faf5ff",
+    "#f97316",
+    "#0d9488",
+    "#3f3f46"
+   ]
+  },
+  {
+   "id": "083-sports-league",
+   "num": 83,
+   "name": "Sports League",
+   "tags": [
+    "association"
+   ],
+   "temperature": 7,
+   "formality": 6,
+   "perfectFor": [
+    "Sports Leagues",
+    "Athletic Associations",
+    "Recreation Councils"
+   ],
+   "blend": "Sports League 80% + Athletic Excellence 20%",
+   "swatch": [
+    "#ffffff",
+    "#ca8a04",
+    "#3b82f6",
+    "#1e293b"
+   ]
+  },
+  {
+   "id": "084-veterans-organization",
+   "num": 84,
+   "name": "Veterans Organization",
+   "tags": [
+    "association",
+    "premium"
+   ],
+   "temperature": 5,
+   "formality": 8,
+   "perfectFor": [
+    "Veterans Groups",
+    "Military Associations",
+    "Service Organizations"
+   ],
+   "blend": "Veterans Organization 80% + Service Honor 20%",
+   "swatch": [
+    "#fdfbf7",
+    "#b8860b",
+    "#dc2626",
+    "#1a1a2e"
+   ]
+  },
+  {
+   "id": "085-religious-denomination",
+   "num": 85,
+   "name": "Religious Denomination",
+   "tags": [
+    "association"
+   ],
+   "temperature": 6,
+   "formality": 7,
+   "perfectFor": [
+    "Religious Bodies",
+    "Faith Denominations",
+    "Church Networks"
+   ],
+   "blend": "Denominational HQ 80% + Faith Community 20%",
+   "swatch": [
+    "#fffbf5",
+    "#60a5fa",
+    "#7c3aed",
+    "#44403c"
+   ]
+  },
+  {
+   "id": "086-fraternal-organization",
+   "num": 86,
+   "name": "Fraternal Organization",
+   "tags": [
+    "association",
+    "premium"
+   ],
+   "temperature": 5,
+   "formality": 8,
+   "perfectFor": [
+    "Fraternal Orders",
+    "Brotherhood Organizations",
+    "Social Clubs"
+   ],
+   "blend": "Fraternal Order 80% + Brotherhood Heritage 20%",
+   "swatch": [
+    "#f9f6f0",
+    "#8b6914",
+    "#7e22ce",
+    "#2d2926"
+   ]
+  },
+  {
+   "id": "087-industry-council",
+   "num": 87,
+   "name": "Industry Council",
+   "tags": [
+    "association",
+    "professional"
+   ],
+   "temperature": 4,
+   "formality": 9,
+   "perfectFor": [
+    "Industry Councils",
+    "Sector Leadership",
+    "Business Forums"
+   ],
+   "blend": "Industry Council 80% + Sector Leadership 20%",
+   "swatch": [
+    "#ffffff",
+    "#2563eb",
+    "#94a3b8",
+    "#475569"
+   ]
+  },
+  {
+   "id": "088-cooperative-association",
+   "num": 88,
+   "name": "Cooperative Association",
+   "tags": [
+    "association"
+   ],
+   "temperature": 7,
+   "formality": 6,
+   "perfectFor": [
+    "Cooperatives",
+    "Member-Owned Orgs",
+    "Collective Groups"
+   ],
+   "blend": "Cooperative Model 80% + Member Ownership 20%",
+   "swatch": [
+    "#fefce8",
+    "#15803d",
+    "#0284c7",
+    "#422006"
+   ]
+  },
+  {
+   "id": "089-professional-network",
+   "num": 89,
+   "name": "Professional Network",
+   "tags": [
+    "association",
+    "professional"
+   ],
+   "temperature": 5,
+   "formality": 7,
+   "perfectFor": [
+    "Professional Networks",
+    "Career Organizations",
+    "Industry Forums"
+   ],
+   "blend": "Professional Network 80% + Career Excellence 20%",
+   "swatch": [
+    "#ffffff",
+    "#f97316",
+    "#0d9488",
+    "#334155"
+   ]
+  },
+  {
+   "id": "090-membership-collective",
+   "num": 90,
+   "name": "Membership Collective",
+   "tags": [
+    "association",
+    "creative"
+   ],
+   "temperature": 7,
+   "formality": 5,
+   "perfectFor": [
+    "Membership Clubs",
+    "Social Collectives",
+    "Community Hubs"
+   ],
+   "blend": "Membership Collective 80% + Shared Purpose 20%",
+   "swatch": [
+    "#faf5ff",
+    "#f472b6",
+    "#4f46e5",
+    "#1e1b4b"
+   ]
+  },
+  {
+   "id": "091-enterprise-saas",
+   "num": 91,
+   "name": "Enterprise SaaS",
+   "tags": [
+    "tech",
+    "professional"
+   ],
+   "temperature": 4,
+   "formality": 8,
+   "perfectFor": [
+    "SaaS Companies",
+    "Enterprise Software",
+    "B2B Platforms"
+   ],
+   "blend": "Enterprise SaaS 60% + Swiss Typography 25% + Material Design 15%",
+   "swatch": [
+    "#fafafa",
+    "#42a5f5",
+    "#90caf9",
+    "#616161"
+   ]
+  },
+  {
+   "id": "092-nordic-minimal",
+   "num": 92,
+   "name": "Nordic Minimal",
+   "tags": [
+    "creative",
+    "professional"
+   ],
+   "temperature": 6,
+   "formality": 6,
+   "perfectFor": [
+    "Design Agencies",
+    "Creative Studios",
+    "Modern Brands"
+   ],
+   "blend": "Scandinavian 60% + Japanese Minimalism 25% + Swiss Grid 15%",
+   "swatch": [
+    "#fafaf9",
+    "#c9b8a3",
+    "#8b7355",
+    "#3d3d37"
+   ]
+  },
+  {
+   "id": "093-luxury-concierge",
+   "num": 93,
+   "name": "Luxury Concierge",
+   "tags": [
+    "premium",
+    "hospitality"
+   ],
+   "temperature": 6,
+   "formality": 9,
+   "perfectFor": [
+    "Concierge Services",
+    "Luxury Lifestyle",
+    "VIP Services"
+   ],
+   "blend": "Five-Star Hospitality 60% + Art Deco 25% + Editorial 15%",
+   "swatch": [
+    "#f8f6f0",
+    "#800020",
+    "#b8860b",
+    "#5a4a42"
+   ]
+  },
+  {
+   "id": "094-cyber-command",
+   "num": 94,
+   "name": "Cyber Command",
+   "tags": [
+    "tech"
+   ],
+   "temperature": 2,
+   "formality": 9,
+   "perfectFor": [
+    "Cybersecurity Firms",
+    "Defense Tech",
+    "Security Operations"
+   ],
+   "blend": "Mission Control 60% + Cyberpunk 25% + Military Precision 15%",
+   "swatch": [
+    "#0a0e1a",
+    "#00ffff",
+    "#ff00ff",
+    "#9ca8bc"
+   ]
+  },
+  {
+   "id": "095-organic-wellness",
+   "num": 95,
+   "name": "Organic Wellness",
+   "tags": [
+    "hospitality",
+    "creative"
+   ],
+   "temperature": 8,
+   "formality": 5,
+   "perfectFor": [
+    "Wellness Brands",
+    "Organic Products",
+    "Eco Lifestyle"
+   ],
+   "blend": "Biophilic Design 60% + Spa Serenity 25% + Sustainable Tech 15%",
+   "swatch": [
+    "#f7ede1",
+    "#e6b84d",
+    "#e5a893",
+    "#2d5016"
+   ]
+  },
+  {
+   "id": "096-investment-elite",
+   "num": 96,
+   "name": "Investment Elite",
+   "tags": [
+    "premium",
+    "professional"
+   ],
+   "temperature": 3,
+   "formality": 10,
+   "perfectFor": [
+    "Investment Banks",
+    "Private Equity",
+    "Wealth Management"
+   ],
+   "blend": "Private Wealth 60% + Data Visualization 25% + Bloomberg 15%",
+   "swatch": [
+    "#0a1628",
+    "#2e4158",
+    "#d4af37",
+    "#a8b9ca"
+   ]
+  },
+  {
+   "id": "097-creative-studio",
+   "num": 97,
+   "name": "Creative Studio",
+   "tags": [
+    "creative"
+   ],
+   "temperature": 6,
+   "formality": 4,
+   "perfectFor": [
+    "Design Studios",
+    "Creative Agencies",
+    "Branding Firms"
+   ],
+   "blend": "Design Agency 60% + Memphis 25% + Bauhaus 15%",
+   "swatch": [
+    "#ffffff",
+    "#1e90ff",
+    "#ffc107",
+    "#333333"
+   ]
+  },
+  {
+   "id": "098-academic-research",
+   "num": 98,
+   "name": "Academic Research",
+   "tags": [
+    "academic",
+    "professional"
+   ],
+   "temperature": 4,
+   "formality": 9,
+   "perfectFor": [
+    "Research Institutes",
+    "Academic Centers",
+    "University Labs"
+   ],
+   "blend": "University Library 60% + Scientific Publishing 25% + Dark Academia 15%",
+   "swatch": [
+    "#ded2b8",
+    "#b8860b",
+    "#6b1c23",
+    "#5c4a35"
+   ]
+  },
+  {
+   "id": "099-sports-premium",
+   "num": 99,
+   "name": "Sports Premium",
+   "tags": [
+    "media",
+    "premium"
+   ],
+   "temperature": 7,
+   "formality": 6,
+   "perfectFor": [
+    "Sports Media",
+    "Athletic Brands",
+    "Premium Sports"
+   ],
+   "blend": "Athletic Excellence 60% + Broadcast Media 25% + Premium Membership 15%",
+   "swatch": [
+    "#0a0e1a",
+    "#00d4ff",
+    "#00ff88",
+    "#ffffff"
+   ]
+  },
+  {
+   "id": "100-heritage-society",
+   "num": 100,
+   "name": "Heritage Society",
+   "tags": [
+    "premium",
+    "academic"
+   ],
+   "temperature": 5,
+   "formality": 9,
+   "perfectFor": [
+    "Heritage Societies",
+    "Genealogy Orgs",
+    "Historical Groups"
+   ],
+   "blend": "Historical Preservation 60% + Genealogy Research 25% + Classical Typography 15%",
+   "swatch": [
+    "#eeeadc",
+    "#b8860b",
+    "#8b4513",
+    "#6b5744"
+   ]
+  },
+  {
+   "id": "101-quantum-lab",
+   "num": 101,
+   "name": "Quantum Lab",
+   "tags": [
+    "tech",
+    "academic"
+   ],
+   "temperature": 3,
+   "formality": 8,
+   "perfectFor": [
+    "Quantum Labs",
+    "Advanced Research",
+    "Science Tech"
+   ],
+   "blend": "Scientific Research 60% + Futuristic Tech 25% + Academic Precision 15%",
+   "swatch": [
+    "#111827",
+    "#06b6d4",
+    "#8b5cf6",
+    "#ffffff"
+   ]
+  },
+  {
+   "id": "102-maritime-guild",
+   "num": 102,
+   "name": "Maritime Guild",
+   "tags": [
+    "association",
+    "premium"
+   ],
+   "temperature": 5,
+   "formality": 8,
+   "perfectFor": [
+    "Maritime Associations",
+    "Shipping Guilds",
+    "Nautical Societies"
+   ],
+   "blend": "Nautical Heritage 60% + Trade Association 25% + Luxury Yacht 15%",
+   "swatch": [
+    "#fffbea",
+    "#8b0000",
+    "#b8860b",
+    "#0a1f44"
+   ]
+  },
+  {
+   "id": "103-artisan-collective",
+   "num": 103,
+   "name": "Artisan Collective",
+   "tags": [
+    "creative",
+    "association"
+   ],
+   "temperature": 7,
+   "formality": 5,
+   "perfectFor": [
+    "Artisan Collectives",
+    "Craft Guilds",
+    "Maker Communities"
+   ],
+   "blend": "Craftsman Guild 60% + E-commerce Modern 25% + Organic Natural 15%",
+   "swatch": [
+    "#fff8dc",
+    "#8b4513",
+    "#6b8e23",
+    "#8b6914"
+   ]
+  },
+  {
+   "id": "104-aviation-elite",
+   "num": 104,
+   "name": "Aviation Elite",
+   "tags": [
+    "premium",
+    "tech"
+   ],
+   "temperature": 4,
+   "formality": 9,
+   "perfectFor": [
+    "Private Aviation",
+    "Jet Services",
+    "Executive Travel"
+   ],
+   "blend": "Private Aviation 60% + Aerospace Engineering 25% + VIP Concierge 15%",
+   "swatch": [
+    "#05183e",
+    "#d4af37",
+    "#9c7e32",
+    "#d1d5db"
+   ]
+  },
+  {
+   "id": "105-music-conservatory",
+   "num": 105,
+   "name": "Music Conservatory",
+   "tags": [
+    "academic",
+    "creative"
+   ],
+   "temperature": 5,
+   "formality": 8,
+   "perfectFor": [
+    "Music Schools",
+    "Conservatories",
+    "Performance Academies"
+   ],
+   "blend": "Classical Music 60% + Academic Institution 25% + Event Management 15%",
+   "swatch": [
+    "#f3ede0",
+    "#6b1c3e",
+    "#d4af37",
+    "#6b1c3e"
+   ]
+  },
+  {
+   "id": "106-green-energy",
+   "num": 106,
+   "name": "Green Energy",
+   "tags": [
+    "tech",
+    "association"
+   ],
+   "temperature": 7,
+   "formality": 6,
+   "perfectFor": [
+    "Green Energy Orgs",
+    "Renewable Tech",
+    "Climate Groups"
+   ],
+   "blend": "Sustainable Energy 60% + Data Dashboard 25% + Advocacy Platform 15%",
+   "swatch": [
+    "#f0f9ff",
+    "#0284c7",
+    "#047857",
+    "#475569"
+   ]
+  },
+  {
+   "id": "107-legal-summit",
+   "num": 107,
+   "name": "Legal Summit",
+   "tags": [
+    "professional",
+    "association"
+   ],
+   "temperature": 3,
+   "formality": 10,
+   "perfectFor": [
+    "Legal Conferences",
+    "Law Associations",
+    "Attorney Networks"
+   ],
+   "blend": "Law Firm Premium 60% + Conference Platform 25% + Knowledge Base 15%",
+   "swatch": [
+    "#faf8f3",
+    "#b8860b",
+    "#7d1328",
+    "#6b6b6b"
+   ]
+  },
+  {
+   "id": "108-culinary-guild",
+   "num": 108,
+   "name": "Culinary Guild",
+   "tags": [
+    "hospitality",
+    "association"
+   ],
+   "temperature": 6,
+   "formality": 7,
+   "perfectFor": [
+    "Culinary Institutes",
+    "Chef Associations",
+    "Food Guilds"
+   ],
+   "blend": "Fine Dining 60% + Professional Certification 25% + Recipe Archive 15%",
+   "swatch": [
+    "#faf2e8",
+    "#b87333",
+    "#c9a961",
+    "#2c1810"
+   ]
+  },
+  {
+   "id": "109-architecture-forum",
+   "num": 109,
+   "name": "Architecture Forum",
+   "tags": [
+    "professional",
+    "creative"
+   ],
+   "temperature": 3,
+   "formality": 8,
+   "perfectFor": [
+    "Architect Associations",
+    "Design Forums",
+    "Urban Planning"
+   ],
+   "blend": "Architect Portfolio 60% + Professional Network 25% + Urban Planning 15%",
+   "swatch": [
+    "#ffffff",
+    "#60a5fa",
+    "#1e40af",
+    "#6b7280"
+   ]
+  },
+  {
+   "id": "110-philanthropy-circle",
+   "num": 110,
+   "name": "Philanthropy Circle",
+   "tags": [
+    "premium",
+    "association"
+   ],
+   "temperature": 6,
+   "formality": 8,
+   "perfectFor": [
+    "Philanthropic Circles",
+    "Donor Networks",
+    "Giving Societies"
+   ],
+   "blend": "Foundation Giving 60% + Donor Network 25% + Nonprofit Excellence 15%",
+   "swatch": [
+    "#fff8e7",
+    "#5b2b74",
+    "#9b6bb4",
+    "#2c1810"
+   ]
+  },
+  {
+   "id": "111-esports-arena",
+   "num": 111,
+   "name": "eSports Arena",
+   "tags": [
+    "tech",
+    "media"
+   ],
+   "temperature": 8,
+   "formality": 3,
+   "perfectFor": [
+    "Esports Teams",
+    "Gaming Leagues",
+    "Tournament Platforms"
+   ],
+   "blend": "Gaming/eSports 60% + Streaming Platform 25% + Tournament Management 15%",
+   "swatch": [
+    "#0a0a0f",
+    "#00f0ff",
+    "#ffd700",
+    "#b0b0c8"
+   ]
+  },
+  {
+   "id": "112-wine-society",
+   "num": 112,
+   "name": "Wine Society",
+   "tags": [
+    "premium",
+    "hospitality"
+   ],
+   "temperature": 6,
+   "formality": 8,
+   "perfectFor": [
+    "Wine Clubs",
+    "Sommelier Societies",
+    "Collector Groups"
+   ],
+   "blend": "Vineyard Estate 60% + Sommelier Certification 25% + Collector's Club 15%",
+   "swatch": [
+    "#faf2e6",
+    "#b8860b",
+    "#6b1b2e",
+    "#5c4033"
+   ]
+  },
+  {
+   "id": "113-blockchain-dao",
+   "num": 113,
+   "name": "Blockchain DAO",
+   "tags": [
+    "tech"
+   ],
+   "temperature": 4,
+   "formality": 5,
+   "perfectFor": [
+    "DAOs",
+    "Crypto Communities",
+    "Blockchain Projects"
+   ],
+   "blend": "Web3/Crypto 60% + Governance Platform 25% + Community Hub 15%",
+   "swatch": [
+    "#120b21",
+    "#0066ff",
+    "#00d4ff",
+    "#ffffff"
+   ]
+  },
+  {
+   "id": "114-healthcare-network",
+   "num": 114,
+   "name": "Healthcare Network",
+   "tags": [
+    "professional",
+    "association"
+   ],
+   "temperature": 4,
+   "formality": 9,
+   "perfectFor": [
+    "Healthcare Networks",
+    "Medical Associations",
+    "Clinical Groups"
+   ],
+   "blend": "Medical Professional 60% + Continuing Education 25% + Peer Collaboration 15%",
+   "swatch": [
+    "#f8f9fa",
+    "#0066cc",
+    "#00a651",
+    "#212529"
+   ]
+  },
+  {
+   "id": "115-fashion-council",
+   "num": 115,
+   "name": "Fashion Council",
+   "tags": [
+    "creative",
+    "media"
+   ],
+   "temperature": 5,
+   "formality": 8,
+   "perfectFor": [
+    "Fashion Councils",
+    "Designer Networks",
+    "Style Associations"
+   ],
+   "blend": "High Fashion 60% + Industry Network 25% + Trend Forecasting 15%",
+   "swatch": [
+    "#ffffff",
+    "#e8a5a5",
+    "#000000",
+    "#666666"
+   ]
+  },
+  {
+   "id": "116-motorsport-club",
+   "num": 116,
+   "name": "Motorsport Club",
+   "tags": [
+    "premium",
+    "association"
+   ],
+   "temperature": 6,
+   "formality": 7,
+   "perfectFor": [
+    "Motorsport Clubs",
+    "Racing Associations",
+    "Car Enthusiasts"
+   ],
+   "blend": "Racing Heritage 60% + Collector's Network 25% + Track Day Management 15%",
+   "swatch": [
+    "#141414",
+    "#ff1f1a",
+    "#b30500",
+    "#8c8c8c"
+   ]
+  },
+  {
+   "id": "117-diplomatic-corps",
+   "num": 117,
+   "name": "Diplomatic Corps",
+   "tags": [
+    "professional"
+   ],
+   "temperature": 4,
+   "formality": 10,
+   "perfectFor": [
+    "Diplomatic Corps",
+    "Foreign Service",
+    "International Relations"
+   ],
+   "blend": "Government Formal 60% + International Relations 25% + Secure Communications 15%",
+   "swatch": [
+    "#f8eede",
+    "#d4af37",
+    "#1a365d",
+    "#0f1f3a"
+   ]
+  },
+  {
+   "id": "118-startup-accelerator",
+   "num": 118,
+   "name": "Startup Accelerator",
+   "tags": [
+    "tech",
+    "professional"
+   ],
+   "temperature": 7,
+   "formality": 5,
+   "perfectFor": [
+    "Startup Accelerators",
+    "VC Networks",
+    "Innovation Hubs"
+   ],
+   "blend": "Startup/VC Culture 60% + Mentorship Network 25% + Demo Day 15%",
+   "swatch": [
+    "#0f0f1e",
+    "#00ff88",
+    "#ffd93d",
+    "#b8b8d1"
+   ]
+  },
+  {
+   "id": "119-meditation-sangha",
+   "num": 119,
+   "name": "Meditation Sangha",
+   "tags": [
+    "hospitality",
+    "creative"
+   ],
+   "temperature": 8,
+   "formality": 4,
+   "perfectFor": [
+    "Meditation Centers",
+    "Mindfulness Groups",
+    "Spiritual Communities"
+   ],
+   "blend": "Zen Minimalism 60% + Retreat Center 25% + Practice Tracking 15%",
+   "swatch": [
+    "#faf8f5",
+    "#8b9e87",
+    "#c9a961",
+    "#6b7563"
+   ]
+  },
+  {
+   "id": "120-space-pioneers",
+   "num": 120,
+   "name": "Space Pioneers",
+   "tags": [
+    "tech",
+    "academic"
+   ],
+   "temperature": 4,
+   "formality": 7,
+   "perfectFor": [
+    "Space Organizations",
+    "Aerospace Advocacy",
+    "Space Tech"
+   ],
+   "blend": "Space Industry 60% + Scientific Community 25% + Advocacy Platform 15%",
+   "swatch": [
+    "#0a0e27",
+    "#58a6ff",
+    "#ff7b00",
+    "#c2c8d1"
+   ]
+  },
+  {
+   "id": "121-civic-innovation-hub",
+   "num": 121,
+   "name": "Civic Innovation Hub",
+   "tags": [
+    "professional",
+    "association"
+   ],
+   "temperature": 5,
+   "formality": 7,
+   "perfectFor": [
+    "Innovation Hubs",
+    "Civic Tech",
+    "Government Innovation"
+   ],
+   "blend": "Government Civic 40% + Startup Accelerator 25% + Swiss Typography 20% + Glassmorphism 15%",
+   "swatch": [
+    "#fafbfc",
+    "#fb923c",
+    "#3b82f6",
+    "#6b7280"
+   ]
+  },
+  {
+   "id": "122-democratic-transparency",
+   "num": 122,
+   "name": "Democratic Transparency",
+   "tags": [
+    "professional",
+    "association"
+   ],
+   "temperature": 6,
+   "formality": 8,
+   "perfectFor": [
+    "Government Agencies",
+    "Public Transparency",
+    "Civic Initiatives"
+   ],
+   "blend": "Government Civic 35% + Editorial Swiss 25% + Biophilic Design 20% + Aurora UI 20%",
+   "swatch": [
+    "#ffffff",
+    "#60a5fa",
+    "#047857",
+    "#4b5563"
+   ]
+  },
+  {
+   "id": "123-public-service-excellence",
+   "num": 123,
+   "name": "Public Service Excellence",
+   "tags": [
+    "premium",
+    "professional",
+    "association"
+   ],
+   "temperature": 5,
+   "formality": 9,
+   "perfectFor": [
+    "Public Services",
+    "Government Excellence",
+    "Civic Leadership"
+   ],
+   "blend": "Government Civic 30% + Quiet Luxury 25% + Scandinavian Bento 20% + Material Design 15% + Light Academia 10%",
+   "swatch": [
+    "#faf9f7",
+    "#0369a1",
+    "#082f49",
+    "#57534e"
+   ]
+  },
+  {
+   "id": "124-regulatory-modernization",
+   "num": 124,
+   "name": "Regulatory Modernization",
+   "tags": [
+    "professional",
+    "association"
+   ],
+   "temperature": 4,
+   "formality": 9,
+   "perfectFor": [
+    "Regulatory Bodies",
+    "Government Agencies",
+    "Policy Makers"
+   ],
+   "blend": "Corporate Refinement 35% + Government Civic 30% + Fintech Modern 20% + Neumorphism 15%",
+   "swatch": [
+    "#f8fafc",
+    "#0066cc",
+    "#06b6d4",
+    "#475569"
+   ]
+  },
+  {
+   "id": "125-impact-collective",
+   "num": 125,
+   "name": "Impact Collective",
+   "tags": [
+    "creative",
+    "association"
+   ],
+   "temperature": 7,
+   "formality": 7,
+   "perfectFor": [
+    "Impact Networks",
+    "Nonprofit Alliances",
+    "Social Enterprise"
+   ],
+   "blend": "Nonprofit Alliance 35% + Solarpunk Biophilic 25% + Organic Modern 20% + Duotone 20%",
+   "swatch": [
+    "#fefce8",
+    "#f97316",
+    "#047857",
+    "#57534e"
+   ]
+  },
+  {
+   "id": "126-philanthropic-legacy",
+   "num": 126,
+   "name": "Philanthropic Legacy",
+   "tags": [
+    "premium",
+    "association"
+   ],
+   "temperature": 6,
+   "formality": 9,
+   "perfectFor": [
+    "Philanthropic Foundations",
+    "Legacy Donors",
+    "Charitable Trusts"
+   ],
+   "blend": "Foundation 30% + Heritage Society 25% + Art Deco Luxury 20% + Light Academia 15% + Pearlcore 10%",
+   "swatch": [
+    "#faf9f7",
+    "#8b6914",
+    "#c9a227",
+    "#5a5a5a"
+   ]
+  },
+  {
+   "id": "127-community-catalyst",
+   "num": 127,
+   "name": "Community Catalyst",
+   "tags": [
+    "creative",
+    "association",
+    "hospitality"
+   ],
+   "temperature": 8,
+   "formality": 5,
+   "perfectFor": [
+    "Community Groups",
+    "Grassroots Orgs",
+    "Local Initiatives"
+   ],
+   "blend": "Membership Collective 35% + Cottagecore 25% + Japandi 20% + Soft Pastel 20%",
+   "swatch": [
+    "#fff7ed",
+    "#fb923c",
+    "#b45309",
+    "#78716c"
+   ]
+  },
+  {
+   "id": "128-advocacy-alliance",
+   "num": 128,
+   "name": "Advocacy Alliance",
+   "tags": [
+    "professional",
+    "association",
+    "media"
+   ],
+   "temperature": 6,
+   "formality": 7,
+   "perfectFor": [
+    "Advocacy Groups",
+    "Policy Networks",
+    "Industry Advocates"
+   ],
+   "blend": "Trade Association 35% + Bold Typography 25% + Color Block 20% + Kinetic Typography UI 20%",
+   "swatch": [
+    "#fafbfc",
+    "#3b82f6",
+    "#ef4444",
+    "#475569"
+   ]
+  },
+  {
+   "id": "129-member-ecosystem",
+   "num": 129,
+   "name": "Member Ecosystem",
+   "tags": [
+    "tech",
+    "association"
+   ],
+   "temperature": 5,
+   "formality": 7,
+   "perfectFor": [
+    "Member Platforms",
+    "Professional Networks",
+    "Community Tech"
+   ],
+   "blend": "Professional Network 30% + Bento Box UI 25% + Organic Modern 20% + Aurora UI 15% + Micro-interaction 10%",
+   "swatch": [
+    "#f8fafc",
+    "#059669",
+    "#f59e0b",
+    "#334155"
+   ]
+  },
+  {
+   "id": "130-credential-authority",
+   "num": 130,
+   "name": "Credential Authority",
+   "tags": [
+    "professional",
+    "association"
+   ],
+   "temperature": 3,
+   "formality": 9,
+   "perfectFor": [
+    "Certification Bodies",
+    "Professional Credentials",
+    "Standards Orgs"
+   ],
+   "blend": "Professional Society 35% + Swiss Typography 25% + Credentialing 20% + Skeleton UI 20%",
+   "swatch": [
+    "#fafbfc",
+    "#ca8a04",
+    "#059669",
+    "#1e293b"
+   ]
+  },
+  {
+   "id": "131-industry-council-evolution",
+   "num": 131,
+   "name": "Industry Council Evolution",
+   "tags": [
+    "tech",
+    "association",
+    "professional"
+   ],
+   "temperature": 4,
+   "formality": 8,
+   "perfectFor": [
+    "Industry Councils",
+    "Sector Leadership",
+    "Trade Forums"
+   ],
+   "blend": "Industry Council 30% + Enterprise SaaS 25% + Data Visualization 25% + Dark Mode 20%",
+   "swatch": [
+    "#faf9f7",
+    "#3b82f6",
+    "#7c3aed",
+    "#64748b"
+   ]
+  },
+  {
+   "id": "132-membership-renaissance",
+   "num": 132,
+   "name": "Membership Renaissance",
+   "tags": [
+    "creative",
+    "premium",
+    "association"
+   ],
+   "temperature": 7,
+   "formality": 6,
+   "perfectFor": [
+    "Creative Collectives",
+    "Member Organizations",
+    "Artistic Guilds"
+   ],
+   "blend": "Membership Collective 25% + Art Nouveau 25% + Floral Garden 20% + Watercolor 15% + Editorial Minimalism 15%",
+   "swatch": [
+    "#fefce8",
+    "#be123c",
+    "#c9a227",
+    "#2d2d2a"
+   ]
+  },
+  {
+   "id": "133-professional-guild-modern",
+   "num": 133,
+   "name": "Professional Guild Modern",
+   "tags": [
+    "professional",
+    "association",
+    "creative"
+   ],
+   "temperature": 4,
+   "formality": 8,
+   "perfectFor": [
+    "Professional Guilds",
+    "Trade Associations",
+    "Craft Councils"
+   ],
+   "blend": "Trade Association 35% + Bauhaus 25% + Neo-Minimalism 20% + Geometric Abstract 20%",
+   "swatch": [
+    "#fafbfc",
+    "#fbbf24",
+    "#1d4ed8",
+    "#18181b"
+   ]
+  },
+  {
+   "id": "134-association-intelligence",
+   "num": 134,
+   "name": "Association Intelligence",
+   "tags": [
+    "tech",
+    "association"
+   ],
+   "temperature": 3,
+   "formality": 8,
+   "perfectFor": [
+    "Research Associations",
+    "Think Tanks",
+    "Intelligence Networks"
+   ],
+   "blend": "Think Tank 30% + AI Research 25% + Quantum Computing 25% + Holographic HUD 20%",
+   "swatch": [
+    "#f8fafc",
+    "#0369a1",
+    "#22d3ee",
+    "#0f172a"
+   ]
+  },
+  {
+   "id": "135-global-standards-body",
+   "num": 135,
+   "name": "Global Standards Body",
+   "tags": [
+    "premium",
+    "professional",
+    "association"
+   ],
+   "temperature": 4,
+   "formality": 9,
+   "perfectFor": [
+    "Global Standards",
+    "International Bodies",
+    "Regulatory Authorities"
+   ],
+   "blend": "International Professional 30% + Diplomatic Corps 25% + Swiss Typography 20% + Corporate Minimalism 15% + Glassmorphism 10%",
+   "swatch": [
+    "#fafbfc",
+    "#0066cc",
+    "#003366",
+    "#1a1a1a"
+   ]
+  },
+  {
+   "id": "136-minimal-wellness",
+   "num": 136,
+   "name": "Minimal Wellness",
+   "tags": [
+    "hospitality",
+    "creative"
+   ],
+   "temperature": 8,
+   "formality": 5,
+   "perfectFor": [
+    "Wellness Centers",
+    "Spas",
+    "Mindfulness Brands"
+   ],
+   "blend": "Zen Minimalism 60% + Wellness Design 40%",
+   "swatch": [
+    "#f5f3f0",
+    "#6ca575",
+    "#e8a87c",
+    "#6b6b6b"
+   ]
+  },
+  {
+   "id": "137-heritage-modernist",
+   "num": 137,
+   "name": "Heritage Modernist",
+   "tags": [
+    "premium",
+    "association"
+   ],
+   "temperature": 4,
+   "formality": 8,
+   "perfectFor": [
+    "Heritage Organizations",
+    "Preservation Societies",
+    "Museums"
+   ],
+   "blend": "Architectural Heritage 65% + Contemporary Minimalism 35%",
+   "swatch": [
+    "#f9f7f3",
+    "#9a6b3d",
+    "#2d2419",
+    "#3f352f"
+   ]
+  },
+  {
+   "id": "138-eco-luxury-refined",
+   "num": 138,
+   "name": "Eco-Luxury Refined",
+   "tags": [
+    "premium",
+    "creative"
+   ],
+   "temperature": 6,
+   "formality": 8,
+   "perfectFor": [
+    "Sustainable Luxury",
+    "Eco Premium Brands",
+    "Green Design"
+   ],
+   "blend": "Sustainable Design 55% + Quiet Luxury 45%",
+   "swatch": [
+    "#f4f2ed",
+    "#d4b684",
+    "#c17a5c",
+    "#4a4e4c"
+   ]
+  },
+  {
+   "id": "139-artisan-contemporary",
+   "num": 139,
+   "name": "Artisan Contemporary",
+   "tags": [
+    "creative",
+    "professional"
+   ],
+   "temperature": 6,
+   "formality": 6,
+   "perfectFor": [
+    "Artisan Brands",
+    "Contemporary Craft",
+    "Design Studios"
+   ],
+   "blend": "Craftsmanship 60% + Bauhaus 40%",
+   "swatch": [
+    "#faf8f5",
+    "#d4925a",
+    "#9a5c3d",
+    "#6b6b6b"
+   ]
+  },
+  {
+   "id": "140-accessible-professional-plus",
+   "num": 140,
+   "name": "Accessible Professional Plus",
+   "tags": [
+    "professional",
+    "association"
+   ],
+   "temperature": 5,
+   "formality": 8,
+   "perfectFor": [
+    "Accessible Services",
+    "Inclusive Orgs",
+    "Universal Design"
+   ],
+   "blend": "Accessible Design 50% + Corporate Professional 50%",
+   "swatch": [
+    "#ffffff",
+    "#0064cc",
+    "#003d7a",
+    "#5a5a5a"
+   ]
+  },
+  {
+   "id": "141-art-nouveau-elegance",
+   "num": 141,
+   "name": "Art Nouveau Elegance",
+   "tags": [
+    "creative",
+    "premium"
+   ],
+   "temperature": 7,
+   "formality": 7,
+   "perfectFor": [
+    "Art Galleries",
+    "Design Studios",
+    "Cultural Organizations"
+   ],
+   "blend": "Art Nouveau 60% + Organic Modern 25% + Soft Pastel 15%",
+   "swatch": [
+    "#f5f1eb",
+    "#7a9b76",
+    "#c9a961",
+    "#5a5a5a"
+   ]
+  },
+  {
+   "id": "142-gothic-revival-digital",
+   "num": 142,
+   "name": "Gothic Revival Digital",
+   "tags": [
+    "premium",
+    "academic"
+   ],
+   "temperature": 4,
+   "formality": 9,
+   "perfectFor": [
+    "Universities",
+    "Libraries",
+    "Heritage Institutions"
+   ],
+   "blend": "Gothic Architecture 55% + Dark Academia 25% + Editorial Swiss 20%",
+   "swatch": [
+    "#f4efe3",
+    "#6b2c3e",
+    "#c9a961",
+    "#2c2c2c"
+   ]
+  },
+  {
+   "id": "143-victorian-modernist",
+   "num": 143,
+   "name": "Victorian Modernist",
+   "tags": [
+    "premium",
+    "professional"
+   ],
+   "temperature": 5,
+   "formality": 8,
+   "perfectFor": [
+    "Heritage Brands",
+    "Classic Services",
+    "Traditional Business"
+   ],
+   "blend": "Victorian Era 50% + Contemporary Minimalism 30% + Typography Focus 20%",
+   "swatch": [
+    "#faf8f4",
+    "#6b5b7a",
+    "#b89977",
+    "#5a5a5a"
+   ]
+  },
+  {
+   "id": "144-rococo-digital-garden",
+   "num": 144,
+   "name": "Rococo Digital Garden",
+   "tags": [
+    "creative",
+    "hospitality"
+   ],
+   "temperature": 8,
+   "formality": 6,
+   "perfectFor": [
+    "Floral Brands",
+    "Garden Societies",
+    "Botanical Organizations"
+   ],
+   "blend": "Rococo Style 55% + Soft Gradients 25% + Floral Organic 20%",
+   "swatch": [
+    "#fae1e6",
+    "#d4af7a",
+    "#88bfa8",
+    "#3d3d3d"
+   ]
+  },
+  {
+   "id": "145-neoclassical-authority",
+   "num": 145,
+   "name": "Neoclassical Authority",
+   "tags": [
+    "professional",
+    "association"
+   ],
+   "temperature": 4,
+   "formality": 9,
+   "perfectFor": [
+    "Government Buildings",
+    "Civic Institutions",
+    "Public Services"
+   ],
+   "blend": "Neoclassical Architecture 60% + Government Civic 25% + Swiss Typography 15%",
+   "swatch": [
+    "#f8f9fa",
+    "#2563eb",
+    "#d4af37",
+    "#1e293b"
+   ]
+  },
+  {
+   "id": "146-renaissance-revival",
+   "num": 146,
+   "name": "Renaissance Revival",
+   "tags": [
+    "premium",
+    "creative"
+   ],
+   "temperature": 6,
+   "formality": 8,
+   "perfectFor": [
+    "Fine Art Museums",
+    "Cultural Institutions",
+    "Art Organizations"
+   ],
+   "blend": "Italian Renaissance 55% + Fine Art Gallery 25% + Editorial Luxury 20%",
+   "swatch": [
+    "#faf6f1",
+    "#e89f8d",
+    "#2d5016",
+    "#3e2723"
+   ]
+  },
+  {
+   "id": "147-medieval-guild-hall",
+   "num": 147,
+   "name": "Medieval Guild Hall",
+   "tags": [
+    "association",
+    "premium"
+   ],
+   "temperature": 5,
+   "formality": 7,
+   "perfectFor": [
+    "Traditional Guilds",
+    "Craft Associations",
+    "Heritage Groups"
+   ],
+   "blend": "Medieval Design 50% + Craft Guild 30% + Heritage Dark 20%",
+   "swatch": [
+    "#3e2723",
+    "#b71c1c",
+    "#d4af37",
+    "#f4e8d0"
+   ]
+  },
+  {
+   "id": "148-baroque-grandeur",
+   "num": 148,
+   "name": "Baroque Grandeur",
+   "tags": [
+    "premium",
+    "hospitality"
+   ],
+   "temperature": 6,
+   "formality": 9,
+   "perfectFor": [
+    "Opera Houses",
+    "Theaters",
+    "Performing Arts Centers"
+   ],
+   "blend": "Baroque Architecture 55% + Dramatic Typography 25% + Opera House 20%",
+   "swatch": [
+    "#faf8f4",
+    "#b8860b",
+    "#6d0f2b",
+    "#311b92"
+   ]
+  },
+  {
+   "id": "149-roman-empire-digital",
+   "num": 149,
+   "name": "Roman Empire Digital",
+   "tags": [
+    "professional",
+    "association"
+   ],
+   "temperature": 3,
+   "formality": 10,
+   "perfectFor": [
+    "Law Firms",
+    "Legal Institutions",
+    "Justice Organizations"
+   ],
+   "blend": "Roman Classical 55% + Law Firm Authority 25% + Marble Material 20%",
+   "swatch": [
+    "#faf9f7",
+    "#8b1a1a",
+    "#8a6039",
+    "#2c2c2c"
+   ]
+  },
+  {
+   "id": "150-ancient-egyptian-luxe",
+   "num": 150,
+   "name": "Ancient Egyptian Luxe",
+   "tags": [
+    "premium",
+    "creative"
+   ],
+   "temperature": 5,
+   "formality": 8,
+   "perfectFor": [
+    "Luxury Museums",
+    "Cultural Heritage",
+    "Ancient Art"
+   ],
+   "blend": "Egyptian Design 50% + Art Deco Geometry 30% + Luxury Gold 20%",
+   "swatch": [
+    "#f9f5ec",
+    "#1a5490",
+    "#b8941f",
+    "#4a4035"
+   ]
+  },
+  {
+   "id": "151-byzantine-contemporary",
+   "num": 151,
+   "name": "Byzantine Contemporary",
+   "tags": [
+    "premium",
+    "heritage"
+   ],
+   "temperature": 5,
+   "formality": 8,
+   "perfectFor": [
+    "Religious Institutions",
+    "Orthodox Churches",
+    "Faith Communities"
+   ],
+   "blend": "Byzantine Art 50% + Modern Orthodox 30% + Heritage Gold 20%",
+   "swatch": [
+    "#f8f6f0",
+    "#4a2b4f",
+    "#c9a961",
+    "#2b2520"
+   ]
+  },
+  {
+   "id": "152-colonial-american-heritage",
+   "num": 152,
+   "name": "Colonial American Heritage",
+   "tags": [
+    "association",
+    "professional"
+   ],
+   "temperature": 5,
+   "formality": 8,
+   "perfectFor": [
+    "Heritage Societies",
+    "Historical Associations",
+    "Preservation Groups"
+   ],
+   "blend": "Colonial American 55% + Heritage Society 25% + Editorial Classic 20%",
+   "swatch": [
+    "#f5efe0",
+    "#2c4a6e",
+    "#6b2626",
+    "#2a2520"
+   ]
+  },
+  {
+   "id": "153-japanese-wabi-sabi",
+   "num": 153,
+   "name": "Japanese Wabi-Sabi",
+   "tags": [
+    "creative",
+    "hospitality"
+   ],
+   "temperature": 6,
+   "formality": 6,
+   "perfectFor": [
+    "Zen Centers",
+    "Japanese Culture",
+    "Minimalist Brands"
+   ],
+   "blend": "Wabi-Sabi Philosophy 55% + Zen Minimalism 25% + Organic Natural 20%",
+   "swatch": [
+    "#f7f5f2",
+    "#8b9a7a",
+    "#6b5d54",
+    "#6b5d54"
+   ]
+  },
+  {
+   "id": "154-scandinavian-hygge",
+   "num": 154,
+   "name": "Scandinavian Hygge",
+   "tags": [
+    "hospitality",
+    "creative"
+   ],
+   "temperature": 8,
+   "formality": 5,
+   "perfectFor": [
+    "Nordic Brands",
+    "Scandinavian Lifestyle",
+    "Cozy Spaces"
+   ],
+   "blend": "Danish Hygge 55% + Nordic Minimalism 25% + Cozy Warmth 20%",
+   "swatch": [
+    "#f5f2ed",
+    "#9dadb4",
+    "#9dadb4",
+    "#5a5a5a"
+   ]
+  },
+  {
+   "id": "155-moroccan-geometric",
+   "num": 155,
+   "name": "Moroccan Geometric",
+   "tags": [
+    "premium",
+    "hospitality"
+   ],
+   "temperature": 7,
+   "formality": 7,
+   "perfectFor": [
+    "Mediterranean Venues",
+    "Moroccan Brands",
+    "Cultural Centers"
+   ],
+   "blend": "Moroccan Zellige 50% + Islamic Geometry 30% + Mediterranean Warmth 20%",
+   "swatch": [
+    "#f5efe7",
+    "#2b6f6f",
+    "#d4a944",
+    "#6b5d5d"
+   ]
+  },
+  {
+   "id": "156-indian-mughal-luxury",
+   "num": 156,
+   "name": "Indian Mughal Luxury",
+   "tags": [
+    "premium",
+    "creative"
+   ],
+   "temperature": 7,
+   "formality": 8,
+   "perfectFor": [
+    "Indian Luxury",
+    "Cultural Heritage",
+    "Traditional Arts"
+   ],
+   "blend": "Mughal Architecture 50% + Luxury India 30% + Ornamental Gold 20%",
+   "swatch": [
+    "#faf7f0",
+    "#1a4d7d",
+    "#e6b84d",
+    "#7a5d52"
+   ]
+  },
+  {
+   "id": "157-chinese-imperial",
+   "num": 157,
+   "name": "Chinese Imperial",
+   "tags": [
+    "premium",
+    "association"
+   ],
+   "temperature": 6,
+   "formality": 9,
+   "perfectFor": [
+    "Chinese Organizations",
+    "Asian Heritage",
+    "Cultural Institutions"
+   ],
+   "blend": "Chinese Imperial 55% + Forbidden City 25% + Luxury Red 20%",
+   "swatch": [
+    "#faf8f0",
+    "#b8232f",
+    "#b8941f",
+    "#2d2d2d"
+   ]
+  },
+  {
+   "id": "158-greek-mediterranean",
+   "num": 158,
+   "name": "Greek Mediterranean",
+   "tags": [
+    "hospitality",
+    "creative"
+   ],
+   "temperature": 7,
+   "formality": 6,
+   "perfectFor": [
+    "Greek Resorts",
+    "Mediterranean Hospitality",
+    "Island Venues"
+   ],
+   "blend": "Greek Island 55% + Mediterranean Blue 25% + Whitewashed Architecture 20%",
+   "swatch": [
+    "#ffffff",
+    "#2b5c8c",
+    "#d87d5c",
+    "#717171"
+   ]
+  },
+  {
+   "id": "159-african-kente",
+   "num": 159,
+   "name": "African Kente",
+   "tags": [
+    "creative",
+    "association"
+   ],
+   "temperature": 8,
+   "formality": 6,
+   "perfectFor": [
+    "African Art",
+    "Cultural Organizations",
+    "Heritage Groups"
+   ],
+   "blend": "Kente Patterns 50% + African Craft 30% + Bold Geometric 20%",
+   "swatch": [
+    "#fff8e7",
+    "#e65100",
+    "#e6b841",
+    "#2d2d2d"
+   ]
+  },
+  {
+   "id": "160-celtic-heritage",
+   "num": 160,
+   "name": "Celtic Heritage",
+   "tags": [
+    "heritage",
+    "association"
+   ],
+   "temperature": 5,
+   "formality": 7,
+   "perfectFor": [
+    "Celtic Heritage",
+    "Irish Organizations",
+    "Cultural Societies"
+   ],
+   "blend": "Celtic Knotwork 50% + Irish Heritage 30% + Nature Organic 20%",
+   "swatch": [
+    "#f5f1e8",
+    "#2c5234",
+    "#d9b976",
+    "#4a3628"
+   ]
+  },
+  {
+   "id": "161-persian-carpet",
+   "num": 161,
+   "name": "Persian Carpet",
+   "tags": [
+    "premium",
+    "hospitality"
+   ],
+   "temperature": 6,
+   "formality": 8,
+   "perfectFor": [
+    "Persian Culture",
+    "Middle Eastern Luxury",
+    "Heritage Brands"
+   ],
+   "blend": "Persian Design 55% + Intricate Patterns 25% + Luxury Warmth 20%",
+   "swatch": [
+    "#efe8de",
+    "#9d5c28",
+    "#6b1e3d",
+    "#34495e"
+   ]
+  },
+  {
+   "id": "162-mexican-folk-art",
+   "num": 162,
+   "name": "Mexican Folk Art",
+   "tags": [
+    "creative",
+    "hospitality"
+   ],
+   "temperature": 9,
+   "formality": 4,
+   "perfectFor": [
+    "Mexican Culture",
+    "Latin Arts",
+    "Festive Venues"
+   ],
+   "blend": "Mexican Talavera 50% + Folk Art Vibrant 30% + Festive Color 20%",
+   "swatch": [
+    "#fffef4",
+    "#f97316",
+    "#06b6d4",
+    "#111827"
+   ]
+  },
+  {
+   "id": "163-nordic-rune",
+   "num": 163,
+   "name": "Nordic Rune",
+   "tags": [
+    "heritage",
+    "association"
+   ],
+   "temperature": 3,
+   "formality": 7,
+   "perfectFor": [
+    "Nordic Heritage",
+    "Viking Culture",
+    "Scandinavian Groups"
+   ],
+   "blend": "Viking Heritage 50% + Norse Mythology 30% + Modern Nordic 20%",
+   "swatch": [
+    "#eaeff5",
+    "#06b6d4",
+    "#0f172a",
+    "#1e293b"
+   ]
+  },
+  {
+   "id": "164-brazilian-carnival",
+   "num": 164,
+   "name": "Brazilian Carnival",
+   "tags": [
+    "creative",
+    "media"
+   ],
+   "temperature": 9,
+   "formality": 3,
+   "perfectFor": [
+    "Brazilian Culture",
+    "Carnival Events",
+    "Latin Entertainment"
+   ],
+   "blend": "Brazilian Carnival 50% + Tropical Vibrant 30% + Samba Energy 20%",
+   "swatch": [
+    "#fffdf5",
+    "#fbbf24",
+    "#f97316",
+    "#111827"
+   ]
+  },
+  {
+   "id": "165-flat-design-2-0",
+   "num": 165,
+   "name": "Flat Design 2.0",
+   "tags": [
+    "tech",
+    "professional"
+   ],
+   "temperature": 5,
+   "formality": 6,
+   "perfectFor": [
+    "SaaS Companies",
+    "Tech Startups",
+    "Modern Apps"
+   ],
+   "blend": "Flat Design 55% + Subtle Shadows 25% + Bold Color 20%",
+   "swatch": [
+    "#ffffff",
+    "#3b82f6",
+    "#ff6b6b",
+    "#2d3748"
+   ]
+  },
+  {
+   "id": "166-skeuomorphic-revival",
+   "num": 166,
+   "name": "Skeuomorphic Revival",
+   "tags": [
+    "tech",
+    "premium"
+   ],
+   "temperature": 5,
+   "formality": 7,
+   "perfectFor": [
+    "Premium Apps",
+    "Luxury Software",
+    "High-End Tech"
+   ],
+   "blend": "Skeuomorphism 50% + Realistic Textures 30% + Modern Polish 20%",
+   "swatch": [
+    "#f1f5f9",
+    "#334155",
+    "#64748b",
+    "#1c1917"
+   ]
+  },
+  {
+   "id": "167-isometric-illustration",
+   "num": 167,
+   "name": "Isometric Illustration",
+   "tags": [
+    "tech",
+    "creative"
+   ],
+   "temperature": 6,
+   "formality": 5,
+   "perfectFor": [
+    "Tech Companies",
+    "SaaS Platforms",
+    "Digital Products"
+   ],
+   "blend": "Isometric Design 55% + Tech Illustration 25% + Playful Color 20%",
+   "swatch": [
+    "#ffffff",
+    "#fbbf24",
+    "#059669",
+    "#1e293b"
+   ]
+  },
+  {
+   "id": "168-line-art-minimal",
+   "num": 168,
+   "name": "Line Art Minimal",
+   "tags": [
+    "creative",
+    "professional"
+   ],
+   "temperature": 4,
+   "formality": 7,
+   "perfectFor": [
+    "Design Agencies",
+    "Creative Studios",
+    "Minimal Brands"
+   ],
+   "blend": "Line Illustration 55% + Minimal Design 25% + Editorial Clean 20%",
+   "swatch": [
+    "#ffffff",
+    "#0f9488",
+    "#000000",
+    "#000000"
+   ]
+  },
+  {
+   "id": "169-gradient-mesh-ui",
+   "num": 169,
+   "name": "Gradient Mesh UI",
+   "tags": [
+    "creative",
+    "tech"
+   ],
+   "temperature": 6,
+   "formality": 5,
+   "perfectFor": [
+    "Creative Tech",
+    "Design Apps",
+    "Visual Platforms"
+   ],
+   "blend": "Gradient Mesh 55% + Aurora Effects 25% + Glassmorphism 20%",
+   "swatch": [
+    "#152544",
+    "#f97316",
+    "#06b6d4",
+    "#b9bec7"
+   ]
+  },
+  {
+   "id": "170-duotone-photography",
+   "num": 170,
+   "name": "Duotone Photography",
+   "tags": [
+    "media",
+    "creative"
+   ],
+   "temperature": 5,
+   "formality": 6,
+   "perfectFor": [
+    "Photography Studios",
+    "Visual Media",
+    "Creative Agencies"
+   ],
+   "blend": "Duotone Effect 55% + Editorial Photo 25% + Bold Typography 20%",
+   "swatch": [
+    "#ffffff",
+    "#ff6b35",
+    "#2d3142",
+    "#6c757d"
+   ]
+  },
+  {
+   "id": "171-low-poly-3d",
+   "num": 171,
+   "name": "Low Poly 3D",
+   "tags": [
+    "tech",
+    "creative"
+   ],
+   "temperature": 5,
+   "formality": 5,
+   "perfectFor": [
+    "Tech Startups",
+    "3D Companies",
+    "Gaming Studios"
+   ],
+   "blend": "Low Poly Art 55% + Geometric Abstract 25% + Tech Modern 20%",
+   "swatch": [
+    "#f1f5f9",
+    "#f97583",
+    "#3b82f6",
+    "#0f172a"
+   ]
+  },
+  {
+   "id": "172-watercolor-digital",
+   "num": 172,
+   "name": "Watercolor Digital",
+   "tags": [
+    "creative",
+    "hospitality"
+   ],
+   "temperature": 7,
+   "formality": 5,
+   "perfectFor": [
+    "Creative Brands",
+    "Artistic Services",
+    "Design Studios"
+   ],
+   "blend": "Watercolor Art 55% + Organic Flow 25% + Soft Pastel 20%",
+   "swatch": [
+    "#f9f5f0",
+    "#e89a8b",
+    "#a8b8c8",
+    "#4a4a4a"
+   ]
+  },
+  {
+   "id": "173-comic-book-pop",
+   "num": 173,
+   "name": "Comic Book Pop",
+   "tags": [
+    "creative",
+    "media"
+   ],
+   "temperature": 7,
+   "formality": 3,
+   "perfectFor": [
+    "Entertainment Brands",
+    "Pop Culture",
+    "Media Companies"
+   ],
+   "blend": "Comic Art 55% + Pop Culture 25% + Bold Graphic 20%",
+   "swatch": [
+    "#ffffff",
+    "#2962ff",
+    "#ff1744",
+    "#1a1a1a"
+   ]
+  },
+  {
+   "id": "174-pixel-art-retro",
+   "num": 174,
+   "name": "Pixel Art Retro",
+   "tags": [
+    "creative",
+    "tech"
+   ],
+   "temperature": 6,
+   "formality": 3,
+   "perfectFor": [
+    "Gaming Brands",
+    "Retro Tech",
+    "Nostalgic Products"
+   ],
+   "blend": "Pixel Art 55% + 8-bit Gaming 25% + Nostalgic Digital 20%",
+   "swatch": [
+    "#f0f0f0",
+    "#f39c12",
+    "#e74c3c",
+    "#0e0e0e"
+   ]
+  },
+  {
+   "id": "175-sticker-playful",
+   "num": 175,
+   "name": "Sticker Playful",
+   "tags": [
+    "creative",
+    "hospitality"
+   ],
+   "temperature": 8,
+   "formality": 2,
+   "perfectFor": [
+    "Playful Brands",
+    "Youth Products",
+    "Friendly Services"
+   ],
+   "blend": "Sticker Design 55% + Kawaii Cute 25% + Rounded Friendly 20%",
+   "swatch": [
+    "#f8f7fb",
+    "#ff6b9d",
+    "#4fc3f7",
+    "#4a4a4a"
+   ]
+  },
+  {
+   "id": "176-blueprint-technical",
+   "num": 176,
+   "name": "Blueprint Technical",
+   "tags": [
+    "tech",
+    "professional"
+   ],
+   "temperature": 3,
+   "formality": 8,
+   "perfectFor": [
+    "Engineering Firms",
+    "Technical Services",
+    "Industrial Design"
+   ],
+   "blend": "Blueprint Design 55% + Technical Drawing 25% + Engineering 20%",
+   "swatch": [
+    "#0d47a1",
+    "#00e5ff",
+    "#ffd600",
+    "#ffffff"
+   ]
+  },
+  {
+   "id": "177-1950s-diner",
+   "num": 177,
+   "name": "1950s Diner",
+   "tags": [
+    "hospitality",
+    "creative"
+   ],
+   "temperature": 7,
+   "formality": 4,
+   "perfectFor": [
+    "Retro Diners",
+    "Vintage Restaurants",
+    "Nostalgic Venues"
+   ],
+   "blend": "50s Americana 55% + Retro Diner 25% + Chrome Accent 20%",
+   "swatch": [
+    "#fff8dc",
+    "#dc143c",
+    "#c0c0c0",
+    "#1a1a1a"
+   ]
+  },
+  {
+   "id": "178-1960s-mod",
+   "num": 178,
+   "name": "1960s Mod",
+   "tags": [
+    "creative",
+    "media"
+   ],
+   "temperature": 6,
+   "formality": 4,
+   "perfectFor": [
+    "Retro Brands",
+    "Vintage Shops",
+    "Nostalgic Services"
+   ],
+   "blend": "60s Mod 55% + Op Art 25% + Space Age 20%",
+   "swatch": [
+    "#ffffff",
+    "#0096ff",
+    "#ff6b35",
+    "#000000"
+   ]
+  },
+  {
+   "id": "179-1970s-disco",
+   "num": 179,
+   "name": "1970s Disco",
+   "tags": [
+    "creative",
+    "media"
+   ],
+   "temperature": 7,
+   "formality": 3,
+   "perfectFor": [
+    "Entertainment Venues",
+    "Nightclubs",
+    "Retro Brands"
+   ],
+   "blend": "Disco Era 55% + Groovy Typography 25% + Metallic Shine 20%",
+   "swatch": [
+    "#0a0a0a",
+    "#ffd700",
+    "#00bfff",
+    "#ffd700"
+   ]
+  },
+  {
+   "id": "180-1980s-synthwave",
+   "num": 180,
+   "name": "1980s Synthwave",
+   "tags": [
+    "creative",
+    "tech"
+   ],
+   "temperature": 5,
+   "formality": 4,
+   "perfectFor": [
+    "Retro Tech",
+    "Synthwave Brands",
+    "Gaming Companies"
+   ],
+   "blend": "Synthwave 55% + Neon Glow 25% + Grid Horizon 20%",
+   "swatch": [
+    "#000000",
+    "#00ffff",
+    "#8b00ff",
+    "#00ffff"
+   ]
+  },
+  {
+   "id": "181-1990s-grunge",
+   "num": 181,
+   "name": "1990s Grunge",
+   "tags": [
+    "creative",
+    "media"
+   ],
+   "temperature": 4,
+   "formality": 2,
+   "perfectFor": [
+    "Alternative Brands",
+    "Music Labels",
+    "Edgy Services"
+   ],
+   "blend": "90s Grunge 55% + Alternative Rock 25% + Distressed Texture 20%",
+   "swatch": [
+    "#f5f1e8",
+    "#cc5500",
+    "#2d5016",
+    "#6b6b6b"
+   ]
+  },
+  {
+   "id": "182-y2k-millennium",
+   "num": 182,
+   "name": "Y2K Millennium",
+   "tags": [
+    "tech",
+    "creative"
+   ],
+   "temperature": 5,
+   "formality": 4,
+   "perfectFor": [
+    "Tech Nostalgia",
+    "Y2K Brands",
+    "Digital Services"
+   ],
+   "blend": "Y2K Aesthetic 55% + Cyber Chrome 25% + Bubble Interface 20%",
+   "swatch": [
+    "#1a1a2e",
+    "#00d9ff",
+    "#ff1f8f",
+    "#ffffff"
+   ]
+  },
+  {
+   "id": "183-vintage-americana",
+   "num": 183,
+   "name": "Vintage Americana",
+   "tags": [
+    "hospitality",
+    "heritage"
+   ],
+   "temperature": 6,
+   "formality": 5,
+   "perfectFor": [
+    "American Brands",
+    "Heritage Businesses",
+    "Traditional Services"
+   ],
+   "blend": "Vintage USA 55% + Americana Heritage 25% + Rustic Charm 20%",
+   "swatch": [
+    "#f5efe0",
+    "#a0201c",
+    "#0f3057",
+    "#6b5d52"
+   ]
+  },
+  {
+   "id": "184-art-deco-golden",
+   "num": 184,
+   "name": "Art Deco Golden",
+   "tags": [
+    "premium",
+    "hospitality"
+   ],
+   "temperature": 5,
+   "formality": 8,
+   "perfectFor": [
+    "Luxury Hotels",
+    "Premium Events",
+    "Elegant Venues"
+   ],
+   "blend": "Art Deco 55% + Gatsby Era 25% + Geometric Gold 20%",
+   "swatch": [
+    "#0a0a0a",
+    "#800020",
+    "#d4af37",
+    "#8b8378"
+   ]
+  },
+  {
+   "id": "185-vintage-cinema",
+   "num": 185,
+   "name": "Vintage Cinema",
+   "tags": [
+    "media",
+    "premium"
+   ],
+   "temperature": 4,
+   "formality": 8,
+   "perfectFor": [
+    "Film Festivals",
+    "Cinema Organizations",
+    "Entertainment Venues"
+   ],
+   "blend": "Classic Hollywood 55% + Film Noir 25% + Theater Marquee 20%",
+   "swatch": [
+    "#0a0a0a",
+    "#d4af37",
+    "#8b1538",
+    "#f5f1e8"
+   ]
+  },
+  {
+   "id": "186-retro-computing",
+   "num": 186,
+   "name": "Retro Computing",
+   "tags": [
+    "tech",
+    "creative"
+   ],
+   "temperature": 3,
+   "formality": 6,
+   "perfectFor": [
+    "Tech Retro",
+    "Computing History",
+    "Developer Tools"
+   ],
+   "blend": "Early Computing 55% + Terminal Interface 25% + Amber CRT 20%",
+   "swatch": [
+    "#0d0d0d",
+    "#ffcc33",
+    "#00ff41",
+    "#cc8800"
+   ]
+  },
+  {
+   "id": "187-victorian-steampunk",
+   "num": 187,
+   "name": "Victorian Steampunk",
+   "tags": [
+    "creative",
+    "premium"
+   ],
+   "temperature": 5,
+   "formality": 7,
+   "perfectFor": [
+    "Alternative Fashion",
+    "Unique Brands",
+    "Creative Services"
+   ],
+   "blend": "Steampunk 55% + Victorian Industrial 25% + Brass Machinery 20%",
+   "swatch": [
+    "#f5e6d3",
+    "#b8860b",
+    "#4a2511",
+    "#3b2414"
+   ]
+  },
+  {
+   "id": "188-mid-century-modern",
+   "num": 188,
+   "name": "Mid-Century Modern",
+   "tags": [
+    "creative",
+    "professional"
+   ],
+   "temperature": 6,
+   "formality": 6,
+   "perfectFor": [
+    "Modern Furniture",
+    "Design Brands",
+    "Contemporary Living"
+   ],
+   "blend": "Mid-Century 55% + Atomic Age 25% + Organic Modernism 20%",
+   "swatch": [
+    "#f5f5dc",
+    "#008b8b",
+    "#cc5500",
+    "#36454f"
+   ]
+  },
+  {
+   "id": "189-paper-texture",
+   "num": 189,
+   "name": "Paper Texture",
+   "tags": [
+    "creative",
+    "professional"
+   ],
+   "temperature": 6,
+   "formality": 7,
+   "perfectFor": [
+    "Print Services",
+    "Publishing",
+    "Traditional Media"
+   ],
+   "blend": "Paper Material 55% + Print Design 25% + Tactile Craft 20%",
+   "swatch": [
+    "#faf8f5",
+    "#a68968",
+    "#6b5744",
+    "#3a3633"
+   ]
+  },
+  {
+   "id": "190-concrete-brutalist",
+   "num": 190,
+   "name": "Concrete Brutalist",
+   "tags": [
+    "creative",
+    "professional"
+   ],
+   "temperature": 3,
+   "formality": 7,
+   "perfectFor": [
+    "Architecture Firms",
+    "Industrial Design",
+    "Modern Brands"
+   ],
+   "blend": "Concrete Material 55% + Brutalist Architecture 25% + Industrial Raw 20%",
+   "swatch": [
+    "#b5b5b5",
+    "#3a5a85",
+    "#8b8d8e",
+    "#2d2d2d"
+   ]
+  },
+  {
+   "id": "191-wood-grain-natural",
+   "num": 191,
+   "name": "Wood Grain Natural",
+   "tags": [
+    "hospitality",
+    "creative"
+   ],
+   "temperature": 7,
+   "formality": 5,
+   "perfectFor": [
+    "Furniture Brands",
+    "Natural Products",
+    "Craft Businesses"
+   ],
+   "blend": "Wood Material 55% + Cabin Warmth 25% + Artisan Craft 20%",
+   "swatch": [
+    "#faf6ed",
+    "#654321",
+    "#d9bf9a",
+    "#654321"
+   ]
+  },
+  {
+   "id": "192-marble-luxury",
+   "num": 192,
+   "name": "Marble Luxury",
+   "tags": [
+    "premium",
+    "hospitality"
+   ],
+   "temperature": 4,
+   "formality": 9,
+   "perfectFor": [
+    "Luxury Interior",
+    "High-End Design",
+    "Premium Services"
+   ],
+   "blend": "Marble Material 55% + Luxury Interior 25% + Classic Elegance 20%",
+   "swatch": [
+    "#f8f8f8",
+    "#d4b76f",
+    "#c1c1c1",
+    "#2c2c2c"
+   ]
+  },
+  {
+   "id": "193-kinetic-typography",
+   "num": 193,
+   "name": "Kinetic Typography",
+   "tags": [
+    "creative",
+    "media"
+   ],
+   "temperature": 5,
+   "formality": 5,
+   "perfectFor": [
+    "Motion Design",
+    "Video Production",
+    "Creative Media"
+   ],
+   "blend": "Kinetic Type 55% + Motion Graphics 25% + Dynamic Layout 20%",
+   "swatch": [
+    "#ffffff",
+    "#ff0054",
+    "#000000",
+    "#404040"
+   ]
+  },
+  {
+   "id": "194-parallax-depth",
+   "num": 194,
+   "name": "Parallax Depth",
+   "tags": [
+    "tech",
+    "creative"
+   ],
+   "temperature": 5,
+   "formality": 6,
+   "perfectFor": [
+    "Interactive Media",
+    "Web Design",
+    "Digital Agencies"
+   ],
+   "blend": "Parallax Effect 55% + 3D Layers 25% + Immersive Scroll 20%",
+   "swatch": [
+    "#142032",
+    "#38bdf8",
+    "#e8f4f8",
+    "#cbd5e1"
+   ]
+  },
+  {
+   "id": "195-liquid-motion",
+   "num": 195,
+   "name": "Liquid Motion",
+   "tags": [
+    "creative",
+    "tech"
+   ],
+   "temperature": 6,
+   "formality": 4,
+   "perfectFor": [
+    "Animation Studios",
+    "Motion Design",
+    "Creative Tech"
+   ],
+   "blend": "Liquid Animation 55% + Morphing Shapes 25% + Fluid Dynamics 20%",
+   "swatch": [
+    "#ffffff",
+    "#c4b5fd",
+    "#60a5fa",
+    "#64748b"
+   ]
+  },
+  {
+   "id": "196-micro-interaction-rich",
+   "num": 196,
+   "name": "Micro-Interaction Rich",
+   "tags": [
+    "tech",
+    "professional"
+   ],
+   "temperature": 5,
+   "formality": 6,
+   "perfectFor": [
+    "UX Design",
+    "Tech Products",
+    "Interactive Services"
+   ],
+   "blend": "Micro-interactions 55% + Feedback Design 25% + Delight Details 20%",
+   "swatch": [
+    "#ffffff",
+    "#fbbf24",
+    "#d97706",
+    "#6b7280"
+   ]
+  },
+  {
+   "id": "197-rpg-fantasy",
+   "num": 197,
+   "name": "RPG Fantasy",
+   "tags": [
+    "creative",
+    "tech"
+   ],
+   "temperature": 5,
+   "formality": 5,
+   "perfectFor": [
+    "Gaming Companies",
+    "RPG Studios",
+    "Fantasy Brands"
+   ],
+   "blend": "Fantasy RPG 55% + Medieval UI 25% + Quest Interface 20%",
+   "swatch": [
+    "#eedcb5",
+    "#8b0000",
+    "#c9a961",
+    "#3e2723"
+   ]
+  },
+  {
+   "id": "198-sci-fi-hud",
+   "num": 198,
+   "name": "Sci-Fi HUD",
+   "tags": [
+    "tech",
+    "creative"
+   ],
+   "temperature": 3,
+   "formality": 7,
+   "perfectFor": [
+    "Tech Companies",
+    "Gaming Studios",
+    "Futuristic Brands"
+   ],
+   "blend": "Sci-Fi Interface 55% + Holographic HUD 25% + Space Command 20%",
+   "swatch": [
+    "#0a1628",
+    "#00d9ff",
+    "#0080ff",
+    "#e8f4f8"
+   ]
+  },
+  {
+   "id": "199-casual-mobile",
+   "num": 199,
+   "name": "Casual Mobile",
+   "tags": [
+    "creative",
+    "tech"
+   ],
+   "temperature": 8,
+   "formality": 2,
+   "perfectFor": [
+    "Mobile Games",
+    "Casual Gaming",
+    "App Studios"
+   ],
+   "blend": "Mobile Game UI 55% + Casual Gaming 25% + Achievement System 20%",
+   "swatch": [
+    "#f5f0e4",
+    "#ffa559",
+    "#c5a3e8",
+    "#5a6c7d"
+   ]
+  },
+  {
+   "id": "200-esports-arena",
+   "num": 200,
+   "name": "Esports Arena",
+   "tags": [
+    "tech",
+    "media"
+   ],
+   "temperature": 6,
+   "formality": 4,
+   "perfectFor": [
+    "Esports Organizations",
+    "Gaming Leagues",
+    "Tournament Platforms"
+   ],
+   "blend": "Esports Branding 55% + Tournament UI 25% + Stream Overlay 20%",
+   "swatch": [
+    "#0d0d0d",
+    "#00f5a0",
+    "#00d9ff",
+    "#ffffff"
+   ]
+  },
+  {
+   "id": "201-pure-light-minimal",
+   "num": 201,
+   "name": "Pure Light Minimal",
+   "tags": [
+    "professional",
+    "tech"
+   ],
+   "temperature": 5,
+   "formality": 7,
+   "perfectFor": [
+    "Minimalist Brands",
+    "Clean Tech",
+    "Modern Services"
+   ],
+   "blend": "Ultra Light 55% + White Space 25% + Clean Typography 20%",
+   "swatch": [
+    "#ffffff",
+    "#2563eb",
+    "#2563eb",
+    "#1a1a1a"
+   ]
+  },
+  {
+   "id": "202-warm-light-natural",
+   "num": 202,
+   "name": "Warm Light Natural",
+   "tags": [
+    "hospitality",
+    "creative"
+   ],
+   "temperature": 7,
+   "formality": 6,
+   "perfectFor": [
+    "Wellness Brands",
+    "Natural Products",
+    "Holistic Services"
+   ],
+   "blend": "Warm Light 55% + Natural Materials 25% + Soft Focus 20%",
+   "swatch": [
+    "#fbf8f3",
+    "#c65d3b",
+    "#9ba890",
+    "#2d2520"
+   ]
+  },
+  {
+   "id": "203-cool-light-professional",
+   "num": 203,
+   "name": "Cool Light Professional",
+   "tags": [
+    "professional",
+    "tech"
+   ],
+   "temperature": 3,
+   "formality": 8,
+   "perfectFor": [
+    "Tech Companies",
+    "Data Services",
+    "Corporate Software"
+   ],
+   "blend": "Cool Light 55% + Corporate Clean 25% + Data Forward 20%",
+   "swatch": [
+    "#f8fafb",
+    "#0ea5e9",
+    "#1e40af",
+    "#0f172a"
+   ]
+  },
+  {
+   "id": "204-true-dark-mode",
+   "num": 204,
+   "name": "True Dark Mode",
+   "tags": [
+    "tech",
+    "professional"
+   ],
+   "temperature": 4,
+   "formality": 6,
+   "perfectFor": [
+    "Tech Products",
+    "Developer Tools",
+    "Modern Apps"
+   ],
+   "blend": "True Dark 55% + OLED Black 25% + Reduced Eye Strain 20%",
+   "swatch": [
+    "#000000",
+    "#3b82f6",
+    "#1e3a8a",
+    "#e5e5e5"
+   ]
+  },
+  {
+   "id": "205-elevated-dark",
+   "num": 205,
+   "name": "Elevated Dark",
+   "tags": [
+    "tech",
+    "premium"
+   ],
+   "temperature": 5,
+   "formality": 7,
+   "perfectFor": [
+    "Premium Tech",
+    "Design Software",
+    "Professional Apps"
+   ],
+   "blend": "Elevated Dark 55% + Material Dark 25% + Layered Shadows 20%",
+   "swatch": [
+    "#121212",
+    "#bb86fc",
+    "#ffb74d",
+    "#e8e8e8"
+   ]
+  },
+  {
+   "id": "206-ai-native-interface",
+   "num": 206,
+   "name": "AI Native Interface",
+   "tags": [
+    "tech",
+    "professional"
+   ],
+   "temperature": 5,
+   "formality": 6,
+   "perfectFor": [
+    "AI Companies",
+    "ML Services",
+    "Intelligent Platforms"
+   ],
+   "blend": "AI-First Design 55% + Conversational UI 25% + Adaptive Layout 20%",
+   "swatch": [
+    "#ffffff",
+    "#a78bfa",
+    "#ec4899",
+    "#1f2937"
+   ]
+  },
+  {
+   "id": "207-neural-network",
+   "num": 207,
+   "name": "Neural Network",
+   "tags": [
+    "tech",
+    "academic"
+   ],
+   "temperature": 4,
+   "formality": 7,
+   "perfectFor": [
+    "AI Research",
+    "Data Science",
+    "Neural Networks"
+   ],
+   "blend": "Neural Visualization 55% + Data Flow 25% + Tech Abstract 20%",
+   "swatch": [
+    "#020617",
+    "#06b6d4",
+    "#a78bfa",
+    "#ffffff"
+   ]
+  },
+  {
+   "id": "208-spatial-computing",
+   "num": 208,
+   "name": "Spatial Computing",
+   "tags": [
+    "tech",
+    "creative"
+   ],
+   "temperature": 5,
+   "formality": 6,
+   "perfectFor": [
+    "AR/VR Companies",
+    "Spatial Computing",
+    "3D Platforms"
+   ],
+   "blend": "Spatial UI 55% + AR/VR Interface 25% + 3D Space 20%",
+   "swatch": [
+    "#151b32",
+    "#06b6d4",
+    "#818cf8",
+    "#b9bbc2"
+   ]
+  },
+  {
+   "id": "209-generative-art",
+   "num": 209,
+   "name": "Generative Art",
+   "tags": [
+    "creative",
+    "tech"
+   ],
+   "temperature": 5,
+   "formality": 5,
+   "perfectFor": [
+    "Creative Tech",
+    "Generative Design",
+    "Art Platforms"
+   ],
+   "blend": "Generative Design 55% + Algorithmic Art 25% + Creative Code 20%",
+   "swatch": [
+    "#f1f3f5",
+    "#fb5607",
+    "#8338ec",
+    "#1e1b4b"
+   ]
+  },
+  {
+   "id": "210-sustainable-digital",
+   "num": 210,
+   "name": "Sustainable Digital",
+   "tags": [
+    "tech",
+    "creative"
+   ],
+   "temperature": 6,
+   "formality": 6,
+   "perfectFor": [
+    "Sustainable Tech",
+    "Eco Companies",
+    "Green Design"
+   ],
+   "blend": "Sustainable Design 55% + Low Carbon UI 25% + Eco Conscious 20%",
+   "swatch": [
+    "#1c1917",
+    "#78350f",
+    "#86efac",
+    "#fafaf9"
+   ]
+  },
+  {
+   "id": "211-metaverse-social",
+   "num": 211,
+   "name": "Metaverse Social",
+   "tags": [
+    "tech",
+    "creative"
+   ],
+   "temperature": 4,
+   "formality": 5,
+   "perfectFor": [
+    "Metaverse Platforms",
+    "VR Communities",
+    "Digital Social Clubs"
+   ],
+   "blend": "VR/AR Aesthetics 55% + Cyberpunk Neon 30% + Glassmorphism 15%",
+   "swatch": [
+    "#100c28",
+    "#00fff5",
+    "#ff006e",
+    "#b8b7bf"
+   ]
+  },
+  {
+   "id": "212-biometric-identity",
+   "num": 212,
+   "name": "Biometric Identity",
+   "tags": [
+    "tech",
+    "professional"
+   ],
+   "temperature": 5,
+   "formality": 8,
+   "perfectFor": [
+    "Security Firms",
+    "Identity Verification",
+    "Biometric Tech"
+   ],
+   "blend": "Security Tech 55% + Organic Patterns 30% + Minimal Clean 15%",
+   "swatch": [
+    "#ffffff",
+    "#00d084",
+    "#0ea5e9",
+    "#6b7280"
+   ]
+  },
+  {
+   "id": "213-voice-interface",
+   "num": 213,
+   "name": "Voice Interface",
+   "tags": [
+    "tech",
+    "creative"
+   ],
+   "temperature": 6,
+   "formality": 6,
+   "perfectFor": [
+    "Voice AI",
+    "Audio Platforms",
+    "Sound Technology"
+   ],
+   "blend": "Audio Visualization 55% + Sound Wave Aesthetics 30% + Calm Minimal 15%",
+   "swatch": [
+    "#fafafa",
+    "#06b6d4",
+    "#7c3aed",
+    "#1e293b"
+   ]
+  },
+  {
+   "id": "214-holographic-display",
+   "num": 214,
+   "name": "Holographic Display",
+   "tags": [
+    "tech",
+    "creative"
+   ],
+   "temperature": 3,
+   "formality": 5,
+   "perfectFor": [
+    "Holographic Tech",
+    "Display Innovation",
+    "Light Technology"
+   ],
+   "blend": "Light Diffraction 55% + Prismatic Colors 30% + Ethereal Minimal 15%",
+   "swatch": [
+    "#fafafa",
+    "#4dc3ff",
+    "#06b6d4",
+    "#1f2937"
+   ]
+  },
+  {
+   "id": "215-neural-link",
+   "num": 215,
+   "name": "Neural Link",
+   "tags": [
+    "tech",
+    "academic"
+   ],
+   "temperature": 4,
+   "formality": 7,
+   "perfectFor": [
+    "Neurotechnology",
+    "BCI Research",
+    "Cognitive Science"
+   ],
+   "blend": "Brain-Computer Interface 55% + Synaptic Patterns 30% + Clinical Precision 15%",
+   "swatch": [
+    "#ffffff",
+    "#00a8ff",
+    "#8b5cf6",
+    "#6b7280"
+   ]
+  },
+  {
+   "id": "216-autonomous-mobility",
+   "num": 216,
+   "name": "Autonomous Mobility",
+   "tags": [
+    "tech",
+    "professional"
+   ],
+   "temperature": 5,
+   "formality": 7,
+   "perfectFor": [
+    "Autonomous Vehicles",
+    "EV Companies",
+    "Mobility Tech"
+   ],
+   "blend": "Self-Driving Tech 55% + Electric Vehicle 30% + Urban Mobility 15%",
+   "swatch": [
+    "#ffffff",
+    "#0099ff",
+    "#f59e0b",
+    "#6b7280"
+   ]
+  },
+  {
+   "id": "217-climate-tech",
+   "num": 217,
+   "name": "Climate Tech",
+   "tags": [
+    "tech",
+    "association"
+   ],
+   "temperature": 6,
+   "formality": 7,
+   "perfectFor": [
+    "Climate Tech",
+    "Environmental Organizations",
+    "Green Innovation"
+   ],
+   "blend": "Environmental Tech 55% + Data Visualization 30% + Nature Organic 15%",
+   "swatch": [
+    "#f5f5f4",
+    "#0284c7",
+    "#22c55e",
+    "#1f2937"
+   ]
+  },
+  {
+   "id": "218-digital-twin",
+   "num": 218,
+   "name": "Digital Twin",
+   "tags": [
+    "tech",
+    "professional"
+   ],
+   "temperature": 4,
+   "formality": 8,
+   "perfectFor": [
+    "Digital Twin Tech",
+    "Simulation Companies",
+    "IoT Platforms"
+   ],
+   "blend": "Mirror World 55% + Simulation Tech 30% + Real-Time Data 15%",
+   "swatch": [
+    "#fafafa",
+    "#00bcd4",
+    "#9c27b0",
+    "#424242"
+   ]
+  },
+  {
+   "id": "219-tokenized-community",
+   "num": 219,
+   "name": "Tokenized Community",
+   "tags": [
+    "tech",
+    "association"
+   ],
+   "temperature": 5,
+   "formality": 5,
+   "perfectFor": [
+    "DAOs",
+    "NFT Communities",
+    "Web3 Organizations"
+   ],
+   "blend": "Web3/NFT Aesthetics 55% + Blockchain Patterns 30% + Crypto Luxury 15%",
+   "swatch": [
+    "#e8ebf9",
+    "#f7931a",
+    "#0d47a1",
+    "#616161"
+   ]
+  },
+  {
+   "id": "220-zero-trust-security",
+   "num": 220,
+   "name": "Zero Trust Security",
+   "tags": [
+    "tech",
+    "professional"
+   ],
+   "temperature": 3,
+   "formality": 9,
+   "perfectFor": [
+    "Cybersecurity",
+    "Defense Tech",
+    "Security Operations"
+   ],
+   "blend": "Fortress Security 55% + Military Precision 30% + Alert Systems 15%",
+   "swatch": [
+    "#0f172a",
+    "#3b82f6",
+    "#16a34a",
+    "#cbd5e1"
+   ]
+  },
+  {
+   "id": "221-k-wave-digital",
+   "num": 221,
+   "name": "K-Wave Digital",
+   "tags": [
+    "creative",
+    "media"
+   ],
+   "temperature": 7,
+   "formality": 4,
+   "perfectFor": [
+    "K-Pop Fandom",
+    "Korean Culture",
+    "Digital Entertainment"
+   ],
+   "blend": "Korean Pop Culture 55% + Neon City 30% + Cute Aesthetics 15%",
+   "swatch": [
+    "#201039",
+    "#00d4ff",
+    "#d4ff00",
+    "#ffffff"
+   ]
+  },
+  {
+   "id": "222-amazonian-heritage",
+   "num": 222,
+   "name": "Amazonian Heritage",
+   "tags": [
+    "association",
+    "creative"
+   ],
+   "temperature": 8,
+   "formality": 6,
+   "perfectFor": [
+    "Conservation Groups",
+    "Indigenous Rights",
+    "Environmental NGOs"
+   ],
+   "blend": "Rainforest Indigenous 55% + Nature Conservation 30% + Modern Activism 15%",
+   "swatch": [
+    "#064e3b",
+    "#fef3c7",
+    "#059669",
+    "#d1fae5"
+   ]
+  },
+  {
+   "id": "223-arctic-aurora",
+   "num": 223,
+   "name": "Arctic Aurora",
+   "tags": [
+    "creative",
+    "hospitality"
+   ],
+   "temperature": 2,
+   "formality": 6,
+   "perfectFor": [
+    "Nordic Brands",
+    "Arctic Tourism",
+    "Northern Organizations"
+   ],
+   "blend": "Extreme Minimal 55% + Aurora Borealis 30% + Ice Crystal 15%",
+   "swatch": [
+    "#f8fafc",
+    "#a855f7",
+    "#0c4a6e",
+    "#0c4a6e"
+   ]
+  },
+  {
+   "id": "224-silk-road",
+   "num": 224,
+   "name": "Silk Road",
+   "tags": [
+    "premium",
+    "association"
+   ],
+   "temperature": 8,
+   "formality": 7,
+   "perfectFor": [
+    "Trade Organizations",
+    "Central Asian Culture",
+    "Heritage Commerce"
+   ],
+   "blend": "Central Asian Patterns 55% + Trade Route Heritage 30% + Modern Commerce 15%",
+   "swatch": [
+    "#fef6d3",
+    "#0369a1",
+    "#d97706",
+    "#1e3a8a"
+   ]
+  },
+  {
+   "id": "225-pacific-rim",
+   "num": 225,
+   "name": "Pacific Rim",
+   "tags": [
+    "professional",
+    "association"
+   ],
+   "temperature": 6,
+   "formality": 7,
+   "perfectFor": [
+    "Pacific Trade",
+    "Asian Business Networks",
+    "International Commerce"
+   ],
+   "blend": "Pan-Asian Fusion 55% + Ocean Commerce 30% + Tech Innovation 15%",
+   "swatch": [
+    "#f8fafc",
+    "#0077b6",
+    "#f97316",
+    "#0c4a6e"
+   ]
+  },
+  {
+   "id": "226-mediterranean-council",
+   "num": 226,
+   "name": "Mediterranean Council",
+   "tags": [
+    "hospitality",
+    "association"
+   ],
+   "temperature": 9,
+   "formality": 6,
+   "perfectFor": [
+    "Mediterranean Tourism",
+    "Southern European Brands",
+    "Coastal Hospitality"
+   ],
+   "blend": "Southern European Warmth 55% + Coastal Elegance 30% + Olive Grove Organic 15%",
+   "swatch": [
+    "#fafaf9",
+    "#1e40af",
+    "#60a5fa",
+    "#78716c"
+   ]
+  },
+  {
+   "id": "227-alpine-excellence",
+   "num": 227,
+   "name": "Alpine Excellence",
+   "tags": [
+    "premium",
+    "hospitality"
+   ],
+   "temperature": 4,
+   "formality": 8,
+   "perfectFor": [
+    "Swiss Brands",
+    "Alpine Resorts",
+    "Mountain Organizations"
+   ],
+   "blend": "Mountain Precision 55% + Swiss Heritage 30% + Luxury Resort 15%",
+   "swatch": [
+    "#fafafa",
+    "#1e3a8a",
+    "#a16207",
+    "#334155"
+   ]
+  },
+  {
+   "id": "228-saharan-oasis",
+   "num": 228,
+   "name": "Saharan Oasis",
+   "tags": [
+    "premium",
+    "hospitality"
+   ],
+   "temperature": 9,
+   "formality": 7,
+   "perfectFor": [
+    "Desert Resorts",
+    "Middle Eastern Luxury",
+    "Saharan Tourism"
+   ],
+   "blend": "Desert Luxury 55% + Geometric Moorish 30% + Nomadic Heritage 15%",
+   "swatch": [
+    "#fafaf9",
+    "#ca8a04",
+    "#c2410c",
+    "#334155"
+   ]
+  },
+  {
+   "id": "229-slavic-heritage",
+   "num": 229,
+   "name": "Slavic Heritage",
+   "tags": [
+    "heritage",
+    "association"
+   ],
+   "temperature": 7,
+   "formality": 6,
+   "perfectFor": [
+    "Slavic Culture",
+    "Eastern European Heritage",
+    "Folk Organizations"
+   ],
+   "blend": "Eastern European Traditions 55% + Folk Art Patterns 30% + Modern Revival 15%",
+   "swatch": [
+    "#fafaf9",
+    "#dc2626",
+    "#1e40af",
+    "#262626"
+   ]
+  },
+  {
+   "id": "230-polynesian-voyage",
+   "num": 230,
+   "name": "Polynesian Voyage",
+   "tags": [
+    "heritage",
+    "hospitality"
+   ],
+   "temperature": 8,
+   "formality": 5,
+   "perfectFor": [
+    "Pacific Culture",
+    "Polynesian Heritage",
+    "Ocean Organizations"
+   ],
+   "blend": "Ocean Navigation 55% + Pacific Island Art 30% + Explorer Spirit 15%",
+   "swatch": [
+    "#f0fdfa",
+    "#fbbf24",
+    "#fb7185",
+    "#171717"
+   ]
+  },
+  {
+   "id": "231-biohacker-collective",
+   "num": 231,
+   "name": "Biohacker Collective",
+   "tags": [
+    "tech",
+    "association"
+   ],
+   "temperature": 5,
+   "formality": 6,
+   "perfectFor": [
+    "Biohacking Communities",
+    "Health Optimization",
+    "Quantified Self"
+   ],
+   "blend": "Quantified Self 55% + Optimization Tech 30% + Health Data 15%",
+   "swatch": [
+    "#fafafa",
+    "#fb923c",
+    "#60a5fa",
+    "#262626"
+   ]
+  },
+  {
+   "id": "232-slow-living",
+   "num": 232,
+   "name": "Slow Living",
+   "tags": [
+    "hospitality",
+    "creative"
+   ],
+   "temperature": 7,
+   "formality": 4,
+   "perfectFor": [
+    "Wellness Retreats",
+    "Slow Living Movement",
+    "Mindfulness Brands"
+   ],
+   "blend": "Anti-Hustle Minimal 55% + Mindfulness Calm 30% + Nature Retreat 15%",
+   "swatch": [
+    "#eff7f3",
+    "#65a30d",
+    "#57534e",
+    "#57534e"
+   ]
+  },
+  {
+   "id": "233-artisan-makers",
+   "num": 233,
+   "name": "Artisan Makers",
+   "tags": [
+    "creative",
+    "association"
+   ],
+   "temperature": 8,
+   "formality": 5,
+   "perfectFor": [
+    "Maker Spaces",
+    "Artisan Guilds",
+    "Craft Communities"
+   ],
+   "blend": "Handcraft Heritage 55% + Digital Tools 30% + Workshop Aesthetic 15%",
+   "swatch": [
+    "#f1e2cd",
+    "#fb923c",
+    "#b45309",
+    "#475569"
+   ]
+  },
+  {
+   "id": "234-remote-nomad",
+   "num": 234,
+   "name": "Remote Nomad",
+   "tags": [
+    "tech",
+    "hospitality"
+   ],
+   "temperature": 6,
+   "formality": 4,
+   "perfectFor": [
+    "Digital Nomads",
+    "Remote Work Communities",
+    "Travel Tech"
+   ],
+   "blend": "Digital Nomad 55% + Travel Adventure 30% + Coworking Modern 15%",
+   "swatch": [
+    "#eaf2fd",
+    "#fb923c",
+    "#3b82f6",
+    "#475569"
+   ]
+  },
+  {
+   "id": "235-heritage-preservation",
+   "num": 235,
+   "name": "Heritage Preservation",
+   "tags": [
+    "heritage",
+    "association"
+   ],
+   "temperature": 7,
+   "formality": 8,
+   "perfectFor": [
+    "Preservation Societies",
+    "Historical Archives",
+    "Museum Organizations"
+   ],
+   "blend": "Historical Conservation 55% + Museum Quality 30% + Modern Archive 15%",
+   "swatch": [
+    "#fdfdfc",
+    "#d97706",
+    "#92400e",
+    "#1c1917"
+   ]
+  },
+  {
+   "id": "236-citizen-science",
+   "num": 236,
+   "name": "Citizen Science",
+   "tags": [
+    "academic",
+    "association"
+   ],
+   "temperature": 6,
+   "formality": 5,
+   "perfectFor": [
+    "Citizen Science",
+    "Community Research",
+    "Amateur Scientists"
+   ],
+   "blend": "Amateur Research 55% + Community Discovery 30% + Data Collection 15%",
+   "swatch": [
+    "#fbfbf2",
+    "#0284c7",
+    "#a78bfa",
+    "#1e293b"
+   ]
+  },
+  {
+   "id": "237-urban-farming",
+   "num": 237,
+   "name": "Urban Farming",
+   "tags": [
+    "association",
+    "creative"
+   ],
+   "temperature": 7,
+   "formality": 5,
+   "perfectFor": [
+    "Urban Agriculture",
+    "Community Gardens",
+    "Food Sustainability"
+   ],
+   "blend": "Agriculture Tech 55% + City Green Spaces 30% + Sustainable Food 15%",
+   "swatch": [
+    "#ffffff",
+    "#fbbf24",
+    "#a16207",
+    "#1c1917"
+   ]
+  },
+  {
+   "id": "238-memory-archive",
+   "num": 238,
+   "name": "Memory Archive",
+   "tags": [
+    "heritage",
+    "creative"
+   ],
+   "temperature": 7,
+   "formality": 5,
+   "perfectFor": [
+    "Memory Organizations",
+    "Digital Archives",
+    "Nostalgia Platforms"
+   ],
+   "blend": "Nostalgia Preservation 55% + Digital Archiving 30% + Scrapbook Aesthetic 15%",
+   "swatch": [
+    "#fef3e2",
+    "#fda4af",
+    "#3b82f6",
+    "#3e2723"
+   ]
+  },
+  {
+   "id": "239-future-elders",
+   "num": 239,
+   "name": "Future Elders",
+   "tags": [
+    "association",
+    "professional"
+   ],
+   "temperature": 8,
+   "formality": 6,
+   "perfectFor": [
+    "Senior Organizations",
+    "Elder Communities",
+    "Intergenerational Groups"
+   ],
+   "blend": "Senior Wisdom 55% + Tech Accessibility 30% + Intergenerational Bridge 15%",
+   "swatch": [
+    "#fef9f0",
+    "#0ea5e9",
+    "#7e22ce",
+    "#4b5563"
+   ]
+  },
+  {
+   "id": "240-inclusive-design",
+   "num": 240,
+   "name": "Inclusive Design",
+   "tags": [
+    "professional",
+    "association"
+   ],
+   "temperature": 6,
+   "formality": 6,
+   "perfectFor": [
+    "Accessibility Organizations",
+    "Inclusive Design",
+    "Universal Design"
+   ],
+   "blend": "Universal Accessibility 55% + Human-Centered 30% + Adaptive Interfaces 15%",
+   "swatch": [
+    "#f3f4f6",
+    "#0066cc",
+    "#ea580c",
+    "#111827"
+   ]
+  },
+  {
+   "id": "241-quantum-finance",
+   "num": 241,
+   "name": "Quantum Finance",
+   "tags": [
+    "tech",
+    "premium",
+    "professional"
+   ],
+   "temperature": 3,
+   "formality": 10,
+   "perfectFor": [
+    "Quantum Finance",
+    "Algorithmic Trading",
+    "Scientific Investment"
+   ],
+   "blend": "Quantum Computing 55% + Private Banking 30% + Scientific Precision 15%",
+   "swatch": [
+    "#f8fafc",
+    "#38bdf8",
+    "#7c3aed",
+    "#0c0f25"
+   ]
+  },
+  {
+   "id": "242-biotech-elite",
+   "num": 242,
+   "name": "Biotech Elite",
+   "tags": [
+    "tech",
+    "premium",
+    "academic"
+   ],
+   "temperature": 4,
+   "formality": 9,
+   "perfectFor": [
+    "Biotech Firms",
+    "Life Sciences VCs",
+    "Research Networks"
+   ],
+   "blend": "Life Sciences 55% + Venture Capital 30% + Research Institution 15%",
+   "swatch": [
+    "#fafafa",
+    "#3b82f6",
+    "#0d9488",
+    "#64748b"
+   ]
+  },
+  {
+   "id": "243-space-commerce",
+   "num": 243,
+   "name": "Space Commerce",
+   "tags": [
+    "tech",
+    "professional"
+   ],
+   "temperature": 3,
+   "formality": 8,
+   "perfectFor": [
+    "Space Commerce",
+    "Aerospace Trade",
+    "Orbital Industries"
+   ],
+   "blend": "Aerospace Industry 55% + International Trade 30% + Tech Innovation 15%",
+   "swatch": [
+    "#ffffff",
+    "#f97316",
+    "#a78bfa",
+    "#0a0a0f"
+   ]
+  },
+  {
+   "id": "244-numismatic-society",
+   "num": 244,
+   "name": "Numismatic Society",
+   "tags": [
+    "heritage",
+    "premium"
+   ],
+   "temperature": 5,
+   "formality": 9,
+   "perfectFor": [
+    "Coin Collectors",
+    "Numismatic Societies",
+    "Currency Museums"
+   ],
+   "blend": "Coin Collecting Heritage 55% + Auction House Prestige 30% + Museum Curation 15%",
+   "swatch": [
+    "#fff7d9",
+    "#059669",
+    "#9a7008",
+    "#6b7280"
+   ]
+  },
+  {
+   "id": "245-antiquarian-books",
+   "num": 245,
+   "name": "Antiquarian Books",
+   "tags": [
+    "heritage",
+    "academic"
+   ],
+   "temperature": 6,
+   "formality": 9,
+   "perfectFor": [
+    "Rare Book Dealers",
+    "Antiquarian Guilds",
+    "Literary Archives"
+   ],
+   "blend": "Rare Books 55% + Library Science 30% + Literary Heritage 15%",
+   "swatch": [
+    "#faf4d2",
+    "#047857",
+    "#5a2a0a",
+    "#1f2937"
+   ]
+  },
+  {
+   "id": "246-horological-masters",
+   "num": 246,
+   "name": "Horological Masters",
+   "tags": [
+    "premium",
+    "heritage"
+   ],
+   "temperature": 4,
+   "formality": 10,
+   "perfectFor": [
+    "Watchmakers",
+    "Horology Institutes",
+    "Timepiece Collectors"
+   ],
+   "blend": "Swiss Watchmaking 55% + Precision Engineering 30% + Luxury Craft 15%",
+   "swatch": [
+    "#fafafa",
+    "#ca8a04",
+    "#ef4444",
+    "#475569"
+   ]
+  },
+  {
+   "id": "247-haute-couture",
+   "num": 247,
+   "name": "Haute Couture",
+   "tags": [
+    "creative",
+    "premium"
+   ],
+   "temperature": 3,
+   "formality": 9,
+   "perfectFor": [
+    "Fashion Houses",
+    "Couture Ateliers",
+    "Designer Guilds"
+   ],
+   "blend": "High Fashion 55% + Parisian Elegance 30% + Art Gallery 15%",
+   "swatch": [
+    "#fafafa",
+    "#f4a3a3",
+    "#78716c",
+    "#78716c"
+   ]
+  },
+  {
+   "id": "248-symphonic-orchestra",
+   "num": 248,
+   "name": "Symphonic Orchestra",
+   "tags": [
+    "creative",
+    "premium"
+   ],
+   "temperature": 5,
+   "formality": 10,
+   "perfectFor": [
+    "Orchestras",
+    "Concert Halls",
+    "Music Patrons"
+   ],
+   "blend": "Classical Music 55% + Concert Hall Architecture 30% + Patron Society 15%",
+   "swatch": [
+    "#fef9f3",
+    "#997a09",
+    "#daa520",
+    "#1a1a1a"
+   ]
+  },
+  {
+   "id": "249-master-sommelier",
+   "num": 249,
+   "name": "Master Sommelier",
+   "tags": [
+    "hospitality",
+    "premium"
+   ],
+   "temperature": 6,
+   "formality": 9,
+   "perfectFor": [
+    "Sommelier Guilds",
+    "Wine Societies",
+    "Gastronomy Institutes"
+   ],
+   "blend": "Fine Wine 55% + French Gastronomy 30% + Certification Authority 15%",
+   "swatch": [
+    "#fef6ed",
+    "#d4af37",
+    "#6b1a2e",
+    "#4a1a22"
+   ]
+  },
+  {
+   "id": "250-supreme-court-bar",
+   "num": 250,
+   "name": "Supreme Court Bar",
+   "tags": [
+    "professional",
+    "premium"
+   ],
+   "temperature": 3,
+   "formality": 10,
+   "perfectFor": [
+    "Supreme Court Bars",
+    "Constitutional Lawyers",
+    "Judicial Societies"
+   ],
+   "blend": "Constitutional Authority 55% + Legal Tradition 30% + Judicial Dignity 15%",
+   "swatch": [
+    "#231f1e",
+    "#ca8a04",
+    "#fef9ef",
+    "#f5f5f4"
+   ]
+  },
+  {
+   "id": "251-royal-academy",
+   "num": 251,
+   "name": "Royal Academy",
+   "tags": [
+    "academic",
+    "premium"
+   ],
+   "temperature": 4,
+   "formality": 10,
+   "perfectFor": [
+    "Royal Academies",
+    "Scientific Societies",
+    "Distinguished Fellows"
+   ],
+   "blend": "Scientific Excellence 55% + Royal Patronage 30% + Academic Distinction 15%",
+   "swatch": [
+    "#fef9ef",
+    "#059669",
+    "#b45309",
+    "#0f172a"
+   ]
+  },
+  {
+   "id": "252-diplomatic-summit",
+   "num": 252,
+   "name": "Diplomatic Summit",
+   "tags": [
+    "professional",
+    "premium"
+   ],
+   "temperature": 4,
+   "formality": 10,
+   "perfectFor": [
+    "Diplomatic Corps",
+    "International Forums",
+    "Global Summits"
+   ],
+   "blend": "International Relations 55% + Protocol Excellence 30% + Global Governance 15%",
+   "swatch": [
+    "#fef9ef",
+    "#009edb",
+    "#0369a1",
+    "#334155"
+   ]
+  },
+  {
+   "id": "253-polar-expedition",
+   "num": 253,
+   "name": "Polar Expedition",
+   "tags": [
+    "creative",
+    "association"
+   ],
+   "temperature": 1,
+   "formality": 7,
+   "perfectFor": [
+    "Polar Expeditions",
+    "Arctic Research",
+    "Exploration Societies"
+   ],
+   "blend": "Arctic Exploration 55% + Scientific Research 30% + Adventure Elite 15%",
+   "swatch": [
+    "#f0fdfa",
+    "#f97316",
+    "#06b6d4",
+    "#0f172a"
+   ]
+  },
+  {
+   "id": "254-grand-prix-collectors",
+   "num": 254,
+   "name": "Grand Prix Collectors",
+   "tags": [
+    "premium",
+    "association"
+   ],
+   "temperature": 5,
+   "formality": 7,
+   "perfectFor": [
+    "Racing Collectors",
+    "Grand Prix Clubs",
+    "Automotive Elite"
+   ],
+   "blend": "Formula Racing 55% + Automotive Luxury 30% + Collector Prestige 15%",
+   "swatch": [
+    "#171717",
+    "#fb923c",
+    "#dc2626",
+    "#fafafa"
+   ]
+  },
+  {
+   "id": "255-alpine-mountaineering",
+   "num": 255,
+   "name": "Alpine Mountaineering",
+   "tags": [
+    "association",
+    "hospitality"
+   ],
+   "temperature": 2,
+   "formality": 7,
+   "perfectFor": [
+    "Mountaineering Federations",
+    "Alpine Clubs",
+    "Summit Societies"
+   ],
+   "blend": "Mountain Climbing 55% + Swiss Precision 30% + Elite Athletics 15%",
+   "swatch": [
+    "#f8fafc",
+    "#f97316",
+    "#3b82f6",
+    "#44403c"
+   ]
+  }
+ ]
+}

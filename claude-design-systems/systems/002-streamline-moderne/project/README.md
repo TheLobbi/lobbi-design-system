@@ -72,11 +72,15 @@ Faces are hosted on Google Fonts (DM Sans, Space Grotesk); load them with:
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 14.0:1.
+- `page-text` on `page-bg` measures 12.9:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `chrome-500` 4.2:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `chrome-300` 1.3:1, `chrome-400` 2.3:1, `accent-teal` 2.2:1, `nav-bg` 1.1:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA contrast ratios maintained
-- Teal accent (#14b8a6) on dark backgrounds: 5.1:1
+- Teal accent (#14b8a6) on dark backgrounds: ~~5.1:1~~ — **measured 2.2:1** (not for body text)
 - Focus states with visible indicators
 - Semantic HTML structure with ARIA labels
 

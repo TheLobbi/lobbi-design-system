@@ -107,10 +107,23 @@ for (const { file, num } of files) {
       }
       return best ? typeOf(best) : null;
     };
+    // Running text: the size most text is set in, not the first paragraph (often a hero subtitle).
+    const dominant = (sel) => {
+      const w = new Map();
+      for (const el of document.querySelectorAll(sel)) {
+        if (!visible(el)) continue;
+        const k = getComputedStyle(el).fontSize;
+        const len = el.textContent.trim().length;
+        const cur = w.get(k) || { n: 0, el };
+        cur.n += len; w.set(k, cur);
+      }
+      const best = [...w.values()].sort((a, b) => b.n - a.n)[0];
+      return best ? typeOf(best.el) : null;
+    };
     const type = {
       display: largest('h1, .hero h1, .hero-title, [class*="hero"] h1, [class*="display"]'),
       h1: firstOf('h1'), h2: firstOf('h2'), h3: firstOf('h3'), h4: firstOf('h4'),
-      body: firstOf('main p, section p, p'),
+      body: dominant('main p, section p, article p, p, li, td'),
       small: firstOf('small, .caption, figcaption, [class*="caption"], [class*="meta"]'),
       label: firstOf('label, th, [class*="label"], [class*="eyebrow"], [class*="overline"]'),
       button: firstOf('button:not(.gallery-nav-toggle), .btn, [class*="btn"], [class*="button"]'),
@@ -131,7 +144,44 @@ for (const { file, num } of files) {
     const groundOf = (el) => { const s = getComputedStyle(el); return { color: s.backgroundColor, image: s.backgroundImage === 'none' ? null : s.backgroundImage.slice(0, 300) }; };
     const main = document.querySelector('main, .main, .container, section') || document.body;
     const body = getComputedStyle(document.body);
+    const parseC = (s) => { const m = s && s.match(/rgba?\(([\d.]+),\s*([\d.]+),\s*([\d.]+)(?:,\s*([\d.]+))?\)/); return m ? [+m[1], +m[2], +m[3], m[4] == null ? 1 : +m[4]] : null; };
+    const groundBehind = (el) => {
+      const chain = [];
+      for (let e = el; e; e = e.parentElement) chain.unshift(e);
+      let c = [255, 255, 255];
+      const lay = (x) => { if (!x || x[3] === 0) return; c = c.map((v, i) => x[i] * x[3] + v * (1 - x[3])); };
+      for (const e of chain) {
+        const st = getComputedStyle(e);
+        if (/gradient/.test(st.backgroundImage)) {
+          const stops = [...st.backgroundImage.matchAll(/rgba?\([^)]*\)/g)].map((m) => parseC(m[0])).filter(Boolean);
+          if (stops.length) { const avg = [0, 1, 2, 3].map((i) => stops.reduce((a, s) => a + s[i], 0) / stops.length); lay(avg); }
+        }
+        lay(parseC(st.backgroundColor));
+      }
+      return `rgb(${c.map(Math.round).join(', ')})`;
+    };
+    // The ground most running text sits on (weighted by text length), and the ink most of that text uses.
+    const grounds = new Map();
+    for (const el of document.querySelectorAll('p, li, td, dd, label, span, a, h2, h3, h4')) {
+      if (!visible(el) || el.children.length > 2) continue;
+      const len = el.textContent.trim().length;
+      const g = groundBehind(el), ink = getComputedStyle(el).color;
+      const cur = grounds.get(g) || { n: 0, inks: new Map() };
+      cur.n += len; cur.inks.set(ink, (cur.inks.get(ink) || 0) + len); grounds.set(g, cur);
+    }
+    const canvas = groundBehind(document.body);
+    const cv = parseC(canvas);
+    const lumC = (c) => { const f = (v) => { v /= 255; return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4; }; return 0.2126 * f(c[0]) + 0.7152 * f(c[1]) + 0.0722 * f(c[2]); };
+    const onCanvas = (c) => [0, 1, 2].map((i) => c[i] * c[3] + cv[i] * (1 - c[3]));
+    const crOn = (ink) => { const a = lumC(onCanvas(parseC(ink))), b = lumC(cv); return (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05); };
+    const inkWeight = new Map();
+    for (const g of grounds.values()) for (const [ink, n] of g.inks) inkWeight.set(ink, (inkWeight.get(ink) || 0) + n);
+    const inks = [...inkWeight.entries()].filter(([i]) => parseC(i)).sort((a, b) => b[1] - a[1]);
+    // Page ink: the most-used text colour that reads on the canvas (4.5:1, else 3:1, else the best available).
+    const ink = (inks.find(([i]) => crOn(i) >= 4.5) || inks.find(([i]) => crOn(i) >= 3) || inks.slice().sort((a, b) => crOn(b[0]) - crOn(a[0]))[0] || [getComputedStyle(document.body).color])[0];
+    const topGround = [...grounds.entries()].sort((a, b) => b[1].n - a[1].n)[0];
     const page = {
+      ground: canvas, ink, surface: topGround && topGround[0] !== canvas ? topGround[0] : null,
       bg: bgOf(document.body) || bgOf(document.documentElement) || 'rgb(255, 255, 255)',
       bodyGround: groundOf(document.body), htmlGround: groundOf(document.documentElement),
       mainBg: bgOf(main),
@@ -201,6 +251,8 @@ for (const { file, num } of files) {
   // The first block comment inside the first <style> is the style's design doc.
   const styleBlock = html.match(/<style[^>]*>([\s\S]*?)<\/style>/i)?.[1] ?? '';
   data.doc = styleBlock.match(/\/\*([\s\S]*?)\*\//)?.[1] ?? '';
+  // Google Fonts pulled in with CSS @import rather than <link>.
+  for (const m of html.matchAll(/@import\s+url\(\s*['"]?(https:\/\/fonts\.googleapis\.com\/[^'")\s]+)['"]?\s*\)/g)) if (!data.fontLinks.includes(m[1])) data.fontLinks.push(m[1]);
   data.file = file;
   data.num = num;
   fs.writeFileSync(path.join(OUT, `${num}.json`), JSON.stringify(data, null, 1));

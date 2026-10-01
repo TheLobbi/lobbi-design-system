@@ -15,7 +15,7 @@ This design celebrates the democratization of scientific discovery. It bridges t
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is light.
-- Identity colours: `discovery-purple`, `discovery-purple-light`, `nature-green`, `research-blue`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `discovery-purple`, `discovery-purple-light`, `nature-green`. Lead with the first; use the rest for accents and emphasis.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
 ### Palette rationale
@@ -63,8 +63,12 @@ Faces are hosted on Google Fonts (Karla, Fira Sans); load them with:
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 14.0:1.
+- `page-text` on `page-bg` measures 14.1:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `nature-green` 3.2:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `lab-white` 1.0:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG AA contrast on all color combinations
 - Large touch targets for field data entry

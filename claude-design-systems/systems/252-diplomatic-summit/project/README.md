@@ -60,7 +60,7 @@ Faces are hosted on Google Fonts (Libre Baskerville, Inter, Source Sans Pro); lo
 
 ## Spacing, shape and elevation
 
-- Spacing steps: `space-7.6` 7.6px, `space-8` 8px, `space-16` 16px, `space-20` 20px, `space-24` 24px, `space-32` 32px. Pad cards and sections from these steps only.
+- Spacing steps: `space-7-6` 7.6px, `space-8` 8px, `space-16` 16px, `space-20` 20px, `space-24` 24px, `space-32` 32px. Pad cards and sections from these steps only.
 - Corners: `radius-2` 2px, `radius-6` 6px.
 - Elevation: `shadow-1`, lowest first for resting cards, higher for hover and overlays.
 
@@ -89,13 +89,17 @@ Faces are hosted on Google Fonts (Libre Baskerville, Inter, Source Sans Pro); lo
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 9.9:1.
+- `page-text` on `page-bg` measures 10.0:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `alliance-green` 3.2:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `un-blue` 2.9:1, `diplomatic-gold` 2.3:1, `summit-white` 1.0:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AAA compliance (international standard)
-- UN blue on white: 9.8:1 contrast ratio
+- UN blue on white: ~~9.8:1~~ contrast ratio — **measured 3.0:1** (not for body text)
 - Treaty navy on charter cream: 10.2:1 contrast ratio
-- Diplomatic gold on treaty navy: 7.6:1 contrast ratio
+- Diplomatic gold on treaty navy: ~~7.6:1~~ contrast ratio — **measured 4.3:1** (not for body text)
 - Focus indicators: 4px visible borders meeting international standards
 - Multilingual screen reader support
 - Right-to-left (RTL) language support ready
