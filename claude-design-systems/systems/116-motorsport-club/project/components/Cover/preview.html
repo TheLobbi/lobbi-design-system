@@ -1,0 +1,61 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html><head><meta charset="utf-8">
+
+<style>
+body{margin:0;background:var(--page-bg);color:var(--page-text);}
+.cover{position:relative;width:960px;height:288px;overflow:hidden;background:var(--page-bg);}
+svg{position:absolute;inset:0;}
+.c-racing-red-light{fill:var(--racing-red-light);stroke:var(--racing-red-light);stroke-width:0;}
+.c-racing-red-dark{fill:var(--racing-red-dark);stroke:var(--racing-red-dark);stroke-width:0;}
+.c-event-status-bg{fill:var(--event-status-bg);stroke:var(--event-status-bg);stroke-width:0;}
+.c-gold-accent{fill:var(--gold-accent);stroke:var(--gold-accent);stroke-width:0;}
+.c-page-bg{fill:var(--page-bg);stroke:var(--page-bg);stroke-width:0;}
+.blk{rx:var(--radius-4);}
+.rule{stroke-width:1px;fill:none;}
+.name{position:absolute;left:40px;bottom:40px;max-width:440px;}
+.name h1 span{display:inline-block;white-space:nowrap;}
+.name h1{margin:0;font-family:var(--font-display);font-weight:700;font-size:66px;line-height:0.95;color:var(--page-text);letter-spacing:0;}
+.name p{margin:16px 0 0;font-family:var(--font-body);font-size:14px;line-height:1.5;color:var(--page-text);}
+</style></head>
+<body><div class="cover">
+<svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+<!--
+  blocks: racing-red-light 29×4 steps, racing-red-dark 26×4 steps, event-status-bg 23×4 steps, gold-accent 20×4 steps
+  arrangement: staggered stack bleeding off the right edge
+  pattern: discs — soft, large-radius shapes → discs and pills cut from the radius scale
+  scales: step spacing-sm (16px), gap 5px, radius radius-4 (4px)
+-->
+<rect class="c-racing-red-light blk" x="512" y="16" width="464" height="64"/>
+<rect class="c-racing-red-dark blk" x="560" y="51" width="416" height="64"/>
+<rect class="c-event-status-bg blk" x="608" y="86" width="368" height="64"/>
+<rect class="c-gold-accent blk" x="656" y="122" width="320" height="64"/>
+<circle class="c-page-bg" cx="532" cy="36" r="12"/>
+<circle class="c-page-bg" cx="564" cy="36" r="12"/>
+<circle class="c-page-bg" cx="596" cy="36" r="12"/>
+<circle class="c-page-bg" cx="628" cy="36" r="12"/>
+<circle class="c-page-bg" cx="660" cy="36" r="12"/>
+<circle class="c-page-bg" cx="692" cy="36" r="12"/>
+<circle class="c-page-bg" cx="724" cy="36" r="12"/>
+<circle class="c-page-bg" cx="756" cy="36" r="12"/>
+<circle class="c-page-bg" cx="788" cy="36" r="12"/>
+<circle class="c-page-bg" cx="820" cy="36" r="12"/>
+<circle class="c-page-bg" cx="852" cy="36" r="12"/>
+<circle class="c-page-bg" cx="884" cy="36" r="12"/>
+</svg>
+<div class="name"><h1><span>Motorsport</span><br><span>Club</span></h1><p>For Motorsport Clubs and Racing Associations</p></div>
+</div>
+<script>
+// Real faces run wider or narrower than the estimate: shrink the name until each line fits its zone.
+(function () {
+  var h = document.querySelector('.name h1'), max = 440, min = 48;
+  var lines = h.querySelectorAll('span');
+  function fit() {
+    var s = parseFloat(getComputedStyle(h).fontSize);
+    for (var i = 0; i < lines.length; i++) while (s > min && lines[i].getBoundingClientRect().width > max) { s -= 2; h.style.fontSize = s + 'px'; }
+  }
+  fit();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>
+</body></html>

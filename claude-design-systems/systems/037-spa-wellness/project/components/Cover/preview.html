@@ -1,0 +1,59 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600&amp;family=Cormorant+Garamond:wght@300;400&amp;display=swap">
+<style>
+body{margin:0;background:var(--page-bg);color:var(--page-text);}
+.cover{position:relative;width:960px;height:288px;overflow:hidden;background:var(--page-bg);}
+svg{position:absolute;inset:0;}
+.c-earth-brown{fill:var(--earth-brown);stroke:var(--earth-brown);stroke-width:0;}
+.c-sage-light{fill:var(--sage-light);stroke:var(--sage-light);stroke-width:0;}
+.c-text-primary{fill:var(--text-primary);stroke:var(--text-primary);stroke-width:0;}
+.c-page-bg{fill:var(--page-bg);stroke:var(--page-bg);stroke-width:0;}
+.blk{rx:var(--radius-3);}
+.rule{stroke-width:1px;fill:none;}
+.name{position:absolute;left:40px;bottom:40px;max-width:440px;}
+.name h1 span{display:inline-block;white-space:nowrap;}
+.name h1{margin:0;font-family:var(--font-display);font-weight:300;font-size:98px;line-height:0.95;color:var(--page-text);letter-spacing:0;}
+.name p{margin:16px 0 0;font-family:var(--font-body);font-size:14px;line-height:1.5;color:var(--text-secondary);}
+</style></head>
+<body><div class="cover">
+<svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+<!--
+  blocks: earth-brown 6×19 steps, sage-light 4×17 steps, text-primary 3×19 steps
+  arrangement: strip of unequal bands bleeding off the top
+  pattern: discs — soft, large-radius shapes → discs and pills cut from the radius scale
+  scales: step space-sm (16px), gap 5px, radius radius-3 (3px)
+-->
+<rect class="c-earth-brown blk" x="864" y="-16" width="91" height="304"/>
+<rect class="c-sage-light blk" x="800" y="32" width="59" height="272"/>
+<rect class="c-text-primary blk" x="752" y="-16" width="43" height="304"/>
+<circle class="c-page-bg" cx="884" cy="20" r="12"/>
+<circle class="c-page-bg" cx="916" cy="20" r="12"/>
+<circle class="c-page-bg" cx="884" cy="52" r="12"/>
+<circle class="c-page-bg" cx="916" cy="52" r="12"/>
+<circle class="c-page-bg" cx="884" cy="84" r="12"/>
+<circle class="c-page-bg" cx="916" cy="84" r="12"/>
+<circle class="c-page-bg" cx="884" cy="116" r="12"/>
+<circle class="c-page-bg" cx="916" cy="116" r="12"/>
+<circle class="c-page-bg" cx="884" cy="148" r="12"/>
+<circle class="c-page-bg" cx="916" cy="148" r="12"/>
+<circle class="c-page-bg" cx="884" cy="180" r="12"/>
+<circle class="c-page-bg" cx="916" cy="180" r="12"/>
+</svg>
+<div class="name"><h1><span>Spa</span><br><span>Wellness</span></h1><p>Luxury Wellness Retreats</p></div>
+</div>
+<script>
+// Real faces run wider or narrower than the estimate: shrink the name until each line fits its zone.
+(function () {
+  var h = document.querySelector('.name h1'), max = 440, min = 48;
+  var lines = h.querySelectorAll('span');
+  function fit() {
+    var s = parseFloat(getComputedStyle(h).fontSize);
+    for (var i = 0; i < lines.length; i++) while (s > min && lines[i].getBoundingClientRect().width > max) { s -= 2; h.style.fontSize = s + 'px'; }
+  }
+  fit();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>
+</body></html>

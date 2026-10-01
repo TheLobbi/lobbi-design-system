@@ -1,0 +1,62 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&amp;family=Roboto:wght@300;400;500;700&amp;display=swap">
+<style>
+body{margin:0;background:var(--page-bg);color:var(--page-text);}
+.cover{position:relative;width:960px;height:288px;overflow:hidden;background:var(--page-bg);}
+svg{position:absolute;inset:0;}
+.c-victory-gold-dark{fill:var(--victory-gold-dark);stroke:var(--victory-gold-dark);stroke-width:0;}
+.c-championship-blue-light{fill:var(--championship-blue-light);stroke:var(--championship-blue-light);stroke-width:0;}
+.c-energy-red-dark{fill:var(--energy-red-dark);stroke:var(--energy-red-dark);stroke-width:0;}
+.c-championship-blue-dark{fill:var(--championship-blue-dark);stroke:var(--championship-blue-dark);stroke-width:0;}
+.c-page-bg{fill:var(--page-bg);stroke:var(--page-bg);stroke-width:0;}
+.blk{rx:var(--radius-4);}
+.rule{stroke-width:1px;fill:none;}
+.name{position:absolute;left:40px;bottom:40px;max-width:440px;}
+.name h1 span{display:inline-block;white-space:nowrap;}
+.name h1{margin:0;font-family:var(--font-display);font-weight:600;font-size:98px;line-height:0.95;color:var(--page-text);letter-spacing:0;}
+.name p{margin:16px 0 0;font-family:var(--font-body);font-size:14px;line-height:1.5;color:var(--gray-600);}
+</style></head>
+<body><div class="cover">
+<svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+<!--
+  blocks: victory-gold-dark 29×4 steps, championship-blue-light 26×4 steps, energy-red-dark 23×4 steps, championship-blue-dark 20×4 steps
+  arrangement: staggered stack bleeding off the right edge
+  pattern: discs — soft, large-radius shapes → discs and pills cut from the radius scale
+  scales: step space-16 (16px), gap 5px, radius radius-4 (4px)
+-->
+<rect class="c-victory-gold-dark blk" x="512" y="16" width="464" height="64"/>
+<rect class="c-championship-blue-light blk" x="560" y="51" width="416" height="64"/>
+<rect class="c-energy-red-dark blk" x="608" y="86" width="368" height="64"/>
+<rect class="c-championship-blue-dark blk" x="656" y="122" width="320" height="64"/>
+<circle class="c-page-bg" cx="532" cy="36" r="12"/>
+<circle class="c-page-bg" cx="564" cy="36" r="12"/>
+<circle class="c-page-bg" cx="596" cy="36" r="12"/>
+<circle class="c-page-bg" cx="628" cy="36" r="12"/>
+<circle class="c-page-bg" cx="660" cy="36" r="12"/>
+<circle class="c-page-bg" cx="692" cy="36" r="12"/>
+<circle class="c-page-bg" cx="724" cy="36" r="12"/>
+<circle class="c-page-bg" cx="756" cy="36" r="12"/>
+<circle class="c-page-bg" cx="788" cy="36" r="12"/>
+<circle class="c-page-bg" cx="820" cy="36" r="12"/>
+<circle class="c-page-bg" cx="852" cy="36" r="12"/>
+<circle class="c-page-bg" cx="884" cy="36" r="12"/>
+</svg>
+<div class="name"><h1><span>Sports</span><br><span>League</span></h1><p>Sports League 80% + Athletic Excellence 20%</p></div>
+</div>
+<script>
+// Real faces run wider or narrower than the estimate: shrink the name until each line fits its zone.
+(function () {
+  var h = document.querySelector('.name h1'), max = 440, min = 48;
+  var lines = h.querySelectorAll('span');
+  function fit() {
+    var s = parseFloat(getComputedStyle(h).fontSize);
+    for (var i = 0; i < lines.length; i++) while (s > min && lines[i].getBoundingClientRect().width > max) { s -= 2; h.style.fontSize = s + 'px'; }
+  }
+  fit();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>
+</body></html>

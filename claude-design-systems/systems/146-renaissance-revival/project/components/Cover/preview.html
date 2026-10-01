@@ -1,0 +1,53 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;600;700&amp;family=Spectral:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:var(--page-bg);color:var(--page-text);}
+.cover{position:relative;width:960px;height:288px;overflow:hidden;background:var(--page-bg);}
+svg{position:absolute;inset:0;}
+.c-terracotta-light{fill:var(--terracotta-light);stroke:var(--terracotta-light);stroke-width:0;}
+.c-forest-green{fill:var(--forest-green);stroke:var(--forest-green);stroke-width:0;}
+.c-terracotta-deep{fill:var(--terracotta-deep);stroke:var(--terracotta-deep);stroke-width:0;}
+.c-forest-sage{fill:var(--forest-sage);stroke:var(--forest-sage);stroke-width:0;}
+.c-page-bg{fill:var(--page-bg);stroke:var(--page-bg);stroke-width:0;}
+.blk{rx:var(--radius-6);}
+.rule{stroke-width:1px;fill:none;}
+.name{position:absolute;left:40px;bottom:40px;max-width:440px;}
+.name h1 span{display:inline-block;white-space:nowrap;}
+.name h1{margin:0;font-family:var(--font-display);font-weight:700;font-size:66px;line-height:0.95;color:var(--page-text);letter-spacing:0;}
+.name p{margin:16px 0 0;font-family:var(--font-body);font-size:14px;line-height:1.5;color:var(--page-text);}
+</style></head>
+<body><div class="cover">
+<svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+<!--
+  blocks: terracotta-light 18×4 steps, forest-green 15×4 steps, terracotta-deep 12×4 steps, forest-sage 9×4 steps
+  arrangement: staggered stack bleeding off the right edge
+  pattern: rules — formal (8/10) serif editorial voice → a few hairline rules crossing the blocks
+  scales: step space-25.888 (25.888px), gap 9px, radius radius-6 (6px)
+-->
+<rect class="c-terracotta-light blk" x="532" y="26" width="454" height="104"/>
+<rect class="c-forest-green blk" x="609" y="83" width="376" height="104"/>
+<rect class="c-terracotta-deep blk" x="687" y="140" width="299" height="104"/>
+<rect class="c-forest-sage blk" x="765" y="197" width="221" height="104"/>
+<line class="c-forest-green rule" x1="480" y1="51.776" x2="960" y2="51.776"/>
+<line class="c-forest-green rule" x1="480" y1="103.552" x2="960" y2="103.552"/>
+<line class="c-forest-green rule" x1="480" y1="155.328" x2="960" y2="155.328"/>
+<line class="c-forest-green rule" x1="480" y1="207.104" x2="960" y2="207.104"/>
+</svg>
+<div class="name"><h1><span>Renaissance</span><br><span>Revival</span></h1><p>Humanism, Proportion &amp; Artistic Mastery</p></div>
+</div>
+<script>
+// Real faces run wider or narrower than the estimate: shrink the name until each line fits its zone.
+(function () {
+  var h = document.querySelector('.name h1'), max = 440, min = 48;
+  var lines = h.querySelectorAll('span');
+  function fit() {
+    var s = parseFloat(getComputedStyle(h).fontSize);
+    for (var i = 0; i < lines.length; i++) while (s > min && lines[i].getBoundingClientRect().width > max) { s -= 2; h.style.fontSize = s + 'px'; }
+  }
+  fit();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>
+</body></html>

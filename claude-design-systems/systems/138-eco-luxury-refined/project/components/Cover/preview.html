@@ -1,0 +1,53 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Source+Sans+Pro:wght@300;400;600;700&amp;display=swap">
+<style>
+body{margin:0;background:var(--page-bg);color:var(--page-text);}
+.cover{position:relative;width:960px;height:288px;overflow:hidden;background:var(--page-bg);}
+svg{position:absolute;inset:0;}
+.c-gold-500{fill:var(--gold-500);stroke:var(--gold-500);stroke-width:0;}
+.c-terracotta-600{fill:var(--terracotta-600);stroke:var(--terracotta-600);stroke-width:0;}
+.c-forest-900{fill:var(--forest-900);stroke:var(--forest-900);stroke-width:0;}
+.c-ocean-600{fill:var(--ocean-600);stroke:var(--ocean-600);stroke-width:0;}
+.c-page-bg{fill:var(--page-bg);stroke:var(--page-bg);stroke-width:0;}
+.blk{rx:var(--radius-2);}
+.rule{stroke-width:1px;fill:none;}
+.name{position:absolute;left:40px;bottom:40px;max-width:440px;}
+.name h1 span{display:inline-block;white-space:nowrap;}
+.name h1{margin:0;font-family:var(--font-display);font-weight:600;font-size:73px;line-height:0.95;color:var(--page-text);letter-spacing:0;}
+.name p{margin:16px 0 0;font-family:var(--font-body);font-size:14px;line-height:1.5;color:var(--page-text);}
+</style></head>
+<body><div class="cover">
+<svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+<!--
+  blocks: gold-500 8×11 steps, terracotta-600 6×4 steps, forest-900 6×3 steps, ocean-600 6×4 steps
+  arrangement: one tall slab with satellites
+  pattern: rules — formal (8/10) serif editorial voice → a few hairline rules crossing the blocks
+  scales: step space-28 (28px), gap 9px, radius radius-2 (2px)
+-->
+<rect class="c-gold-500 blk" x="564" y="-28" width="224" height="316"/>
+<rect class="c-terracotta-600 blk" x="797" y="28" width="168" height="112"/>
+<rect class="c-forest-900 blk" x="797" y="149" width="163" height="84"/>
+<rect class="c-ocean-600 blk" x="797" y="242" width="168" height="112"/>
+<line class="c-terracotta-600 rule" x1="480" y1="56" x2="960" y2="56"/>
+<line class="c-terracotta-600 rule" x1="480" y1="112" x2="960" y2="112"/>
+<line class="c-terracotta-600 rule" x1="480" y1="168" x2="960" y2="168"/>
+<line class="c-terracotta-600 rule" x1="480" y1="224" x2="960" y2="224"/>
+</svg>
+<div class="name"><h1><span>Eco-Luxury</span><br><span>Refined</span></h1><p>Sustainable Aspiration &amp; Natural Refinement</p></div>
+</div>
+<script>
+// Real faces run wider or narrower than the estimate: shrink the name until each line fits its zone.
+(function () {
+  var h = document.querySelector('.name h1'), max = 440, min = 48;
+  var lines = h.querySelectorAll('span');
+  function fit() {
+    var s = parseFloat(getComputedStyle(h).fontSize);
+    for (var i = 0; i < lines.length; i++) while (s > min && lines[i].getBoundingClientRect().width > max) { s -= 2; h.style.fontSize = s + 'px'; }
+  }
+  fit();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>
+</body></html>

@@ -1,0 +1,62 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:var(--page-bg);color:var(--page-text);}
+.cover{position:relative;width:960px;height:288px;overflow:hidden;background:var(--page-bg);}
+svg{position:absolute;inset:0;}
+.c-color-muted-terracotta{fill:var(--color-muted-terracotta);stroke:var(--color-muted-terracotta);stroke-width:0;}
+.c-bento-trend-text-2{fill:var(--bento-trend-text-2);stroke:var(--bento-trend-text-2);stroke-width:0;}
+.c-color-charcoal{fill:var(--color-charcoal);stroke:var(--color-charcoal);stroke-width:0;}
+.c-color-stone-gray{fill:var(--color-stone-gray);stroke:var(--color-stone-gray);stroke-width:0;}
+.c-page-bg{fill:var(--page-bg);stroke:var(--page-bg);stroke-width:0;}
+.blk{rx:var(--radius-sm);}
+.rule{stroke-width:1px;fill:none;}
+.name{position:absolute;left:40px;top:136px;max-width:880px;}
+.name h1 span{display:inline-block;white-space:nowrap;}
+.name h1{margin:0;font-family:var(--font-display);font-weight:600;font-size:64px;line-height:0.92;color:var(--page-text);letter-spacing:0;}
+.name p{margin:16px 0 0;font-family:var(--font-body);font-size:14px;line-height:1.5;color:var(--page-text);}
+</style></head>
+<body><div class="cover">
+<svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+<!--
+  blocks: color-muted-terracotta 17×6 steps, bento-trend-text-2 10×6 steps, color-charcoal 13×6 steps, color-stone-gray 7×6 steps
+  arrangement: top band of unequal strips (name too wide for its zone)
+  pattern: discs — soft, large-radius shapes → discs and pills cut from the radius scale
+  scales: step space-md (20px), gap 7px, radius radius-sm (12px)
+-->
+<rect class="c-color-muted-terracotta blk" x="0" y="0" width="336" height="112"/>
+<rect class="c-bento-trend-text-2 blk" x="343" y="0" width="199" height="112"/>
+<rect class="c-color-charcoal blk" x="549" y="0" width="267" height="112"/>
+<rect class="c-color-stone-gray blk" x="823" y="0" width="130" height="112"/>
+<circle class="c-page-bg" cx="25" cy="25" r="15"/>
+<circle class="c-page-bg" cx="65" cy="25" r="15"/>
+<circle class="c-page-bg" cx="105" cy="25" r="15"/>
+<circle class="c-page-bg" cx="145" cy="25" r="15"/>
+<circle class="c-page-bg" cx="185" cy="25" r="15"/>
+<circle class="c-page-bg" cx="225" cy="25" r="15"/>
+<circle class="c-page-bg" cx="265" cy="25" r="15"/>
+<circle class="c-page-bg" cx="305" cy="25" r="15"/>
+<circle class="c-page-bg" cx="25" cy="65" r="15"/>
+<circle class="c-page-bg" cx="65" cy="65" r="15"/>
+<circle class="c-page-bg" cx="105" cy="65" r="15"/>
+<circle class="c-page-bg" cx="145" cy="65" r="15"/>
+</svg>
+<div class="name"><h1><span>Scandinavian Bento</span></h1><p>Scandinavian 75% + Bento Grid 25%</p></div>
+</div>
+<script>
+// Real faces run wider or narrower than the estimate: shrink the name until each line fits its zone.
+(function () {
+  var h = document.querySelector('.name h1'), max = 880, min = 32;
+  var lines = h.querySelectorAll('span');
+  function fit() {
+    var s = parseFloat(getComputedStyle(h).fontSize);
+    for (var i = 0; i < lines.length; i++) while (s > min && lines[i].getBoundingClientRect().width > max) { s -= 2; h.style.fontSize = s + 'px'; }
+  }
+  fit();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>
+</body></html>

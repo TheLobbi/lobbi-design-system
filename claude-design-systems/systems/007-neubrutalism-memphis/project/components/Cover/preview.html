@@ -1,0 +1,54 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&amp;family=Outfit:wght@800;900&amp;display=swap">
+<style>
+body{margin:0;background:var(--page-bg);color:var(--page-text);}
+.cover{position:relative;width:960px;height:288px;overflow:hidden;background:var(--page-bg);}
+svg{position:absolute;inset:0;}
+.c-color-magenta{fill:var(--color-magenta);stroke:var(--color-magenta);stroke-width:0;}
+.c-color-green{fill:var(--color-green);stroke:var(--color-green);stroke-width:0;}
+.c-color-blue{fill:var(--color-blue);stroke:var(--color-blue);stroke-width:0;}
+.c-color-black{fill:var(--color-black);stroke:var(--color-black);stroke-width:0;}
+.c-page-bg{fill:var(--page-bg);stroke:var(--page-bg);stroke-width:0;}
+.blk{rx:var(--radius-playful);}
+.rule{stroke-width:1px;fill:none;}
+.name{position:absolute;left:40px;top:136px;max-width:880px;}
+.name h1 span{display:inline-block;white-space:nowrap;}
+.name h1{margin:0;font-family:var(--font-display);font-weight:700;font-size:64px;line-height:0.92;color:var(--page-text);letter-spacing:0;}
+.name p{margin:16px 0 0;font-family:var(--font-body);font-size:14px;line-height:1.5;color:var(--page-text);}
+</style></head>
+<body><div class="cover">
+<svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+<!--
+  blocks: color-magenta 14×5 steps, color-green 8×5 steps, color-blue 11×5 steps, color-black 5×5 steps
+  arrangement: top band of unequal strips (name too wide for its zone)
+  pattern: stripes — loud, low-formality (4/10) voice → stripes at a spacing pitch
+  scales: step space-md (24px), gap 8px, radius radius-playful (24px), hairline border-width
+-->
+<rect class="c-color-magenta blk" x="0" y="0" width="335" height="112"/>
+<rect class="c-color-green blk" x="343" y="0" width="198" height="112"/>
+<rect class="c-color-blue blk" x="549" y="0" width="266" height="112"/>
+<rect class="c-color-black blk" x="823" y="0" width="129" height="112"/>
+<rect class="c-page-bg" x="12" y="12" width="311" height="12"/>
+<rect class="c-page-bg" x="12" y="36" width="311" height="12"/>
+<rect class="c-page-bg" x="12" y="60" width="311" height="12"/>
+<rect class="c-page-bg" x="12" y="84" width="311" height="12"/>
+</svg>
+<div class="name"><h1><span>Neubrutalism Memphis</span></h1><p>Neubrutalism 75% + Memphis 25%</p></div>
+</div>
+<script>
+// Real faces run wider or narrower than the estimate: shrink the name until each line fits its zone.
+(function () {
+  var h = document.querySelector('.name h1'), max = 880, min = 32;
+  var lines = h.querySelectorAll('span');
+  function fit() {
+    var s = parseFloat(getComputedStyle(h).fontSize);
+    for (var i = 0; i < lines.length; i++) while (s > min && lines[i].getBoundingClientRect().width > max) { s -= 2; h.style.fontSize = s + 'px'; }
+  }
+  fit();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>
+</body></html>

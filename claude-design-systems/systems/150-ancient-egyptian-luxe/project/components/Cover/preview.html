@@ -1,0 +1,52 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@400;600;700&amp;family=Noto+Serif:wght@400;600;700&amp;display=swap">
+<style>
+body{margin:0;background:var(--page-bg);color:var(--page-text);}
+.cover{position:relative;width:960px;height:288px;overflow:hidden;background:var(--page-bg);}
+svg{position:absolute;inset:0;}
+.c-color-lapis-dark{fill:var(--color-lapis-dark);stroke:var(--color-lapis-dark);stroke-width:0;}
+.c-color-gold-light{fill:var(--color-gold-light);stroke:var(--color-gold-light);stroke-width:0;}
+.c-color-gold-dark{fill:var(--color-gold-dark);stroke:var(--color-gold-dark);stroke-width:0;}
+.c-color-lapis-light{fill:var(--color-lapis-light);stroke:var(--color-lapis-light);stroke-width:0;}
+.c-page-bg{fill:var(--page-bg);stroke:var(--page-bg);stroke-width:0;}
+.blk{rx:var(--border-radius-sm);}
+.rule{stroke-width:1px;fill:none;}
+.name{position:absolute;left:40px;top:136px;max-width:880px;}
+.name h1 span{display:inline-block;white-space:nowrap;}
+.name h1{margin:0;font-family:var(--font-display);font-weight:700;font-size:64px;line-height:0.92;color:var(--page-text);letter-spacing:0;}
+.name p{margin:16px 0 0;font-family:var(--font-body);font-size:14px;line-height:1.5;color:var(--color-text-secondary);}
+</style></head>
+<body><div class="cover">
+<svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+<!--
+  blocks: color-lapis-dark 13×4 steps, color-gold-light 8×4 steps, color-gold-dark 10×4 steps, color-lapis-light 5×4 steps
+  arrangement: top band of unequal strips (name too wide for its zone)
+  pattern: rules — formal (8/10) serif editorial voice → a few hairline rules crossing the blocks
+  scales: step space-lg (25.888px), gap 9px, radius border-radius-sm (2px), hairline border-width-thin
+-->
+<rect class="c-color-lapis-dark blk" x="0" y="0" width="334" height="112"/>
+<rect class="c-color-gold-light blk" x="343" y="0" width="197" height="112"/>
+<rect class="c-color-gold-dark blk" x="549" y="0" width="265" height="112"/>
+<rect class="c-color-lapis-light blk" x="823" y="0" width="128" height="112"/>
+<line class="c-color-gold-light rule" x1="0" y1="37" x2="960" y2="37"/>
+<line class="c-color-gold-light rule" x1="0" y1="75" x2="960" y2="75"/>
+</svg>
+<div class="name"><h1><span>Ancient Egyptian Luxe</span></h1><p>Egyptian Design 50% + Art Deco Geometry 30% + Luxury Gold 20%</p></div>
+</div>
+<script>
+// Real faces run wider or narrower than the estimate: shrink the name until each line fits its zone.
+(function () {
+  var h = document.querySelector('.name h1'), max = 880, min = 32;
+  var lines = h.querySelectorAll('span');
+  function fit() {
+    var s = parseFloat(getComputedStyle(h).fontSize);
+    for (var i = 0; i < lines.length; i++) while (s > min && lines[i].getBoundingClientRect().width > max) { s -= 2; h.style.fontSize = s + 'px'; }
+  }
+  fit();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>
+</body></html>

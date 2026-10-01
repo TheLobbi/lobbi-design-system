@@ -1,0 +1,67 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:var(--page-bg);color:var(--page-text);}
+.cover{position:relative;width:960px;height:288px;overflow:hidden;background:var(--page-bg);}
+svg{position:absolute;inset:0;}
+.c-accent{fill:var(--accent);stroke:var(--accent);stroke-width:0;}
+.c-jet-black{fill:var(--jet-black);stroke:var(--jet-black);stroke-width:0;}
+.c-concrete-gray{fill:var(--concrete-gray);stroke:var(--concrete-gray);stroke-width:0;}
+.c-steel-dark{fill:var(--steel-dark);stroke:var(--steel-dark);stroke-width:0;}
+.c-page-bg{fill:var(--page-bg);stroke:var(--page-bg);stroke-width:0;}
+.blk{rx:0px;}
+.rule{stroke-width:1px;fill:none;}
+.name{position:absolute;left:40px;bottom:40px;max-width:440px;}
+.name h1 span{display:inline-block;white-space:nowrap;}
+.name h1{margin:0;font-family:var(--font-display);font-weight:300;font-size:78px;line-height:0.95;color:var(--page-text);letter-spacing:0;}
+.name p{margin:16px 0 0;font-family:var(--font-body);font-size:14px;line-height:1.5;color:var(--page-text);}
+</style></head>
+<body><div class="cover">
+<svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+<!--
+  blocks: accent 6×13 steps, jet-black 4×11 steps, concrete-gray 3×13 steps, steel-dark 5×11 steps
+  arrangement: strip of unequal bands bleeding off the top
+  pattern: tiles — geometric, modular dashboard layouts → tiles cut by the radius tokens
+  scales: step 24px (no spacing token), gap 8px, radius none
+-->
+<rect class="c-accent blk" x="816" y="-24" width="136" height="312"/>
+<rect class="c-jet-black blk" x="720" y="48" width="88" height="264"/>
+<rect class="c-concrete-gray blk" x="648" y="-24" width="64" height="312"/>
+<rect class="c-steel-dark blk" x="528" y="48" width="112" height="264"/>
+<rect class="c-page-bg tile" x="828" y="12" width="30" height="30"/>
+<rect class="c-page-bg tile" x="866" y="12" width="30" height="30"/>
+<rect class="c-page-bg tile" x="904" y="12" width="30" height="30"/>
+<rect class="c-page-bg tile" x="828" y="50" width="68" height="30"/>
+<rect class="c-page-bg tile" x="904" y="50" width="30" height="30"/>
+<rect class="c-page-bg tile" x="828" y="88" width="30" height="30"/>
+<rect class="c-page-bg tile" x="866" y="88" width="30" height="30"/>
+<rect class="c-page-bg tile" x="904" y="88" width="30" height="30"/>
+<rect class="c-page-bg tile" x="828" y="126" width="68" height="30"/>
+<rect class="c-page-bg tile" x="904" y="126" width="30" height="30"/>
+<rect class="c-page-bg tile" x="828" y="164" width="30" height="30"/>
+<rect class="c-page-bg tile" x="866" y="164" width="30" height="30"/>
+<rect class="c-page-bg tile" x="904" y="164" width="30" height="30"/>
+<rect class="c-page-bg tile" x="828" y="202" width="68" height="30"/>
+<rect class="c-page-bg tile" x="904" y="202" width="30" height="30"/>
+<rect class="c-page-bg tile" x="828" y="240" width="30" height="30"/>
+<rect class="c-page-bg tile" x="866" y="240" width="30" height="30"/>
+<rect class="c-page-bg tile" x="904" y="240" width="30" height="30"/>
+</svg>
+<div class="name"><h1><span>Architect</span><br><span>Portfolio</span></h1><p>Architect's Portfolio 75% + Swiss Grid 25%</p></div>
+</div>
+<script>
+// Real faces run wider or narrower than the estimate: shrink the name until each line fits its zone.
+(function () {
+  var h = document.querySelector('.name h1'), max = 440, min = 48;
+  var lines = h.querySelectorAll('span');
+  function fit() {
+    var s = parseFloat(getComputedStyle(h).fontSize);
+    for (var i = 0; i < lines.length; i++) while (s > min && lines[i].getBoundingClientRect().width > max) { s -= 2; h.style.fontSize = s + 'px'; }
+  }
+  fit();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>
+</body></html>

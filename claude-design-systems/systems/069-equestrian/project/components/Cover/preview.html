@@ -1,0 +1,54 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&amp;family=Crimson+Pro:wght@300;400;500;600&amp;family=Lato:wght@300;400;700&amp;display=swap">
+<style>
+body{margin:0;background:var(--page-bg);color:var(--page-text);}
+.cover{position:relative;width:960px;height:288px;overflow:hidden;background:var(--page-bg);}
+svg{position:absolute;inset:0;}
+.c-color-saddle-brown{fill:var(--color-saddle-brown);stroke:var(--color-saddle-brown);stroke-width:0;}
+.c-color-gold{fill:var(--color-gold);stroke:var(--color-gold);stroke-width:0;}
+.c-color-racing-green-dark{fill:var(--color-racing-green-dark);stroke:var(--color-racing-green-dark);stroke-width:0;}
+.c-color-vintage-tan{fill:var(--color-vintage-tan);stroke:var(--color-vintage-tan);stroke-width:0;}
+.c-page-bg{fill:var(--page-bg);stroke:var(--page-bg);stroke-width:0;}
+.blk{rx:var(--radius-sm);}
+.rule{stroke-width:1px;fill:none;}
+.name{position:absolute;left:40px;bottom:40px;max-width:440px;}
+.name h1 span{display:inline-block;white-space:nowrap;}
+.name h1{margin:0;font-family:var(--font-display);font-weight:700;font-size:73px;line-height:0.92;color:var(--page-text);letter-spacing:0;}
+.name p{margin:16px 0 0;font-family:var(--font-body);font-size:14px;line-height:1.5;color:var(--page-text);}
+</style></head>
+<body><div class="cover">
+<svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+<!--
+  blocks: color-saddle-brown 8×13 steps, color-gold 9×4 steps, color-racing-green-dark 9×3 steps, color-vintage-tan 9×4 steps
+  arrangement: one tall slab with satellites
+  pattern: rules — formal (9/10) serif editorial voice → a few hairline rules crossing the blocks
+  scales: step space-md (24px), gap 8px, radius radius-sm (4px)
+-->
+<rect class="c-color-saddle-brown blk" x="552" y="-24" width="192" height="312"/>
+<rect class="c-color-gold blk" x="752" y="24" width="208" height="96"/>
+<rect class="c-color-racing-green-dark blk" x="752" y="128" width="208" height="72"/>
+<rect class="c-color-vintage-tan blk" x="752" y="208" width="208" height="96"/>
+<line class="c-color-gold rule" x1="480" y1="48" x2="960" y2="48"/>
+<line class="c-color-gold rule" x1="480" y1="96" x2="960" y2="96"/>
+<line class="c-color-gold rule" x1="480" y1="144" x2="960" y2="144"/>
+<line class="c-color-gold rule" x1="480" y1="192" x2="960" y2="192"/>
+</svg>
+<div class="name"><h1><span>Equestrian</span></h1><p>Elite Equestrian Heritage</p></div>
+</div>
+<script>
+// Real faces run wider or narrower than the estimate: shrink the name until each line fits its zone.
+(function () {
+  var h = document.querySelector('.name h1'), max = 440, min = 48;
+  var lines = h.querySelectorAll('span');
+  function fit() {
+    var s = parseFloat(getComputedStyle(h).fontSize);
+    for (var i = 0; i < lines.length; i++) while (s > min && lines[i].getBoundingClientRect().width > max) { s -= 2; h.style.fontSize = s + 'px'; }
+  }
+  fit();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>
+</body></html>

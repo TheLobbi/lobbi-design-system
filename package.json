@@ -6,7 +6,11 @@
     "serve": "npx serve .",
     "generate-thumbnails": "node scripts/generate-thumbnails.js",
     "generate-placeholder": "node scripts/generate-thumbnails.js --placeholder-only",
-    "add-back-nav": "node scripts/add-back-navigation.js"
+    "add-back-nav": "node scripts/add-back-navigation.js",
+    "ds:extract": "node claude-design-systems/scripts/extract.mjs",
+    "ds:build": "node claude-design-systems/scripts/build.mjs",
+    "ds:validate": "node claude-design-systems/scripts/validate.mjs",
+    "ds:covers": "node claude-design-systems/scripts/render-check.mjs"
   },
   "keywords": [
     "design-system",
@@ -19,6 +23,7 @@
   "private": true,
   "devDependencies": {
     "puppeteer": "^21.0.0",
-    "sharp": "^0.33.0"
+    "sharp": "^0.33.0",
+    "playwright": "^1.56.1"
   }
 }

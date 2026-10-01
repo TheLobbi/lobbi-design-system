@@ -1,0 +1,25 @@
+{
+  "v": 3,
+  "layout": "files",
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-10-01T03:29:40Z"
+  },
+  "title": "Wine Society",
+  "namespace": "WineSociety",
+  "libraries": [],
+  "sections": {},
+  "groups": [],
+  "assetGroups": {},
+  "blobs": {},
+  "docs": {
+    "readme": "project/README.md",
+    "sections": []
+  },
+  "lastChange": {
+    "by": "Markus Ahling",
+    "at": "2026-10-01T03:38:29Z",
+    "via": "GitHub · thelobbi/lobbi-design-system@3c82971",
+    "note": "Built from style-112-wine-society.html"
+  }
+}

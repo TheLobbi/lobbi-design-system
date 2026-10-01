@@ -1,0 +1,58 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:var(--page-bg);color:var(--page-text);}
+.cover{position:relative;width:960px;height:288px;overflow:hidden;background:var(--page-bg);}
+svg{position:absolute;inset:0;}
+.c-color-sky-blue{fill:var(--color-sky-blue);stroke:var(--color-sky-blue);stroke-width:0;}
+.c-color-light-blue{fill:var(--color-light-blue);stroke:var(--color-light-blue);stroke-width:0;}
+.c-color-mid-blue{fill:var(--color-mid-blue);stroke:var(--color-mid-blue);stroke-width:0;}
+.c-color-gray{fill:var(--color-gray);stroke:var(--color-gray);stroke-width:0;}
+.c-page-bg{fill:var(--page-bg);stroke:var(--page-bg);stroke-width:0;}
+.blk{rx:var(--border-radius);}
+.rule{stroke-width:1px;fill:none;}
+.name{position:absolute;left:40px;bottom:40px;max-width:440px;}
+.name h1 span{display:inline-block;white-space:nowrap;}
+.name h1{margin:0;font-family:var(--font-display);font-weight:700;font-size:83px;line-height:0.95;color:var(--page-text);letter-spacing:0;}
+.name p{margin:16px 0 0;font-family:var(--font-body);font-size:14px;line-height:1.5;color:var(--color-gray);}
+</style></head>
+<body><div class="cover">
+<svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+<!--
+  blocks: color-sky-blue 19×4 steps, color-light-blue 16×4 steps, color-mid-blue 13×4 steps, color-gray 10×4 steps
+  arrangement: staggered stack bleeding off the right edge
+  pattern: discs — soft, large-radius shapes → discs and pills cut from the radius scale
+  scales: step space-lg (24px), gap 8px, radius border-radius (1rem)
+-->
+<rect class="c-color-sky-blue blk" x="528" y="24" width="456" height="96"/>
+<rect class="c-color-light-blue blk" x="600" y="77" width="384" height="96"/>
+<rect class="c-color-mid-blue blk" x="672" y="130" width="312" height="96"/>
+<rect class="c-color-gray blk" x="744" y="182" width="240" height="96"/>
+<circle class="c-page-bg" cx="558" cy="54" r="18"/>
+<circle class="c-page-bg" cx="606" cy="54" r="18"/>
+<circle class="c-page-bg" cx="654" cy="54" r="18"/>
+<circle class="c-page-bg" cx="702" cy="54" r="18"/>
+<circle class="c-page-bg" cx="750" cy="54" r="18"/>
+<circle class="c-page-bg" cx="798" cy="54" r="18"/>
+<circle class="c-page-bg" cx="846" cy="54" r="18"/>
+<circle class="c-page-bg" cx="894" cy="54" r="18"/>
+</svg>
+<div class="name"><h1><span>Parallax</span><br><span>Depth</span></h1><p>Parallax Effect 55% + 3D Layers 25% + Immersive Scroll 20%</p></div>
+</div>
+<script>
+// Real faces run wider or narrower than the estimate: shrink the name until each line fits its zone.
+(function () {
+  var h = document.querySelector('.name h1'), max = 440, min = 48;
+  var lines = h.querySelectorAll('span');
+  function fit() {
+    var s = parseFloat(getComputedStyle(h).fontSize);
+    for (var i = 0; i < lines.length; i++) while (s > min && lines[i].getBoundingClientRect().width > max) { s -= 2; h.style.fontSize = s + 'px'; }
+  }
+  fit();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>
+</body></html>
