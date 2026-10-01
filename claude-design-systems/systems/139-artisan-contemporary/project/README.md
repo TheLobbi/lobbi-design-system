@@ -56,7 +56,7 @@ Timing values: `--transition-base` 0.2s ease, `--transition-slow` 0.3s ease.
 - `page-text` on `page-bg` measures 5.0:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
 - Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `color-primary` 3.6:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
-- These fall under 3:1 on `page-bg`: `color-primary-light` 2.5:1, `social-icon-bg` 1.1:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+- These fall under 3:1 on `page-bg`: `bg-primary` 1.0:1, `bg-secondary` 1.1:1, `color-primary-light` 2.5:1, `social-icon-bg` 1.1:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Further guidance
 
@@ -224,8 +224,8 @@ Timing values: `--transition-base` 0.2s ease, `--transition-slow` 0.3s ease.
 - === ACCESSIBILITY COMPLIANCE (WCAG 2.1 AA) ===
 
 - Color Contrast:
-- Primary on white: ~~4.8:1~~ (AA Large ✓) — **measured 1.1–5.3:1**
-- Secondary on white: ~~11.2:1~~ (AAA ✓) — **measured 1.1–13.0:1**
+- Primary on white: ~~4.8:1~~ (AA Large ✓) — **measured 1.1–5.3:1** (under 4.5:1, so not for body text: `bg-primary`, `color-primary`, `color-primary-light`)
+- Secondary on white: ~~11.2:1~~ (AAA ✓) — **measured 1.1–13.0:1** (under 4.5:1, so not for body text: `bg-secondary`)
 - Charcoal on white: ~~13.5:1~~ (AAA ✓) — **measured 10.9:1**
 - All text meets minimum 4.5:1
 

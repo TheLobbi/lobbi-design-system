@@ -259,10 +259,15 @@ function buildTokens(raw, meta, doc) {
     const band = hueBand(t._rgb);
     if (!HUE_OK[word].includes(band)) t.usage += ` Named “${word}” in the source, but the value is ${band}; kept exact.`;
   }
+  // Colours the design notes quote as text ("Pink on white: 4.7:1") count as text colours too.
+  const claimedText = doc.lines.filter((l) => /\d(\.\d+)?\s*:\s*1/.test(l))
+    .map((l) => (l.replace(/^[-•✓\s]+/, '').match(/^(?:[^:(]*?:\s*)?([A-Za-z][\w-]*(?: [A-Za-z][\w-]*)?)\s+(?:text\s+)?on\s+/i) || [])[1])
+    .filter(Boolean).map(slug).filter((w) => w && !/^(white|black|text|body)$/.test(w));
   // Contrast notes for text colours.
   for (const t of colorTokens) {
     if (!t._rgb || t._ground || t._ink || t._surface) continue;
-    const isText = /text|ink|fg|foreground|muted|link|heading|copy/.test(t.name) || (raw.refs[t._var]?.text?.length) || (raw.hexRefs[solidHex(t._rgb)]?.text?.length);
+    const isText = /text|ink|fg|foreground|muted|link|heading|copy/.test(t.name) || (raw.refs[t._var]?.text?.length) || (raw.hexRefs[solidHex(t._rgb)]?.text?.length)
+      || claimedText.some((w) => ('-' + t.name + '-').includes('-' + w + '-'));
     if (!isText) continue;
     const cr = contrast(over(t._rgb, pageBg), pageBg);
     t._cr = cr; t._lowText = cr < 4.5;
@@ -499,14 +504,14 @@ function buildReadme(raw, meta, doc, T) {
 // matching pair supports gets the measured figure in bold beside it.
 function checkClaims(md, T) {
   const toks = T.colorTokens.filter((t) => t._rgb);
-  const named = { white: [{ r: 255, g: 255, b: 255, a: 1 }], black: [{ r: 0, g: 0, b: 0, a: 1 }] };
+  const named = { white: [{ c: { r: 255, g: 255, b: 255, a: 1 } }], black: [{ c: { r: 0, g: 0, b: 0, a: 1 } }] };
   const resolve = (phrase) => {
     const p = phrase.trim().replace(/^(the|a)\s+/i, '');
     const hx = p.match(/#[0-9a-f]{3,6}\b/i);
-    if (hx) return [parseRgb(hx[0].toLowerCase())];
+    if (hx) return [{ c: parseRgb(hx[0].toLowerCase()) }];
     const sl = slug(p);
     if (!sl) return null;
-    const hits = toks.filter((t) => t.name === sl || t.name.endsWith('-' + sl) || ('-' + t.name + '-').includes('-' + sl + '-')).map((t) => t._rgb);
+    const hits = toks.filter((t) => t.name === sl || t.name.endsWith('-' + sl) || ('-' + t.name + '-').includes('-' + sl + '-')).map((t) => ({ c: t._rgb, name: t.name }));
     return hits.length ? hits : named[sl] || null;
   };
   const fmt = (xs) => { const lo = Math.min(...xs), hi = Math.max(...xs); return lo.toFixed(1) === hi.toFixed(1) ? `${lo.toFixed(1)}:1` : `${lo.toFixed(1)}–${hi.toFixed(1)}:1`; };
@@ -524,14 +529,20 @@ function checkClaims(md, T) {
       || line.match(/\((#[0-9a-f]{3,6})\s+on\s+(#[0-9a-f]{3,6})\)/i);
     if (on) {
       const fg = resolve(on[1]), bg = resolve(on[2]);
-      if (fg && bg) pairs = fg.flatMap((f) => bg.map((b) => contrast(over(f, b), b)));
+      if (fg && bg) pairs = fg.flatMap((f) => bg.map((b) => ({ cr: contrast(over(f.c, b.c), b.c), name: f.name })));
     } else {
       const hx = [...line.matchAll(/#[0-9a-f]{6}\b|#[0-9a-f]{3}\b/gi)];
-      if (hx.length === 1) { const f = parseRgb(hx[0][0].toLowerCase()); pairs = [contrast(over(f, T.pageBg), T.pageBg)]; }
+      if (hx.length === 1) { const f = parseRgb(hx[0][0].toLowerCase()); pairs = [{ cr: contrast(over(f, T.pageBg), T.pageBg) }]; }
     }
-    if (!pairs || pairs.some((x) => Math.abs(x - claimed) <= 0.35)) return line;
+    if (!pairs) return line;
+    const crs = pairs.map((x) => x.cr);
+    // A claim of body-text contrast must hold for every shade it names, not just the closest one.
+    const short = claimed >= 4.5 ? pairs.filter((x) => x.cr < 4.5) : [];
+    if (crs.some((x) => Math.abs(x - claimed) <= 0.35) && !short.length) return line;
+    const shortNames = [...new Set(short.map((x) => x.name).filter(Boolean))];
+    const note = Math.max(...crs) < 4.5 ? ' (not for body text)' : shortNames.length ? ` (under 4.5:1, so not for body text: ${shortNames.map(code).join(', ')})` : '';
     // Strike the claim so the designer's note reads as superseded by the measurement.
-    return `${line.replace(r[0], `~~${r[0]}~~`)} — **measured ${fmt(pairs)}**${Math.max(...pairs) < 4.5 ? ' (not for body text)' : ''}`;
+    return `${line.replace(r[0], `~~${r[0]}~~`)} — **measured ${fmt(crs)}**${note}`;
   }).join('\n');
 }
 function pushLines(L, sec) {

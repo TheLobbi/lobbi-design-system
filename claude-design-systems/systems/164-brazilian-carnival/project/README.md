@@ -90,14 +90,14 @@ Faces are hosted on Google Fonts (Righteous, Quicksand); load them with:
 
 - `page-text` on `page-bg` measures 17.4:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
-- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `pink-500` 3.5:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
-- These fall under 3:1 on `page-bg`: `gold-400` 1.6:1, `white-pure` 1.0:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `green-600` 3.7:1, `purple-500` 3.9:1, `pink-500` 3.5:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `green-500` 2.5:1, `gold-400` 1.6:1, `white-pure` 1.0:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA minimum contrast ratios
-- Green on white: ~~4.6:1~~ contrast ratio — **measured 2.5–5.5:1**
-- Purple on cream: ~~7.2:1~~ contrast ratio — **measured 3.8–6.7:1**
+- Green on white: ~~4.6:1~~ contrast ratio — **measured 2.5–5.5:1** (under 4.5:1, so not for body text: `green-500`, `green-600`)
+- Purple on cream: ~~7.2:1~~ contrast ratio — **measured 3.8–6.7:1** (under 4.5:1, so not for body text: `purple-500`)
 - Orange text avoided on white (use as backgrounds/accents)
 - Pink paired with dark text for readability
 - High-contrast alternatives provided

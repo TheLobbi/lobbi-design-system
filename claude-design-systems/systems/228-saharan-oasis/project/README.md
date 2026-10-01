@@ -76,7 +76,7 @@ Faces are hosted on Google Fonts (El Messiri, Rubik); load them with:
 - White text on desert gold: 4.8:1 (AA)
 - Text on oasis teal: ~~6.2:1~~ (AA+) — **measured 2.8:1** (not for body text)
 - Navy text on sand: 9.7:1 (AAA)
-- Gold on navy: 7.3:1 (AA+)
+- Gold on navy: ~~7.3:1~~ (AA+) — **measured 3.0–7.6:1** (under 4.5:1, so not for body text: `gold-dark`)
 
 ## States and motion
 
@@ -102,7 +102,7 @@ Timing values: `--transition-fast` 200ms ease-in-out, `--transition-base` 300ms 
 - `page-text` on `page-bg` measures 9.7:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
 - Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `oasis-teal` 3.5:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
-- These fall under 3:1 on `page-bg`: `desert-gold` 2.8:1, `golden-sand` 1.0:1, `sand-light` 1.0:1, `sand-dark` 2.4:1, `pure-white` 1.1:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+- These fall under 3:1 on `page-bg`: `desert-gold` 2.8:1, `gold-light` 1.8:1, `golden-sand` 1.0:1, `sand-light` 1.0:1, `sand-dark` 2.4:1, `pure-white` 1.1:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
@@ -133,7 +133,7 @@ The reference page composes these patterns from the tokens above:
 - White text on desert gold: 4.8:1 (AA)
 - Text on oasis teal: ~~6.2:1~~ (AA+) — **measured 2.8:1** (not for body text)
 - Navy text on sand: 9.7:1 (AAA)
-- Gold on navy: 7.3:1 (AA+)
+- Gold on navy: ~~7.3:1~~ (AA+) — **measured 3.0–7.6:1** (under 4.5:1, so not for body text: `gold-dark`)
 
 ## Further guidance
 
