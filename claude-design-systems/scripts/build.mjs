@@ -17,9 +17,13 @@ const SYSTEMS = path.join(ROOT, 'systems');
 
 const REPO_SLUG = 'thelobbi/lobbi-design-system';
 const AUTHOR = process.env.DS_AUTHOR || 'Markus Ahling';
-const NOW = new Date().toISOString().replace(/\.\d+Z$/, 'Z');
+let NOW = new Date().toISOString().replace(/\.\d+Z$/, 'Z');
 let SHA = 'main';
-try { SHA = execSync('git rev-parse --short HEAD', { cwd: REPO }).toString().trim(); } catch {}
+// Stamp builds with the source commit's time, not the clock, so a rebuild only changes what changed.
+try {
+  SHA = execSync('git rev-parse --short HEAD', { cwd: REPO }).toString().trim();
+  NOW = new Date(execSync('git log -1 --format=%cI', { cwd: REPO }).toString().trim()).toISOString().replace(/\.\d+Z$/, 'Z');
+} catch {}
 
 // ── gallery metadata ────────────────────────────────────────────────────────
 const indexHtml = fs.readFileSync(path.join(REPO, 'index.html'), 'utf8');
@@ -523,7 +527,8 @@ function checkClaims(md, T) {
       if (hx.length === 1) { const f = parseRgb(hx[0][0].toLowerCase()); pairs = [contrast(over(f, T.pageBg), T.pageBg)]; }
     }
     if (!pairs || pairs.some((x) => Math.abs(x - claimed) <= 0.35)) return line;
-    return `${line} — **measured ${fmt(pairs)}**${Math.max(...pairs) < 4.5 ? ' (not for body text)' : ''}`;
+    // Strike the claim so the designer's note reads as superseded by the measurement.
+    return `${line.replace(r[0], `~~${r[0]}~~`)} — **measured ${fmt(pairs)}**${Math.max(...pairs) < 4.5 ? ' (not for body text)' : ''}`;
   }).join('\n');
 }
 function pushLines(L, sec) {

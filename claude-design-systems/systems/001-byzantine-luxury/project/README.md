@@ -88,8 +88,8 @@ Faces are hosted on Google Fonts (Playfair Display, Inter); load them with:
 From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA minimum contrast ratios
-- Gold on burgundy: 7.2:1 contrast ratio — **measured 1.8–6.5:1**
-- Paper on stone: 12.4:1 contrast ratio — **measured 16.5:1**
+- Gold on burgundy: ~~7.2:1~~ contrast ratio — **measured 1.8–6.5:1**
+- Paper on stone: ~~12.4:1~~ contrast ratio — **measured 16.5:1**
 - Focus visible states on all interactive elements
 - Semantic HTML structure with proper heading hierarchy
 

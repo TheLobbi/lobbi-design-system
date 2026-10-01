@@ -80,9 +80,9 @@ Timing values: `--transition-base` 400ms cubic-bezier(0.4, 0, 0.2, 1), `--transi
 From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - Leather on Cream: 11.2:1 (AAA) - Excellent readability
-- Bronze on Cream: 10.5:1 (AAA) - Strong hierarchy — **measured 11.8:1**
-- Brass on Leather: 4.8:1 (AA) - Accent emphasis — **measured 4.1:1** (not for body text)
-- Copper on Cream: 5.2:1 (AA Large) - Secondary text — **measured 3.1:1** (not for body text)
+- Bronze on Cream: ~~10.5:1~~ (AAA) - Strong hierarchy — **measured 11.8:1**
+- Brass on Leather: ~~4.8:1~~ (AA) - Accent emphasis — **measured 4.1:1** (not for body text)
+- Copper on Cream: ~~5.2:1~~ (AA Large) - Secondary text — **measured 3.1:1** (not for body text)
 
 ## Component inventory
 

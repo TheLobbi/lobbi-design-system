@@ -79,9 +79,9 @@ Timing values: `--transition-base` 350ms cubic-bezier(0.4, 0, 0.2, 1), `--transi
 
 From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
-- Charcoal on Cream: 10.8:1 (AAA) - Primary text — **measured 8.9:1**
-- Teal on Cream: 4.9:1 (AA Large) - Headings — **measured 3.7:1** (not for body text)
-- Mustard on Charcoal: 5.2:1 (AA Large) - Accents — **measured 4.6:1**
+- Charcoal on Cream: ~~10.8:1~~ (AAA) - Primary text — **measured 8.9:1**
+- Teal on Cream: ~~4.9:1~~ (AA Large) - Headings — **measured 3.7:1** (not for body text)
+- Mustard on Charcoal: ~~5.2:1~~ (AA Large) - Accents — **measured 4.6:1**
 - Wood on Cream: 4.6:1 (AA Large) - Secondary elements
 
 ## Component inventory

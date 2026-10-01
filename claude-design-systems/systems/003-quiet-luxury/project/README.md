@@ -81,7 +81,7 @@ From the style's design notes (ratios checked against the tokens; a **bold** mea
 
 - WCAG 2.1 AA contrast ratios maintained
 - Navy (#1a365d) on cream (#fdfbf7): 8.2:1
-- Charcoal (#2d3436) on cream: 10.1:1 — **measured 12.3:1**
+- Charcoal (#2d3436) on cream: ~~10.1:1~~ — **measured 12.3:1**
 - Focus states with subtle underlines
 - Semantic structure with ARIA labels
 

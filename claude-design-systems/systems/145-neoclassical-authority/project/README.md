@@ -90,7 +90,7 @@ From the style's design notes (ratios checked against the tokens; a **bold** mea
 - WCAG 2.1 AA minimum contrast ratios
 - Slate-deep on marble-white: 14.2:1 contrast ratio
 - Gold-accent on slate-blue: 4.8:1 contrast ratio
-- Senate-blue on marble: 8.1:1 contrast ratio — **measured 4.6–4.9:1**
+- Senate-blue on marble: ~~8.1:1~~ contrast ratio — **measured 4.6–4.9:1**
 - Focus visible states with 2px gold borders
 - Semantic HTML with proper ARIA landmarks
 - Skip-to-content navigation for screen readers

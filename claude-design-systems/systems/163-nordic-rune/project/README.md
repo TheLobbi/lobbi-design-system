@@ -94,9 +94,9 @@ Faces are hosted on Google Fonts (Cinzel, IBM Plex Sans); load them with:
 From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA minimum contrast ratios
-- Slate on stone: 12.5:1 contrast ratio (exceeds AAA) — **measured 6.1–16.3:1**
+- Slate on stone: ~~12.5:1~~ contrast ratio (exceeds AAA) — **measured 6.1–16.3:1**
 - Ice-blue on charcoal: 8.2:1 contrast ratio
-- Gold on slate: 6.9:1 contrast ratio — **measured 2.7–7.6:1**
+- Gold on slate: ~~6.9:1~~ contrast ratio — **measured 2.7–7.6:1**
 - Focus indicators with 3px ice-blue outline
 - Semantic HTML with proper heading hierarchy
 - ARIA landmarks for navigation

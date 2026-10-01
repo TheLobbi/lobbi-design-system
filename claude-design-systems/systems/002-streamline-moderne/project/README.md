@@ -79,7 +79,7 @@ Faces are hosted on Google Fonts (DM Sans, Space Grotesk); load them with:
 From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA contrast ratios maintained
-- Teal accent (#14b8a6) on dark backgrounds: 5.1:1 — **measured 2.2:1** (not for body text)
+- Teal accent (#14b8a6) on dark backgrounds: ~~5.1:1~~ — **measured 2.2:1** (not for body text)
 - Focus states with visible indicators
 - Semantic HTML structure with ARIA labels
 

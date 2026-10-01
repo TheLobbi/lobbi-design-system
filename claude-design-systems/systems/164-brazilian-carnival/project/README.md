@@ -95,8 +95,8 @@ Faces are hosted on Google Fonts (Righteous, Quicksand); load them with:
 From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA minimum contrast ratios
-- Green on white: 4.6:1 contrast ratio — **measured 2.5–5.5:1**
-- Purple on cream: 7.2:1 contrast ratio — **measured 3.8–6.7:1**
+- Green on white: ~~4.6:1~~ contrast ratio — **measured 2.5–5.5:1**
+- Purple on cream: ~~7.2:1~~ contrast ratio — **measured 3.8–6.7:1**
 - Orange text avoided on white (use as backgrounds/accents)
 - Pink paired with dark text for readability
 - High-contrast alternatives provided

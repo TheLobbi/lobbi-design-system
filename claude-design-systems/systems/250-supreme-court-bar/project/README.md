@@ -91,8 +91,8 @@ Faces are hosted on Google Fonts (Lora, Source Serif Pro, Inter); load them with
 From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AAA compliance (highest standard for legal systems)
-- Marble white on justice black: 18.5:1 contrast ratio — **measured 16.0:1**
-- Seal gold on stone: 8.4:1 contrast ratio — **measured 5.2:1**
+- Marble white on justice black: ~~18.5:1~~ contrast ratio — **measured 16.0:1**
+- Seal gold on stone: ~~8.4:1~~ contrast ratio — **measured 5.2:1**
 - Focus indicators: 3px visible borders on all interactive elements
 - Semantic HTML with ARIA labels for screen readers
 - Keyboard navigation: Full tab order for legal professionals

@@ -77,10 +77,10 @@ Timing values: `--transition-base` 300ms cubic-bezier(0.4, 0, 0.2, 1), `--transi
 
 From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
-- Black on White: 19.5:1 (AAA) - Maximum readability — **measured 19.0:1**
-- White on Black: 19.5:1 (AAA) - Dramatic reverse — **measured 19.0:1**
-- Gold on Black: 9.8:1 (AA Large) - Accent hierarchy — **measured 9.4:1**
-- Red on Cream: 7.2:1 (AA) - Warm secondary — **measured 8.2:1**
+- Black on White: ~~19.5:1~~ (AAA) - Maximum readability — **measured 19.0:1**
+- White on Black: ~~19.5:1~~ (AAA) - Dramatic reverse — **measured 19.0:1**
+- Gold on Black: ~~9.8:1~~ (AA Large) - Accent hierarchy — **measured 9.4:1**
+- Red on Cream: ~~7.2:1~~ (AA) - Warm secondary — **measured 8.2:1**
 
 ## Component inventory
 

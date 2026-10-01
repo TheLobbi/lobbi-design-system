@@ -95,9 +95,9 @@ Faces are hosted on Google Fonts (Libre Baskerville, IBM Plex Sans, IBM Plex Ser
 From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA+ compliance (academic standard)
-- Royal blue on cream: 8.9:1 contrast ratio — **measured 8.3:1**
+- Royal blue on cream: ~~8.9:1~~ contrast ratio — **measured 8.3:1**
 - Scholar black on ivory: 17.2:1 contrast ratio
-- Academy gold on navy: 7.1:1 contrast ratio — **measured 4.5:1**
+- Academy gold on navy: ~~7.1:1~~ contrast ratio — **measured 4.5:1**
 - Focus indicators: 3px gold borders on all interactive elements
 - Semantic HTML with proper ARIA labels for research data
 - Screen reader friendly: All charts and data tables have text alternatives

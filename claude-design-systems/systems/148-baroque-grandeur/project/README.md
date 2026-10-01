@@ -91,9 +91,9 @@ Faces are hosted on Google Fonts (Bodoni Moda, Libre Caslon Text); load them wit
 From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA minimum contrast ratios
-- Royal-purple on cream-silk: 10.2:1 contrast ratio — **measured 11.2:1**
-- Gold-antique on purple-deep: 4.9:1 contrast ratio — **measured 5.9:1**
-- Burgundy on cream-warm: 8.7:1 contrast ratio — **measured 8.2–10.6:1**
+- Royal-purple on cream-silk: ~~10.2:1~~ contrast ratio — **measured 11.2:1**
+- Gold-antique on purple-deep: ~~4.9:1~~ contrast ratio — **measured 5.9:1**
+- Burgundy on cream-warm: ~~8.7:1~~ contrast ratio — **measured 8.2–10.6:1**
 - Focus visible states with 3px gold borders
 - Semantic HTML with ARIA landmarks
 - Keyboard navigation fully supported

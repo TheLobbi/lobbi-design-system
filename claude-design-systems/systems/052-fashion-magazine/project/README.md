@@ -83,8 +83,8 @@ Timing values: `--transition-fast` 150ms ease, `--transition-base` 300ms ease, `
 From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA: Black/white meets 21:1 contrast ratio
-- Pink on White: 3.8:1 (sufficient for large text) — **measured 2.6:1** (not for body text)
-- Gold on Black: 5.2:1 (sufficient for UI elements) — **measured 10.0:1**
+- Pink on White: ~~3.8:1~~ (sufficient for large text) — **measured 2.6:1** (not for body text)
+- Gold on Black: ~~5.2:1~~ (sufficient for UI elements) — **measured 10.0:1**
 - Focus Indicators: 3px solid gold outlines
 - Semantic HTML: Proper heading hierarchy, ARIA labels
 

@@ -74,8 +74,8 @@ Faces are hosted on Google Fonts (Figtree, Fraunces); load them with:
 - CONTRAST RATIOS (WCAG 2.1 AAA Compliance):
 - Primary text on white: 16.2:1 (AAA+)
 - White text on mountain blue: 10.3:1 (AAA)
-- Text on pine green: 8.9:1 (AAA) — **measured 1.5:1** (not for body text)
-- Mountain blue on alpine white: 10.3:1 (AAA) — **measured 3.5–9.9:1**
+- Text on pine green: ~~8.9:1~~ (AAA) — **measured 1.5:1** (not for body text)
+- Mountain blue on alpine white: ~~10.3:1~~ (AAA) — **measured 3.5–9.9:1**
 - All interactive elements exceed 7:1 (AAA minimum)
 
 ## States and motion
@@ -129,8 +129,8 @@ The reference page composes these patterns from the tokens above:
 - CONTRAST RATIOS (WCAG 2.1 AAA Compliance):
 - Primary text on white: 16.2:1 (AAA+)
 - White text on mountain blue: 10.3:1 (AAA)
-- Text on pine green: 8.9:1 (AAA) — **measured 1.5:1** (not for body text)
-- Mountain blue on alpine white: 10.3:1 (AAA) — **measured 3.5–9.9:1**
+- Text on pine green: ~~8.9:1~~ (AAA) — **measured 1.5:1** (not for body text)
+- Mountain blue on alpine white: ~~10.3:1~~ (AAA) — **measured 3.5–9.9:1**
 - All interactive elements exceed 7:1 (AAA minimum)
 
 ## Further guidance

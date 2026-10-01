@@ -59,7 +59,7 @@ From the style's design notes (ratios checked against the tokens; a **bold** mea
 - CONTRAST RATIOS (WCAG AA Minimum):
 - ├─ Sage on Cream: 4.8:1 (AAA for large text)
 - ├─ Earth Brown on Cream: 6.2:1 (AAA compliant)
-- ├─ Body text: #4a4a4a on cream (12:1 - exceptional) — **measured 8.2:1**
+- ├─ Body text: #4a4a4a on cream (~~12:1~~ - exceptional) — **measured 8.2:1**
 - Interactive elements: 4.5:1 minimum guaranteed
 
 ## Further guidance

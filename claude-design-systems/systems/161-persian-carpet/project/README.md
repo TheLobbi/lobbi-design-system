@@ -92,8 +92,8 @@ Faces are hosted on Google Fonts (Playfair Display, Source Sans Pro); load them 
 From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA minimum contrast ratios throughout
-- Burgundy on cream: 8.1:1 contrast ratio — **measured 4.9–9.9:1**
-- Navy on gold: 7.5:1 contrast ratio — **measured 2.4–7.1:1**
+- Burgundy on cream: ~~8.1:1~~ contrast ratio — **measured 4.9–9.9:1**
+- Navy on gold: ~~7.5:1~~ contrast ratio — **measured 2.4–7.1:1**
 - Cream text on navy: 11.2:1 contrast ratio
 - Focus visible states with 3px gold outline
 - Semantic HTML with proper ARIA labels

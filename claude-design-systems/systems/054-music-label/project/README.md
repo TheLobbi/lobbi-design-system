@@ -122,7 +122,7 @@ Faces are hosted on Google Fonts (Bebas Neue, Inter); load them with:
 
 - ACCESSIBILITY CONSIDERATIONS
 
-- WCAG 2.1 AA: Gold (#d4af37) on vinyl black exceeds 7:1 contrast — **measured 9.4:1**
+- WCAG 2.1 AA: Gold (#d4af37) on vinyl black exceeds ~~7:1~~ contrast — **measured 9.4:1**
 - Keyboard Navigation: Tab order follows release chronology
 - Screen Readers: ARIA labels for album artwork, streaming metrics
 - Reduced Motion: Respects prefers-reduced-motion (static waveforms)

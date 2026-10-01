@@ -140,9 +140,9 @@ From the style's design notes (ratios checked against the tokens; a **bold** mea
 - Motion: Respects prefers-reduced-motion
 
 - Color Contrast Ratios:
-- Star white on void black: 21:1 (AAA) — **measured 20.4:1**
-- Nebula purple on void black: 8.2:1 (AA Large) — **measured 3.6:1** (not for body text)
-- Rocket orange on void black: 9.1:1 (AA) — **measured 7.3:1**
+- Star white on void black: ~~21:1~~ (AAA) — **measured 20.4:1**
+- Nebula purple on void black: ~~8.2:1~~ (AA Large) — **measured 3.6:1** (not for body text)
+- Rocket orange on void black: ~~9.1:1~~ (AA) — **measured 7.3:1**
 
 ## Component inventory
 

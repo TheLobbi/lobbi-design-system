@@ -17,9 +17,13 @@ const OUT = path.join(ROOT, 'lobbi/project');
 const DEFAULT = Number(process.argv[2] || 9);
 const NAME = 'Lobbi Design System';
 const AUTHOR = process.env.DS_AUTHOR || 'Markus Ahling';
-const NOW = new Date().toISOString().replace(/\.\d+Z$/, 'Z');
+let NOW = new Date().toISOString().replace(/\.\d+Z$/, 'Z');
 let SHA = 'main';
-try { SHA = execSync('git rev-parse --short HEAD', { cwd: REPO }).toString().trim(); } catch {}
+// Stamp builds with the source commit's time, not the clock, so a rebuild only changes what changed.
+try {
+  SHA = execSync('git rev-parse --short HEAD', { cwd: REPO }).toString().trim();
+  NOW = new Date(execSync('git log -1 --format=%cI', { cwd: REPO }).toString().trim()).toISOString().replace(/\.\d+Z$/, 'Z');
+} catch {}
 
 const html = fs.readFileSync(path.join(REPO, 'index.html'), 'utf8');
 const at = html.indexOf('const styles = [');

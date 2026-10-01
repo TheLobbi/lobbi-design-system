@@ -140,8 +140,8 @@ From the style's design notes (ratios checked against the tokens; a **bold** mea
 
 - Color Contrast:
 - Policy Blue on White: 9.7:1 (AAA compliant)
-- Slate on White: 8.2:1 (AAA compliant) — **measured 2.4–7.2:1**
-- Red on White: 7.1:1 (AAA compliant for large text) — **measured 4.6–6.1:1**
+- Slate on White: ~~8.2:1~~ (AAA compliant) — **measured 2.4–7.2:1**
+- Red on White: ~~7.1:1~~ (AAA compliant for large text) — **measured 4.6–6.1:1**
 
 - Keyboard Navigation:
 - All interactive elements keyboard accessible (tab order logical)

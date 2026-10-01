@@ -85,9 +85,9 @@ Faces are hosted on Google Fonts (Zen Kaku Gothic New, Plus Jakarta Sans); load 
 - Body text: Minimum 7:1 contrast ratio (AAA)
 - Large text: Minimum 4.5:1 contrast ratio (AAA)
 - UI elements: Minimum 3:1 contrast ratio (AA)
-- Pacific Blue #0077b6 on white: 8.1:1 (AAA) — **measured 4.5:1**
-- Deep Navy #0c4a6e on white: 10.2:1 (AAA) — **measured 8.8:1**
-- Jade Green #10b981 on white: 5.8:1 (AA large text, AAA small text) — **measured 2.3:1** (not for body text)
+- Pacific Blue #0077b6 on white: ~~8.1:1~~ (AAA) — **measured 4.5:1**
+- Deep Navy #0c4a6e on white: ~~10.2:1~~ (AAA) — **measured 8.8:1**
+- Jade Green #10b981 on white: ~~5.8:1~~ (AA large text, AAA small text) — **measured 2.3:1** (not for body text)
 
 - Honour `prefers-reduced-motion`: drop lifts and transitions to instant state changes.
 

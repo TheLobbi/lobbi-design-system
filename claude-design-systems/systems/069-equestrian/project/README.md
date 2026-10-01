@@ -80,7 +80,7 @@ Timing values: `--transition-fast` 150ms cubic-bezier(0.4, 0.0, 0.2, 1), `--tran
 From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - Racing green (#1e4d2b) on cream (#faf6eb): 10.2:1 (AAA)
-- Saddle brown (#8b4513) on cream: 5.8:1 (AA+) — **measured 6.6:1**
+- Saddle brown (#8b4513) on cream: ~~5.8:1~~ (AA+) — **measured 6.6:1**
 - Gold (#c9a227) used only for non-essential accents
 - Body text minimum 16px, data tables 14px — **the reference page sets running text at 14px**
 

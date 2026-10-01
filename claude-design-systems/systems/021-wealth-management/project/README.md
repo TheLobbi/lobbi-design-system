@@ -128,8 +128,8 @@ Faces are hosted on Google Fonts (Cormorant, Inter); load them with:
 - ACCESSIBILITY CONSIDERATIONS
 
 - Color Contrast:
-- Charcoal on Ivory: 11.2:1 (AAA Large Text) — **measured 13.7:1**
-- Forest Green on Ivory: 8.4:1 (AAA Large Text, AA Normal) — **measured 12.2:1**
+- Charcoal on Ivory: ~~11.2:1~~ (AAA Large Text) — **measured 13.7:1**
+- Forest Green on Ivory: ~~8.4:1~~ (AAA Large Text, AA Normal) — **measured 12.2:1**
 - Gold on Green: Decorative only, never text-only indicator
 
 - Typography:

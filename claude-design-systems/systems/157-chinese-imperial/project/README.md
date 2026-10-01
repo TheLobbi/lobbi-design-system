@@ -108,7 +108,7 @@ From the style's design notes (ratios checked against the tokens; a **bold** mea
 - CONTRAST RATIOS (WCAG 2.1 AA Compliance):
 - Primary text on ivory: 12.5:1 (AAA)
 - White text on imperial red: 5.8:1 (AA)
-- Text on jade green: 7.2:1 (AA) — **measured 1.8–2.7:1** (not for body text)
+- Text on jade green: ~~7.2:1~~ (AA) — **measured 1.8–2.7:1** (not for body text)
 - Gold text on dark backgrounds: 4.8:1 (AA)
 
 ### Responsive Behavior

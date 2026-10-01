@@ -184,9 +184,9 @@ Timing values: `--transition-fast` 150ms cubic-bezier(0.4, 0, 0.2, 1), `--transi
 - ACCESSIBILITY COMPLIANCE (WCAG 2.1 AA)
 
 - ✓ Color Contrast Ratios:
-- Primary text (#2d2419) on cream: 12.5:1 (AAA) — **measured 14.2:1**
+- Primary text (#2d2419) on cream: ~~12.5:1~~ (AAA) — **measured 14.2:1**
 - Secondary text (#5a4a42) on cream: 7.8:1 (AA+)
-- Link text (#5a4a42) on white: 8.9:1 (AAA) — **measured 7.9:1**
+- Link text (#5a4a42) on white: ~~8.9:1~~ (AAA) — **measured 7.9:1**
 - Button text (white) on primary: 11.2:1 (AAA)
 
 - ✓ Typography:

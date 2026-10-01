@@ -98,7 +98,7 @@ From the style's design notes (ratios checked against the tokens; a **bold** mea
 
 - ├─ WCAG 2.1 AA contrast ratios maintained
 - ├─ Burgundy (#722f37) on cream (#faf6eb): 8.2:1 (AAA)
-- ├─ Green (#4d7c0f) on cream: 6.1:1 (AA) — **measured 4.4:1** (not for body text)
+- ├─ Green (#4d7c0f) on cream: ~~6.1:1~~ (AA) — **measured 4.4:1** (not for body text)
 - ├─ Gold (#b8860b) used decoratively, not for critical info
 - ├─ Semantic HTML5 structure (estate organization)
 - Keyboard navigation with visible focus states

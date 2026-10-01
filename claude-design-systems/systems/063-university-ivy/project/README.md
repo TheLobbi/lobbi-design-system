@@ -133,8 +133,8 @@ Timing values: `--transition-normal` 300ms ease, `--transition-slow` 400ms ease.
 From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA minimum (AAA for most text)
-- Navy on ivory: 12.6:1 contrast ratio — **measured 7.9–14.4:1**
-- Crimson on ivory: 7.8:1 contrast ratio — **measured 5.1–10.7:1**
+- Navy on ivory: ~~12.6:1~~ contrast ratio — **measured 7.9–14.4:1**
+- Crimson on ivory: ~~7.8:1~~ contrast ratio — **measured 5.1–10.7:1**
 - Keyboard navigation fully supported
 - Screen reader semantic structure
 - Readable font sizes for all ages

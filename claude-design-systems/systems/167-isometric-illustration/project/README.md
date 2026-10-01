@@ -79,7 +79,7 @@ Timing values: `--transition-fast` 150ms ease-out, `--transition-base` 250ms eas
 
 From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
-- Text uses Deep Navy (#1E293B) on white backgrounds (14.8:1 ratio) — **measured 14.4:1**
+- Text uses Deep Navy (#1E293B) on white backgrounds (~~14.8:1~~ ratio) — **measured 14.4:1**
 - Large text can use Electric Blue (4.89:1 ratio)
 - Interactive elements minimum 44x44px touch target
 - Color + shape convey meaning (not color alone)
@@ -185,7 +185,7 @@ The reference page composes these patterns from the tokens above:
 - CONTRAST RATIOS (WCAG AA Compliant):
 - Deep Navy on White: 14.8:1 (AAA compliant)
 - Electric Blue on White: 4.89:1 (AA compliant)
-- Purple on White: 3.27:1 (AA for large text, graphics) — **measured 2.7–5.7:1**
+- Purple on White: ~~3.27:1~~ (AA for large text, graphics) — **measured 2.7–5.7:1**
 - Mint on White: 2.04:1 (Decorative only, not for text)
 - All critical text uses Deep Navy for accessibility
 

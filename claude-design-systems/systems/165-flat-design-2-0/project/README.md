@@ -157,7 +157,7 @@ The reference page composes these patterns from the tokens above:
 
 - CONTRAST RATIOS (WCAG AA Compliant):
 - Blue on White: 4.89:1 (AA compliant for large text, AAA for graphics)
-- Charcoal on White: 11.58:1 (AAA compliant) — **measured 12.0:1**
+- Charcoal on White: ~~11.58:1~~ (AAA compliant) — **measured 12.0:1**
 - White on Blue: 4.89:1 (AA compliant)
 - Coral on White: 3.68:1 (AA compliant for large text)
 - Mint on White: 1.82:1 (Used only for decorative elements, not text)

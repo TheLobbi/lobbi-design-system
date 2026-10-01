@@ -130,7 +130,7 @@ From the style's design notes (ratios checked against the tokens; a **bold** mea
 - Movement gold (#ca8a04) on dial white (#fafafa): 4.6:1 contrast (AA large)
 - Steel silver (#6b7280) on white: 4.7:1 contrast (AA standard)
 - Complication blue (#1e40af) on white: 8.2:1 contrast (AAA)
-- Anthracite gray (#374151) on white: 10.8:1 contrast (AAA) — **measured 9.7:1**
+- Anthracite gray (#374151) on white: ~~10.8:1~~ contrast (AAA) — **measured 9.7:1**
 - Watch images include alt text with brand, model, reference number, complications
 - Technical abbreviations expanded on hover (COSC = Contrôle Officiel Suisse...)
 - Catalog tables with proper headers and scope for screen reader navigation

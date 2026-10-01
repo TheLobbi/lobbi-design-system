@@ -109,7 +109,7 @@ From the style's design notes (ratios checked against the tokens; a **bold** mea
 - CONTRAST RATIOS (WCAG 2.1 AA Compliance):
 - Primary text on white: 14.2:1 (AAA)
 - White text on Santorini blue: 6.1:1 (AA)
-- Text on olive green: 7.8:1 (AA) — **measured 1.1:1** (not for body text)
+- Text on olive green: ~~7.8:1~~ (AA) — **measured 1.1:1** (not for body text)
 - Navy text on sand: 8.3:1 (AA)
 
 ### Responsive Behavior

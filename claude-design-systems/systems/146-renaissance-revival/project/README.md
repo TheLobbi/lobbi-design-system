@@ -92,8 +92,8 @@ From the style's design notes (ratios checked against the tokens; a **bold** mea
 
 - WCAG 2.1 AA minimum contrast ratios
 - Umber on ivory: 12.8:1 contrast ratio
-- Forest-green on cream: 7.4:1 contrast ratio — **measured 8.1:1**
-- Gold-deep on terracotta: 4.6:1 contrast ratio — **measured 1.0–1.6:1** (not for body text)
+- Forest-green on cream: ~~7.4:1~~ contrast ratio — **measured 8.1:1**
+- Gold-deep on terracotta: ~~4.6:1~~ contrast ratio — **measured 1.0–1.6:1** (not for body text)
 - Focus visible states with 3px gold borders
 - Semantic HTML with ARIA landmarks
 - Alt text for all decorative elements

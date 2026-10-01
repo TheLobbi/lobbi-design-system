@@ -73,8 +73,8 @@ Faces are hosted on Google Fonts (Lora, Source Sans 3); load them with:
 - CONTRAST RATIOS (WCAG 2.1 AA+ Compliance):
 - Primary text on cream: 12.8:1 (AAA)
 - White text on Aegean blue: 7.2:1 (AA+)
-- Text on terracotta: 6.5:1 (AA) — **measured 1.1–1.5:1** (not for body text)
-- Olive green text on white: 5.8:1 (AA) — **measured 3.0–3.1:1** (not for body text)
+- Text on terracotta: ~~6.5:1~~ (AA) — **measured 1.1–1.5:1** (not for body text)
+- Olive green text on white: ~~5.8:1~~ (AA) — **measured 3.0–3.1:1** (not for body text)
 - Navy text on limestone: 14.1:1 (AAA)
 
 ## States and motion
@@ -124,8 +124,8 @@ The reference page composes these patterns from the tokens above:
 - CONTRAST RATIOS (WCAG 2.1 AA+ Compliance):
 - Primary text on cream: 12.8:1 (AAA)
 - White text on Aegean blue: 7.2:1 (AA+)
-- Text on terracotta: 6.5:1 (AA) — **measured 1.1–1.5:1** (not for body text)
-- Olive green text on white: 5.8:1 (AA) — **measured 3.0–3.1:1** (not for body text)
+- Text on terracotta: ~~6.5:1~~ (AA) — **measured 1.1–1.5:1** (not for body text)
+- Olive green text on white: ~~5.8:1~~ (AA) — **measured 3.0–3.1:1** (not for body text)
 - Navy text on limestone: 14.1:1 (AAA)
 
 ## Further guidance

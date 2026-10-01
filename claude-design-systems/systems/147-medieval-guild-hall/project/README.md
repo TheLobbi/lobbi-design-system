@@ -92,8 +92,8 @@ From the style's design notes (ratios checked against the tokens; a **bold** mea
 
 - WCAG 2.1 AA minimum contrast ratios
 - Parchment on mahogany: 11.4:1 contrast ratio
-- Gold-leaf on oak-brown: 5.2:1 contrast ratio — **measured 4.4:1** (not for body text)
-- Red-guild on parchment: 7.8:1 contrast ratio — **measured 5.4:1**
+- Gold-leaf on oak-brown: ~~5.2:1~~ contrast ratio — **measured 4.4:1** (not for body text)
+- Red-guild on parchment: ~~7.8:1~~ contrast ratio — **measured 5.4:1**
 - Focus visible states with 3px borders
 - Semantic HTML with proper headings
 - Skip navigation for assistive technologies

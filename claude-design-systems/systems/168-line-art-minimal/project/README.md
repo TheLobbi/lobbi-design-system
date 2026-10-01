@@ -177,7 +177,7 @@ The reference page composes these patterns from the tokens above:
 
 - CONTRAST RATIOS (WCAG AAA Compliant):
 - Black on White: 21:1 (AAA compliant, maximum contrast)
-- Charcoal on White: 15.3:1 (AAA compliant) — **measured 17.4:1**
+- Charcoal on White: ~~15.3:1~~ (AAA compliant) — **measured 17.4:1**
 - Teal on White: 3.98:1 (AA compliant for large text)
 - White on Teal: 3.98:1 (AA compliant for large text)
 - Medium Gray on White: 5.8:1 (AA compliant)

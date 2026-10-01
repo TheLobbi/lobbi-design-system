@@ -92,9 +92,9 @@ Faces are hosted on Google Fonts (Abril Fatface, Nunito); load them with:
 From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA minimum contrast ratios
-- Turquoise on white: 4.8:1 contrast ratio — **measured 2.4–5.4:1**
+- Turquoise on white: ~~4.8:1~~ contrast ratio — **measured 2.4–5.4:1**
 - Pink on white: 4.7:1 contrast ratio
-- Cobalt on cream: 9.1:1 contrast ratio — **measured 8.4–10.0:1**
+- Cobalt on cream: ~~9.1:1~~ contrast ratio — **measured 8.4–10.0:1**
 - Yellow text avoided on white (use as backgrounds/accents only)
 - High-contrast mode support
 - Focus indicators with 4px width for clarity

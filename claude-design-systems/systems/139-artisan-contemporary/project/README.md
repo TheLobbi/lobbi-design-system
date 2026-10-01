@@ -223,9 +223,9 @@ Timing values: `--transition-base` 0.2s ease, `--transition-slow` 0.3s ease.
 - === ACCESSIBILITY COMPLIANCE (WCAG 2.1 AA) ===
 
 - Color Contrast:
-- Primary on white: 4.8:1 (AA Large ✓) — **measured 1.1–5.3:1**
-- Secondary on white: 11.2:1 (AAA ✓) — **measured 1.1–13.0:1**
-- Charcoal on white: 13.5:1 (AAA ✓) — **measured 10.9:1**
+- Primary on white: ~~4.8:1~~ (AA Large ✓) — **measured 1.1–5.3:1**
+- Secondary on white: ~~11.2:1~~ (AAA ✓) — **measured 1.1–13.0:1**
+- Charcoal on white: ~~13.5:1~~ (AAA ✓) — **measured 10.9:1**
 - All text meets minimum 4.5:1
 
 - Interaction:

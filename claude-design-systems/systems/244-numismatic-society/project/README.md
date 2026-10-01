@@ -121,8 +121,8 @@ Timing values: `--transition-base` 300ms cubic-bezier(0.4, 0, 0.2, 1).
 From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - Antique gold (#b8860b) on cream (#fef3c7): 4.2:1 contrast (AA large text)
-- Burgundy (#7f1d1d) on cream: 7.8:1 contrast (AAA compliance) — **measured 9.3:1**
-- Patina green (#059669) on white: 4.5:1 contrast (AA standard) — **measured 3.5:1** (not for body text)
+- Burgundy (#7f1d1d) on cream: ~~7.8:1~~ contrast (AAA compliance) — **measured 9.3:1**
+- Patina green (#059669) on white: ~~4.5:1~~ contrast (AA standard) — **measured 3.5:1** (not for body text)
 - Coin images include alt text with identification, date, mint
 - Grading abbreviations expanded on hover (MS = Mint State)
 - Catalog tables with scope attributes for screen reader navigation

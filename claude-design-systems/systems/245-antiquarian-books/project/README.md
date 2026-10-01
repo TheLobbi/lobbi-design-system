@@ -128,7 +128,7 @@ From the style's design notes (ratios checked against the tokens; a **bold** mea
 
 - Leather brown (#78350f) on cream (#fef3c7): 5.8:1 contrast (AA compliance)
 - Ink black (#111827) on vellum white (#fafafa): 16.2:1 contrast (AAA)
-- Library green (#065f46) on cream: 6.4:1 contrast (AA+) — **measured 6.9:1**
+- Library green (#065f46) on cream: ~~6.4:1~~ contrast (AA+) — **measured 6.9:1**
 - Book images include alt text with title, author, date, edition statement
 - Bibliographic abbreviations expanded on hover (8vo = Octavo format)
 - Catalog tables with proper scope and headers for screen readers

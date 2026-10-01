@@ -74,7 +74,7 @@ Faces are hosted on Google Fonts (El Messiri, Rubik); load them with:
 - CONTRAST RATIOS (WCAG 2.1 AA+ Compliance):
 - Primary text on sandstone: 11.4:1 (AAA)
 - White text on desert gold: 4.8:1 (AA)
-- Text on oasis teal: 6.2:1 (AA+) — **measured 2.8:1** (not for body text)
+- Text on oasis teal: ~~6.2:1~~ (AA+) — **measured 2.8:1** (not for body text)
 - Navy text on sand: 9.7:1 (AAA)
 - Gold on navy: 7.3:1 (AA+)
 
@@ -130,7 +130,7 @@ The reference page composes these patterns from the tokens above:
 - CONTRAST RATIOS (WCAG 2.1 AA+ Compliance):
 - Primary text on sandstone: 11.4:1 (AAA)
 - White text on desert gold: 4.8:1 (AA)
-- Text on oasis teal: 6.2:1 (AA+) — **measured 2.8:1** (not for body text)
+- Text on oasis teal: ~~6.2:1~~ (AA+) — **measured 2.8:1** (not for body text)
 - Navy text on sand: 9.7:1 (AAA)
 - Gold on navy: 7.3:1 (AA+)
 

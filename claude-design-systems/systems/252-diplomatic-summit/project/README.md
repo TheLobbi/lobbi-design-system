@@ -96,9 +96,9 @@ Faces are hosted on Google Fonts (Libre Baskerville, Inter, Source Sans Pro); lo
 From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AAA compliance (international standard)
-- UN blue on white: 9.8:1 contrast ratio — **measured 3.0:1** (not for body text)
+- UN blue on white: ~~9.8:1~~ contrast ratio — **measured 3.0:1** (not for body text)
 - Treaty navy on charter cream: 10.2:1 contrast ratio
-- Diplomatic gold on treaty navy: 7.6:1 contrast ratio — **measured 4.3:1** (not for body text)
+- Diplomatic gold on treaty navy: ~~7.6:1~~ contrast ratio — **measured 4.3:1** (not for body text)
 - Focus indicators: 4px visible borders meeting international standards
 - Multilingual screen reader support
 - Right-to-left (RTL) language support ready
