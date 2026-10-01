@@ -44,8 +44,9 @@ Faces are hosted on Google Fonts (Outfit, VT323); load them with:
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 17.1:1.
+- `page-text` on `page-bg` measures 6.2:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `vapor-pink` 3.5:1, `vapor-orange` 4.1:1, `y2k-bubble` 2.2:1, `y2k-glass` 1.5:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Not synced
 

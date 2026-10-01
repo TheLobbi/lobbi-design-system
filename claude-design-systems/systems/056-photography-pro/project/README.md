@@ -138,8 +138,9 @@ Timing values: `--transition-fast` 150ms ease, `--transition-base` 300ms ease, `
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 17.3:1.
+- `page-text` on `page-bg` measures 4.8:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `color-gallery-white` 1.0:1, `category-tag-bg` 1.0:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Further guidance
 

@@ -22,7 +22,7 @@
     "#1c1917",
     "#fbbf24",
     "#b8860b",
-    "#faf8f5"
+    "#cecbc9"
    ]
   },
   {
@@ -41,7 +41,7 @@
    ],
    "blend": "Art Deco 80% + Streamline 20%",
    "swatch": [
-    "#f8fafc",
+    "#edf1f6",
     "#3b82f6",
     "#14b8a6",
     "#1e293b"
@@ -63,7 +63,7 @@
    ],
    "blend": "Quiet Luxury 80% + Minimal 20%",
    "swatch": [
-    "#fdfbf7",
+    "#faf6f1",
     "#1a365d",
     "#c4a77d",
     "#2d3436"
@@ -85,9 +85,9 @@
    ],
    "blend": "Japandi 80% + Glassmorphism 20%",
    "swatch": [
-    "#f5f5f4",
+    "#e5dfd5",
     "#c67d4d",
-    "#9dc183",
+    "#7c9a5c",
     "#44403c"
    ]
   },
@@ -107,10 +107,10 @@
    ],
    "blend": "Swiss 80% + Aurora UI 20%",
    "swatch": [
-    "#f9fafb",
+    "#ffffff",
     "#06b6d4",
     "#8b5cf6",
-    "#111827"
+    "#374151"
    ]
   },
   {
@@ -196,10 +196,10 @@
    ],
    "blend": "Dark Academia 80% + Lobbi Brand 20%",
    "swatch": [
-    "#1a0f0a",
+    "#23140d",
     "#c9a227",
     "#ffbf00",
-    "#f4f1e8"
+    "#d4c5b0"
    ]
   },
   {
@@ -218,10 +218,10 @@
    ],
    "blend": "Vaporwave 70% + Y2K 30%",
    "swatch": [
-    "#1a1a2e",
+    "#6a4148",
     "#ff00ff",
     "#ff9d00",
-    "#ffffff"
+    "#e1d9da"
    ]
   },
   {
@@ -240,9 +240,9 @@
    ],
    "blend": "Solarpunk 70% + Biophilic 30%",
    "swatch": [
-    "#fefdfb",
-    "#fbbf24",
+    "#f0fdf4",
     "#38bdf8",
+    "#f59e0b",
     "#44403c"
    ]
   },
@@ -288,7 +288,7 @@
     "#fdfcfb",
     "#c4a35a",
     "#272219",
-    "#3d362d"
+    "#5c5347"
    ]
   },
   {
@@ -311,7 +311,7 @@
     "#ffffff",
     "#0066cc",
     "#000000",
-    "#222222"
+    "#555555"
    ]
   },
   {
@@ -334,7 +334,7 @@
     "#faf8f5",
     "#1a2744",
     "#b8a369",
-    "#333333"
+    "#555555"
    ]
   },
   {
@@ -356,7 +356,7 @@
     "#ffffff",
     "#4a90e2",
     "#0a0a0a",
-    "#0a0a0a"
+    "#505050"
    ]
   },
   {
@@ -424,7 +424,7 @@
     "#fdfbf7",
     "#d9c596",
     "#8b8378",
-    "#2d2d2d"
+    "#4a4a4a"
    ]
   },
   {
@@ -447,7 +447,7 @@
     "#18181b",
     "#06b6d4",
     "#059669",
-    "#f4f4f5"
+    "#fafafa"
    ]
   },
   {
@@ -467,7 +467,7 @@
    ],
    "blend": "Wealth Management 75% + Art Deco Elegance 25%",
    "swatch": [
-    "#fefdf8",
+    "#f9f6e8",
     "#d4af37",
     "#1a3a2f",
     "#2c2c2c"
@@ -490,7 +490,7 @@
    ],
    "blend": "Fintech Modern 70% + Gradient Mesh 30%",
    "swatch": [
-    "#f8fafc",
+    "#ffffff",
     "#93c5fd",
     "#3b82f6",
     "#334155"
@@ -516,7 +516,7 @@
     "#0a0a0a",
     "#00ff88",
     "#00d4ff",
-    "#ffffff"
+    "#a0a0a0"
    ]
   },
   {
@@ -603,10 +603,10 @@
    ],
    "blend": "Consulting Elite 80% + Minimal Precision 20%",
    "swatch": [
-    "#f8fafc",
+    "#ffffff",
     "#ef4444",
     "#10b981",
-    "#1e293b"
+    "#475569"
    ]
   },
   {
@@ -672,9 +672,9 @@
    "blend": "Pharmaceutical 80% + Scientific Precision 20%",
    "swatch": [
     "#f0f9ff",
-    "#1f2937",
-    "#1f2937",
-    "#1f2937"
+    "#374151",
+    "#374151",
+    "#374151"
    ]
   },
   {
@@ -716,10 +716,10 @@
    ],
    "blend": "Accounting Premium 80% + Conservative Trust 20%",
    "swatch": [
-    "#f4f4f5",
+    "#fafaf9",
     "#166534",
     "#d97706",
-    "#27272a"
+    "#3f3f46"
    ]
   },
   {
@@ -738,10 +738,10 @@
    ],
    "blend": "Patent Law 75% + Technical Documentation 25%",
    "swatch": [
-    "#f8fafc",
+    "#f1f5f9",
     "#d97706",
     "#4338ca",
-    "#0f172a"
+    "#334155"
    ]
   },
   {
@@ -787,7 +787,7 @@
     "#0c1a3e",
     "#0077b6",
     "#b3d9ff",
-    "#ffffff"
+    "#e7e9ec"
    ]
   },
   {
@@ -807,10 +807,10 @@
    ],
    "blend": "Golf Resort 75% + Country Club 25%",
    "swatch": [
-    "#f5f1e4",
+    "#faf6eb",
     "#c9a227",
     "#1d4d2b",
-    "#78593e"
+    "#1d4d2b"
    ]
   },
   {
@@ -829,10 +829,10 @@
    ],
    "blend": "Spa Wellness 80% + Zen Minimalism 20%",
    "swatch": [
-    "#fdf6e3",
+    "#fcf8ef",
     "#9caf88",
     "#8b7355",
-    "#4a4a4a"
+    "#6b6b6b"
    ]
   },
   {
@@ -874,7 +874,7 @@
    ],
    "blend": "Private Aviation 75% + Jet Set Luxury 25%",
    "swatch": [
-    "#0f172a",
+    "#172033",
     "#d4af37",
     "#f8fafc",
     "#e5e7eb"
@@ -918,10 +918,10 @@
    ],
    "blend": "Jewelry Boutique 80% + Glamour 20%",
    "swatch": [
-    "#f5f5f5",
+    "#fafafa",
     "#e8b4b8",
     "#d4a574",
-    "#0d0d0d"
+    "#3c3c3c"
    ]
   },
   {
@@ -944,7 +944,7 @@
     "#fefefe",
     "#8b4513",
     "#2c5f2d",
-    "#000000"
+    "#666666"
    ]
   },
   {
@@ -990,7 +990,7 @@
     "#f8fafc",
     "#047857",
     "#38bdf8",
-    "#1e293b"
+    "#475569"
    ]
   },
   {
@@ -1032,10 +1032,10 @@
    ],
    "blend": "Robotics 75% + Industrial Clean 25%",
    "swatch": [
-    "#111827",
+    "#18212f",
     "#f97316",
     "#06b6d4",
-    "#f3f4f6"
+    "#d1d5db"
    ]
   },
   {
@@ -1058,7 +1058,7 @@
     "#0c0c1d",
     "#f0f9ff",
     "#c084fc",
-    "#f0f9ff"
+    "#e0f2fe"
    ]
   },
   {
@@ -1077,10 +1077,10 @@
    ],
    "blend": "Clean Energy 75% + Sustainable Tech 25%",
    "swatch": [
-    "#f9fafb",
+    "#fefefe",
     "#0284c7",
-    "#38bdf8",
-    "#1f2937"
+    "#fbbf24",
+    "#4b5563"
    ]
   },
   {
@@ -1102,7 +1102,7 @@
     "#050505",
     "#fb923c",
     "#38bdf8",
-    "#ffffff"
+    "#b4b4b4"
    ]
   },
   {
@@ -1148,7 +1148,7 @@
     "#faf9f6",
     "#c41e3a",
     "#2d7a3e",
-    "#1a1a1a"
+    "#4a4a4a"
    ]
   },
   {
@@ -1171,7 +1171,7 @@
     "#ffffff",
     "#d4af37",
     "#000000",
-    "#000000"
+    "#666666"
    ]
   },
   {
@@ -1240,7 +1240,7 @@
     "#0c0c0c",
     "#9f1239",
     "#c9a227",
-    "#fafafa"
+    "#e5e5e5"
    ]
   },
   {
@@ -1263,7 +1263,7 @@
     "#fefefe",
     "#6b7280",
     "#6b7280",
-    "#1a1a1a"
+    "#6b7280"
    ]
   },
   {
@@ -1283,9 +1283,9 @@
    ],
    "blend": "Podcast Premium 75% + Audio Wave Aesthetic 25%",
    "swatch": [
-    "#f8fafc",
+    "#fefefe",
+    "#7dd3fc",
     "#f97316",
-    "#38bdf8",
     "#1e293b"
    ]
   },
@@ -1329,7 +1329,7 @@
    ],
    "blend": "Board Room 80% + Executive Power 20%",
    "swatch": [
-    "#f5f3f0",
+    "#faf8f5",
     "#b8860b",
     "#1e3a5f",
     "#3d1f1f"
@@ -1374,7 +1374,7 @@
    ],
    "blend": "Startup Unicorn 75% + VC Pitch Deck 25%",
    "swatch": [
-    "#f8fafc",
+    "#ffffff",
     "#3b82f6",
     "#8b5cf6",
     "#0f172a"
@@ -1396,10 +1396,10 @@
    ],
    "blend": "Non-Profit Premium 80% + Impact Storytelling 20%",
    "swatch": [
-    "#fefce8",
+    "#f9fafb",
     "#3b82f6",
     "#92400e",
-    "#111827"
+    "#4b5563"
    ]
   },
   {
@@ -1422,7 +1422,7 @@
     "#fffff5",
     "#a51c30",
     "#1e3a5f",
-    "#1e3a5f"
+    "#4a5f7f"
    ]
   },
   {
@@ -1490,7 +1490,7 @@
     "#f3f4f6",
     "#003087",
     "#003087",
-    "#0b0c0c"
+    "#505a5f"
    ]
   },
   {
@@ -1532,7 +1532,7 @@
    ],
    "blend": "Wine Estate 80% + Vineyard Terroir 20%",
    "swatch": [
-    "#faf6eb",
+    "#f5f0e3",
     "#b8860b",
     "#65a30d",
     "#722f37"
@@ -1581,7 +1581,7 @@
     "#0c0c0c",
     "#004225",
     "#dc2626",
-    "#e8e8e8"
+    "#a8a8a8"
    ]
   },
   {
@@ -1650,7 +1650,7 @@
     "#fffff8",
     "#1a4d2e",
     "#b8860b",
-    "#1f1f1f"
+    "#696560"
    ]
   },
   {
@@ -1696,7 +1696,7 @@
     "#f1f5f9",
     "#7c2d12",
     "#a0861f",
-    "#111111"
+    "#0d0d0d"
    ]
   },
   {
@@ -1716,10 +1716,10 @@
    ],
    "blend": "Medical Association 80% + Healthcare Authority 20%",
    "swatch": [
-    "#f8fafc",
+    "#ffffff",
     "#0369a1",
     "#0ea5e9",
-    "#0c4a6e"
+    "#475569"
    ]
   },
   {
@@ -1739,7 +1739,7 @@
    ],
    "blend": "Realtors Association 80% + Property Excellence 20%",
    "swatch": [
-    "#f5f4f0",
+    "#ffffff",
     "#c41230",
     "#d4a843",
     "#333333"
@@ -1764,7 +1764,7 @@
     "#f0f7ff",
     "#003366",
     "#f5a623",
-    "#1e3a5f"
+    "#4b5563"
    ]
   },
   {
@@ -1809,7 +1809,7 @@
     "#faf8f5",
     "#0ea5e9",
     "#c2703e",
-    "#3d3d3d"
+    "#6b7280"
    ]
   },
   {
@@ -1874,7 +1874,7 @@
    ],
    "blend": "Sports League 80% + Athletic Excellence 20%",
    "swatch": [
-    "#f9fafb",
+    "#ffffff",
     "#ca8a04",
     "#3b82f6",
     "#1e293b"
@@ -1968,7 +1968,7 @@
     "#ffffff",
     "#2563eb",
     "#94a3b8",
-    "#0f172a"
+    "#475569"
    ]
   },
   {
@@ -2010,7 +2010,7 @@
    ],
    "blend": "Professional Network 80% + Career Excellence 20%",
    "swatch": [
-    "#f8fafc",
+    "#ffffff",
     "#f97316",
     "#0d9488",
     "#334155"
@@ -2079,7 +2079,7 @@
    ],
    "blend": "Scandinavian 60% + Japanese Minimalism 25% + Swiss Grid 15%",
    "swatch": [
-    "#f5f5f4",
+    "#fafaf9",
     "#c9b8a3",
     "#8b7355",
     "#3d3d37"
@@ -2102,10 +2102,10 @@
    ],
    "blend": "Five-Star Hospitality 60% + Art Deco 25% + Editorial 15%",
    "swatch": [
-    "#fffaf0",
+    "#f8f6f0",
     "#800020",
     "#b8860b",
-    "#2c1810"
+    "#5a4a42"
    ]
   },
   {
@@ -2127,7 +2127,7 @@
     "#0a0e1a",
     "#00ffff",
     "#ff00ff",
-    "#e0e6f0"
+    "#9ca8bc"
    ]
   },
   {
@@ -2147,10 +2147,10 @@
    ],
    "blend": "Biophilic Design 60% + Spa Serenity 25% + Sustainable Tech 15%",
    "swatch": [
-    "#f9f4ef",
-    "#f0b740",
+    "#f7ede1",
+    "#e6b84d",
     "#e5a893",
-    "#3a3428"
+    "#2d5016"
    ]
   },
   {
@@ -2173,7 +2173,7 @@
     "#0a1628",
     "#2e4158",
     "#d4af37",
-    "#c4d3e0"
+    "#a8b9ca"
    ]
   },
   {
@@ -2215,10 +2215,10 @@
    ],
    "blend": "University Library 60% + Scientific Publishing 25% + Dark Academia 15%",
    "swatch": [
-    "#e8dcc8",
+    "#ded2b8",
     "#b8860b",
     "#6b1c23",
-    "#2c2416"
+    "#5c4a35"
    ]
   },
   {
@@ -2261,10 +2261,10 @@
    ],
    "blend": "Historical Preservation 60% + Genealogy Research 25% + Classical Typography 15%",
    "swatch": [
-    "#f4f1e8",
+    "#eeeadc",
     "#b8860b",
     "#8b4513",
-    "#2d241a"
+    "#6b5744"
    ]
   },
   {
@@ -2284,7 +2284,7 @@
    ],
    "blend": "Scientific Research 60% + Futuristic Tech 25% + Academic Precision 15%",
    "swatch": [
-    "#0f0f23",
+    "#111827",
     "#06b6d4",
     "#8b5cf6",
     "#ffffff"
@@ -2307,7 +2307,7 @@
    ],
    "blend": "Nautical Heritage 60% + Trade Association 25% + Luxury Yacht 15%",
    "swatch": [
-    "#fffef7",
+    "#fffbea",
     "#8b0000",
     "#b8860b",
     "#0a1f44"
@@ -2333,7 +2333,7 @@
     "#fff8dc",
     "#8b4513",
     "#6b8e23",
-    "#654321"
+    "#8b6914"
    ]
   },
   {
@@ -2353,10 +2353,10 @@
    ],
    "blend": "Private Aviation 60% + Aerospace Engineering 25% + VIP Concierge 15%",
    "swatch": [
-    "#0a1128",
-    "#003876",
+    "#05183e",
     "#d4af37",
-    "#e5e7eb"
+    "#9c7e32",
+    "#d1d5db"
    ]
   },
   {
@@ -2376,10 +2376,10 @@
    ],
    "blend": "Classical Music 60% + Academic Institution 25% + Event Management 15%",
    "swatch": [
-    "#f8f5e8",
+    "#f3ede0",
     "#6b1c3e",
     "#d4af37",
-    "#2c2c2c"
+    "#6b1c3e"
    ]
   },
   {
@@ -2399,10 +2399,10 @@
    ],
    "blend": "Sustainable Energy 60% + Data Dashboard 25% + Advocacy Platform 15%",
    "swatch": [
-    "#f8fafc",
+    "#f0f9ff",
     "#0284c7",
     "#047857",
-    "#334155"
+    "#475569"
    ]
   },
   {
@@ -2425,7 +2425,7 @@
     "#faf8f3",
     "#b8860b",
     "#7d1328",
-    "#0a1628"
+    "#6b6b6b"
    ]
   },
   {
@@ -2445,7 +2445,7 @@
    ],
    "blend": "Fine Dining 60% + Professional Certification 25% + Recipe Archive 15%",
    "swatch": [
-    "#fff8f0",
+    "#faf2e8",
     "#b87333",
     "#c9a961",
     "#2c1810"
@@ -2468,10 +2468,10 @@
    ],
    "blend": "Architect Portfolio 60% + Professional Network 25% + Urban Planning 15%",
    "swatch": [
-    "#f9fafb",
+    "#ffffff",
     "#60a5fa",
     "#1e40af",
-    "#1f2937"
+    "#6b7280"
    ]
   },
   {
@@ -2517,7 +2517,7 @@
     "#0a0a0f",
     "#00f0ff",
     "#ffd700",
-    "#ffffff"
+    "#b0b0c8"
    ]
   },
   {
@@ -2537,10 +2537,10 @@
    ],
    "blend": "Vineyard Estate 60% + Sommelier Certification 25% + Collector's Club 15%",
    "swatch": [
-    "#fffef9",
+    "#faf2e6",
     "#b8860b",
-    "#e6c84f",
-    "#2a1810"
+    "#6b1b2e",
+    "#5c4033"
    ]
   },
   {
@@ -2559,7 +2559,7 @@
    ],
    "blend": "Web3/Crypto 60% + Governance Platform 25% + Community Hub 15%",
    "swatch": [
-    "#0a0614",
+    "#120b21",
     "#0066ff",
     "#00d4ff",
     "#ffffff"
@@ -2608,7 +2608,7 @@
     "#ffffff",
     "#e8a5a5",
     "#000000",
-    "#000000"
+    "#666666"
    ]
   },
   {
@@ -2628,10 +2628,10 @@
    ],
    "blend": "Racing Heritage 60% + Collector's Network 25% + Track Day Management 15%",
    "swatch": [
-    "#0d0d0d",
+    "#141414",
     "#ff1f1a",
     "#b30500",
-    "#e8e8e8"
+    "#8c8c8c"
    ]
   },
   {
@@ -2650,7 +2650,7 @@
    ],
    "blend": "Government Formal 60% + International Relations 25% + Secure Communications 15%",
    "swatch": [
-    "#faf5e9",
+    "#f8eede",
     "#d4af37",
     "#1a365d",
     "#0f1f3a"
@@ -2676,7 +2676,7 @@
     "#0f0f1e",
     "#00ff88",
     "#ffd93d",
-    "#ffffff"
+    "#b8b8d1"
    ]
   },
   {
@@ -2699,7 +2699,7 @@
     "#faf8f5",
     "#8b9e87",
     "#c9a961",
-    "#4a4e42"
+    "#6b7563"
    ]
   },
   {
@@ -2722,7 +2722,7 @@
     "#0a0e27",
     "#58a6ff",
     "#ff7b00",
-    "#f0f6fc"
+    "#c2c8d1"
    ]
   },
   {
@@ -2745,7 +2745,7 @@
     "#fafbfc",
     "#fb923c",
     "#3b82f6",
-    "#1f2937"
+    "#6b7280"
    ]
   },
   {
@@ -2768,7 +2768,7 @@
     "#ffffff",
     "#60a5fa",
     "#047857",
-    "#111827"
+    "#4b5563"
    ]
   },
   {
@@ -2792,7 +2792,7 @@
     "#faf9f7",
     "#0369a1",
     "#082f49",
-    "#1c1917"
+    "#57534e"
    ]
   },
   {
@@ -2815,7 +2815,7 @@
     "#f8fafc",
     "#0066cc",
     "#06b6d4",
-    "#0f172a"
+    "#475569"
    ]
   },
   {
@@ -2838,7 +2838,7 @@
     "#fefce8",
     "#f97316",
     "#047857",
-    "#44403c"
+    "#57534e"
    ]
   },
   {
@@ -2861,7 +2861,7 @@
     "#faf9f7",
     "#8b6914",
     "#c9a227",
-    "#2d2d2d"
+    "#5a5a5a"
    ]
   },
   {
@@ -2885,7 +2885,7 @@
     "#fff7ed",
     "#fb923c",
     "#b45309",
-    "#57534e"
+    "#78716c"
    ]
   },
   {
@@ -2909,7 +2909,7 @@
     "#fafbfc",
     "#3b82f6",
     "#ef4444",
-    "#1e293b"
+    "#475569"
    ]
   },
   {
@@ -2979,7 +2979,7 @@
     "#faf9f7",
     "#3b82f6",
     "#7c3aed",
-    "#1e293b"
+    "#64748b"
    ]
   },
   {
@@ -3097,7 +3097,7 @@
     "#f5f3f0",
     "#6ca575",
     "#e8a87c",
-    "#2c2c2c"
+    "#6b6b6b"
    ]
   },
   {
@@ -3120,7 +3120,7 @@
     "#f9f7f3",
     "#9a6b3d",
     "#2d2419",
-    "#2d2419"
+    "#3f352f"
    ]
   },
   {
@@ -3143,7 +3143,7 @@
     "#f4f2ed",
     "#d4b684",
     "#c17a5c",
-    "#2a2e2c"
+    "#4a4e4c"
    ]
   },
   {
@@ -3166,7 +3166,7 @@
     "#faf8f5",
     "#d4925a",
     "#9a5c3d",
-    "#3d3d3d"
+    "#6b6b6b"
    ]
   },
   {
@@ -3189,7 +3189,7 @@
     "#ffffff",
     "#0064cc",
     "#003d7a",
-    "#1a1a1a"
+    "#5a5a5a"
    ]
   },
   {
@@ -3209,10 +3209,10 @@
    ],
    "blend": "Art Nouveau 60% + Organic Modern 25% + Soft Pastel 15%",
    "swatch": [
-    "#faf7f2",
+    "#f5f1eb",
     "#7a9b76",
     "#c9a961",
-    "#3a3a3a"
+    "#5a5a5a"
    ]
   },
   {
@@ -3258,7 +3258,7 @@
     "#faf8f4",
     "#6b5b7a",
     "#b89977",
-    "#2d2d2d"
+    "#5a5a5a"
    ]
   },
   {
@@ -3278,7 +3278,7 @@
    ],
    "blend": "Rococo Style 55% + Soft Gradients 25% + Floral Organic 20%",
    "swatch": [
-    "#fff9f5",
+    "#fae1e6",
     "#d4af7a",
     "#88bfa8",
     "#3d3d3d"
@@ -3370,7 +3370,7 @@
    ],
    "blend": "Baroque Architecture 55% + Dramatic Typography 25% + Opera House 20%",
    "swatch": [
-    "#f5f1e8",
+    "#faf8f4",
     "#b8860b",
     "#6d0f2b",
     "#311b92"
@@ -3488,7 +3488,7 @@
     "#f7f5f2",
     "#8b9a7a",
     "#6b5d54",
-    "#4a4a4a"
+    "#6b5d54"
    ]
   },
   {
@@ -3534,7 +3534,7 @@
     "#f5efe7",
     "#2b6f6f",
     "#d4a944",
-    "#4a3c3c"
+    "#6b5d5d"
    ]
   },
   {
@@ -3557,7 +3557,7 @@
     "#faf7f0",
     "#1a4d7d",
     "#e6b84d",
-    "#5c3a2e"
+    "#7a5d52"
    ]
   },
   {
@@ -3577,7 +3577,7 @@
    ],
    "blend": "Chinese Imperial 55% + Forbidden City 25% + Luxury Red 20%",
    "swatch": [
-    "#f5f2e8",
+    "#faf8f0",
     "#b8232f",
     "#b8941f",
     "#2d2d2d"
@@ -3600,10 +3600,10 @@
    ],
    "blend": "Greek Island 55% + Mediterranean Blue 25% + Whitewashed Architecture 20%",
    "swatch": [
-    "#fff8f0",
+    "#ffffff",
     "#2b5c8c",
     "#d87d5c",
-    "#1a3a52"
+    "#717171"
    ]
   },
   {
@@ -3669,10 +3669,10 @@
    ],
    "blend": "Persian Design 55% + Intricate Patterns 25% + Luxury Warmth 20%",
    "swatch": [
-    "#f5f0e8",
+    "#efe8de",
     "#9d5c28",
     "#6b1e3d",
-    "#1a2332"
+    "#34495e"
    ]
   },
   {
@@ -3692,7 +3692,7 @@
    ],
    "blend": "Mexican Talavera 50% + Folk Art Vibrant 30% + Festive Color 20%",
    "swatch": [
-    "#fefce8",
+    "#fffef4",
     "#f97316",
     "#06b6d4",
     "#111827"
@@ -3715,10 +3715,10 @@
    ],
    "blend": "Viking Heritage 50% + Norse Mythology 30% + Modern Nordic 20%",
    "swatch": [
-    "#f1f5f9",
+    "#eaeff5",
     "#06b6d4",
     "#0f172a",
-    "#0f172a"
+    "#1e293b"
    ]
   },
   {
@@ -3738,7 +3738,7 @@
    ],
    "blend": "Brazilian Carnival 50% + Tropical Vibrant 30% + Samba Energy 20%",
    "swatch": [
-    "#fffbeb",
+    "#fffdf5",
     "#fbbf24",
     "#f97316",
     "#111827"
@@ -3761,7 +3761,7 @@
    ],
    "blend": "Flat Design 55% + Subtle Shadows 25% + Bold Color 20%",
    "swatch": [
-    "#f7fafc",
+    "#ffffff",
     "#3b82f6",
     "#ff6b6b",
     "#2d3748"
@@ -3784,7 +3784,7 @@
    ],
    "blend": "Skeuomorphism 50% + Realistic Textures 30% + Modern Polish 20%",
    "swatch": [
-    "#f8fafc",
+    "#f1f5f9",
     "#334155",
     "#64748b",
     "#1c1917"
@@ -3807,9 +3807,9 @@
    ],
    "blend": "Isometric Design 55% + Tech Illustration 25% + Playful Color 20%",
    "swatch": [
-    "#f8fafc",
+    "#ffffff",
+    "#fbbf24",
     "#059669",
-    "#f59e0b",
     "#1e293b"
    ]
   },
@@ -3853,10 +3853,10 @@
    ],
    "blend": "Gradient Mesh 55% + Aurora Effects 25% + Glassmorphism 20%",
    "swatch": [
-    "#1a1a2e",
+    "#152544",
     "#f97316",
     "#06b6d4",
-    "#1a1a1a"
+    "#b9bec7"
    ]
   },
   {
@@ -3879,7 +3879,7 @@
     "#ffffff",
     "#ff6b35",
     "#2d3142",
-    "#2d3142"
+    "#6c757d"
    ]
   },
   {
@@ -3991,7 +3991,7 @@
    ],
    "blend": "Sticker Design 55% + Kawaii Cute 25% + Rounded Friendly 20%",
    "swatch": [
-    "#fff6f6",
+    "#f8f7fb",
     "#ff6b9d",
     "#4fc3f7",
     "#4a4a4a"
@@ -4132,7 +4132,7 @@
     "#f5f1e8",
     "#cc5500",
     "#2d5016",
-    "#1a1a1a"
+    "#6b6b6b"
    ]
   },
   {
@@ -4178,7 +4178,7 @@
     "#f5efe0",
     "#a0201c",
     "#0f3057",
-    "#2d2416"
+    "#6b5d52"
    ]
   },
   {
@@ -4201,7 +4201,7 @@
     "#0a0a0a",
     "#800020",
     "#d4af37",
-    "#f5f5dc"
+    "#8b8378"
    ]
   },
   {
@@ -4224,7 +4224,7 @@
     "#0a0a0a",
     "#d4af37",
     "#8b1538",
-    "#fafafa"
+    "#f5f1e8"
    ]
   },
   {
@@ -4247,7 +4247,7 @@
     "#0d0d0d",
     "#ffcc33",
     "#00ff41",
-    "#ffaa00"
+    "#cc8800"
    ]
   },
   {
@@ -4270,7 +4270,7 @@
     "#f5e6d3",
     "#b8860b",
     "#4a2511",
-    "#4a2511"
+    "#3b2414"
    ]
   },
   {
@@ -4408,7 +4408,7 @@
     "#ffffff",
     "#ff0054",
     "#000000",
-    "#000000"
+    "#404040"
    ]
   },
   {
@@ -4428,10 +4428,10 @@
    ],
    "blend": "Parallax Effect 55% + 3D Layers 25% + Immersive Scroll 20%",
    "swatch": [
-    "#0a1628",
+    "#142032",
     "#38bdf8",
     "#e8f4f8",
-    "#ffffff"
+    "#cbd5e1"
    ]
   },
   {
@@ -4451,10 +4451,10 @@
    ],
    "blend": "Liquid Animation 55% + Morphing Shapes 25% + Fluid Dynamics 20%",
    "swatch": [
-    "#f8fafc",
+    "#ffffff",
     "#c4b5fd",
     "#60a5fa",
-    "#1e293b"
+    "#64748b"
    ]
   },
   {
@@ -4474,10 +4474,10 @@
    ],
    "blend": "Micro-interactions 55% + Feedback Design 25% + Delight Details 20%",
    "swatch": [
-    "#f9fafb",
+    "#ffffff",
+    "#fbbf24",
     "#d97706",
-    "#60a5fa",
-    "#374151"
+    "#6b7280"
    ]
   },
   {
@@ -4497,9 +4497,9 @@
    ],
    "blend": "Fantasy RPG 55% + Medieval UI 25% + Quest Interface 20%",
    "swatch": [
-    "#e8d4a8",
+    "#eedcb5",
     "#8b0000",
-    "#1e5631",
+    "#c9a961",
     "#3e2723"
    ]
   },
@@ -4543,10 +4543,10 @@
    ],
    "blend": "Mobile Game UI 55% + Casual Gaming 25% + Achievement System 20%",
    "swatch": [
-    "#e3f2fd",
+    "#f5f0e4",
     "#ffa559",
     "#c5a3e8",
-    "#2c3e50"
+    "#5a6c7d"
    ]
   },
   {
@@ -4704,7 +4704,7 @@
    ],
    "blend": "AI-First Design 55% + Conversational UI 25% + Adaptive Layout 20%",
    "swatch": [
-    "#f9fafb",
+    "#ffffff",
     "#a78bfa",
     "#ec4899",
     "#1f2937"
@@ -4750,10 +4750,10 @@
    ],
    "blend": "Spatial UI 55% + AR/VR Interface 25% + 3D Space 20%",
    "swatch": [
-    "#0f1629",
+    "#151b32",
     "#06b6d4",
     "#818cf8",
-    "#ffffff"
+    "#b9bbc2"
    ]
   },
   {
@@ -4773,9 +4773,9 @@
    ],
    "blend": "Generative Design 55% + Algorithmic Art 25% + Creative Code 20%",
    "swatch": [
-    "#f8f9fa",
-    "#00d9ff",
+    "#f1f3f5",
     "#fb5607",
+    "#8338ec",
     "#1e1b4b"
    ]
   },
@@ -4819,10 +4819,10 @@
    ],
    "blend": "VR/AR Aesthetics 55% + Cyberpunk Neon 30% + Glassmorphism 15%",
    "swatch": [
-    "#0d0221",
+    "#100c28",
     "#00fff5",
     "#ff006e",
-    "#fafafa"
+    "#b8b7bf"
    ]
   },
   {
@@ -4842,10 +4842,10 @@
    ],
    "blend": "Security Tech 55% + Organic Patterns 30% + Minimal Clean 15%",
    "swatch": [
-    "#f8fafc",
+    "#ffffff",
     "#00d084",
     "#0ea5e9",
-    "#1f2937"
+    "#6b7280"
    ]
   },
   {
@@ -4914,7 +4914,7 @@
     "#ffffff",
     "#00a8ff",
     "#8b5cf6",
-    "#1f2937"
+    "#6b7280"
    ]
   },
   {
@@ -4937,7 +4937,7 @@
     "#ffffff",
     "#0099ff",
     "#f59e0b",
-    "#111827"
+    "#6b7280"
    ]
   },
   {
@@ -4957,7 +4957,7 @@
    ],
    "blend": "Environmental Tech 55% + Data Visualization 30% + Nature Organic 15%",
    "swatch": [
-    "#f9fafb",
+    "#f5f5f4",
     "#0284c7",
     "#22c55e",
     "#1f2937"
@@ -4980,7 +4980,7 @@
    ],
    "blend": "Mirror World 55% + Simulation Tech 30% + Real-Time Data 15%",
    "swatch": [
-    "#f5f5f5",
+    "#fafafa",
     "#00bcd4",
     "#9c27b0",
     "#424242"
@@ -5003,10 +5003,10 @@
    ],
    "blend": "Web3/NFT Aesthetics 55% + Blockchain Patterns 30% + Crypto Luxury 15%",
    "swatch": [
-    "#f5f5f5",
+    "#e8ebf9",
     "#f7931a",
     "#0d47a1",
-    "#424242"
+    "#616161"
    ]
   },
   {
@@ -5029,7 +5029,7 @@
     "#0f172a",
     "#3b82f6",
     "#16a34a",
-    "#e2e8f0"
+    "#cbd5e1"
    ]
   },
   {
@@ -5049,7 +5049,7 @@
    ],
    "blend": "Korean Pop Culture 55% + Neon City 30% + Cute Aesthetics 15%",
    "swatch": [
-    "#1a0b2e",
+    "#201039",
     "#00d4ff",
     "#d4ff00",
     "#ffffff"
@@ -5075,7 +5075,7 @@
     "#064e3b",
     "#fef3c7",
     "#059669",
-    "#f0fdf4"
+    "#d1fae5"
    ]
   },
   {
@@ -5095,7 +5095,7 @@
    ],
    "blend": "Extreme Minimal 55% + Aurora Borealis 30% + Ice Crystal 15%",
    "swatch": [
-    "#e0f2fe",
+    "#f8fafc",
     "#a855f7",
     "#0c4a6e",
     "#0c4a6e"
@@ -5118,7 +5118,7 @@
    ],
    "blend": "Central Asian Patterns 55% + Trade Route Heritage 30% + Modern Commerce 15%",
    "swatch": [
-    "#fef3c7",
+    "#fef6d3",
     "#0369a1",
     "#d97706",
     "#1e3a8a"
@@ -5164,10 +5164,10 @@
    ],
    "blend": "Southern European Warmth 55% + Coastal Elegance 30% + Olive Grove Organic 15%",
    "swatch": [
-    "#fef3e7",
+    "#fafaf9",
     "#1e40af",
     "#60a5fa",
-    "#1e293b"
+    "#78716c"
    ]
   },
   {
@@ -5190,7 +5190,7 @@
     "#fafafa",
     "#1e3a8a",
     "#a16207",
-    "#1e293b"
+    "#334155"
    ]
   },
   {
@@ -5210,10 +5210,10 @@
    ],
    "blend": "Desert Luxury 55% + Geometric Moorish 30% + Nomadic Heritage 15%",
    "swatch": [
-    "#fef3e7",
+    "#fafaf9",
     "#ca8a04",
     "#c2410c",
-    "#1e293b"
+    "#334155"
    ]
   },
   {
@@ -5302,10 +5302,10 @@
    ],
    "blend": "Anti-Hustle Minimal 55% + Mindfulness Calm 30% + Nature Retreat 15%",
    "swatch": [
-    "#fefce8",
-    "#7dd3fc",
+    "#eff7f3",
     "#65a30d",
-    "#78716c"
+    "#57534e",
+    "#57534e"
    ]
   },
   {
@@ -5325,10 +5325,10 @@
    ],
    "blend": "Handcraft Heritage 55% + Digital Tools 30% + Workshop Aesthetic 15%",
    "swatch": [
-    "#fafaf9",
-    "#fdba74",
-    "#f97316",
-    "#334155"
+    "#f1e2cd",
+    "#fb923c",
+    "#b45309",
+    "#475569"
    ]
   },
   {
@@ -5348,7 +5348,7 @@
    ],
    "blend": "Digital Nomad 55% + Travel Adventure 30% + Coworking Modern 15%",
    "swatch": [
-    "#f8fafc",
+    "#eaf2fd",
     "#fb923c",
     "#3b82f6",
     "#475569"
@@ -5371,7 +5371,7 @@
    ],
    "blend": "Historical Conservation 55% + Museum Quality 30% + Modern Archive 15%",
    "swatch": [
-    "#ffffff",
+    "#fdfdfc",
     "#d97706",
     "#92400e",
     "#1c1917"
@@ -5394,7 +5394,7 @@
    ],
    "blend": "Amateur Research 55% + Community Discovery 30% + Data Collection 15%",
    "swatch": [
-    "#f8fafc",
+    "#fbfbf2",
     "#0284c7",
     "#a78bfa",
     "#1e293b"
@@ -5417,9 +5417,9 @@
    ],
    "blend": "Agriculture Tech 55% + City Green Spaces 30% + Sustainable Food 15%",
    "swatch": [
-    "#15803d",
-    "#fef3c7",
+    "#ffffff",
     "#fbbf24",
+    "#a16207",
     "#1c1917"
    ]
   },
@@ -5463,10 +5463,10 @@
    ],
    "blend": "Senior Wisdom 55% + Tech Accessibility 30% + Intergenerational Bridge 15%",
    "swatch": [
-    "#fef3e2",
+    "#fef9f0",
     "#0ea5e9",
     "#7e22ce",
-    "#1f2937"
+    "#4b5563"
    ]
   },
   {
@@ -5510,7 +5510,7 @@
    ],
    "blend": "Quantum Computing 55% + Private Banking 30% + Scientific Precision 15%",
    "swatch": [
-    "#f1f5f9",
+    "#f8fafc",
     "#38bdf8",
     "#7c3aed",
     "#0c0f25"
@@ -5534,10 +5534,10 @@
    ],
    "blend": "Life Sciences 55% + Venture Capital 30% + Research Institution 15%",
    "swatch": [
-    "#f8fafc",
+    "#fafafa",
     "#3b82f6",
     "#0d9488",
-    "#1e293b"
+    "#64748b"
    ]
   },
   {
@@ -5557,7 +5557,7 @@
    ],
    "blend": "Aerospace Industry 55% + International Trade 30% + Tech Innovation 15%",
    "swatch": [
-    "#f8fafc",
+    "#ffffff",
     "#f97316",
     "#a78bfa",
     "#0a0a0f"
@@ -5580,10 +5580,10 @@
    ],
    "blend": "Coin Collecting Heritage 55% + Auction House Prestige 30% + Museum Curation 15%",
    "swatch": [
-    "#fffbeb",
+    "#fff7d9",
     "#059669",
     "#9a7008",
-    "#1f2937"
+    "#6b7280"
    ]
   },
   {
@@ -5603,7 +5603,7 @@
    ],
    "blend": "Rare Books 55% + Library Science 30% + Literary Heritage 15%",
    "swatch": [
-    "#f5f5dc",
+    "#faf4d2",
     "#047857",
     "#5a2a0a",
     "#1f2937"
@@ -5626,10 +5626,10 @@
    ],
    "blend": "Swiss Watchmaking 55% + Precision Engineering 30% + Luxury Craft 15%",
    "swatch": [
-    "#f1f5f9",
+    "#fafafa",
     "#ca8a04",
     "#ef4444",
-    "#374151"
+    "#475569"
    ]
   },
   {
@@ -5652,7 +5652,7 @@
     "#fafafa",
     "#f4a3a3",
     "#78716c",
-    "#1a1a1a"
+    "#78716c"
    ]
   },
   {
@@ -5718,7 +5718,7 @@
    ],
    "blend": "Constitutional Authority 55% + Legal Tradition 30% + Judicial Dignity 15%",
    "swatch": [
-    "#1c1917",
+    "#231f1e",
     "#ca8a04",
     "#fef9ef",
     "#f5f5f4"
@@ -5810,10 +5810,10 @@
    ],
    "blend": "Formula Racing 55% + Automotive Luxury 30% + Collector Prestige 15%",
    "swatch": [
-    "#0a0a0a",
+    "#171717",
     "#fb923c",
     "#dc2626",
-    "#0a0a0a"
+    "#fafafa"
    ]
   },
   {

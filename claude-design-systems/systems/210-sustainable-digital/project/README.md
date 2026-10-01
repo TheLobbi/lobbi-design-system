@@ -32,12 +32,15 @@ This interface embodies the principles of sustainable digital design - reducing 
 
 - `display` — "Atkinson Hyperlegible", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
 
-Faces are hosted on Google Fonts (Atkinson Hyperlegible); load them with:
+Faces are hosted on Google Fonts (Atkinson Hyperlegible, Roboto); load them with:
 
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
 ```
+
+The reference page names Roboto without loading it, so it shows a fallback face; the last link above loads the intended face.
 
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
 - Uppercase is reserved for small labels (`label`), always with the letter-spacing given.
@@ -92,6 +95,9 @@ Timing values: `--transition-base` 200ms ease.
 
 - `page-text` on `page-bg` measures 16.7:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `color-forest-green` 2.5:1, `color-sage-gray` 3.6:1, `color-darker-bg` 1.1:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AAA compliant contrast ratios (7:1 minimum)
 - Atkinson Hyperlegible font for maximum readability

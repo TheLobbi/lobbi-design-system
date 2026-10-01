@@ -120,7 +120,7 @@
     if (cache[id]) return render(cache[id]);
     fetch(BASE + id + '.json').then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(function (d) { cache[id] = d; if (cur === id) render(d); })
-      .catch(function () { $('s').innerHTML = ''; $('s').appendChild(el('div', { cls: 'empty', text: 'Could not load styles/' + id + '.json' })); });
+      .catch(function () { if (cur !== id) return; $('s').innerHTML = ''; $('s').appendChild(el('div', { cls: 'empty', text: 'Could not load styles/' + id + '.json' })); });
   }
   function fill() {
     var q = $('q').value.trim().toLowerCase();
@@ -135,7 +135,7 @@
   $('prev').addEventListener('click', function () { step(-1); });
   $('next').addEventListener('click', function () { step(1); });
   $('rand').addEventListener('click', function () { if (list.length) show(list[Math.floor(Math.random() * list.length)].id); });
-  fetch(BASE + 'index.json').then(function (r) { return r.json(); }).then(function (ix) { all = ix.styles; cur = ix.default; fill(); show(ix.default); })
+  fetch(BASE + 'index.json').then(function (r) { return r.json(); }).then(function (ix) { all = ix.styles; cur = ix.default; fill(); show(cur); })
     .catch(function () { $('s').innerHTML = ''; $('s').appendChild(el('div', { cls: 'empty', text: 'Could not load styles/index.json' })); });
 })();
 </script>

@@ -65,8 +65,11 @@ Timing values: `--transition-fast` 150ms ease-in-out, `--transition-base` 250ms 
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 11.3:1.
+- `page-text` on `page-bg` measures 4.8:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `white` 1.0:1, `terracotta-light` 2.9:1, `olive-green` 4.3:1, `gray-light` 2.3:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - High contrast text pairings
 - Clear focus indicators with blue outline
@@ -106,7 +109,7 @@ Timing values: `--transition-fast` 150ms ease-in-out, `--transition-base` 250ms 
 - CONTRAST RATIOS (WCAG 2.1 AA Compliance):
 - Primary text on white: 14.2:1 (AAA)
 - White text on Santorini blue: 6.1:1 (AA)
-- Text on olive green: 7.8:1 (AA)
+- Text on olive green: 7.8:1 (AA) — **measured 1.1:1** (not for body text)
 - Navy text on sand: 8.3:1 (AA)
 
 ### Responsive Behavior

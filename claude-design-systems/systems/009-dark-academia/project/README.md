@@ -14,7 +14,7 @@ This interface merges the intellectual prestige of Dark Academia (80%) with Lobb
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is dark.
-- Identity colours: `library-brown`, `antique-gold`, `parchment`, `oxford-blue`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `antique-gold`, `parchment`, `oxford-blue`. Lead with the first; use the rest for accents and emphasis.
 - Status colours (`badge-success-bg`) always travel with a word or icon; never signal state by hue alone.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
@@ -46,8 +46,9 @@ Faces are hosted on Google Fonts (Playfair Display, Inter); load them with:
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 16.7:1.
+- `page-text` on `page-bg` measures 10.5:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `library-brown` 1.1:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Further guidance
 

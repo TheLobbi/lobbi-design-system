@@ -15,7 +15,7 @@ Investment Elite: Private Wealth 60% + Data Visualization 25% + Bloomberg 15%.
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is dark.
-- Identity colours: `primary-darkest`, `primary-lighter`, `silver-light`, `gold-light`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `silver-light`, `gold-light`, `gold-darker`. Lead with the first; use the rest for accents and emphasis.
 - Status colours (`success`, `success-dark`, `danger`, `danger-dark`, `warning`, `info`) always travel with a word or icon; never signal state by hue alone.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
@@ -52,8 +52,9 @@ Timing values: `--transition-fast` 0.15s ease, `--transition-base` 0.3s ease, `-
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 11.9:1.
+- `page-text` on `page-bg` measures 8.7:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `primary-darkest` 1.0:1, `silver-darker` 4.5:1, `danger` 3.8:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Further guidance
 

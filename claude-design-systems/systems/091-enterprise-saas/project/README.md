@@ -23,6 +23,14 @@ Enterprise SaaS: Enterprise SaaS 60% + Swiss Typography 25% + Material Design 15
 
 - `display` — -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
 
+Faces are hosted on Google Fonts (Roboto); load them with:
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+```
+
+The reference page names Roboto without loading it, so it shows a fallback face; the last link above loads the intended face.
+
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
 - Uppercase is reserved for small labels (`label`), always with the letter-spacing given.
 
@@ -47,6 +55,7 @@ Timing values: `--transition-fast` 150ms cubic-bezier(0.4, 0, 0.2, 1), `--transi
 
 - `page-text` on `page-bg` measures 5.9:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `color-primary-600` 3.5:1, `color-primary-700` 4.4:1, `color-neutral-400` 1.8:1, `color-neutral-500` 2.6:1, `color-neutral-600` 4.4:1, `color-success` 2.7:1, `color-error` 3.5:1, `surface-base` 1.0:1, `surface-elevated-1` 1.0:1, `surface-elevated-2` 1.0:1, `kpi-icon-text-2` 3.6:1, `kpi-icon-text-3` 4.3:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Further guidance
 

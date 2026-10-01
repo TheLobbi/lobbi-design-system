@@ -14,7 +14,7 @@ Premium Winery Heritage & Terroir Excellence. Inspired by: Opus One, Château Ma
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is light.
-- Identity colours: `wine-burgundy`, `cream`, `vineyard-green`, `gold`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `wine-burgundy`, `vineyard-green`, `gold`. Lead with the first; use the rest for accents and emphasis.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
 ### Palette rationale
@@ -90,12 +90,15 @@ Timing values: `--transition-quick` 150ms ease, `--transition-medium` 300ms ease
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 8.9:1.
+- `page-text` on `page-bg` measures 8.5:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `cream` 1.1:1, `cream-dark` 1.1:1, `vineyard-green` 4.4:1, `gold` 2.9:1, `gold-light` 2.0:1, `category-tag-bg` 1.1:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - ├─ WCAG 2.1 AA contrast ratios maintained
 - ├─ Burgundy (#722f37) on cream (#faf6eb): 8.2:1 (AAA)
-- ├─ Green (#4d7c0f) on cream: 6.1:1 (AA)
+- ├─ Green (#4d7c0f) on cream: 6.1:1 (AA) — **measured 4.4:1** (not for body text)
 - ├─ Gold (#b8860b) used decoratively, not for critical info
 - ├─ Semantic HTML5 structure (estate organization)
 - Keyboard navigation with visible focus states

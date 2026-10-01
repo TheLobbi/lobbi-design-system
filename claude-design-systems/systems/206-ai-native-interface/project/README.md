@@ -91,6 +91,9 @@ Timing values: `--transition-fast` 150ms ease-in-out, `--transition-base` 200ms 
 
 - `page-text` on `page-bg` measures 14.0:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `color-soft-purple` 4.1:1, `color-white` 1.0:1, `color-medium-gray` 2.4:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA compliant contrast ratios (4.5:1 minimum)
 - Semantic HTML supporting screen readers and AI assistants

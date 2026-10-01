@@ -15,12 +15,20 @@ Sports Premium: Athletic Excellence 60% + Broadcast Media 25% + Premium Membersh
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is dark.
-- Identity colours: `primary-dark`, `electric-blue`, `victory-orange`, `athletic-green`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `electric-blue`, `victory-orange`, `athletic-green`. Lead with the first; use the rest for accents and emphasis.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
 ## Typography
 
 - `display` — Inter, system-ui, sans-serif
+
+Faces are hosted on Google Fonts (Inter); load them with:
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+```
+
+The reference page names Inter without loading it, so it shows a fallback face; the last link above loads the intended face.
 
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
 - Uppercase is reserved for small labels (`label`, `button`), always with the letter-spacing given.
@@ -46,6 +54,7 @@ Timing values: `--transition-fast` 150ms cubic-bezier(0.4, 0, 0.2, 1), `--transi
 
 - `page-text` on `page-bg` measures 19.3:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `primary-dark` 1.0:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Not synced
 

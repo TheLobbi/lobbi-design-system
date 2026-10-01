@@ -83,11 +83,14 @@ Faces are hosted on Google Fonts (Libre Baskerville, IBM Plex Serif); load them 
 
 - `page-text` on `page-bg` measures 13.9:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `marble-cream` 1.1:1, `gold-accent` 2.0:1, `category-tag-bg` 1.1:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA minimum contrast ratios
 - Slate-deep on marble-white: 14.2:1 contrast ratio
 - Gold-accent on slate-blue: 4.8:1 contrast ratio
-- Senate-blue on marble: 8.1:1 contrast ratio
+- Senate-blue on marble: 8.1:1 contrast ratio — **measured 4.6–4.9:1**
 - Focus visible states with 2px gold borders
 - Semantic HTML with proper ARIA landmarks
 - Skip-to-content navigation for screen readers

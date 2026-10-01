@@ -15,7 +15,7 @@ Craftsmanship, Brotherhood & Timeless Quality. Inspired by: Medieval guildhalls,
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is dark.
-- Identity colours: `oak-brown`, `gold-burnished`, `red-guild`, `parchment`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `oak-brown`, `gold-burnished`, `red-guild`. Lead with the first; use the rest for accents and emphasis.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
 ### Palette rationale
@@ -56,7 +56,7 @@ Faces are hosted on Google Fonts (Uncial Antiqua, Merriweather); load them with:
 
 ## Spacing, shape and elevation
 
-- Spacing steps: `space-6.4` 6.4px, `space-8` 8px, `space-14` 14px, `space-20` 20px, `space-24` 24px, `space-32` 32px. Pad cards and sections from these steps only.
+- Spacing steps: `space-6-4` 6.4px, `space-8` 8px, `space-14` 14px, `space-20` 20px, `space-24` 24px, `space-32` 32px. Pad cards and sections from these steps only.
 - Corners: `radius-3` 3px, `radius-4` 4px, `radius-full` 50px.
 - Elevation: `shadow-1`, `shadow-2`, `shadow-3`, lowest first for resting cards, higher for hover and overlays.
 
@@ -84,13 +84,16 @@ Faces are hosted on Google Fonts (Uncial Antiqua, Merriweather); load them with:
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 11.4:1.
+- `page-text` on `page-bg` measures 11.1:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `oak-brown` 1.5:1, `walnut` 1.1:1, `mahogany` 1.0:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA minimum contrast ratios
 - Parchment on mahogany: 11.4:1 contrast ratio
-- Gold-leaf on oak-brown: 5.2:1 contrast ratio
-- Red-guild on parchment: 7.8:1 contrast ratio
+- Gold-leaf on oak-brown: 5.2:1 contrast ratio — **measured 4.4:1** (not for body text)
+- Red-guild on parchment: 7.8:1 contrast ratio — **measured 5.4:1**
 - Focus visible states with 3px borders
 - Semantic HTML with proper headings
 - Skip navigation for assistive technologies

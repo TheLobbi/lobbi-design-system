@@ -65,7 +65,8 @@ function roles(tokens, readme) {
   const primary = (brand[0] || { c: text, n: 'page-text' });
   const accent = brand.find((x) => dist(x.c, primary.c) > 70) || primary;
   const on = (c) => (contrast(c, parse('#ffffff')) >= contrast(c, parse('#111111')) ? '#ffffff' : '#111111');
-  const surface = find(/surface|card|panel|elevated|raised|paper/, (c) => contrast(c, bg) < 1.6 && contrast(text, c) >= 4.5);
+  const surface = (() => { const s = res('page-surface'); return s && contrast(text, over(s, bg)) >= 4.5 ? { c: over(s, bg) } : null; })()
+    || find(/surface|card|panel|elevated|raised|paper/, (c) => contrast(c, bg) < 1.6 && contrast(text, c) >= 4.5);
   const mutedTok = all.find((x) => /muted|secondary|subtle|gray|grey|soft/.test(x.n) && /text|ink|fg|muted|gray|grey/.test(x.n) && contrast(x.c, bg) >= 4.5);
   const border = find(/border|divider|rule|line|outline/, (c) => contrast(c, bg) >= 1.15);
   const status = Object.fromEntries(['success', 'warning', 'danger'].map((k) => {
@@ -107,6 +108,7 @@ fs.mkdirSync(path.join(OUT, 'styles'), { recursive: true });
 fs.mkdirSync(path.join(OUT, 'components/StyleSwitcher'), { recursive: true });
 fs.mkdirSync(path.join(OUT, 'components/Cover'), { recursive: true });
 const index = [];
+const lowPairs = [];
 for (const r of registry) {
   const proj = path.join(ROOT, r.dir, 'project');
   const tokens = JSON.parse(fs.readFileSync(path.join(proj, 'tokens.json'), 'utf8'));
@@ -114,6 +116,10 @@ for (const r of registry) {
   const m = META[r.num];
   const id = path.basename(r.dir);
   const ro = roles(tokens, readme);
+  // Default text must read on the default ground in every style.
+  const cr = contrast(parse(ro.text), parse(ro.bg));
+  if (cr < 3) throw new Error(`style ${r.num} (${r.name}): roles.text ${ro.text} on roles.bg ${ro.bg} is ${cr.toFixed(2)}:1`);
+  if (cr < 4.5) lowPairs.push(`${r.num} ${r.name} ${cr.toFixed(1)}:1`);
   const doc = {
     id, num: r.num, name: r.name, blend: m.blend, tags: m.tags, temperature: m.temp, formality: m.formality, perfectFor: m.perfectFor,
     source: r.source, roles: ro, tokens, readme,
@@ -194,4 +200,4 @@ fs.writeFileSync(idxPath, JSON.stringify({
   libraries: [], sections: {}, groups: [], assetGroups: {}, blobs: {}, docs: { readme: 'project/README.md', sections: [] },
   lastChange: { by: AUTHOR, at: NOW, via: `GitHub · thelobbi/lobbi-design-system@${SHA}`, note: `Merged ${index.length} styles into one system with a Style Switcher` },
 }, null, 2) + '\n');
-console.log(`lobbi: ${index.length} styles, default ${def.id}`);
+console.log(`lobbi: ${index.length} styles, default ${def.id}${lowPairs.length ? `; default text under 4.5:1 (kept as the source has it): ${lowPairs.join('; ')}` : ''}`);

@@ -41,6 +41,7 @@ Creative Studio: Design Agency 60% + Memphis 25% + Bauhaus 15%.
 
 - `page-text` on `page-bg` measures 12.6:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `primary-yellow` 1.6:1, `memphis-pink` 2.7:1, `white` 1.0:1, `gray-medium` 1.6:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Not synced
 

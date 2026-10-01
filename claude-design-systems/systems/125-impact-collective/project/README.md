@@ -34,6 +34,14 @@ MEASURING WHAT MATTERS. Core Principle: "Impact visualization meets organic hope
 
 - `display` — -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
 
+Faces are hosted on Google Fonts (Roboto); load them with:
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+```
+
+The reference page names Roboto without loading it, so it shows a fallback face; the last link above loads the intended face.
+
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
 - Uppercase is reserved for small labels (`label`), always with the letter-spacing given.
 
@@ -73,8 +81,11 @@ Timing values: `--transition-fast` 150ms ease-out, `--transition-base` 250ms eas
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 9.9:1.
+- `page-text` on `page-bg` measures 7.4:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `impact-green` 3.6:1, `leaf-green` 2.5:1, `sky-blue` 2.7:1, `sun-amber` 2.1:1, `gray-300` 1.4:1, `gray-400` 2.4:1, `category-tag-bg` 1.0:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 Level AAA target for all text
 - Minimum 7:1 contrast for body text (cream on brown)

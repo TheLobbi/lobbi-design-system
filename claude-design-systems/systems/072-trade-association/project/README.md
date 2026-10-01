@@ -63,6 +63,9 @@ Faces are hosted on Google Fonts (IBM Plex Sans, IBM Plex Serif, IBM Plex Mono);
 
 - `page-text` on `page-bg` measures 14.6:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `accent` 3.6:1, `warning` 3.0:1, `success` 3.6:1, `white` 1.1:1, `gray-400` 1.4:1, `gray-500` 2.0:1, `gray-600` 3.2:1, `certification-level-text` 4.3:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA compliant contrast ratios
 - Semantic HTML structure

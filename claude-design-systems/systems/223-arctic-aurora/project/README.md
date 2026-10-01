@@ -83,8 +83,9 @@ Faces are hosted on Google Fonts (Nunito Sans, Libre Franklin); load them with:
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 8.2:1.
+- `page-text` on `page-bg` measures 8.9:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `aurora-green` 1.3:1, `aurora-pink` 3.3:1, `stat-label-text` 4.5:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Further guidance
 

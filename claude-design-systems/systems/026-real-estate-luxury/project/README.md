@@ -73,6 +73,9 @@ Faces are hosted on Google Fonts (Raleway, Cormorant Garamond); load them with:
 
 - `page-text` on `page-bg` measures 13.0:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `warm-white` 1.0:1, `rose-gold` 3.6:1, `property-badge-bg` 1.1:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - 4.5:1 contrast ratio maintained (charcoal on cream)
 - Rose gold used as accent only, never sole indicator

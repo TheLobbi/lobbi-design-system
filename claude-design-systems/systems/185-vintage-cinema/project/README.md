@@ -71,13 +71,16 @@ Timing values: `--transition-base` 300ms cubic-bezier(0.4, 0, 0.2, 1), `--transi
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 19.0:1.
+- `page-text` on `page-bg` measures 17.6:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `color-rich-black` 1.0:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
-- Black on White: 19.5:1 (AAA) - Maximum readability
-- White on Black: 19.5:1 (AAA) - Dramatic reverse
-- Gold on Black: 9.8:1 (AA Large) - Accent hierarchy
-- Red on Cream: 7.2:1 (AA) - Warm secondary
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
+
+- Black on White: 19.5:1 (AAA) - Maximum readability — **measured 19.0:1**
+- White on Black: 19.5:1 (AAA) - Dramatic reverse — **measured 19.0:1**
+- Gold on Black: 9.8:1 (AA Large) - Accent hierarchy — **measured 9.4:1**
+- Red on Cream: 7.2:1 (AA) - Warm secondary — **measured 8.2:1**
 
 ## Component inventory
 

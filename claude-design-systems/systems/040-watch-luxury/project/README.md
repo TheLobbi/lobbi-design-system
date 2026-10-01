@@ -44,7 +44,7 @@ Faces are hosted on Google Fonts (Libre Baskerville, Montserrat); load them with
 ```
 
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
-- Uppercase is reserved for small labels (`body`, `label`), always with the letter-spacing given.
+- Uppercase is reserved for small labels (`label`), always with the letter-spacing given.
 
 ### Type rationale
 
@@ -126,6 +126,7 @@ Timing values: `--transition-fast` 200ms ease-in-out, `--transition-base` 300ms 
 
 - `page-text` on `page-bg` measures 15.0:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `rose-gold` 3.3:1, `cream` 1.0:1, `platinum` 1.6:1, `neutral-light` 1.1:1, `bg-card` 1.1:1, `accent-primary` 3.3:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Component inventory
 

@@ -54,6 +54,7 @@ Timing values: `--transition-fast` 150ms cubic-bezier(0.4, 0, 0.2, 1), `--transi
 
 - `page-text` on `page-bg` measures 16.8:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `compliance-green` 3.0:1, `pending-amber` 2.1:1, `alert-red` 4.4:1, `text-tertiary` 2.0:1, `surface-elevated` 1.0:1, `glass-bg` 1.0:1, `glass-border` 1.0:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Not synced
 

@@ -28,7 +28,8 @@ Premier auction house aesthetic blending the gravitas of Sotheby's and Christie'
 ## Typography
 
 - `display` — "Cormorant Garamond", serif
-- `body` — Montserrat, sans-serif
+- `body` — "Courier New", monospace
+- `montserrat` — "Montserrat", sans-serif
 
 Faces are hosted on Google Fonts (Cormorant Garamond, Montserrat); load them with:
 
@@ -38,7 +39,7 @@ Faces are hosted on Google Fonts (Cormorant Garamond, Montserrat); load them wit
 ```
 
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
-- Uppercase is reserved for small labels (`body`, `label`, `button`), always with the letter-spacing given.
+- Uppercase is reserved for small labels (`label`, `button`), always with the letter-spacing given.
 
 ### Type rationale
 
@@ -76,6 +77,9 @@ Faces are hosted on Google Fonts (Cormorant Garamond, Montserrat); load them wit
 
 - `page-text` on `page-bg` measures 16.1:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `cream` 1.0:1, `gold` 2.3:1, `stat-detail-text` 3.3:1, `category-tag-bg` 1.1:1, `footer-about-text` 1.5:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - High contrast (blue/gold on cream) ensures readability
 - Serif fonts sized generously for clarity

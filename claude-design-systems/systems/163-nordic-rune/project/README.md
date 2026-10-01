@@ -15,7 +15,7 @@ Ancient Wisdom & Stoic Strength. Inspired by: Viking runestones, Norse mythology
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is light.
-- Identity colours: `slate-900`, `ice-blue-400`, `ice-blue-500`, `gold-400`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `slate-900`, `ice-blue-400`, `ice-blue-500`. Lead with the first; use the rest for accents and emphasis.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
 ### Palette rationale
@@ -61,7 +61,7 @@ Faces are hosted on Google Fonts (Cinzel, IBM Plex Sans); load them with:
 
 ## Spacing, shape and elevation
 
-- Spacing steps: `space-8` 8px, `space-16` 16px, `space-19.2` 19.2px, `space-20` 20px, `space-24` 24px, `space-32` 32px. Pad cards and sections from these steps only.
+- Spacing steps: `space-8` 8px, `space-16` 16px, `space-19-2` 19.2px, `space-20` 20px, `space-24` 24px, `space-32` 32px. Pad cards and sections from these steps only.
 - Elevation: `shadow-1`, `shadow-2`, `shadow-3`, lowest first for resting cards, higher for hover and overlays.
 
 - Base unit: 8px - modular grid suggesting stone masonry precision
@@ -87,13 +87,16 @@ Faces are hosted on Google Fonts (Cinzel, IBM Plex Sans); load them with:
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 16.3:1.
+- `page-text` on `page-bg` measures 12.7:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `ice-blue-400` 1.3:1, `ice-blue-600` 2.1:1, `gold-400` 2.0:1, `gold-500` 2.4:1, `stone-100` 1.1:1, `stone-200` 1.1:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA minimum contrast ratios
-- Slate on stone: 12.5:1 contrast ratio (exceeds AAA)
+- Slate on stone: 12.5:1 contrast ratio (exceeds AAA) — **measured 6.1–16.3:1**
 - Ice-blue on charcoal: 8.2:1 contrast ratio
-- Gold on slate: 6.9:1 contrast ratio
+- Gold on slate: 6.9:1 contrast ratio — **measured 2.7–7.6:1**
 - Focus indicators with 3px ice-blue outline
 - Semantic HTML with proper heading hierarchy
 - ARIA landmarks for navigation

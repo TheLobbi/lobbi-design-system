@@ -14,7 +14,7 @@ Robotics: Robotics 75% + Industrial Clean 25%.
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is dark.
-- Identity colours: `electric-orange`, `deep-dark`, `status-operational`, `status-maintenance`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `electric-orange`, `status-operational`, `status-maintenance`. Lead with the first; use the rest for accents and emphasis.
 - Status colours (`status-warning`, `status-critical`) always travel with a word or icon; never signal state by hue alone.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
@@ -30,7 +30,7 @@ Faces are hosted on Google Fonts (DM Sans); load them with:
 ```
 
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
-- Uppercase is reserved for small labels (`heading-3`, `body`, `label`), always with the letter-spacing given.
+- Uppercase is reserved for small labels (`heading-3`, `label`), always with the letter-spacing given.
 
 ## Spacing, shape and elevation
 
@@ -51,8 +51,9 @@ Timing values: `--transition-fast` 150ms ease, `--transition-base` 200ms ease.
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 16.1:1.
+- `page-text` on `page-bg` measures 11.0:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `gray-500` 3.3:1, `status-critical` 4.3:1, `status-idle` 3.3:1, `status-maintenance` 4.4:1, `sensor-blue` 4.4:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Not synced
 

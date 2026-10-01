@@ -37,7 +37,7 @@ This interface embodies the convergence of quantum computing power and instituti
 ## Typography
 
 - `display` — "IBM Plex Serif", Georgia, serif
-- `body` — "IBM Plex Mono", "Courier New", monospace
+- `ibm-plex-mono` — "IBM Plex Mono", monospace
 
 Faces are hosted on Google Fonts (IBM Plex Serif, IBM Plex Mono); load them with:
 
@@ -105,6 +105,9 @@ Timing values: `--transition-fast` 150ms cubic-bezier(0.4, 0, 0.2, 1), `--transi
 
 - `page-text` on `page-bg` measures 17.3:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `color-finance-gold` 1.9:1, `color-precision-silver` 2.3:1, `color-silver-light` 1.4:1, `color-quantum-teal` 2.5:1, `color-pure-white` 1.1:1, `badge-error-bg` 4.4:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AAA compliance for financial data
 - 7:1 contrast ratio for all critical numbers

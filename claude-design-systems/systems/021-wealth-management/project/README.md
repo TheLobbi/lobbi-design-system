@@ -14,7 +14,7 @@ Target Audience: Ultra-high-net-worth individuals, family offices, private wealt
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is light.
-- Identity colours: `forest-green`, `champagne-gold`, `ivory`, `stat-change-text-2`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `forest-green`, `champagne-gold`, `stat-change-text-2`. Lead with the first; use the rest for accents and emphasis.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
 ### Palette rationale
@@ -60,7 +60,7 @@ Faces are hosted on Google Fonts (Cormorant, Inter); load them with:
 ```
 
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
-- Uppercase is reserved for small labels (`body`, `label`), always with the letter-spacing given.
+- Uppercase is reserved for small labels (`label`), always with the letter-spacing given.
 
 ### Type rationale
 
@@ -128,8 +128,8 @@ Faces are hosted on Google Fonts (Cormorant, Inter); load them with:
 - ACCESSIBILITY CONSIDERATIONS
 
 - Color Contrast:
-- Charcoal on Ivory: 11.2:1 (AAA Large Text)
-- Forest Green on Ivory: 8.4:1 (AAA Large Text, AA Normal)
+- Charcoal on Ivory: 11.2:1 (AAA Large Text) — **measured 13.7:1**
+- Forest Green on Ivory: 8.4:1 (AAA Large Text, AA Normal) — **measured 12.2:1**
 - Gold on Green: Decorative only, never text-only indicator
 
 - Typography:
@@ -158,8 +158,9 @@ Timing values: `--transition-fast` 200ms ease-out, `--transition-medium` 300ms e
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 13.7:1.
+- `page-text` on `page-bg` measures 12.9:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `champagne-gold` 1.9:1, `ivory` 1.1:1, `category-tag-bg` 1.1:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Component inventory
 

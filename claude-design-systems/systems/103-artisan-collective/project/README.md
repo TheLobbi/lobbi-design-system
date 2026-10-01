@@ -23,6 +23,14 @@ Artisan Collective: Craftsman Guild 60% + E-commerce Modern 25% + Organic Natura
 - `display` — Georgia, Garamond, serif
 - `body` — Lato, "Open Sans", sans-serif
 
+Faces are hosted on Google Fonts (Lato, Open Sans); load them with:
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap">
+```
+
+The reference page names Lato, Open Sans without loading them, so it shows a fallback face; the last link above loads the intended face.
+
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
 
 ## Spacing, shape and elevation
@@ -38,8 +46,9 @@ Artisan Collective: Craftsman Guild 60% + E-commerce Modern 25% + Organic Natura
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 8.3:1.
+- `page-text` on `page-bg` measures 4.6:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `terracotta-main` 2.7:1, `terracotta-light` 1.7:1, `cream-base` 1.0:1, `cream-warm` 1.1:1, `earth-moss` 3.4:1, `artisan-image-bg` 1.1:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Not synced
 

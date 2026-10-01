@@ -15,7 +15,7 @@ Friendly Progression Platform: This design system embraces the joy and accessibi
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is light.
-- Identity colours: `color-yellow`, `color-blue`, `color-blue-light`, `color-pink`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `color-yellow`, `color-blue`, `color-blue-light`. Lead with the first; use the rest for accents and emphasis.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
 ## Typography
@@ -101,8 +101,9 @@ Timing values: `--transition-bounce` cubic-bezier(0.68, -0.55, 0.265, 1.55), `--
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 9.6:1.
+- `page-text` on `page-bg` measures 4.8:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `color-yellow` 1.2:1, `color-pink` 2.4:1, `color-pink-light` 1.5:1, `color-purple` 3.3:1, `color-white` 1.1:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Not synced
 

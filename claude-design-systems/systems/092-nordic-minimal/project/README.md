@@ -23,6 +23,14 @@ Nordic Minimal: Scandinavian 60% + Japanese Minimalism 25% + Swiss Grid 15%.
 
 - `display` — -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, "Helvetica Neue", Arial, sans-serif
 
+Faces are hosted on Google Fonts (Inter); load them with:
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+```
+
+The reference page names Inter without loading it, so it shows a fallback face; the last link above loads the intended face.
+
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
 
 ## Spacing, shape and elevation
@@ -52,6 +60,7 @@ Timing values: `--transition-fast` 150ms ease, `--transition-base` 250ms ease, `
 
 - `page-text` on `page-bg` measures 10.0:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `color-white` 1.0:1, `color-gray-300` 1.9:1, `color-gray-400` 2.9:1, `color-success` 3.4:1, `color-warning` 2.2:1, `color-info` 3.0:1, `color-error` 3.4:1, `category-tag-bg` 1.1:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Further guidance
 

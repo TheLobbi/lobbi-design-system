@@ -26,7 +26,7 @@ Philanthropy Circle: Foundation Giving 60% + Donor Network 25% + Nonprofit Excel
 
 ## Spacing, shape and elevation
 
-- Spacing steps: `space-7.6` 7.6px, `space-8` 8px, `space-12` 12px, `space-16` 16px, `space-24` 24px, `space-32` 32px. Pad cards and sections from these steps only.
+- Spacing steps: `space-7-6` 7.6px, `space-8` 8px, `space-12` 12px, `space-16` 16px, `space-24` 24px, `space-32` 32px. Pad cards and sections from these steps only.
 - Corners: `radius-8` 8px, `radius-10` 10px, `radius-12` 12px, `radius-20` 20px.
 - Elevation: `shadow-sm`, `shadow-md`, `shadow-lg`, lowest first for resting cards, higher for hover and overlays.
 
@@ -37,8 +37,9 @@ Philanthropy Circle: Foundation Giving 60% + Donor Network 25% + Nonprofit Excel
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 15.9:1.
+- `page-text` on `page-bg` measures 16.2:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `text-muted` 4.1:1, `success-green` 3.7:1, `user-profile-bg` 1.0:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Not synced
 

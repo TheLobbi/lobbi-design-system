@@ -42,8 +42,9 @@ Faces are hosted on Google Fonts (Archivo); load them with:
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 19.8:1.
+- `page-text` on `page-bg` measures 8.1:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `pure-white` 1.0:1, `concrete-gray` 2.6:1, `accent` 3.3:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Not synced
 

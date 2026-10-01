@@ -88,13 +88,16 @@ Faces are hosted on Google Fonts (Libre Baskerville, IBM Plex Sans, IBM Plex Ser
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 17.0:1.
+- `page-text` on `page-bg` measures 17.1:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `academy-gold` 2.2:1, `emerald-green` 3.6:1, `ivory-white` 1.0:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA+ compliance (academic standard)
-- Royal blue on cream: 8.9:1 contrast ratio
+- Royal blue on cream: 8.9:1 contrast ratio — **measured 8.3:1**
 - Scholar black on ivory: 17.2:1 contrast ratio
-- Academy gold on navy: 7.1:1 contrast ratio
+- Academy gold on navy: 7.1:1 contrast ratio — **measured 4.5:1**
 - Focus indicators: 3px gold borders on all interactive elements
 - Semantic HTML with proper ARIA labels for research data
 - Screen reader friendly: All charts and data tables have text alternatives

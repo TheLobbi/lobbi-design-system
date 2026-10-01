@@ -86,8 +86,9 @@ Faces are hosted on Google Fonts (Cormorant Garamond, Source Sans Pro); load the
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 12.3:1.
+- `page-text` on `page-bg` measures 7.6:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `cream-200` 1.1:1, `gold-600` 2.0:1, `gold-500` 1.7:1, `gold-300` 1.3:1, `ocean-600` 4.0:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Component inventory
 

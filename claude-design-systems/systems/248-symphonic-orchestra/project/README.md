@@ -47,7 +47,7 @@ Faces are hosted on Google Fonts (Playfair Display, Spectral, Lora); load them w
 ```
 
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
-- Uppercase is reserved for small labels (`body`, `label`, `button`), always with the letter-spacing given.
+- Uppercase is reserved for small labels (`label`, `button`), always with the letter-spacing given.
 
 ### Type rationale
 
@@ -112,11 +112,14 @@ Timing values: `--transition-slow` 500ms cubic-bezier(0.4, 0, 0.2, 1), `--transi
 
 - `page-text` on `page-bg` measures 16.6:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `color-concert-gold` 3.1:1, `color-marble-white` 1.0:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - Gold (#b8860b) on black (#1a1a1a): 7.2:1 contrast (AAA compliant)
 - White text on orchestra black: 15.8:1 contrast (exceeds AAA)
 - Cream backgrounds with dark text: 14.2:1 contrast
-- 18px minimum body text for program readability
+- 18px minimum body text for program readability — **the reference page sets running text at 16px**
 - 56px minimum touch targets for ticket selection
 - Focus indicators use 2px gold outline with clear visibility
 - Semantic HTML5 for screen reader navigation

@@ -89,18 +89,18 @@ Faces are hosted on Google Fonts (Bangers, Comic Neue); load them with:
 - COLOR PSYCHOLOGY & SEMANTICS
 
 - Primary Palette - Classic Comic Colors:
-- POW Red (#FF1744)           - Action, energy, primary CTAs (8.2:1 contrast)
-- KAPOW Yellow (#FFD600)      - Attention, excitement, highlights (12.5:1)
-- ZOOM Blue (#2962FF)         - Trust, stability, links (6.8:1)
-- Ink Black (#1A1A1A)         - Outlines, text, depth (15.3:1)
-- Paper White (#FFFFFF)       - Backgrounds, clarity, space (21:1)
+- POW Red (#FF1744)           - Action, energy, primary CTAs (8.2:1 contrast) — **measured 3.8:1** (not for body text)
+- KAPOW Yellow (#FFD600)      - Attention, excitement, highlights (12.5:1) — **measured 1.4:1** (not for body text)
+- ZOOM Blue (#2962FF)         - Trust, stability, links (6.8:1) — **measured 4.9:1**
+- Ink Black (#1A1A1A)         - Outlines, text, depth (15.3:1) — **measured 17.4:1**
+- Paper White (#FFFFFF)       - Backgrounds, clarity, space (21:1) — **measured 1.0:1** (not for body text)
 - Halftone Gray (#E0E0E0)     - Texture, subtle backgrounds (1.5:1)
-- Shadow Purple (#6A1B9A)     - Depth, premium elements (7.1:1)
+- Shadow Purple (#6A1B9A)     - Depth, premium elements (7.1:1) — **measured 9.4:1**
 
 - Secondary Palette - Pop Accents:
-- Success Green (#00E676)     - Achievement, confirmation (5.5:1)
-- Warning Orange (#FF6D00)    - Caution, urgency (4.8:1)
-- Info Cyan (#00B8D4)         - Information, neutral actions (5.2:1)
+- Success Green (#00E676)     - Achievement, confirmation (5.5:1) — **measured 1.7:1** (not for body text)
+- Warning Orange (#FF6D00)    - Caution, urgency (4.8:1) — **measured 2.8:1** (not for body text)
+- Info Cyan (#00B8D4)         - Information, neutral actions (5.2:1) — **measured 2.4:1** (not for body text)
 
 - Contrast Strategy:
 - ✓ All text: Minimum 7:1 against backgrounds (WCAG AAA)
@@ -226,7 +226,7 @@ Faces are hosted on Google Fonts (Bangers, Comic Neue); load them with:
 - ACCESSIBILITY COMPLIANCE - WCAG 2.1 LEVEL AA+
 
 - Color Contrast:
-- ✓ Text on white: Minimum 7:1 (exceeds AA requirement)
+- ✓ Text on white: Minimum 7:1 (exceeds AA requirement) — **measured 17.4:1**
 - ✓ Text on colored backgrounds: Minimum 4.5:1
 - ✓ Border contrast: 3:1 minimum against adjacent colors
 - ✓ Focus indicators: 4px solid blue, highly visible
@@ -365,6 +365,7 @@ Timing values: `--transition-fast` 0.15s cubic-bezier(0.4, 0, 0.2, 1), `--transi
 
 - `page-text` on `page-bg` measures 17.4:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `color-pow-red` 3.8:1, `color-kapow-yellow` 1.4:1, `color-paper-white` 1.0:1, `color-success-green` 1.7:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Not synced
 

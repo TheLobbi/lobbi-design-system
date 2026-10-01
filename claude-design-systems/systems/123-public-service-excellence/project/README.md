@@ -22,6 +22,14 @@ Public Service Excellence: Government Civic 30% + Quiet Luxury 25% + Scandinavia
 
 - `display` — -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, "Helvetica Neue", sans-serif
 
+Faces are hosted on Google Fonts (Inter); load them with:
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+```
+
+The reference page names Inter without loading it, so it shows a fallback face; the last link above loads the intended face.
+
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
 - Uppercase is reserved for small labels (`label`), always with the letter-spacing given.
 
@@ -44,8 +52,9 @@ Timing values: `--transition` 250ms cubic-bezier(0.4, 0, 0.2, 1).
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 16.6:1.
+- `page-text` on `page-bg` measures 7.3:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `institutional-white` 1.1:1, `quiet-taupe-dark` 3.6:1, `excellence-gold` 2.3:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Not synced
 

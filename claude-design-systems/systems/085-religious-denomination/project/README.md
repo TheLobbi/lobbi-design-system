@@ -15,7 +15,7 @@ Blend denominational authority (80%) with faith community warmth (20%). Create a
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is light.
-- Identity colours: `sacred-purple`, `grace-gold`, `grace-gold-light`, `peaceful-ivory`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `sacred-purple-light`, `grace-gold`, `grace-gold-light`. Lead with the first; use the rest for accents and emphasis.
 - Status colours (`success-green`, `alert-amber`) always travel with a word or icon; never signal state by hue alone.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
@@ -55,6 +55,9 @@ Faces are hosted on Google Fonts (Cormorant Garamond, Lato); load them with:
 
 - `page-text` on `page-bg` measures 10.0:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `grace-gold-light` 1.4:1, `grace-gold-dark` 2.8:1, `hope-blue` 3.6:1, `white` 1.0:1, `success-green` 3.7:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA compliant color contrasts
 - Clear visual hierarchy for all ages

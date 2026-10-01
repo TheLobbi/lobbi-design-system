@@ -70,6 +70,9 @@ Faces are hosted on Google Fonts (Playfair Display, Source Sans Pro); load them 
 
 - `page-text` on `page-bg` measures 16.5:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `honor-gold` 3.1:1, `silver-gray` 2.5:1, `honor-name-bg` 1.0:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - High contrast for aging eyes
 - Clear, readable typography

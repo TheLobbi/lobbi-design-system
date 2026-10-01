@@ -51,8 +51,9 @@ Timing values: `--transition-smooth` 350ms cubic-bezier(0.4, 0, 0.2, 1).
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 10.3:1.
+- `page-text` on `page-bg` measures 10.4:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `soft-teal` 2.5:1, `rose-gold` 1.5:1, `soft-gray` 1.7:1, `accent-teal-dark` 3.6:1, `success-green` 1.9:1, `white` 1.1:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Not synced
 

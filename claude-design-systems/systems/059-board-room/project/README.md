@@ -15,7 +15,7 @@ CORPORATE BOARD AUTHORITY + EXECUTIVE POWER. Blend Ratio: Board Room (80%) + Exe
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is light.
-- Identity colours: `mahogany-dark`, `executive-cream`, `power-gold`, `navy`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `mahogany-dark`, `power-gold`, `navy`. Lead with the first; use the rest for accents and emphasis.
 - Status colours (`success`, `warning`, `error`, `info`) always travel with a word or icon; never signal state by hue alone.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
@@ -29,7 +29,7 @@ CORPORATE BOARD AUTHORITY + EXECUTIVE POWER. Blend Ratio: Board Room (80%) + Exe
 ## Typography
 
 - `display` — "Libre Baskerville", serif
-- `body` — Lato, sans-serif
+- `lato` — "Lato", sans-serif
 
 Faces are hosted on Google Fonts (Libre Baskerville, Lato); load them with:
 
@@ -80,6 +80,7 @@ Timing values: `--transition-base` 200ms ease-in-out, `--transition-slow` 300ms 
 
 - `page-text` on `page-bg` measures 13.4:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `executive-cream` 1.0:1, `power-gold` 2.9:1, `bronze` 4.1:1, `category-tag-bg` 1.1:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Component inventory
 

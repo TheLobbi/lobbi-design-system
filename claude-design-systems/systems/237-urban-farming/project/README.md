@@ -14,8 +14,8 @@ This design celebrates the intersection of technology and nature in urban agricu
 
 ## Color
 
-- Set the page on `page-bg` with body text in `page-text`. The theme is dark.
-- Identity colours: `growth-green`, `growth-green-light`, `harvest-gold`, `harvest-gold-dark`. Lead with the first; use the rest for accents and emphasis.
+- Set the page on `page-bg` with body text in `page-text`. The theme is light.
+- Identity colours: `page-surface`, `growth-green`, `growth-green-light`, `harvest-gold`. Lead with the first; use the rest for accents and emphasis.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
 ### Palette rationale
@@ -63,8 +63,11 @@ Faces are hosted on Google Fonts (Albert Sans, Literata); load them with:
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 3.5:1.
+- `page-text` on `page-bg` measures 17.0:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `harvest-gold` 1.9:1, `harvest-gold-light` 1.6:1, `earth-beige` 1.1:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG AA contrast for outdoor readability
 - Large touch targets for gloved hands and field use

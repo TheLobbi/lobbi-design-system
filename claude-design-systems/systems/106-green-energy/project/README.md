@@ -23,6 +23,14 @@ Green Energy: Sustainable Energy 60% + Data Dashboard 25% + Advocacy Platform 15
 
 - `display` — -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
 
+Faces are hosted on Google Fonts (Roboto); load them with:
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+```
+
+The reference page names Roboto without loading it, so it shows a fallback face; the last link above loads the intended face.
+
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
 
 ## Spacing, shape and elevation
@@ -38,8 +46,9 @@ Green Energy: Sustainable Energy 60% + Data Dashboard 25% + Advocacy Platform 15
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 9.9:1.
+- `page-text` on `page-bg` measures 7.2:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `green-600` 3.6:1, `green-400` 1.8:1, `blue-600` 3.9:1, `white` 1.0:1, `gray-300` 1.4:1, `gray-400` 2.5:1, `success` 2.4:1, `danger` 3.6:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Not synced
 

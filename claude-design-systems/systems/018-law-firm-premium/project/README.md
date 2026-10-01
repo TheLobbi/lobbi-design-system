@@ -21,8 +21,8 @@ Law Firm Premium: Law Firm Traditional 70% + Modern Conservative 30%.
 ## Typography
 
 - `display` — "Libre Baskerville", Georgia, serif
-- `body` — "EB Garamond", Georgia, serif
-- `source-sans-pro` — "Source Sans Pro", sans-serif
+- `body` — "Source Sans Pro", sans-serif
+- `eb-garamond` — "EB Garamond", serif
 
 Faces are hosted on Google Fonts (Libre Baskerville, EB Garamond, Source Sans Pro); load them with:
 
@@ -46,6 +46,7 @@ Faces are hosted on Google Fonts (Libre Baskerville, EB Garamond, Source Sans Pr
 
 - `page-text` on `page-bg` measures 11.4:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `ivory-50` 1.0:1, `category-tag-bg` 1.0:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Not synced
 

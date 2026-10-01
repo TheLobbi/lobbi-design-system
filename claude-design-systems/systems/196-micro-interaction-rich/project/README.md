@@ -75,8 +75,11 @@ Timing values: `--transition-instant` 0.1s, `--transition-fast` 0.15s, `--transi
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 9.9:1.
+- `page-text` on `page-bg` measures 4.6:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `color-white` 1.0:1, `color-blue` 3.5:1, `color-green-dark` 3.6:1, `color-orange-dark` 3.0:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - All feedback has multiple channels (color + icon + text)
 - Focus states extremely clear for keyboard navigation

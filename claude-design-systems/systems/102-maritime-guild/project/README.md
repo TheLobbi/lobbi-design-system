@@ -37,8 +37,9 @@ Maritime Guild: Nautical Heritage 60% + Trade Association 25% + Luxury Yacht 15%
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 16.1:1.
+- `page-text` on `page-bg` measures 15.7:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `brass-medium` 3.1:1, `brass-light` 2.2:1, `cream-dark` 1.1:1, `cream-light` 1.0:1, `white` 1.0:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Not synced
 

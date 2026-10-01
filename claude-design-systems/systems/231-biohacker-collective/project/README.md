@@ -159,6 +159,9 @@ Faces are hosted on Google Fonts (Overpass, Atkinson Hyperlegible); load them wi
 
 - `page-text` on `page-bg` measures 14.5:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `vital-green` 2.2:1, `heart-red` 3.6:1, `data-blue` 3.5:1, `sleep-blue` 2.4:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - Color Contrast:
 - All text meets WCAG 2.1 AA minimum (4.5:1 ratio)

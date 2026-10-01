@@ -53,8 +53,9 @@ Timing values: `--transition-base` 0.2s ease, `--transition-slow` 0.3s ease.
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 10.2:1.
+- `page-text` on `page-bg` measures 5.0:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `color-primary` 3.6:1, `color-primary-light` 2.5:1, `social-icon-bg` 1.1:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Further guidance
 
@@ -222,9 +223,9 @@ Timing values: `--transition-base` 0.2s ease, `--transition-slow` 0.3s ease.
 - === ACCESSIBILITY COMPLIANCE (WCAG 2.1 AA) ===
 
 - Color Contrast:
-- Primary on white: 4.8:1 (AA Large ✓)
-- Secondary on white: 11.2:1 (AAA ✓)
-- Charcoal on white: 13.5:1 (AAA ✓)
+- Primary on white: 4.8:1 (AA Large ✓) — **measured 1.1–5.3:1**
+- Secondary on white: 11.2:1 (AAA ✓) — **measured 1.1–13.0:1**
+- Charcoal on white: 13.5:1 (AAA ✓) — **measured 10.9:1**
 - All text meets minimum 4.5:1
 
 - Interaction:

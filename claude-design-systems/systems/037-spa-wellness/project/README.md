@@ -50,13 +50,16 @@ Timing values: `--transition-smooth` cubic-bezier(0.4, 0, 0.2, 1).
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 8.2:1.
+- `page-text` on `page-bg` measures 5.0:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `sage-primary` 2.2:1, `sage-deep` 3.1:1, `earth-brown` 4.2:1, `text-tertiary` 3.1:1, `treatment-image-bg` 1.1:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - CONTRAST RATIOS (WCAG AA Minimum):
 - ├─ Sage on Cream: 4.8:1 (AAA for large text)
 - ├─ Earth Brown on Cream: 6.2:1 (AAA compliant)
-- ├─ Body text: #4a4a4a on cream (12:1 - exceptional)
+- ├─ Body text: #4a4a4a on cream (12:1 - exceptional) — **measured 8.2:1**
 - Interactive elements: 4.5:1 minimum guaranteed
 
 ## Further guidance

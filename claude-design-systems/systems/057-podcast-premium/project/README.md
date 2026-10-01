@@ -42,7 +42,7 @@ Faces are hosted on Google Fonts (Nunito, Inter); load them with:
 ```
 
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
-- Uppercase is reserved for small labels (`body`, `label`), always with the letter-spacing given.
+- Uppercase is reserved for small labels (`label`), always with the letter-spacing given.
 
 ### Type rationale
 
@@ -59,7 +59,7 @@ Faces are hosted on Google Fonts (Nunito, Inter); load them with:
 - → 32px: Hero show titles
 - → 24px: Section headings
 - → 18px: Episode titles
-- → 16px: Body text
+- → 16px: Body text — **the reference page sets running text at 14px**
 - → 14px: Metadata, labels
 - → 12px: Captions, timestamps
 
@@ -190,8 +190,9 @@ Timing values: `--transition-fast` 150ms ease-out, `--transition-base` 250ms eas
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 14.0:1.
+- `page-text` on `page-bg` measures 14.2:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `logo-icon-bg` 1.0:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Not synced
 

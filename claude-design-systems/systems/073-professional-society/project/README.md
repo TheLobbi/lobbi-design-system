@@ -68,8 +68,9 @@ Faces are hosted on Google Fonts (Libre Baskerville, Lato); load them with:
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 16.4:1.
+- `page-text` on `page-bg` measures 5.6:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `secondary-gold` 3.1:1, `gold-light` 2.3:1, `progress-fill-bg` 1.0:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Further guidance
 

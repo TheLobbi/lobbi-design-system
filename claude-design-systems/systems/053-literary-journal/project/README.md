@@ -20,7 +20,7 @@ Premium Literary Publications. ━━━━━━━━━━━━━━━━�
 ## Typography
 
 - `display` — "Crimson Pro", Georgia, serif
-- `body` — Inter, -apple-system, sans-serif
+- `inter` — "Inter", sans-serif
 
 Faces are hosted on Google Fonts (Crimson Pro, Inter); load them with:
 
@@ -30,7 +30,7 @@ Faces are hosted on Google Fonts (Crimson Pro, Inter); load them with:
 ```
 
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
-- Uppercase is reserved for small labels (`body`, `label`), always with the letter-spacing given.
+- Uppercase is reserved for small labels (`label`), always with the letter-spacing given.
 
 ## Spacing, shape and elevation
 
@@ -105,6 +105,7 @@ Faces are hosted on Google Fonts (Crimson Pro, Inter); load them with:
 
 - `page-text` on `page-bg` measures 16.4:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `warm-white` 1.1:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Further guidance
 
@@ -134,7 +135,7 @@ Faces are hosted on Google Fonts (Crimson Pro, Inter); load them with:
 - │   - UI Elements: 500-600 weight, clarity in metadata            │
 - │   - Labels: 400 weight, functional precision                     │
 - │                                                                   │
-- │ Scale: 14px base → 16px body → 20px subhead → 32px title         │
+- │ Scale: 14px base → 16px body → 20px subhead → 32px title         │ — **the reference page sets running text at 16px**
 - ┘
 
 - Spacing: Reading-Optimized

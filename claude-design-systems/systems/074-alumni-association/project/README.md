@@ -48,7 +48,7 @@ Faces are hosted on Google Fonts (Playfair Display, Open Sans); load them with:
 
 ## Spacing, shape and elevation
 
-- Spacing steps: `space-4.8` 4.8px, `space-8` 8px, `space-12.8` 12.8px, `space-16` 16px, `space-24` 24px, `space-32` 32px. Pad cards and sections from these steps only.
+- Spacing steps: `space-4-8` 4.8px, `space-8` 8px, `space-12-8` 12.8px, `space-16` 16px, `space-24` 24px, `space-32` 32px. Pad cards and sections from these steps only.
 - Corners: `radius-6` 6px, `radius-8` 8px, `radius-12` 12px, `radius-15` 15px.
 - Elevation: `shadow-1`, lowest first for resting cards, higher for hover and overlays.
 
@@ -67,6 +67,7 @@ Faces are hosted on Google Fonts (Playfair Display, Open Sans); load them with:
 
 - `page-text` on `page-bg` measures 13.9:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `gold` 2.1:1, `gold-light` 1.6:1, `gold-dark` 2.9:1, `white` 1.0:1, `stat-change-bg` 4.2:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Further guidance
 

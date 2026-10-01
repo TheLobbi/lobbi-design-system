@@ -15,14 +15,14 @@ Heritage Society: Historical Preservation 60% + Genealogy Research 25% + Classic
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is light.
-- Identity colours: `parchment-light`, `parchment-dark`, `sepia-medium`, `brown-dark`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `parchment-dark`, `sepia-medium`, `brown-dark`. Lead with the first; use the rest for accents and emphasis.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
 ## Typography
 
 - `display` — "Playfair Display", serif
-- `body` — "EB Garamond", serif
-- `crimson-text` — "Crimson Text", serif
+- `body` — "Crimson Text", serif
+- `eb-garamond` — "EB Garamond", serif
 
 Faces are hosted on Google Fonts (Playfair Display, Crimson Text, EB Garamond); load them with:
 
@@ -47,8 +47,9 @@ Faces are hosted on Google Fonts (Playfair Display, Crimson Text, EB Garamond); 
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 13.5:1.
+- `page-text` on `page-bg` measures 5.7:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `parchment-light` 1.1:1, `parchment-medium` 1.1:1, `sepia-light` 1.7:1, `sepia-dark` 3.7:1, `gold-antique` 2.7:1, `gold-aged` 3.5:1, `category-tag-bg` 1.2:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Not synced
 

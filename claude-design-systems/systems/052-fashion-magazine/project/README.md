@@ -29,6 +29,14 @@ High fashion editorial aesthetic blending Fashion Magazine (80%) with Vogue Eleg
 - `display` — "Playfair Display", Didot, "Bodoni MT", Georgia, serif
 - `body` — -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif
 
+Faces are hosted on Google Fonts (Playfair Display); load them with:
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap">
+```
+
+The reference page names Playfair Display without loading it, so it shows a fallback face; the last link above loads the intended face.
+
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
 - Uppercase is reserved for small labels (`body`, `label`), always with the letter-spacing given.
 
@@ -68,12 +76,15 @@ Timing values: `--transition-fast` 150ms ease, `--transition-base` 300ms ease, `
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 21.0:1.
+- `page-text` on `page-bg` measures 5.7:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `color-white` 1.0:1, `color-pink` 2.6:1, `color-gold` 2.1:1, `stat-label-text` 2.8:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA: Black/white meets 21:1 contrast ratio
-- Pink on White: 3.8:1 (sufficient for large text)
-- Gold on Black: 5.2:1 (sufficient for UI elements)
+- Pink on White: 3.8:1 (sufficient for large text) — **measured 2.6:1** (not for body text)
+- Gold on Black: 5.2:1 (sufficient for UI elements) — **measured 10.0:1**
 - Focus Indicators: 3px solid gold outlines
 - Semantic HTML: Proper heading hierarchy, ARIA labels
 

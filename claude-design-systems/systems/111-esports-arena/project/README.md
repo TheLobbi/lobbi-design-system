@@ -45,8 +45,9 @@ ESports Arena: Gaming/eSports 60% + Streaming Platform 25% + Tournament Manageme
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 19.8:1.
+- `page-text` on `page-bg` measures 9.3:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `neon-purple` 4.3:1, `text-muted` 4.0:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Further guidance
 

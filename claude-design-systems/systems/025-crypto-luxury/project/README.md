@@ -67,6 +67,8 @@ Timing values: `--transition-smooth` 300ms cubic-bezier(0.4, 0, 0.2, 1), `--tran
 - `page-text` on `page-bg` measures 13.2:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
 
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
+
 - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ## Component inventory

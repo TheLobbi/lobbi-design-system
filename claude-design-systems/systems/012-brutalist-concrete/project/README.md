@@ -30,7 +30,7 @@ Faces are hosted on Google Fonts (JetBrains Mono, Space Grotesk); load them with
 ```
 
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
-- Uppercase is reserved for small labels (`display`, `heading-2`, `heading-3`, `body`, `label`, `button`), always with the letter-spacing given.
+- Uppercase is reserved for small labels (`display`, `heading-2`, `heading-3`, `label`, `button`), always with the letter-spacing given.
 
 ## Spacing, shape and elevation
 
@@ -45,6 +45,7 @@ Faces are hosted on Google Fonts (JetBrains Mono, Space Grotesk); load them with
 
 - `page-text` on `page-bg` measures 19.3:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `concrete-400` 2.3:1, `concrete-500` 4.3:1, `pure-white` 1.1:1, `accent-red` 3.5:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Not synced
 

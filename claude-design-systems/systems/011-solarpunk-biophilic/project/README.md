@@ -42,8 +42,9 @@ Faces are hosted on Google Fonts (Plus Jakarta Sans); load them with:
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 10.1:1.
+- `page-text` on `page-bg` measures 9.9:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `leaf-600` 3.2:1, `solar-500` 2.1:1, `sky-400` 2.1:1, `category-tag-bg` 1.0:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Not synced
 

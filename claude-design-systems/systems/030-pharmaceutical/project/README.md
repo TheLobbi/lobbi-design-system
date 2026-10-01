@@ -68,8 +68,11 @@ Faces are hosted on Google Fonts (Open Sans); load them with:
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 13.8:1.
+- `page-text` on `page-bg` measures 9.4:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `badge-icon-bg` 3.0:1, `molecule-icon-bg` 1.1:1, `trial-phase-bg-2` 3.7:1, `progress-fill-bg` 3.2:1, `stat-label-text` 4.4:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 Level AAA:
 - Color contrast ratios >7:1 for all text

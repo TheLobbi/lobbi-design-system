@@ -37,7 +37,7 @@ Faces are hosted on Google Fonts (IBM Plex Sans, Space Grotesk); load them with:
 ```
 
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
-- Uppercase is reserved for small labels (`heading-3`, `heading-4`, `body`, `label`, `button`), always with the letter-spacing given.
+- Uppercase is reserved for small labels (`heading-3`, `heading-4`, `label`, `button`), always with the letter-spacing given.
 
 ## Spacing, shape and elevation
 
@@ -67,6 +67,7 @@ Timing values: `--transition` 200ms cubic-bezier(0.4, 0, 0.2, 1).
 
 - `page-text` on `page-bg` measures 17.1:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `neutral-400` 2.5:1, `category-tag-bg` 1.0:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Further guidance
 

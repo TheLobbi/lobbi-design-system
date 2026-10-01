@@ -52,10 +52,17 @@ const contrast = (a, b) => { const [x, y] = [lum(a), lum(b)].sort((p, q) => q - 
 const over = (fg, bg) => ({ r: fg.r * fg.a + bg.r * (1 - fg.a), g: fg.g * fg.a + bg.g * (1 - fg.a), b: fg.b * fg.a + bg.b * (1 - fg.a), a: 1 });
 const sat = (c) => { const mx = Math.max(c.r, c.g, c.b) / 255, mn = Math.min(c.r, c.g, c.b) / 255, l = (mx + mn) / 2; return mx === mn ? 0 : (mx - mn) / (1 - Math.abs(2 * l - 1)); };
 const dist = (a, b) => Math.hypot(a.r - b.r, a.g - b.g, a.b - b.b);
+const hueBand = (c) => {
+  const r = c.r / 255, g = c.g / 255, b = c.b / 255, mx = Math.max(r, g, b), mn = Math.min(r, g, b), d = mx - mn;
+  let h = d === 0 ? 0 : mx === r ? ((g - b) / d) % 6 : mx === g ? (b - r) / d + 2 : (r - g) / d + 4;
+  h = (h * 60 + 360) % 360;
+  return h < 15 || h >= 345 ? 'red' : h < 45 ? 'orange' : h < 70 ? 'yellow' : h < 170 ? 'green' : h < 200 ? 'cyan' : h < 255 ? 'blue' : h < 290 ? 'purple' : 'pink';
+};
+const HUE_OK = { red: ['red', 'pink', 'orange'], orange: ['orange', 'red', 'yellow'], yellow: ['yellow', 'orange', 'green'], green: ['green', 'yellow', 'cyan'], blue: ['blue', 'cyan', 'purple'], purple: ['purple', 'blue', 'pink'], violet: ['purple', 'blue', 'pink'], pink: ['pink', 'red', 'purple'] };
 
 // ── misc helpers ────────────────────────────────────────────────────────────
 const slug = (s) => s.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-const tokName = (s) => s.replace(/^--/, '').replace(/[^A-Za-z0-9_.-]+/g, '-').replace(/^[^A-Za-z0-9]+/, '').slice(0, 64);
+const tokName = (s) => s.replace(/^--/, '').replace(/[^A-Za-z0-9_-]+/g, '-').replace(/^[^A-Za-z0-9]+/, '').slice(0, 64);
 const pascal = (s) => s.replace(/&/g, ' And ').split(/[^A-Za-z0-9]+/).filter(Boolean).map((w) => w[0].toUpperCase() + w.slice(1)).join('').replace(/^(\d)/, 'S$1');
 const px = (v) => { const m = String(v).trim().match(/^(-?[\d.]+)(px|rem|em)?$/); if (!m) return null; return m[2] === 'rem' || m[2] === 'em' ? +m[1] * 16 : +m[1]; };
 const isLength = (v) => /^(-?[\d.]+(px|rem|em|%)|0)$/.test(String(v).trim());
@@ -166,7 +173,8 @@ function buildTokens(raw, meta, doc) {
   const colorVars = R.order.filter((p) => R.colorOf[p]);
   const darkColorVars = raw.dark.order.filter((p) => parseRgb(raw.dark.resolved[p]));
   const firstIsDark = false;
-  const pageBg = parseRgb(raw.page.bg) || { r: 255, g: 255, b: 255, a: 1 };
+  const WHITE = { r: 255, g: 255, b: 255, a: 1 };
+  const pageBg = over(parseRgb(raw.page.ground || raw.page.bg) || WHITE, WHITE);
   const themes = darkColorVars.length
     ? [{ id: 'light', name: 'Light' }, { id: 'dark', name: 'Dark' }]
     : [lum(pageBg) < 0.2 ? { id: 'dark', name: 'Dark' } : { id: 'light', name: 'Light' }];
@@ -225,21 +233,35 @@ function buildTokens(raw, meta, doc) {
     colorTokens.push({ name, value: x.hex, usage: `Painted directly by the reference page: ${usageFromRefs(x.kinds).replace(/^Used as /, '')}`, _rgb: parseRgb(x.hex) });
   }
   // The page ground and ink, as rendered.
-  const pageText = parseRgb(raw.page.text) || { r: 0, g: 0, b: 0, a: 1 };
+  const pageText = parseRgb(raw.page.ink || raw.page.text) || { r: 0, g: 0, b: 0, a: 1 };
   // Prefer a theme-aware token so the ground and ink follow every theme.
-  const sameAs = (c) => colorTokens.filter((t) => t._rgb && t._rgb.a === 1 && dist(t._rgb, c) < 1).sort((a, b) => (typeof b.value === 'object') - (typeof a.value === 'object'))[0];
+  const sameAs = (c) => colorTokens.filter((t) => t._rgb && t._rgb.a === 1 && dist(t._rgb, c) < 10 && (c.a ?? 1) === 1).sort((a, b) => (typeof b.value === 'object') - (typeof a.value === 'object'))[0];
   const bgTok = sameAs(pageBg), txTok = sameAs(pageText);
   const gradient = raw.page.bodyGround?.image && /gradient/.test(raw.page.bodyGround.image);
   colorTokens.unshift(
-    { name: take('page-bg'), value: bgTok ? `{${bgTok.name}}` : toHex(pageBg), usage: `Page ground${gradient ? ' (first stop of the body gradient)' : ''}. Every text pairing below is checked against it.`, _rgb: pageBg, _ground: true },
-    { name: take('page-text'), value: txTok ? `{${txTok.name}}` : toHex(pageText), usage: `Default body text on \`page-bg\` (${contrast(over(pageText, pageBg), pageBg).toFixed(1)}:1).`, _rgb: pageText, _ink: true },
+    { name: take('page-bg'), value: bgTok ? `{${bgTok.name}}` : toHex(pageBg), usage: `Page ground, as rendered behind the page's content${gradient ? ' (the body gradient, averaged)' : ''}. Every text pairing below is checked against it.`, _rgb: pageBg, _ground: true },
+    { name: take('page-text'), value: txTok ? `{${txTok.name}}` : toHex(pageText), usage: `Default body text on \`page-bg\`: the colour most of the page's text uses that reads on it (${contrast(over(pageText, pageBg), pageBg).toFixed(1)}:1).`, _rgb: pageText, _ink: true },
   );
+  const surf = raw.page.surface && over(parseRgb(raw.page.surface) || WHITE, WHITE);
+  if (surf && dist(surf, pageBg) > 6) {
+    const sTok = sameAs(surf);
+    colorTokens.splice(2, 0, { name: take('page-surface'), value: sTok ? `{${sTok.name}}` : toHex(surf), usage: 'Surface most of the page\'s running text sits on (cards, panels).', _rgb: surf, _surface: true });
+  }
+  // A token named for one hue but holding another: keep the value exact, say so.
+  for (const t of colorTokens) {
+    if (!t._rgb || sat(t._rgb) < 0.25) continue;
+    const word = (t.name.match(/(red|orange|yellow|green|blue|purple|violet|pink)/) || [])[1];
+    if (!word) continue;
+    const band = hueBand(t._rgb);
+    if (!HUE_OK[word].includes(band)) t.usage += ` Named “${word}” in the source, but the value is ${band}; kept exact.`;
+  }
   // Contrast notes for text colours.
   for (const t of colorTokens) {
-    if (!t._rgb || t._ground || t._ink) continue;
+    if (!t._rgb || t._ground || t._ink || t._surface) continue;
     const isText = /text|ink|fg|foreground|muted|link|heading|copy/.test(t.name) || (raw.refs[t._var]?.text?.length) || (raw.hexRefs[solidHex(t._rgb)]?.text?.length);
     if (!isText) continue;
     const cr = contrast(over(t._rgb, pageBg), pageBg);
+    t._cr = cr; t._lowText = cr < 4.5;
     t.usage += ` ${cr.toFixed(1)}:1 on \`page-bg\`${cr < 4.5 ? (cr >= 3 ? ' — large text (24px+) or non-text marks only.' : ' — under 3:1 here, as in the source: use it only on the lighter or darker fills the reference page pairs it with, never as text on `page-bg`.') : '.'}`;
   }
 
@@ -333,7 +355,7 @@ function buildTokens(raw, meta, doc) {
   for (const [fam, styles] of Object.entries(byFam)) groups.push({ name: groupName[fam] || fam, family: fam, styles: styles.map(({ family, ...s }) => s) });
   if (scale.length) groups.push({ name: 'Scale', family: famKey[firstFam(bodyStack).toLowerCase()], styles: scale.slice(0, 16).map((s) => ({ name: s.name, fontSize: s.fontSize, usage: `Size step \`--${s.name}\` from the style's type scale.` })) });
 
-  const strip = (arr) => arr.map(({ _rgb, _var, _ground, _ink, ...t }) => t);
+  const strip = (arr) => arr.map(({ _rgb, _var, _ground, _ink, _surface, ...t }) => t);
   const tokens = {
     name: meta.name,
     version: 1,
@@ -399,7 +421,8 @@ function buildReadme(raw, meta, doc, T) {
   L.push('## Typography', '');
   const famLines = Object.entries(T.families).map(([k, v]) => `- ${code(k)} — ${v}`);
   L.push(...famLines);
-  if (T.gFamilies.length) L.push('', `Faces are hosted on Google Fonts (${T.gFamilies.join(', ')}); load them with:`, '', '```html', ...raw.fontLinks.map((u) => `<link rel="stylesheet" href="${u}">`), '```');
+  if (raw.fontLinks.length) L.push('', `Faces are hosted on Google Fonts (${[...T.gFamilies, ...T.addedFonts].join(', ')}); load them with:`, '', '```html', ...raw.fontLinks.map((u) => `<link rel="stylesheet" href="${u}">`), '```');
+  if (T.addedFonts.length) L.push('', `The reference page names ${T.addedFonts.join(', ')} without loading ${T.addedFonts.length > 1 ? 'them' : 'it'}, so it shows a fallback face; the last link above loads the intended face.`);
   L.push('', `- Set titles in ${code('display')}${T.typeRows.some((r) => r.name === 'heading-2') ? `, sections in ${code('heading-2')}` : ''} and running text in ${code('body')}.`);
   if (T.typeRows.some((r) => r.usage.includes('uppercase'))) L.push(`- Uppercase is reserved for small labels (${T.typeRows.filter((r) => r.usage.includes('uppercase')).map((r) => code(r.name)).join(', ')}), always with the letter-spacing given.`);
   const typeSec = findSection(doc, /TYPOGRAPH|TYPE|FONT/);
@@ -438,8 +461,10 @@ function buildReadme(raw, meta, doc, T) {
   L.push('## Accessibility', '');
   L.push(`- ${code('page-text')} on ${code('page-bg')} measures ${contrast(over(T.pageText, T.pageBg), T.pageBg).toFixed(1)}:1.`);
   L.push('- Every interactive element shows a visible focus state at 3:1 or better against its surface.');
+  const weak = T.colorTokens.filter((t) => t._lowText).map((t) => `${code(t.name)} ${t._cr.toFixed(1)}:1`);
+  if (weak.length) L.push(`- Measured on ${code('page-bg')}, these text colours fall short of 4.5:1: ${weak.join(', ')}. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.`);
   const a11y = findSection(doc, /ACCESSIB|WCAG|A11Y/);
-  if (a11y) { L.push(''); pushLines(L, a11y); }
+  if (a11y) { L.push('', 'From the style\'s design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):', ''); pushLines(L, a11y); }
   L.push('');
 
   // Components
@@ -460,7 +485,46 @@ function buildReadme(raw, meta, doc, T) {
 
   L.push('## Not synced', '');
   L.push(`Built from \`${raw.file}\`. No component bundle: the reference page's markup is not packaged as live components.${T.notSynced.length ? ` Variables not representable as tokens (calc/clamp/gradients/font stacks): ${T.notSynced.slice(0, 12).map((s) => code(s.split(' ')[0])).join(', ')}${T.notSynced.length > 12 ? ` and ${T.notSynced.length - 12} more` : ''}.` : ''}`);
-  return L.join('\n').replace(/\n{3,}/g, '\n\n') + '\n';
+  return checkClaims(L.join('\n'), T).replace(/\n{3,}/g, '\n\n') + '\n';
+}
+// Contrast ratios quoted in a style's design notes ("Teal on Cream: 4.9:1",
+// "Amber (#f57c00) - 5.8:1") are measured against the tokens; a claim no
+// matching pair supports gets the measured figure in bold beside it.
+function checkClaims(md, T) {
+  const toks = T.colorTokens.filter((t) => t._rgb);
+  const named = { white: [{ r: 255, g: 255, b: 255, a: 1 }], black: [{ r: 0, g: 0, b: 0, a: 1 }] };
+  const resolve = (phrase) => {
+    const p = phrase.trim().replace(/^(the|a)\s+/i, '');
+    const hx = p.match(/#[0-9a-f]{3,6}\b/i);
+    if (hx) return [parseRgb(hx[0].toLowerCase())];
+    const sl = slug(p);
+    if (!sl) return null;
+    const hits = toks.filter((t) => t.name === sl || t.name.endsWith('-' + sl) || ('-' + t.name + '-').includes('-' + sl + '-')).map((t) => t._rgb);
+    return hits.length ? hits : named[sl] || null;
+  };
+  const fmt = (xs) => { const lo = Math.min(...xs), hi = Math.max(...xs); return lo.toFixed(1) === hi.toFixed(1) ? `${lo.toFixed(1)}:1` : `${lo.toFixed(1)}–${hi.toFixed(1)}:1`; };
+  return md.split('\n').map((line) => {
+    if (!/^- /.test(line) || /`page-bg`|focus state|golden ratio|1:1\.618/i.test(line)) return line;
+    const bodyPx = parseFloat((T.typeRows.find((x) => x.name === 'body') || {}).fontSize);
+    const sz = line.match(/(\d+(?:\.\d+)?)px\b/);
+    if (sz && bodyPx && /(minimum|base)[^\n]*(body|text|font)|body[^\n]*(minimum|base|size)|(body|base) (text|font)/i.test(line) && !/:\s*1\b|line-height|letter/i.test(line) && Math.abs(+sz[1] - bodyPx) > 1)
+      return `${line} — **the reference page sets running text at ${bodyPx}px**`;
+    const r = line.match(/(\d+(?:\.\d+)?)\s*:\s*1/);
+    if (!r) return line;
+    const claimed = +r[1];
+    let pairs = null;
+    const on = line.replace(/^- (✓\s*)?/, '').match(/^(?:[^:(]*?:\s*)?(#[0-9a-f]{3,6}|[A-Za-z][\w-]*(?: [A-Za-z][\w-]*)?)\s+(?:text\s+)?on\s+(#[0-9a-f]{3,6}|[A-Za-z][\w-]*(?: [A-Za-z][\w-]*)?)/i)
+      || line.match(/\((#[0-9a-f]{3,6})\s+on\s+(#[0-9a-f]{3,6})\)/i);
+    if (on) {
+      const fg = resolve(on[1]), bg = resolve(on[2]);
+      if (fg && bg) pairs = fg.flatMap((f) => bg.map((b) => contrast(over(f, b), b)));
+    } else {
+      const hx = [...line.matchAll(/#[0-9a-f]{6}\b|#[0-9a-f]{3}\b/gi)];
+      if (hx.length === 1) { const f = parseRgb(hx[0][0].toLowerCase()); pairs = [contrast(over(f, T.pageBg), T.pageBg)]; }
+    }
+    if (!pairs || pairs.some((x) => Math.abs(x - claimed) <= 0.35)) return line;
+    return `${line} — **measured ${fmt(pairs)}**${Math.max(...pairs) < 4.5 ? ' (not for body text)' : ''}`;
+  }).join('\n');
 }
 function pushLines(L, sec) {
   const out = [];
@@ -674,6 +738,22 @@ function findTagline(raw, meta) {
   return `For ${meta.perfectFor.slice(0, 2).join(' and ')}`;
 }
 
+// Families some style in this repo loads from Google Fonts: a page that names one
+// without loading it gets its load URL added (the reference page shows a fallback).
+const GOOGLE = new Set(fs.readdirSync(RAW).flatMap((f) => JSON.parse(fs.readFileSync(path.join(RAW, f), 'utf8')).fontLinks)
+  .flatMap((u) => [...u.matchAll(/family=([^&:]+)/g)].map((m) => decodeURIComponent(m[1].replace(/\+/g, ' ')))));
+// System and commercial faces some pages wrongly request from Google Fonts.
+const NOT_GOOGLE = /^(helvetica( neue)?|arial|georgia|garamond|didot|bodoni( mt)?|times( new roman)?|futura|gill sans|segoe ui|sf pro.*|avenir.*|baskerville|optima|palatino.*|trebuchet ms|verdana|courier( new)?|system-ui|-apple-system|blinkmacsystemfont)$/i;
+function addMissingFonts(raw, families) {
+  const loaded = new Set(raw.fontLinks.flatMap((u) => [...u.matchAll(/family=([^&:]+)/g)].map((m) => decodeURIComponent(m[1].replace(/\+/g, ' ')))));
+  const named = new Set(Object.values(families).flatMap((st) => st.split(',').map((f) => f.replace(/["']/g, '').trim())));
+  const missing = [...named].filter((f) => GOOGLE.has(f) && !loaded.has(f) && !NOT_GOOGLE.test(f));
+  if (!missing.length) return [];
+  // Plain family names: a css2 request listing a weight the family lacks fails outright.
+  raw.fontLinks.push(`https://fonts.googleapis.com/css2?${missing.map((f) => `family=${f.replace(/ /g, '+')}`).join('&')}&display=swap`);
+  return missing;
+}
+
 // ── main ────────────────────────────────────────────────────────────────────
 const only = process.argv.slice(2).map(Number).filter(Boolean);
 const nums = fs.readdirSync(RAW).map((f) => Number(f.replace('.json', ''))).filter((n) => !only.length || only.includes(n)).sort((a, b) => a - b);
@@ -683,6 +763,7 @@ for (const num of nums) {
   const meta = META[num];
   const doc = parseDoc(raw.doc);
   const T = buildTokens(raw, meta, doc);
+  T.addedFonts = addMissingFonts(raw, T.families);
   T.tokens = T.tokens;
   const dirName = `${String(num).padStart(3, '0')}-${slug(meta.name)}`;
   const dir = path.join(SYSTEMS, dirName, 'project');

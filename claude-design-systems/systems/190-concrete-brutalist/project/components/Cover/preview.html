@@ -9,8 +9,8 @@ body{margin:0;background:var(--page-bg);color:var(--page-text);}
 svg{position:absolute;inset:0;}
 .c-color-steel-blue-dark{fill:var(--color-steel-blue-dark);stroke:var(--color-steel-blue-dark);stroke-width:0;}
 .c-color-concrete{fill:var(--color-concrete);stroke:var(--color-concrete);stroke-width:0;}
+.c-page-surface{fill:var(--page-surface);stroke:var(--page-surface);stroke-width:0;}
 .c-color-charcoal{fill:var(--color-charcoal);stroke:var(--color-charcoal);stroke-width:0;}
-.c-color-white{fill:var(--color-white);stroke:var(--color-white);stroke-width:0;}
 .c-page-bg{fill:var(--page-bg);stroke:var(--page-bg);stroke-width:0;}
 .blk{rx:var(--radius-sm);}
 .tile{rx:var(--radius-sm);}
@@ -23,15 +23,15 @@ svg{position:absolute;inset:0;}
 <body><div class="cover">
 <svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
 <!--
-  blocks: color-steel-blue-dark 6×13 steps, color-concrete 4×11 steps, color-charcoal 3×13 steps, color-white 5×11 steps
+  blocks: color-steel-blue-dark 6×13 steps, color-concrete 4×11 steps, page-surface 3×13 steps, color-charcoal 5×11 steps
   arrangement: strip of unequal bands bleeding off the top
   pattern: tiles — geometric, modular dashboard layouts → tiles cut by the radius tokens
   scales: step space-xl (24px), gap 8px, radius radius-sm (2px)
 -->
 <rect class="c-color-steel-blue-dark blk" x="816" y="-24" width="136" height="312"/>
 <rect class="c-color-concrete blk" x="720" y="48" width="88" height="264"/>
-<rect class="c-color-charcoal blk" x="648" y="-24" width="64" height="312"/>
-<rect class="c-color-white blk" x="528" y="48" width="112" height="264"/>
+<rect class="c-page-surface blk" x="648" y="-24" width="64" height="312"/>
+<rect class="c-color-charcoal blk" x="528" y="48" width="112" height="264"/>
 <rect class="c-page-bg tile" x="828" y="12" width="30" height="30"/>
 <rect class="c-page-bg tile" x="866" y="12" width="30" height="30"/>
 <rect class="c-page-bg tile" x="904" y="12" width="30" height="30"/>

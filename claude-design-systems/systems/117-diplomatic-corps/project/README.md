@@ -15,7 +15,7 @@ Diplomatic Corps: Government Formal 60% + International Relations 25% + Secure C
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is light.
-- Identity colours: `navy-primary`, `gold-primary`, `gold-light`, `cream-primary`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `gold-primary`, `gold-light`, `cream-primary`. Lead with the first; use the rest for accents and emphasis.
 - Status colours (`red-alert`) always travel with a word or icon; never signal state by hue alone.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
@@ -39,8 +39,9 @@ Diplomatic Corps: Government Formal 60% + International Relations 25% + Secure C
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 15.1:1.
+- `page-text` on `page-bg` measures 14.3:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `gold-primary` 1.8:1, `gold-secondary` 2.5:1, `gold-light` 1.1:1, `cream-primary` 1.1:1, `cream-secondary` 1.1:1, `white` 1.1:1, `gray-medium` 1.3:1, `green-verified` 4.0:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Not synced
 

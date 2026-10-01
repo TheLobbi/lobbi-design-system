@@ -14,7 +14,7 @@ This design embodies the reverence and responsibility of preserving cultural her
 
 ## Color
 
-- Set the page on `page-bg` with body text in `page-text`. The theme is dark.
+- Set the page on `page-bg` with body text in `page-text`. The theme is light.
 - Identity colours: `archive-sepia`, `preservation-green`, `document-cream`. Lead with the first; use the rest for accents and emphasis.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
@@ -62,8 +62,11 @@ Faces are hosted on Google Fonts (Playfair Display, Spectral); load them with:
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 1.2:1.
+- `page-text` on `page-bg` measures 17.2:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `document-cream` 1.1:1, `document-cream-light` 1.0:1, `document-cream-dark` 1.2:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG AAA contrast ratios on cream backgrounds
 - Serif fonts sized generously for readability (16px+ body)

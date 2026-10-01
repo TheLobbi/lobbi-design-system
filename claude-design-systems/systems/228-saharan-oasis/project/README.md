@@ -74,7 +74,7 @@ Faces are hosted on Google Fonts (El Messiri, Rubik); load them with:
 - CONTRAST RATIOS (WCAG 2.1 AA+ Compliance):
 - Primary text on sandstone: 11.4:1 (AAA)
 - White text on desert gold: 4.8:1 (AA)
-- Text on oasis teal: 6.2:1 (AA+)
+- Text on oasis teal: 6.2:1 (AA+) — **measured 2.8:1** (not for body text)
 - Navy text on sand: 9.7:1 (AAA)
 - Gold on navy: 7.3:1 (AA+)
 
@@ -99,8 +99,11 @@ Timing values: `--transition-fast` 200ms ease-in-out, `--transition-base` 300ms 
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 13.4:1.
+- `page-text` on `page-bg` measures 9.7:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `desert-gold` 2.8:1, `golden-sand` 1.0:1, `oasis-teal` 3.5:1, `sand-light` 1.0:1, `sand-dark` 2.4:1, `pure-white` 1.1:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - High contrast text pairings meeting AA+ standards
 - Clear focus indicators with teal outline (3px, high visibility)
@@ -127,7 +130,7 @@ The reference page composes these patterns from the tokens above:
 - CONTRAST RATIOS (WCAG 2.1 AA+ Compliance):
 - Primary text on sandstone: 11.4:1 (AAA)
 - White text on desert gold: 4.8:1 (AA)
-- Text on oasis teal: 6.2:1 (AA+)
+- Text on oasis teal: 6.2:1 (AA+) — **measured 2.8:1** (not for body text)
 - Navy text on sand: 9.7:1 (AAA)
 - Gold on navy: 7.3:1 (AA+)
 

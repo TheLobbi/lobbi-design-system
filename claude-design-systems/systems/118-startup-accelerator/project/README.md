@@ -15,12 +15,20 @@ Startup Accelerator: Startup/VC Culture 60% + Mentorship Network 25% + Demo Day 
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is dark.
-- Identity colours: `bg-primary`, `growth-up`, `growth-down`, `metric-yellow`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `growth-up`, `growth-down`, `metric-yellow`. Lead with the first; use the rest for accents and emphasis.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
 ## Typography
 
 - `display` — Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif
+
+Faces are hosted on Google Fonts (Inter, Roboto); load them with:
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap">
+```
+
+The reference page names Inter, Roboto without loading them, so it shows a fallback face; the last link above loads the intended face.
 
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
 
@@ -37,8 +45,9 @@ Startup Accelerator: Startup/VC Culture 60% + Mentorship Network 25% + Demo Day 
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 19.0:1.
+- `page-text` on `page-bg` measures 9.8:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `bg-primary` 1.0:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Not synced
 

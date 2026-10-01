@@ -15,7 +15,7 @@ This interface explores the emerging paradigm of spatial computing - designing f
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is dark.
-- Identity colours: `color-deep-space`, `color-spatial-purple`, `color-cyan-highlight`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `color-spatial-purple`, `color-cyan-highlight`. Lead with the first; use the rest for accents and emphasis.
 - Status colours (`badge-warning-bg`) always travel with a word or icon; never signal state by hue alone.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
@@ -90,8 +90,11 @@ Timing values: `--transition-fast` 200ms cubic-bezier(0.4, 0, 0.2, 1), `--transi
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 18.0:1.
+- `page-text` on `page-bg` measures 8.8:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `color-glass-dark` 1.3:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA compliant contrast ratios despite translucency
 - High contrast fallback for reduced transparency mode

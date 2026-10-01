@@ -14,7 +14,7 @@ Cyber Command: Mission Control 60% + Cyberpunk 25% + Military Precision 15%.
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is dark.
-- Identity colours: `cyber-cyan`, `cyber-magenta`, `cyber-blue`, `cyber-purple`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `cyber-cyan`, `cyber-magenta`, `cyber-blue`. Lead with the first; use the rest for accents and emphasis.
 - Status colours (`status-critical`, `status-warning`) always travel with a word or icon; never signal state by hue alone.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
@@ -38,8 +38,9 @@ Cyber Command: Mission Control 60% + Cyberpunk 25% + Military Precision 15%.
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 15.4:1.
+- `page-text` on `page-bg` measures 8.0:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `bg-primary` 1.0:1, `text-muted` 4.3:1, `status-offline` 3.4:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Not synced
 

@@ -15,7 +15,7 @@ Space Pioneers: Space Industry 60% + Scientific Community 25% + Advocacy Platfor
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is dark.
-- Identity colours: `space-black`, `nebula-purple`, `nebula-light`, `star-white`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `nebula-purple`, `nebula-light`, `star-white`. Lead with the first; use the rest for accents and emphasis.
 - Status colours (`alert-red`) always travel with a word or icon; never signal state by hue alone.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
@@ -38,7 +38,7 @@ Space Pioneers: Space Industry 60% + Scientific Community 25% + Advocacy Platfor
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 17.5:1.
+- `page-text` on `page-bg` measures 11.3:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
 
 ## Not synced

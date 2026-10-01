@@ -15,7 +15,7 @@ Teachers Union: Teachers Union 80% + Education Advocacy 20%.
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is light.
-- Identity colours: `color-primary`, `color-secondary`, `color-accent`, `ultrathink-header-border`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `color-primary`, `color-accent`, `ultrathink-header-border`. Lead with the first; use the rest for accents and emphasis.
 - Status colours (`color-success`, `color-warning`, `color-info`) always travel with a word or icon; never signal state by hue alone.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
@@ -49,6 +49,7 @@ Faces are hosted on Google Fonts (Source Sans Pro, Merriweather); load them with
 
 - `page-text` on `page-bg` measures 13.9:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `color-background` 1.1:1, `color-accent` 2.8:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Not synced
 

@@ -85,6 +85,9 @@ Timing values: `--transition-base` 400ms ease-in-out, `--transition-slow` 600ms 
 
 - `page-text` on `page-bg` measures 21.0:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `color-white` 1.0:1, `color-gray-medium` 2.8:1, `color-accent` 2.5:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - Black on white text: 21:1 (exceeds AAA requirements)
 - All interactive elements minimum 44x44px
@@ -174,7 +177,7 @@ The reference page composes these patterns from the tokens above:
 
 - CONTRAST RATIOS (WCAG AAA Compliant):
 - Black on White: 21:1 (AAA compliant, maximum contrast)
-- Charcoal on White: 15.3:1 (AAA compliant)
+- Charcoal on White: 15.3:1 (AAA compliant) — **measured 17.4:1**
 - Teal on White: 3.98:1 (AA compliant for large text)
 - White on Teal: 3.98:1 (AA compliant for large text)
 - Medium Gray on White: 5.8:1 (AA compliant)

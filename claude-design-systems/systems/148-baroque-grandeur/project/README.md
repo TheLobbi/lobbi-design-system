@@ -84,13 +84,16 @@ Faces are hosted on Google Fonts (Bodoni Moda, Libre Caslon Text); load them wit
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 10.9:1.
+- `page-text` on `page-bg` measures 11.2:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `gold-bright` 1.3:1, `cream-silk` 1.0:1, `category-tag-bg` 1.1:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA minimum contrast ratios
-- Royal-purple on cream-silk: 10.2:1 contrast ratio
-- Gold-antique on purple-deep: 4.9:1 contrast ratio
-- Burgundy on cream-warm: 8.7:1 contrast ratio
+- Royal-purple on cream-silk: 10.2:1 contrast ratio — **measured 11.2:1**
+- Gold-antique on purple-deep: 4.9:1 contrast ratio — **measured 5.9:1**
+- Burgundy on cream-warm: 8.7:1 contrast ratio — **measured 8.2–10.6:1**
 - Focus visible states with 3px gold borders
 - Semantic HTML with ARIA landmarks
 - Keyboard navigation fully supported

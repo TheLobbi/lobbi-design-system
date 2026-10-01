@@ -35,7 +35,7 @@ Faces are hosted on Google Fonts (Outfit); load them with:
 ```
 
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
-- Uppercase is reserved for small labels (`body`, `label`), always with the letter-spacing given.
+- Uppercase is reserved for small labels (`label`), always with the letter-spacing given.
 
 ### Type rationale
 
@@ -107,8 +107,11 @@ Timing values: `--transition-fast` 150ms ease, `--transition-base` 250ms ease, `
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 16.0:1.
+- `page-text` on `page-bg` measures 8.2:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `color-carbon-black` 1.0:1, `color-performance-red` 4.1:1, `color-british-racing-green` 1.7:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 

@@ -23,6 +23,14 @@ Music Conservatory: Classical Music 60% + Academic Institution 25% + Event Manag
 - `display` — Cinzel, "Trajan Pro", serif
 - `body` — "Cormorant Garamond", "Playfair Display", Georgia, serif
 
+Faces are hosted on Google Fonts (Cinzel, Cormorant Garamond, Playfair Display); load them with:
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond&family=Playfair+Display&display=swap">
+```
+
+The reference page names Cinzel, Cormorant Garamond, Playfair Display without loading them, so it shows a fallback face; the last link above loads the intended face.
+
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
 - Uppercase is reserved for small labels (`label`), always with the letter-spacing given.
 
@@ -45,8 +53,9 @@ Timing values: `--transition-smooth` all 0.3s cubic-bezier(0.4, 0, 0.2, 1).
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 12.8:1.
+- `page-text` on `page-bg` measures 9.7:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `gold-accent` 2.0:1, `gold-light` 1.2:1, `gold-bright` 1.8:1, `ivory-primary` 1.2:1, `ivory-warm` 1.1:1, `user-profile-bg` 1.2:1, `book-btn-bg` 1.4:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Not synced
 

@@ -52,8 +52,9 @@ Timing values: `--transition-fast` 150ms ease-out, `--transition-base` 200ms eas
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 14.0:1.
+- `page-text` on `page-bg` measures 7.4:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `solar-gold` 1.6:1, `solar-gold-dark` 2.1:1, `leaf-green` 2.2:1, `leaf-green-dark` 3.2:1, `sky-blue` 2.7:1, `sky-blue-dark` 4.0:1, `pure-white` 1.0:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Not synced
 

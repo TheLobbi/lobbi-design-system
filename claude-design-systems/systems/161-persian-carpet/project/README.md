@@ -58,7 +58,7 @@ Faces are hosted on Google Fonts (Playfair Display, Source Sans Pro); load them 
 
 ## Spacing, shape and elevation
 
-- Spacing steps: `space-6.4` 6.4px, `space-8` 8px, `space-16` 16px, `space-20` 20px, `space-24` 24px, `space-32` 32px. Pad cards and sections from these steps only.
+- Spacing steps: `space-6-4` 6.4px, `space-8` 8px, `space-16` 16px, `space-20` 20px, `space-24` 24px, `space-32` 32px. Pad cards and sections from these steps only.
 - Corners: `radius-6` 6px, `radius-8` 8px, `radius-20` 20px.
 - Elevation: `shadow-1`, `shadow-2`, `shadow-3`, lowest first for resting cards, higher for hover and overlays.
 
@@ -85,12 +85,15 @@ Faces are hosted on Google Fonts (Playfair Display, Source Sans Pro); load them 
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 13.9:1.
+- `page-text` on `page-bg` measures 7.6:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `gold-400` 1.8:1, `copper-500` 3.1:1, `cream-100` 1.1:1, `cream-200` 1.1:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA minimum contrast ratios throughout
-- Burgundy on cream: 8.1:1 contrast ratio
-- Navy on gold: 7.5:1 contrast ratio
+- Burgundy on cream: 8.1:1 contrast ratio — **measured 4.9–9.9:1**
+- Navy on gold: 7.5:1 contrast ratio — **measured 2.4–7.1:1**
 - Cream text on navy: 11.2:1 contrast ratio
 - Focus visible states with 3px gold outline
 - Semantic HTML with proper ARIA labels

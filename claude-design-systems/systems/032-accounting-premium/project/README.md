@@ -24,6 +24,14 @@ Big Four Accounting Firms (Deloitte, PwC, EY, KPMG).
 - `display` — Georgia, "Playfair Display", Garamond, "Times New Roman", serif
 - `body` — Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif
 
+Faces are hosted on Google Fonts (Playfair Display, Inter, Roboto); load them with:
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&family=Roboto&display=swap">
+```
+
+The reference page names Playfair Display, Inter, Roboto without loading them, so it shows a fallback face; the last link above loads the intended face.
+
 - Set titles in `display` and running text in `body`.
 - Uppercase is reserved for small labels (`label`), always with the letter-spacing given.
 
@@ -75,8 +83,11 @@ Timing values: `--transition-fast` 150ms ease, `--transition-base` 200ms ease.
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 13.6:1.
+- `page-text` on `page-bg` measures 9.5:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `color-gray-500` 4.4:1, `color-amber` 2.9:1, `stat-change-text` 4.4:1, `category-tag-bg` 1.1:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - ├─ WCAG AAA contrast ratios (7:1 for body text)
 - ├─ Semantic HTML structure

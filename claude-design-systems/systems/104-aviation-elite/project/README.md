@@ -15,7 +15,7 @@ Aviation Elite: Private Aviation 60% + Aerospace Engineering 25% + VIP Concierge
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is dark.
-- Identity colours: `midnight-blue`, `aviation-blue-light`, `gold-subtle`, `gold-dark`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `gold-subtle`, `gold-dark`, `off-white`. Lead with the first; use the rest for accents and emphasis.
 - Status colours (`success`, `warning`, `error`, `info`) always travel with a word or icon; never signal state by hue alone.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
@@ -40,8 +40,9 @@ Aviation Elite: Private Aviation 60% + Aerospace Engineering 25% + VIP Concierge
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 15.1:1.
+- `page-text` on `page-bg` measures 11.8:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `midnight-blue` 1.1:1, `silver-dark` 3.6:1, `error` 3.6:1, `info` 4.2:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
 
 ## Not synced
 

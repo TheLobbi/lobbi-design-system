@@ -37,6 +37,12 @@ WHITE CUBE GALLERY AESTHETICS. ━━━━━━━━━━━━━━━━�
 
 - `display` — Inter, "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif
 
+Faces are hosted on Google Fonts (Inter); load them with:
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap">
+```
+
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
 - Uppercase is reserved for small labels (`heading-4`, `body`, `label`, `caption`, `button`), always with the letter-spacing given.
 
@@ -107,8 +113,11 @@ Timing values: `--transition-speed` 200ms.
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 20.8:1.
+- `page-text` on `page-bg` measures 5.7:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours fall short of 4.5:1: `color-gallery-white` 1.0:1. Use them only for large text (24px+) or on the fills their notes name, whatever the design notes below claim.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA COMPLIANCE
 - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
