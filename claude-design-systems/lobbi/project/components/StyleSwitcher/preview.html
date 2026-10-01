@@ -1,0 +1,142 @@
+<!-- @dsCard group="Styles" height=860 subtitle="Pick any of the Lobbi styles and watch the sample screen re-theme" -->
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--page-bg);color:var(--page-text);font-family:var(--font-body),system-ui,sans-serif}
+  .bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:12px 16px;border-bottom:1px solid currentColor;border-color:color-mix(in srgb,var(--page-text) 18%,transparent)}
+  .bar input,.bar select,.bar button{font:inherit;font-size:13px;color:inherit;background:transparent;border:1px solid color-mix(in srgb,var(--page-text) 35%,transparent);border-radius:6px;padding:6px 10px;min-height:32px}
+  .bar input{flex:1 1 160px;min-width:120px}
+  .bar select{flex:2 1 220px;max-width:340px}
+  .bar select option{color:#111;background:#fff}
+  .bar button{cursor:pointer}
+  .bar button:focus-visible,.bar input:focus-visible,.bar select:focus-visible{outline:2px solid var(--page-text);outline-offset:2px}
+  .meta{width:100%;font-size:12px;opacity:.8;display:flex;gap:12px;flex-wrap:wrap}
+  .meta b{font-weight:600}
+  /* The themed sample: every value comes from the chosen style's roles. */
+  .s{background:var(--bg);color:var(--text);font-family:var(--body-f);font-size:var(--body-s);font-weight:var(--body-w);letter-spacing:var(--body-ls);min-height:760px;transition:background .2s,color .2s}
+  @media (prefers-reduced-motion:reduce){.s{transition:none}}
+  .hdr{display:flex;align-items:center;gap:24px;padding:var(--sp) calc(var(--sp)*1.5);border-bottom:1px solid var(--border);flex-wrap:wrap}
+  .org{font-family:var(--disp-f);font-weight:var(--disp-w);font-size:22px;letter-spacing:var(--disp-ls)}
+  .nav{display:flex;gap:4px;flex-wrap:wrap}
+  .nav a{color:var(--muted);text-decoration:none;padding:6px 10px;border-radius:var(--r-sm);font-size:14px}
+  .nav a.on{color:var(--onPrimary);background:var(--primary)}
+  .main{padding:calc(var(--sp)*1.5)}
+  .eyebrow{font-family:var(--label-f);font-size:var(--label-s);font-weight:var(--label-w);letter-spacing:var(--label-ls);text-transform:var(--label-tt);color:var(--muted);margin:0 0 6px}
+  h1.t{font-family:var(--disp-f);font-weight:var(--disp-w);font-size:clamp(28px,var(--disp-s),44px);letter-spacing:var(--disp-ls);text-transform:var(--disp-tt);line-height:1.1;margin:0 0 6px}
+  .sub{color:var(--muted);margin:0 0 var(--spl)}
+  .row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:var(--sp);margin-bottom:var(--spl)}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:var(--sp);box-shadow:var(--shadow)}
+  .card .n{font-family:var(--disp-f);font-weight:var(--disp-w);font-size:30px;line-height:1.1;margin:4px 0}
+  .card .d{font-size:13px;color:var(--muted)}
+  .acts{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:var(--spl)}
+  .btn{font-family:var(--btn-f);font-size:var(--btn-s);font-weight:var(--btn-w);letter-spacing:var(--btn-ls);text-transform:var(--btn-tt);border-radius:var(--r);padding:10px 18px;border:1px solid transparent;cursor:pointer}
+  .btn.p{background:var(--primary);color:var(--onPrimary)}
+  .btn.a{background:var(--accent);color:var(--onAccent)}
+  .btn.o{background:transparent;color:var(--text);border-color:var(--border)}
+  .badge{font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;border:1px solid currentColor}
+  .grid2{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:var(--sp)}
+  @media (max-width:640px){.grid2{grid-template-columns:1fr}}
+  h2.h{font-family:var(--head-f);font-weight:var(--head-w);font-size:var(--head-s);letter-spacing:var(--head-ls);text-transform:var(--head-tt);margin:0 0 12px}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th{font-family:var(--label-f);font-size:var(--label-s);font-weight:var(--label-w);letter-spacing:var(--label-ls);text-transform:var(--label-tt);color:var(--muted);text-align:left;padding:8px;border-bottom:1px solid var(--border)}
+  td{padding:10px 8px;border-bottom:1px solid var(--border)}
+  label.f{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+  input.f{width:100%;font:inherit;color:var(--text);background:var(--bg);border:1px solid var(--border);border-radius:var(--r-sm);padding:9px 12px;margin-bottom:12px}
+  input.f:focus-visible{outline:2px solid var(--primary);outline-offset:1px}
+  .pal{display:flex;flex-wrap:wrap;gap:6px;margin-top:var(--sp)}
+  .sw{width:72px;font-size:10px;color:var(--muted);word-break:break-all}
+  .sw i{display:block;height:36px;border-radius:var(--r-sm);border:1px solid var(--border);margin-bottom:4px}
+  .empty{padding:48px;text-align:center;opacity:.8}
+</style></head>
+<body>
+<div id="app">
+  <div class="bar" role="toolbar" aria-label="Style switcher">
+    <input id="q" type="search" placeholder="Search name, tag or use…" aria-label="Search styles">
+    <select id="sel" aria-label="Style"></select>
+    <button id="prev" aria-label="Previous style">‹ Prev</button>
+    <button id="next" aria-label="Next style">Next ›</button>
+    <button id="rand">Random</button>
+    <div class="meta" id="meta" aria-live="polite"></div>
+  </div>
+  <div class="s" id="s"><div class="empty">Loading styles…</div></div>
+</div>
+<script>
+(function () {
+  var BASE = '../../styles/';
+  var all = [], list = [], cur = null, cache = {};
+  var $ = function (id) { return document.getElementById(id); };
+  var el = function (tag, attrs, kids) {
+    var e = document.createElement(tag);
+    for (var k in attrs || {}) { if (k === 'text') e.textContent = attrs[k]; else if (k === 'cls') e.className = attrs[k]; else e.setAttribute(k, attrs[k]); }
+    (kids || []).forEach(function (c) { if (c) e.appendChild(c); });
+    return e;
+  };
+  var loaded = {};
+  function loadFonts(urls) { (urls || []).forEach(function (u) { if (loaded[u] || !/^https:\/\/fonts\.googleapis\.com\//.test(u)) return; loaded[u] = 1; document.head.appendChild(el('link', { rel: 'stylesheet', href: u })); }); }
+  function setType(st, p, t) {
+    if (!t) return;
+    st.setProperty('--' + p + '-f', t.family); st.setProperty('--' + p + '-s', t.size); st.setProperty('--' + p + '-w', t.weight);
+    st.setProperty('--' + p + '-ls', t.letterSpacing || 'normal'); st.setProperty('--' + p + '-tt', t.upper ? 'uppercase' : 'none');
+  }
+  function render(d) {
+    var r = d.roles, s = $('s'), st = s.style;
+    loadFonts(r.fonts);
+    var map = { bg: r.bg, text: r.text, muted: r.muted, surface: r.surface, border: r.border, primary: r.primary, onPrimary: r.onPrimary, accent: r.accent, onAccent: r.onAccent, shadow: r.shadow };
+    for (var k in map) st.setProperty('--' + k, map[k]);
+    st.setProperty('--r', r.radius + 'px'); st.setProperty('--r-sm', r.radiusSm + 'px');
+    st.setProperty('--sp', r.space + 'px'); st.setProperty('--spl', r.spaceLg + 'px');
+    setType(st, 'body', r.body); setType(st, 'disp', r.display || r.body); setType(st, 'head', r.heading || r.display || r.body);
+    setType(st, 'label', r.label || r.body); setType(st, 'btn', r.button || r.body);
+    s.innerHTML = '';
+    var nav = el('nav', { cls: 'nav', 'aria-label': 'Sample navigation' }, ['Dashboard', 'Members', 'Events', 'Finance', 'Reports'].map(function (n, i) { return el('a', { href: '#', cls: i === 0 ? 'on' : '', text: n }); }));
+    s.appendChild(el('header', { cls: 'hdr' }, [el('div', { cls: 'org', text: 'Harbor Guild' }), nav]));
+    var stat = function (label, n, dsc) { return el('div', { cls: 'card' }, [el('p', { cls: 'eyebrow', text: label }), el('div', { cls: 'n', text: n }), el('div', { cls: 'd', text: dsc })]); };
+    var badge = function (t, c) { var b = el('span', { cls: 'badge', text: t }); if (c) b.style.color = c; return b; };
+    var rows = [['Amara Okafor', 'Fellow', 'Active', r.success], ['Lucas Brandt', 'Member', 'Renewal due', r.warning], ['Priya Raman', 'Board', 'Active', r.success], ['Tomás Ortega', 'Associate', 'Lapsed', r.danger]];
+    var table = el('table', {}, [
+      el('thead', {}, [el('tr', {}, ['Name', 'Tier', 'Status'].map(function (h) { return el('th', { text: h }); }))]),
+      el('tbody', {}, rows.map(function (x) { return el('tr', {}, [el('td', { text: x[0] }), el('td', { text: x[1] }), el('td', {}, [badge(x[2], x[3])])]); })),
+    ]);
+    var pal = el('div', { cls: 'pal' }, (r.palette || []).map(function (p) { var i = el('i'); i.style.background = p.hex; return el('div', { cls: 'sw', title: p.name + ' ' + p.hex }, [i, document.createTextNode(p.name)]); }));
+    s.appendChild(el('main', { cls: 'main' }, [
+      el('p', { cls: 'eyebrow', text: 'Style ' + d.num + ' · ' + d.tags.join(' · ') }),
+      el('h1', { cls: 't', text: d.name }),
+      el('p', { cls: 'sub', text: d.blend + '. Perfect for ' + d.perfectFor.join(', ') + '.' }),
+      el('div', { cls: 'row' }, [stat('Total members', '2,847', '+124 this quarter'), stat('Upcoming events', '12', 'Next: Annual Gala'), stat('Renewal rate', '94%', 'Up 3 points')]),
+      el('div', { cls: 'acts' }, [el('button', { cls: 'btn p', text: 'Invite member' }), el('button', { cls: 'btn a', text: 'Create event' }), el('button', { cls: 'btn o', text: 'Export list' })]),
+      el('div', { cls: 'grid2' }, [
+        el('section', { cls: 'card' }, [el('h2', { cls: 'h', text: 'Recent members' }), table]),
+        el('section', { cls: 'card' }, [el('h2', { cls: 'h', text: 'Quick search' }), el('label', { cls: 'f', for: 'demo-q', text: 'Member name' }), el('input', { cls: 'f', id: 'demo-q', placeholder: 'e.g. Okafor' }), el('button', { cls: 'btn p', text: 'Search' }), pal]),
+      ]),
+    ]));
+    $('meta').innerHTML = '';
+    [['Style', d.num + ' / ' + all.length], ['Temperature', d.temperature + '/10'], ['Formality', d.formality + '/10'], ['File', 'styles/' + d.id + '.json']].forEach(function (m) {
+      $('meta').appendChild(el('span', {}, [el('b', { text: m[0] + ': ' }), document.createTextNode(m[1])]));
+    });
+  }
+  function show(id) {
+    cur = id; $('sel').value = id;
+    if (cache[id]) return render(cache[id]);
+    fetch(BASE + id + '.json').then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (d) { cache[id] = d; if (cur === id) render(d); })
+      .catch(function () { $('s').innerHTML = ''; $('s').appendChild(el('div', { cls: 'empty', text: 'Could not load styles/' + id + '.json' })); });
+  }
+  function fill() {
+    var q = $('q').value.trim().toLowerCase();
+    list = all.filter(function (s) { return !q || (s.num + ' ' + s.name + ' ' + s.tags.join(' ') + ' ' + s.perfectFor.join(' ') + ' ' + s.blend).toLowerCase().indexOf(q) >= 0; });
+    var sel = $('sel'); sel.innerHTML = '';
+    list.forEach(function (s) { sel.appendChild(el('option', { value: s.id, text: s.num + ' · ' + s.name })); });
+    if (list.length && !list.some(function (s) { return s.id === cur; })) show(list[0].id); else if (cur) sel.value = cur;
+  }
+  function step(n) { if (!list.length) return; var i = list.findIndex(function (s) { return s.id === cur; }); show(list[(i + n + list.length) % list.length].id); }
+  $('q').addEventListener('input', fill);
+  $('sel').addEventListener('change', function () { show(this.value); });
+  $('prev').addEventListener('click', function () { step(-1); });
+  $('next').addEventListener('click', function () { step(1); });
+  $('rand').addEventListener('click', function () { if (list.length) show(list[Math.floor(Math.random() * list.length)].id); });
+  fetch(BASE + 'index.json').then(function (r) { return r.json(); }).then(function (ix) { all = ix.styles; cur = ix.default; fill(); show(ix.default); })
+    .catch(function () { $('s').innerHTML = ''; $('s').appendChild(el('div', { cls: 'empty', text: 'Could not load styles/index.json' })); });
+})();
+</script>
+</body></html>
