@@ -1,0 +1,61 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&amp;family=Montserrat:wght@300;400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:var(--page-bg);color:var(--page-text);}
+.cover{position:relative;width:960px;height:288px;overflow:hidden;background:var(--page-bg);}
+svg{position:absolute;inset:0;}
+.c-rose-floral{fill:var(--rose-floral);stroke:var(--rose-floral);stroke-width:0;}
+.c-gold-renaissance{fill:var(--gold-renaissance);stroke:var(--gold-renaissance);stroke-width:0;}
+.c-terracotta{fill:var(--terracotta);stroke:var(--terracotta);stroke-width:0;}
+.c-lavender{fill:var(--lavender);stroke:var(--lavender);stroke-width:0;}
+.c-page-bg{fill:var(--page-bg);stroke:var(--page-bg);stroke-width:0;}
+.blk{rx:var(--radius-sm);}
+.rule{stroke-width:1px;fill:none;}
+.name{position:absolute;left:40px;bottom:40px;max-width:440px;}
+.name h1 span{display:inline-block;white-space:nowrap;}
+.name h1{margin:0;font-family:var(--font-display);font-weight:600;font-size:66px;line-height:0.95;color:var(--page-text);letter-spacing:0;}
+.name p{margin:16px 0 0;font-family:var(--font-body);font-size:14px;line-height:1.5;color:var(--page-text);}
+</style></head>
+<body><div class="cover">
+<svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+<!--
+  blocks: rose-floral 8×15 steps, gold-renaissance 13×4 steps, terracotta 13×3 steps, lavender 13×4 steps
+  arrangement: one tall slab with satellites
+  pattern: discs — soft, large-radius shapes → discs and pills cut from the radius scale
+  scales: step space-md (20px), gap 7px, radius radius-sm (6px)
+-->
+<rect class="c-rose-floral blk" x="540" y="-20" width="160" height="308"/>
+<rect class="c-gold-renaissance blk" x="707" y="20" width="253" height="80"/>
+<rect class="c-terracotta blk" x="707" y="107" width="253" height="60"/>
+<rect class="c-lavender blk" x="707" y="174" width="253" height="80"/>
+<circle class="c-page-bg" cx="565" cy="25" r="15"/>
+<circle class="c-page-bg" cx="605" cy="25" r="15"/>
+<circle class="c-page-bg" cx="645" cy="25" r="15"/>
+<circle class="c-page-bg" cx="565" cy="65" r="15"/>
+<circle class="c-page-bg" cx="605" cy="65" r="15"/>
+<circle class="c-page-bg" cx="645" cy="65" r="15"/>
+<circle class="c-page-bg" cx="565" cy="105" r="15"/>
+<circle class="c-page-bg" cx="605" cy="105" r="15"/>
+<circle class="c-page-bg" cx="645" cy="105" r="15"/>
+<circle class="c-page-bg" cx="565" cy="145" r="15"/>
+<circle class="c-page-bg" cx="605" cy="145" r="15"/>
+<circle class="c-page-bg" cx="645" cy="145" r="15"/>
+</svg>
+<div class="name"><h1><span>Membership</span><br><span>Renaissance</span></h1><p>For Creative Collectives and Member Organizations</p></div>
+</div>
+<script>
+// Real faces run wider or narrower than the estimate: shrink the name until each line fits its zone.
+(function () {
+  var h = document.querySelector('.name h1'), max = 440, min = 48;
+  var lines = h.querySelectorAll('span');
+  function fit() {
+    var s = parseFloat(getComputedStyle(h).fontSize);
+    for (var i = 0; i < lines.length; i++) while (s > min && lines[i].getBoundingClientRect().width > max) { s -= 2; h.style.fontSize = s + 'px'; }
+  }
+  fit();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>
+</body></html>

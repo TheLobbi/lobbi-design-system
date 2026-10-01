@@ -1,0 +1,83 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&amp;family=Source+Sans+Pro:wght@400;600&amp;display=swap">
+<style>
+body{margin:0;background:var(--page-bg);color:var(--page-text);}
+.cover{position:relative;width:960px;height:288px;overflow:hidden;background:var(--page-bg);}
+svg{position:absolute;inset:0;}
+.c-color-refraction-blue{fill:var(--color-refraction-blue);stroke:var(--color-refraction-blue);stroke-width:0;}
+.c-color-cyan-glow{fill:var(--color-cyan-glow);stroke:var(--color-cyan-glow);stroke-width:0;}
+.c-color-spectrum-purple{fill:var(--color-spectrum-purple);stroke:var(--color-spectrum-purple);stroke-width:0;}
+.c-color-dark-text{fill:var(--color-dark-text);stroke:var(--color-dark-text);stroke-width:0;}
+.c-page-bg{fill:var(--page-bg);stroke:var(--page-bg);stroke-width:0;}
+.blk{rx:var(--border-radius-sm);}
+.rule{stroke-width:1px;fill:none;}
+.name{position:absolute;left:40px;top:136px;max-width:880px;}
+.name h1 span{display:inline-block;white-space:nowrap;}
+.name h1{margin:0;font-family:var(--font-display);font-weight:700;font-size:64px;line-height:0.92;color:var(--page-text);letter-spacing:0;}
+.name p{margin:16px 0 0;font-family:var(--font-body);font-size:14px;line-height:1.5;color:var(--color-gray-text);}
+</style></head>
+<body><div class="cover">
+<svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+<!--
+  blocks: color-refraction-blue 12×4 steps, color-cyan-glow 7×4 steps, color-spectrum-purple 9×4 steps, color-dark-text 5×4 steps
+  arrangement: top band of unequal strips (name too wide for its zone)
+  pattern: dots — precise, technical palette on a modular grid → a dot grid at one spacing step
+  scales: step spacing-md (28px), gap 9px, radius border-radius-sm (8px)
+-->
+<rect class="c-color-refraction-blue blk" x="0" y="0" width="334" height="112"/>
+<rect class="c-color-cyan-glow blk" x="343" y="0" width="197" height="112"/>
+<rect class="c-color-spectrum-purple blk" x="549" y="0" width="265" height="112"/>
+<rect class="c-color-dark-text blk" x="823" y="0" width="128" height="112"/>
+<circle class="c-page-bg" cx="18" cy="18" r="4"/>
+<circle class="c-page-bg" cx="46" cy="18" r="4"/>
+<circle class="c-page-bg" cx="74" cy="18" r="4"/>
+<circle class="c-page-bg" cx="102" cy="18" r="4"/>
+<circle class="c-page-bg" cx="130" cy="18" r="4"/>
+<circle class="c-page-bg" cx="158" cy="18" r="4"/>
+<circle class="c-page-bg" cx="186" cy="18" r="4"/>
+<circle class="c-page-bg" cx="214" cy="18" r="4"/>
+<circle class="c-page-bg" cx="242" cy="18" r="4"/>
+<circle class="c-page-bg" cx="270" cy="18" r="4"/>
+<circle class="c-page-bg" cx="298" cy="18" r="4"/>
+<circle class="c-page-bg" cx="18" cy="46" r="4"/>
+<circle class="c-page-bg" cx="46" cy="46" r="4"/>
+<circle class="c-page-bg" cx="74" cy="46" r="4"/>
+<circle class="c-page-bg" cx="102" cy="46" r="4"/>
+<circle class="c-page-bg" cx="130" cy="46" r="4"/>
+<circle class="c-page-bg" cx="158" cy="46" r="4"/>
+<circle class="c-page-bg" cx="186" cy="46" r="4"/>
+<circle class="c-page-bg" cx="214" cy="46" r="4"/>
+<circle class="c-page-bg" cx="242" cy="46" r="4"/>
+<circle class="c-page-bg" cx="270" cy="46" r="4"/>
+<circle class="c-page-bg" cx="298" cy="46" r="4"/>
+<circle class="c-page-bg" cx="18" cy="74" r="4"/>
+<circle class="c-page-bg" cx="46" cy="74" r="4"/>
+<circle class="c-page-bg" cx="74" cy="74" r="4"/>
+<circle class="c-page-bg" cx="102" cy="74" r="4"/>
+<circle class="c-page-bg" cx="130" cy="74" r="4"/>
+<circle class="c-page-bg" cx="158" cy="74" r="4"/>
+<circle class="c-page-bg" cx="186" cy="74" r="4"/>
+<circle class="c-page-bg" cx="214" cy="74" r="4"/>
+<circle class="c-page-bg" cx="242" cy="74" r="4"/>
+<circle class="c-page-bg" cx="270" cy="74" r="4"/>
+<circle class="c-page-bg" cx="298" cy="74" r="4"/>
+</svg>
+<div class="name"><h1><span>Holographic Display</span></h1><p>For Holographic Tech and Display Innovation</p></div>
+</div>
+<script>
+// Real faces run wider or narrower than the estimate: shrink the name until each line fits its zone.
+(function () {
+  var h = document.querySelector('.name h1'), max = 880, min = 32;
+  var lines = h.querySelectorAll('span');
+  function fit() {
+    var s = parseFloat(getComputedStyle(h).fontSize);
+    for (var i = 0; i < lines.length; i++) while (s > min && lines[i].getBoundingClientRect().width > max) { s -= 2; h.style.fontSize = s + 'px'; }
+  }
+  fit();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>
+</body></html>

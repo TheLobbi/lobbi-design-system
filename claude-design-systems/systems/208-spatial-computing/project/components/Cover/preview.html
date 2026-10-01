@@ -1,0 +1,60 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:var(--page-bg);color:var(--page-text);}
+.cover{position:relative;width:960px;height:288px;overflow:hidden;background:var(--page-bg);}
+svg{position:absolute;inset:0;}
+.c-color-cyan-highlight{fill:var(--color-cyan-highlight);stroke:var(--color-cyan-highlight);stroke-width:0;}
+.c-color-spatial-purple-light{fill:var(--color-spatial-purple-light);stroke:var(--color-spatial-purple-light);stroke-width:0;}
+.c-color-ambient-gray{fill:var(--color-ambient-gray);stroke:var(--color-ambient-gray);stroke-width:0;}
+.c-page-bg{fill:var(--page-bg);stroke:var(--page-bg);stroke-width:0;}
+.blk{rx:var(--border-radius-sm);}
+.rule{stroke-width:1px;fill:none;}
+.name{position:absolute;left:40px;bottom:40px;max-width:440px;}
+.name h1 span{display:inline-block;white-space:nowrap;}
+.name h1{margin:0;font-family:var(--font-display);font-weight:800;font-size:74px;line-height:0.95;color:var(--page-text);letter-spacing:0;}
+.name p{margin:16px 0 0;font-family:var(--font-body);font-size:14px;line-height:1.5;color:var(--color-ambient-gray);}
+</style></head>
+<body><div class="cover">
+<svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+<!--
+  blocks: color-cyan-highlight 6×15 steps, color-spatial-purple-light 4×13 steps, color-ambient-gray 3×15 steps
+  arrangement: strip of unequal bands bleeding off the top
+  pattern: discs — soft, large-radius shapes → discs and pills cut from the radius scale
+  scales: step spacing-unit (20px), gap 7px, radius border-radius-sm (12px)
+-->
+<rect class="c-color-cyan-highlight blk" x="840" y="-20" width="113" height="308"/>
+<rect class="c-color-spatial-purple-light blk" x="760" y="40" width="73" height="268"/>
+<rect class="c-color-ambient-gray blk" x="700" y="-20" width="53" height="308"/>
+<circle class="c-page-bg" cx="865" cy="25" r="15"/>
+<circle class="c-page-bg" cx="905" cy="25" r="15"/>
+<circle class="c-page-bg" cx="865" cy="65" r="15"/>
+<circle class="c-page-bg" cx="905" cy="65" r="15"/>
+<circle class="c-page-bg" cx="865" cy="105" r="15"/>
+<circle class="c-page-bg" cx="905" cy="105" r="15"/>
+<circle class="c-page-bg" cx="865" cy="145" r="15"/>
+<circle class="c-page-bg" cx="905" cy="145" r="15"/>
+<circle class="c-page-bg" cx="865" cy="185" r="15"/>
+<circle class="c-page-bg" cx="905" cy="185" r="15"/>
+<circle class="c-page-bg" cx="865" cy="225" r="15"/>
+<circle class="c-page-bg" cx="905" cy="225" r="15"/>
+</svg>
+<div class="name"><h1><span>Spatial</span><br><span>Computing</span></h1><p>Spatial UI 55% + AR/VR Interface 25% + 3D Space 20%</p></div>
+</div>
+<script>
+// Real faces run wider or narrower than the estimate: shrink the name until each line fits its zone.
+(function () {
+  var h = document.querySelector('.name h1'), max = 440, min = 48;
+  var lines = h.querySelectorAll('span');
+  function fit() {
+    var s = parseFloat(getComputedStyle(h).fontSize);
+    for (var i = 0; i < lines.length; i++) while (s > min && lines[i].getBoundingClientRect().width > max) { s -= 2; h.style.fontSize = s + 'px'; }
+  }
+  fit();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>
+</body></html>

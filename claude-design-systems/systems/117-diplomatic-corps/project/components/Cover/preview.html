@@ -1,0 +1,53 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html><head><meta charset="utf-8">
+
+<style>
+body{margin:0;background:var(--page-bg);color:var(--page-text);}
+.cover{position:relative;width:960px;height:288px;overflow:hidden;background:var(--page-bg);}
+svg{position:absolute;inset:0;}
+.c-classification-top-secret{fill:var(--classification-top-secret);stroke:var(--classification-top-secret);stroke-width:0;}
+.c-gold-secondary{fill:var(--gold-secondary);stroke:var(--gold-secondary);stroke-width:0;}
+.c-navy-dark{fill:var(--navy-dark);stroke:var(--navy-dark);stroke-width:0;}
+.c-classification-confidential{fill:var(--classification-confidential);stroke:var(--classification-confidential);stroke-width:0;}
+.c-page-bg{fill:var(--page-bg);stroke:var(--page-bg);stroke-width:0;}
+.blk{rx:var(--radius-3);}
+.rule{stroke-width:1px;fill:none;}
+.name{position:absolute;left:40px;bottom:40px;max-width:440px;}
+.name h1 span{display:inline-block;white-space:nowrap;}
+.name h1{margin:0;font-family:var(--font-display);font-weight:400;font-size:78px;line-height:0.95;color:var(--page-text);letter-spacing:0;}
+.name p{margin:16px 0 0;font-family:var(--font-body);font-size:14px;line-height:1.5;color:var(--gray-dark);}
+</style></head>
+<body><div class="cover">
+<svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+<!--
+  blocks: classification-top-secret 8×13 steps, gold-secondary 9×4 steps, navy-dark 9×3 steps, classification-confidential 9×4 steps
+  arrangement: one tall slab with satellites
+  pattern: rules — formal (10/10) serif editorial voice → a few hairline rules crossing the blocks
+  scales: step spacing-lg (24px), gap 8px, radius radius-3 (3px)
+-->
+<rect class="c-classification-top-secret blk" x="552" y="-24" width="192" height="312"/>
+<rect class="c-gold-secondary blk" x="752" y="24" width="208" height="96"/>
+<rect class="c-navy-dark blk" x="752" y="128" width="208" height="72"/>
+<rect class="c-classification-confidential blk" x="752" y="208" width="208" height="96"/>
+<line class="c-gold-secondary rule" x1="480" y1="48" x2="960" y2="48"/>
+<line class="c-gold-secondary rule" x1="480" y1="96" x2="960" y2="96"/>
+<line class="c-gold-secondary rule" x1="480" y1="144" x2="960" y2="144"/>
+<line class="c-gold-secondary rule" x1="480" y1="192" x2="960" y2="192"/>
+</svg>
+<div class="name"><h1><span>Diplomatic</span><br><span>Corps</span></h1><p>For Diplomatic Corps and Foreign Service</p></div>
+</div>
+<script>
+// Real faces run wider or narrower than the estimate: shrink the name until each line fits its zone.
+(function () {
+  var h = document.querySelector('.name h1'), max = 440, min = 48;
+  var lines = h.querySelectorAll('span');
+  function fit() {
+    var s = parseFloat(getComputedStyle(h).fontSize);
+    for (var i = 0; i < lines.length; i++) while (s > min && lines[i].getBoundingClientRect().width > max) { s -= 2; h.style.fontSize = s + 'px'; }
+  }
+  fit();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>
+</body></html>

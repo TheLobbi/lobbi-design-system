@@ -1,0 +1,54 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&amp;family=Source+Sans+Pro:wght@300;400;600;700;900&amp;display=swap">
+<style>
+body{margin:0;background:var(--page-bg);color:var(--page-text);}
+.cover{position:relative;width:960px;height:288px;overflow:hidden;background:var(--page-bg);}
+svg{position:absolute;inset:0;}
+.c-color-sage-green{fill:var(--color-sage-green);stroke:var(--color-sage-green);stroke-width:0;}
+.c-color-deep-leather{fill:var(--color-deep-leather);stroke:var(--color-deep-leather);stroke-width:0;}
+.c-color-bright-gold{fill:var(--color-bright-gold);stroke:var(--color-bright-gold);stroke-width:0;}
+.c-color-ink-black{fill:var(--color-ink-black);stroke:var(--color-ink-black);stroke-width:0;}
+.c-page-bg{fill:var(--page-bg);stroke:var(--page-bg);stroke-width:0;}
+.blk{rx:var(--border-radius-sm);}
+.rule{stroke-width:1px;fill:none;}
+.name{position:absolute;left:40px;bottom:40px;max-width:440px;}
+.name h1 span{display:inline-block;white-space:nowrap;}
+.name h1{margin:0;font-family:var(--font-display);font-weight:800;font-size:66px;line-height:0.95;color:var(--page-text);letter-spacing:0;}
+.name p{margin:16px 0 0;font-family:var(--font-body);font-size:14px;line-height:1.5;color:var(--page-text);}
+</style></head>
+<body><div class="cover">
+<svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+<!--
+  blocks: color-sage-green 21×4 steps, color-deep-leather 18×4 steps, color-bright-gold 15×4 steps, color-ink-black 12×4 steps
+  arrangement: staggered stack bleeding off the right edge
+  pattern: rules — formal (9/10) serif editorial voice → a few hairline rules crossing the blocks
+  scales: step space-md (22px), gap 7px, radius border-radius-sm (2px)
+-->
+<rect class="c-color-sage-green blk" x="524" y="22" width="458" height="88"/>
+<rect class="c-color-deep-leather blk" x="590" y="70" width="392" height="88"/>
+<rect class="c-color-bright-gold blk" x="656" y="119" width="326" height="88"/>
+<rect class="c-color-ink-black blk" x="722" y="167" width="260" height="88"/>
+<line class="c-color-deep-leather rule" x1="480" y1="44" x2="960" y2="44"/>
+<line class="c-color-deep-leather rule" x1="480" y1="88" x2="960" y2="88"/>
+<line class="c-color-deep-leather rule" x1="480" y1="132" x2="960" y2="132"/>
+<line class="c-color-deep-leather rule" x1="480" y1="176" x2="960" y2="176"/>
+</svg>
+<div class="name"><h1><span>Antiquarian</span><br><span>Books</span></h1><p>Rare Books 55% + Library Science 30% + Literary Heritage 15%</p></div>
+</div>
+<script>
+// Real faces run wider or narrower than the estimate: shrink the name until each line fits its zone.
+(function () {
+  var h = document.querySelector('.name h1'), max = 440, min = 48;
+  var lines = h.querySelectorAll('span');
+  function fit() {
+    var s = parseFloat(getComputedStyle(h).fontSize);
+    for (var i = 0; i < lines.length; i++) while (s > min && lines[i].getBoundingClientRect().width > max) { s -= 2; h.style.fontSize = s + 'px'; }
+  }
+  fit();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>
+</body></html>

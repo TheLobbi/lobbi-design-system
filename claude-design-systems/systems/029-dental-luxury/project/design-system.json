@@ -1,0 +1,25 @@
+{
+  "v": 3,
+  "layout": "files",
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-10-01T03:29:40Z"
+  },
+  "title": "Dental Luxury",
+  "namespace": "DentalLuxury",
+  "libraries": [],
+  "sections": {},
+  "groups": [],
+  "assetGroups": {},
+  "blobs": {},
+  "docs": {
+    "readme": "project/README.md",
+    "sections": []
+  },
+  "lastChange": {
+    "by": "Markus Ahling",
+    "at": "2026-10-01T03:32:36Z",
+    "via": "GitHub · thelobbi/lobbi-design-system@5c55b1b",
+    "note": "Built from style-29-dental-luxury.html"
+  }
+}

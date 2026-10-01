@@ -1,0 +1,75 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:var(--page-bg);color:var(--page-text);}
+.cover{position:relative;width:960px;height:288px;overflow:hidden;background:var(--page-bg);}
+svg{position:absolute;inset:0;}
+.c-strategic-blue{fill:var(--strategic-blue);stroke:var(--strategic-blue);stroke-width:0;}
+.c-status-review-text{fill:var(--status-review-text);stroke:var(--status-review-text);stroke-width:0;}
+.c-status-active-text{fill:var(--status-active-text);stroke:var(--status-active-text);stroke-width:0;}
+.c-text-primary{fill:var(--text-primary);stroke:var(--text-primary);stroke-width:0;}
+.c-page-bg{fill:var(--page-bg);stroke:var(--page-bg);stroke-width:0;}
+.blk{rx:var(--radius-3);}
+.tile{rx:var(--radius-3);}
+.rule{stroke-width:1px;fill:none;}
+.name{position:absolute;left:40px;bottom:40px;max-width:440px;}
+.name h1 span{display:inline-block;white-space:nowrap;}
+.name h1{margin:0;font-family:var(--font-display);font-weight:700;font-size:83px;line-height:0.95;color:var(--page-text);letter-spacing:0;}
+.name p{margin:16px 0 0;font-family:var(--font-body);font-size:14px;line-height:1.5;color:var(--text-secondary);}
+</style></head>
+<body><div class="cover">
+<svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+<!--
+  blocks: strategic-blue 8×15 steps, status-review-text 13×4 steps, status-active-text 13×3 steps, text-primary 13×4 steps
+  arrangement: one tall slab with satellites
+  pattern: tiles — geometric, modular dashboard layouts → tiles cut by the radius tokens
+  scales: step space-20 (20px), gap 7px, radius radius-3 (3px)
+-->
+<rect class="c-strategic-blue blk" x="540" y="-20" width="160" height="308"/>
+<rect class="c-status-review-text blk" x="707" y="20" width="253" height="80"/>
+<rect class="c-status-active-text blk" x="707" y="107" width="253" height="60"/>
+<rect class="c-text-primary blk" x="707" y="174" width="253" height="80"/>
+<rect class="c-page-bg tile" x="550" y="10" width="25" height="25"/>
+<rect class="c-page-bg tile" x="582" y="10" width="25" height="25"/>
+<rect class="c-page-bg tile" x="614" y="10" width="25" height="25"/>
+<rect class="c-page-bg tile" x="646" y="10" width="25" height="25"/>
+<rect class="c-page-bg tile" x="550" y="42" width="25" height="25"/>
+<rect class="c-page-bg tile" x="582" y="42" width="25" height="25"/>
+<rect class="c-page-bg tile" x="614" y="42" width="25" height="25"/>
+<rect class="c-page-bg tile" x="646" y="42" width="25" height="25"/>
+<rect class="c-page-bg tile" x="550" y="74" width="57" height="25"/>
+<rect class="c-page-bg tile" x="614" y="74" width="25" height="25"/>
+<rect class="c-page-bg tile" x="646" y="74" width="25" height="25"/>
+<rect class="c-page-bg tile" x="550" y="106" width="25" height="25"/>
+<rect class="c-page-bg tile" x="582" y="106" width="25" height="25"/>
+<rect class="c-page-bg tile" x="614" y="106" width="57" height="25"/>
+<rect class="c-page-bg tile" x="550" y="138" width="25" height="25"/>
+<rect class="c-page-bg tile" x="582" y="138" width="25" height="25"/>
+<rect class="c-page-bg tile" x="614" y="138" width="25" height="25"/>
+<rect class="c-page-bg tile" x="646" y="138" width="25" height="25"/>
+<rect class="c-page-bg tile" x="550" y="170" width="57" height="25"/>
+<rect class="c-page-bg tile" x="614" y="170" width="25" height="25"/>
+<rect class="c-page-bg tile" x="646" y="170" width="25" height="25"/>
+<rect class="c-page-bg tile" x="550" y="202" width="25" height="25"/>
+<rect class="c-page-bg tile" x="582" y="202" width="25" height="25"/>
+<rect class="c-page-bg tile" x="614" y="202" width="57" height="25"/>
+</svg>
+<div class="name"><h1><span>Industry</span><br><span>Council</span></h1><p>Industry Council 80% + Sector Leadership 20%</p></div>
+</div>
+<script>
+// Real faces run wider or narrower than the estimate: shrink the name until each line fits its zone.
+(function () {
+  var h = document.querySelector('.name h1'), max = 440, min = 48;
+  var lines = h.querySelectorAll('span');
+  function fit() {
+    var s = parseFloat(getComputedStyle(h).fontSize);
+    for (var i = 0; i < lines.length; i++) while (s > min && lines[i].getBoundingClientRect().width > max) { s -= 2; h.style.fontSize = s + 'px'; }
+  }
+  fit();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>
+</body></html>

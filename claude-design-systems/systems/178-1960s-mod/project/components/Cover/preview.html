@@ -1,0 +1,59 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous&amp;family=Rubik:wght@300;400;500;600;700;800&amp;display=swap">
+<style>
+body{margin:0;background:var(--page-bg);color:var(--page-text);}
+.cover{position:relative;width:960px;height:288px;overflow:hidden;background:var(--page-bg);}
+svg{position:absolute;inset:0;}
+.c-electric-blue{fill:var(--electric-blue);stroke:var(--electric-blue);stroke-width:0;}
+.c-hot-pink{fill:var(--hot-pink);stroke:var(--hot-pink);stroke-width:0;}
+.c-sunshine-yellow{fill:var(--sunshine-yellow);stroke:var(--sunshine-yellow);stroke-width:0;}
+.c-mod-orange{fill:var(--mod-orange);stroke:var(--mod-orange);stroke-width:0;}
+.c-page-bg{fill:var(--page-bg);stroke:var(--page-bg);stroke-width:0;}
+.blk{rx:0px;}
+.rule{stroke-width:1px;fill:none;}
+.name{position:absolute;left:40px;bottom:40px;max-width:440px;}
+.name h1 span{display:inline-block;white-space:nowrap;}
+.name h1{margin:0;font-family:var(--font-display);font-weight:700;font-size:98px;line-height:0.95;color:var(--page-text);letter-spacing:0;}
+.name p{margin:16px 0 0;font-family:var(--font-body);font-size:14px;line-height:1.5;color:var(--page-text);}
+</style></head>
+<body><div class="cover">
+<svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+<!--
+  blocks: electric-blue 6×13 steps, hot-pink 4×11 steps, sunshine-yellow 3×13 steps, mod-orange 5×11 steps
+  arrangement: strip of unequal bands bleeding off the top
+  pattern: stripes — loud, low-formality (4/10) voice → stripes at a spacing pitch
+  scales: step space-24 (24px), gap 8px, radius none
+-->
+<rect class="c-electric-blue blk" x="816" y="-24" width="136" height="312"/>
+<rect class="c-hot-pink blk" x="720" y="48" width="88" height="264"/>
+<rect class="c-sunshine-yellow blk" x="648" y="-24" width="64" height="312"/>
+<rect class="c-mod-orange blk" x="528" y="48" width="112" height="264"/>
+<rect class="c-page-bg" x="828" y="12" width="112" height="12"/>
+<rect class="c-page-bg" x="828" y="36" width="112" height="12"/>
+<rect class="c-page-bg" x="828" y="60" width="112" height="12"/>
+<rect class="c-page-bg" x="828" y="84" width="112" height="12"/>
+<rect class="c-page-bg" x="828" y="108" width="112" height="12"/>
+<rect class="c-page-bg" x="828" y="132" width="112" height="12"/>
+<rect class="c-page-bg" x="828" y="156" width="112" height="12"/>
+<rect class="c-page-bg" x="828" y="180" width="112" height="12"/>
+<rect class="c-page-bg" x="828" y="204" width="112" height="12"/>
+<rect class="c-page-bg" x="828" y="228" width="112" height="12"/>
+</svg>
+<div class="name"><h1><span>1960s</span><br><span>Mod</span></h1><p>60s Mod 55% + Op Art 25% + Space Age 20%</p></div>
+</div>
+<script>
+// Real faces run wider or narrower than the estimate: shrink the name until each line fits its zone.
+(function () {
+  var h = document.querySelector('.name h1'), max = 440, min = 48;
+  var lines = h.querySelectorAll('span');
+  function fit() {
+    var s = parseFloat(getComputedStyle(h).fontSize);
+    for (var i = 0; i < lines.length; i++) while (s > min && lines[i].getBoundingClientRect().width > max) { s -= 2; h.style.fontSize = s + 'px'; }
+  }
+  fit();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>
+</body></html>

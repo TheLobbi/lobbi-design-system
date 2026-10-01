@@ -1,0 +1,51 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&amp;family=Lato:wght@300;400;600;700&amp;display=swap">
+<style>
+body{margin:0;background:var(--page-bg);color:var(--page-text);}
+.cover{position:relative;width:960px;height:288px;overflow:hidden;background:var(--page-bg);}
+svg{position:absolute;inset:0;}
+.c-secondary-gold{fill:var(--secondary-gold);stroke:var(--secondary-gold);stroke-width:0;}
+.c-forest-dark{fill:var(--forest-dark);stroke:var(--forest-dark);stroke-width:0;}
+.c-burgundy-light{fill:var(--burgundy-light);stroke:var(--burgundy-light);stroke-width:0;}
+.c-forest-light{fill:var(--forest-light);stroke:var(--forest-light);stroke-width:0;}
+.c-page-bg{fill:var(--page-bg);stroke:var(--page-bg);stroke-width:0;}
+.blk{rx:var(--radius-sm);}
+.rule{stroke-width:1px;fill:none;}
+.name{position:absolute;left:40px;top:136px;max-width:880px;}
+.name h1 span{display:inline-block;white-space:nowrap;}
+.name h1{margin:0;font-family:var(--font-display);font-weight:700;font-size:64px;line-height:0.92;color:var(--page-text);letter-spacing:0;}
+.name p{margin:16px 0 0;font-family:var(--font-body);font-size:14px;line-height:1.5;color:var(--page-text);}
+</style></head>
+<body><div class="cover">
+<svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+<!--
+  blocks: secondary-gold 14×5 steps, forest-dark 8×5 steps, burgundy-light 11×5 steps, forest-light 5×5 steps
+  arrangement: top band of unequal strips (name too wide for its zone)
+  pattern: rules — formal (9/10) serif editorial voice → a few hairline rules crossing the blocks
+  scales: step spacing-md (24px), gap 8px, radius radius-sm (4px)
+-->
+<rect class="c-secondary-gold blk" x="0" y="0" width="335" height="112"/>
+<rect class="c-forest-dark blk" x="343" y="0" width="198" height="112"/>
+<rect class="c-burgundy-light blk" x="549" y="0" width="266" height="112"/>
+<rect class="c-forest-light blk" x="823" y="0" width="129" height="112"/>
+<line class="c-forest-dark rule" x1="0" y1="37" x2="960" y2="37"/>
+<line class="c-forest-dark rule" x1="0" y1="75" x2="960" y2="75"/>
+</svg>
+<div class="name"><h1><span>Professional Society</span></h1><p>Professional Society 80% + Academic Excellence 20%</p></div>
+</div>
+<script>
+// Real faces run wider or narrower than the estimate: shrink the name until each line fits its zone.
+(function () {
+  var h = document.querySelector('.name h1'), max = 880, min = 32;
+  var lines = h.querySelectorAll('span');
+  function fit() {
+    var s = parseFloat(getComputedStyle(h).fontSize);
+    for (var i = 0; i < lines.length; i++) while (s > min && lines[i].getBoundingClientRect().width > max) { s -= 2; h.style.fontSize = s + 'px'; }
+  }
+  fit();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>
+</body></html>

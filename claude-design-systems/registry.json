@@ -1,0 +1,3293 @@
+{
+  "type": "https://claude.ai/code/artifact/23336be2-ea67-47fa-abc1-ead8c645a326",
+  "note": "One Claude Design System artifact per Lobbi style. artifact = its claude.ai URL (null until published).",
+  "systems": [
+    {
+      "num": 1,
+      "name": "Byzantine Luxury",
+      "dir": "systems/001-byzantine-luxury",
+      "source": "style-1-byzantine-luxury.html",
+      "tags": [
+        "premium",
+        "heritage"
+      ],
+      "colors": 17,
+      "styles": 6,
+      "artifact": "https://claude.ai/artifact/GQ9H7fiGMSHCtJXXksTVTj"
+    },
+    {
+      "num": 2,
+      "name": "Streamline Moderne",
+      "dir": "systems/002-streamline-moderne",
+      "source": "style-2-streamline-moderne.html",
+      "tags": [
+        "creative"
+      ],
+      "colors": 13,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 3,
+      "name": "Quiet Luxury",
+      "dir": "systems/003-quiet-luxury",
+      "source": "style-3-quiet-luxury.html",
+      "tags": [
+        "premium"
+      ],
+      "colors": 15,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 4,
+      "name": "Japandi + Glass",
+      "dir": "systems/004-japandi-glass",
+      "source": "style-4-japandi-glass.html",
+      "tags": [
+        "creative"
+      ],
+      "colors": 17,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 5,
+      "name": "Swiss + Aurora",
+      "dir": "systems/005-swiss-aurora",
+      "source": "style-5-swiss-aurora.html",
+      "tags": [
+        "professional"
+      ],
+      "colors": 17,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 6,
+      "name": "Art Deco Cyberpunk",
+      "dir": "systems/006-art-deco-cyberpunk",
+      "source": "style-6-deco-cyberpunk.html",
+      "tags": [
+        "creative"
+      ],
+      "colors": 18,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 7,
+      "name": "Neubrutalism Memphis",
+      "dir": "systems/007-neubrutalism-memphis",
+      "source": "style-7-neubrutalism-memphis.html",
+      "tags": [
+        "creative"
+      ],
+      "colors": 9,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 8,
+      "name": "Scandinavian Bento",
+      "dir": "systems/008-scandinavian-bento",
+      "source": "style-8-scandi-bento.html",
+      "tags": [
+        "professional"
+      ],
+      "colors": 11,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 9,
+      "name": "Dark Academia",
+      "dir": "systems/009-dark-academia",
+      "source": "style-9-dark-academia-lobbi.html",
+      "tags": [
+        "premium",
+        "academic"
+      ],
+      "colors": 21,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 10,
+      "name": "Vaporwave Y2K",
+      "dir": "systems/010-vaporwave-y2k",
+      "source": "style-10-vaporwave-y2k.html",
+      "tags": [
+        "creative"
+      ],
+      "colors": 11,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 11,
+      "name": "Solarpunk Biophilic",
+      "dir": "systems/011-solarpunk-biophilic",
+      "source": "style-11-solarpunk-biophilic.html",
+      "tags": [
+        "tech"
+      ],
+      "colors": 21,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 12,
+      "name": "Brutalist Concrete",
+      "dir": "systems/012-brutalist-concrete",
+      "source": "style-12-brutalist-concrete.html",
+      "tags": [
+        "creative"
+      ],
+      "colors": 14,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 13,
+      "name": "Corporate Refinement",
+      "dir": "systems/013-corporate-refinement",
+      "source": "style-13-quiet-luxury.html",
+      "tags": [
+        "premium",
+        "professional"
+      ],
+      "colors": 17,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 14,
+      "name": "Editorial Swiss",
+      "dir": "systems/014-editorial-swiss",
+      "source": "style-14-editorial-swiss.html",
+      "tags": [
+        "professional",
+        "media"
+      ],
+      "colors": 14,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 15,
+      "name": "Private Banking",
+      "dir": "systems/015-private-banking",
+      "source": "style-15-private-banking.html",
+      "tags": [
+        "premium",
+        "professional"
+      ],
+      "colors": 13,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 16,
+      "name": "Architect Portfolio",
+      "dir": "systems/016-architect-portfolio",
+      "source": "style-16-architect-portfolio.html",
+      "tags": [
+        "professional"
+      ],
+      "colors": 11,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 17,
+      "name": "Executive Suite",
+      "dir": "systems/017-executive-suite",
+      "source": "style-17-executive-suite.html",
+      "tags": [
+        "professional"
+      ],
+      "colors": 19,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 18,
+      "name": "Law Firm Premium",
+      "dir": "systems/018-law-firm-premium",
+      "source": "style-18-law-firm-premium.html",
+      "tags": [
+        "premium",
+        "professional"
+      ],
+      "colors": 20,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 19,
+      "name": "Luxury Hotel",
+      "dir": "systems/019-luxury-hotel",
+      "source": "style-19-luxury-hotel.html",
+      "tags": [
+        "premium",
+        "hospitality"
+      ],
+      "colors": 18,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 20,
+      "name": "Investment Fund",
+      "dir": "systems/020-investment-fund",
+      "source": "style-20-investment-fund.html",
+      "tags": [
+        "professional",
+        "tech"
+      ],
+      "colors": 17,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 21,
+      "name": "Wealth Management",
+      "dir": "systems/021-wealth-management",
+      "source": "style-21-wealth-management.html",
+      "tags": [
+        "premium",
+        "professional"
+      ],
+      "colors": 13,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 22,
+      "name": "Fintech Modern",
+      "dir": "systems/022-fintech-modern",
+      "source": "style-22-fintech-modern.html",
+      "tags": [
+        "tech",
+        "professional"
+      ],
+      "colors": 25,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 23,
+      "name": "Trading Terminal",
+      "dir": "systems/023-trading-terminal",
+      "source": "style-23-trading-terminal.html",
+      "tags": [
+        "tech",
+        "professional"
+      ],
+      "colors": 13,
+      "styles": 4,
+      "artifact": null
+    },
+    {
+      "num": 24,
+      "name": "Insurance Premium",
+      "dir": "systems/024-insurance-premium",
+      "source": "style-24-insurance-premium.html",
+      "tags": [
+        "professional"
+      ],
+      "colors": 15,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 25,
+      "name": "Crypto Luxury",
+      "dir": "systems/025-crypto-luxury",
+      "source": "style-25-crypto-luxury.html",
+      "tags": [
+        "tech",
+        "premium"
+      ],
+      "colors": 16,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 26,
+      "name": "Real Estate Luxury",
+      "dir": "systems/026-real-estate-luxury",
+      "source": "style-26-real-estate-luxury.html",
+      "tags": [
+        "premium",
+        "hospitality"
+      ],
+      "colors": 8,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 27,
+      "name": "Consulting Elite",
+      "dir": "systems/027-consulting-elite",
+      "source": "style-27-consulting-elite.html",
+      "tags": [
+        "professional"
+      ],
+      "colors": 15,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 28,
+      "name": "Medical Premium",
+      "dir": "systems/028-medical-premium",
+      "source": "style-28-medical-premium.html",
+      "tags": [
+        "professional",
+        "tech"
+      ],
+      "colors": 16,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 29,
+      "name": "Dental Luxury",
+      "dir": "systems/029-dental-luxury",
+      "source": "style-29-dental-luxury.html",
+      "tags": [
+        "hospitality"
+      ],
+      "colors": 13,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 30,
+      "name": "Pharmaceutical",
+      "dir": "systems/030-pharmaceutical",
+      "source": "style-30-pharmaceutical.html",
+      "tags": [
+        "professional",
+        "tech"
+      ],
+      "colors": 12,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 31,
+      "name": "Engineering Firm",
+      "dir": "systems/031-engineering-firm",
+      "source": "style-31-engineering-firm.html",
+      "tags": [
+        "professional",
+        "tech"
+      ],
+      "colors": 14,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 32,
+      "name": "Accounting Premium",
+      "dir": "systems/032-accounting-premium",
+      "source": "style-32-accounting-premium.html",
+      "tags": [
+        "professional"
+      ],
+      "colors": 18,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 33,
+      "name": "Patent Law",
+      "dir": "systems/033-patent-law",
+      "source": "style-33-patent-law.html",
+      "tags": [
+        "professional"
+      ],
+      "colors": 22,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 34,
+      "name": "HR Enterprise",
+      "dir": "systems/034-hr-enterprise",
+      "source": "style-34-hr-enterprise.html",
+      "tags": [
+        "professional",
+        "tech"
+      ],
+      "colors": 20,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 35,
+      "name": "Yacht Club",
+      "dir": "systems/035-yacht-club",
+      "source": "style-35-yacht-club.html",
+      "tags": [
+        "premium",
+        "hospitality"
+      ],
+      "colors": 19,
+      "styles": 8,
+      "artifact": null
+    },
+    {
+      "num": 36,
+      "name": "Golf Resort",
+      "dir": "systems/036-golf-resort",
+      "source": "style-36-golf-resort.html",
+      "tags": [
+        "premium",
+        "hospitality"
+      ],
+      "colors": 12,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 37,
+      "name": "Spa Wellness",
+      "dir": "systems/037-spa-wellness",
+      "source": "style-37-spa-wellness.html",
+      "tags": [
+        "hospitality"
+      ],
+      "colors": 16,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 38,
+      "name": "Fine Dining",
+      "dir": "systems/038-fine-dining",
+      "source": "style-38-fine-dining.html",
+      "tags": [
+        "premium",
+        "hospitality"
+      ],
+      "colors": 11,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 39,
+      "name": "Private Aviation",
+      "dir": "systems/039-private-aviation",
+      "source": "style-39-private-aviation.html",
+      "tags": [
+        "premium"
+      ],
+      "colors": 13,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 40,
+      "name": "Watch Luxury",
+      "dir": "systems/040-watch-luxury",
+      "source": "style-40-watch-luxury.html",
+      "tags": [
+        "premium"
+      ],
+      "colors": 22,
+      "styles": 8,
+      "artifact": null
+    },
+    {
+      "num": 41,
+      "name": "Jewelry Boutique",
+      "dir": "systems/041-jewelry-boutique",
+      "source": "style-41-jewelry-boutique.html",
+      "tags": [
+        "premium"
+      ],
+      "colors": 11,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 42,
+      "name": "Art Gallery",
+      "dir": "systems/042-art-gallery",
+      "source": "style-42-art-gallery.html",
+      "tags": [
+        "creative",
+        "premium"
+      ],
+      "colors": 11,
+      "styles": 8,
+      "artifact": null
+    },
+    {
+      "num": 43,
+      "name": "AI Research",
+      "dir": "systems/043-ai-research",
+      "source": "style-43-ai-research.html",
+      "tags": [
+        "tech",
+        "academic"
+      ],
+      "colors": 15,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 44,
+      "name": "Biotech Lab",
+      "dir": "systems/044-biotech-lab",
+      "source": "style-44-biotech-lab.html",
+      "tags": [
+        "tech",
+        "professional"
+      ],
+      "colors": 25,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 45,
+      "name": "Aerospace",
+      "dir": "systems/045-aerospace",
+      "source": "style-45-aerospace.html",
+      "tags": [
+        "tech",
+        "professional"
+      ],
+      "colors": 19,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 46,
+      "name": "Robotics",
+      "dir": "systems/046-robotics",
+      "source": "style-46-robotics.html",
+      "tags": [
+        "tech"
+      ],
+      "colors": 24,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 47,
+      "name": "Quantum Computing",
+      "dir": "systems/047-quantum-computing",
+      "source": "style-47-quantum-computing.html",
+      "tags": [
+        "tech",
+        "academic"
+      ],
+      "colors": 18,
+      "styles": 4,
+      "artifact": null
+    },
+    {
+      "num": 48,
+      "name": "Clean Energy",
+      "dir": "systems/048-clean-energy",
+      "source": "style-48-clean-energy.html",
+      "tags": [
+        "tech"
+      ],
+      "colors": 27,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 49,
+      "name": "Space Industry",
+      "dir": "systems/049-space-industry",
+      "source": "style-49-space-industry.html",
+      "tags": [
+        "tech"
+      ],
+      "colors": 14,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 50,
+      "name": "Cybersecurity",
+      "dir": "systems/050-cybersecurity",
+      "source": "style-50-cybersecurity.html",
+      "tags": [
+        "tech",
+        "professional"
+      ],
+      "colors": 17,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 51,
+      "name": "News Editorial",
+      "dir": "systems/051-news-editorial",
+      "source": "style-51-news-editorial.html",
+      "tags": [
+        "media",
+        "professional"
+      ],
+      "colors": 12,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 52,
+      "name": "Fashion Magazine",
+      "dir": "systems/052-fashion-magazine",
+      "source": "style-52-fashion-magazine.html",
+      "tags": [
+        "media",
+        "creative"
+      ],
+      "colors": 10,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 53,
+      "name": "Literary Journal",
+      "dir": "systems/053-literary-journal",
+      "source": "style-53-literary-journal.html",
+      "tags": [
+        "media",
+        "academic"
+      ],
+      "colors": 10,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 54,
+      "name": "Music Label",
+      "dir": "systems/054-music-label",
+      "source": "style-54-music-label.html",
+      "tags": [
+        "media",
+        "creative"
+      ],
+      "colors": 11,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 55,
+      "name": "Film Studio",
+      "dir": "systems/055-film-studio",
+      "source": "style-55-film-studio.html",
+      "tags": [
+        "media",
+        "creative"
+      ],
+      "colors": 16,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 56,
+      "name": "Photography Pro",
+      "dir": "systems/056-photography-pro",
+      "source": "style-56-photography-pro.html",
+      "tags": [
+        "media",
+        "creative"
+      ],
+      "colors": 9,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 57,
+      "name": "Podcast Premium",
+      "dir": "systems/057-podcast-premium",
+      "source": "style-57-podcast-premium.html",
+      "tags": [
+        "media",
+        "tech"
+      ],
+      "colors": 17,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 58,
+      "name": "Streaming Platform",
+      "dir": "systems/058-streaming-platform",
+      "source": "style-58-streaming-platform.html",
+      "tags": [
+        "media",
+        "tech"
+      ],
+      "colors": 12,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 59,
+      "name": "Board Room",
+      "dir": "systems/059-board-room",
+      "source": "style-59-board-room.html",
+      "tags": [
+        "premium",
+        "professional"
+      ],
+      "colors": 16,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 60,
+      "name": "Fortune 500",
+      "dir": "systems/060-fortune-500",
+      "source": "style-60-fortune-500.html",
+      "tags": [
+        "professional"
+      ],
+      "colors": 13,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 61,
+      "name": "Startup Unicorn",
+      "dir": "systems/061-startup-unicorn",
+      "source": "style-61-startup-unicorn.html",
+      "tags": [
+        "tech",
+        "professional"
+      ],
+      "colors": 19,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 62,
+      "name": "Non-Profit Premium",
+      "dir": "systems/062-non-profit-premium",
+      "source": "style-62-nonprofit-premium.html",
+      "tags": [
+        "professional"
+      ],
+      "colors": 19,
+      "styles": 8,
+      "artifact": null
+    },
+    {
+      "num": 63,
+      "name": "University Ivy",
+      "dir": "systems/063-university-ivy",
+      "source": "style-63-university-ivy.html",
+      "tags": [
+        "academic",
+        "premium"
+      ],
+      "colors": 23,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 64,
+      "name": "Think Tank",
+      "dir": "systems/064-think-tank",
+      "source": "style-64-think-tank.html",
+      "tags": [
+        "academic",
+        "professional"
+      ],
+      "colors": 15,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 65,
+      "name": "Foundation",
+      "dir": "systems/065-foundation",
+      "source": "style-65-foundation.html",
+      "tags": [
+        "premium",
+        "professional"
+      ],
+      "colors": 14,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 66,
+      "name": "Government Civic",
+      "dir": "systems/066-government-civic",
+      "source": "style-66-government-civic.html",
+      "tags": [
+        "professional"
+      ],
+      "colors": 14,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 67,
+      "name": "Auction House",
+      "dir": "systems/067-auction-house",
+      "source": "style-67-auction-house.html",
+      "tags": [
+        "premium"
+      ],
+      "colors": 14,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 68,
+      "name": "Wine Estate",
+      "dir": "systems/068-wine-estate",
+      "source": "style-68-wine-estate.html",
+      "tags": [
+        "premium",
+        "hospitality"
+      ],
+      "colors": 16,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 69,
+      "name": "Equestrian",
+      "dir": "systems/069-equestrian",
+      "source": "style-69-equestrian.html",
+      "tags": [
+        "premium",
+        "hospitality"
+      ],
+      "colors": 22,
+      "styles": 8,
+      "artifact": null
+    },
+    {
+      "num": 70,
+      "name": "Luxury Auto",
+      "dir": "systems/070-luxury-auto",
+      "source": "style-70-luxury-auto.html",
+      "tags": [
+        "premium",
+        "tech"
+      ],
+      "colors": 16,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 71,
+      "name": "Chamber of Commerce",
+      "dir": "systems/071-chamber-of-commerce",
+      "source": "style-71-chamber-commerce.html",
+      "tags": [
+        "association",
+        "professional"
+      ],
+      "colors": 15,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 72,
+      "name": "Trade Association",
+      "dir": "systems/072-trade-association",
+      "source": "style-72-trade-association.html",
+      "tags": [
+        "association",
+        "professional"
+      ],
+      "colors": 32,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 73,
+      "name": "Professional Society",
+      "dir": "systems/073-professional-society",
+      "source": "style-73-professional-society.html",
+      "tags": [
+        "association",
+        "academic"
+      ],
+      "colors": 18,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 74,
+      "name": "Alumni Association",
+      "dir": "systems/074-alumni-association",
+      "source": "style-74-alumni-association.html",
+      "tags": [
+        "association",
+        "academic"
+      ],
+      "colors": 17,
+      "styles": 8,
+      "artifact": null
+    },
+    {
+      "num": 75,
+      "name": "Bar Association",
+      "dir": "systems/075-bar-association",
+      "source": "style-75-bar-association.html",
+      "tags": [
+        "association",
+        "professional"
+      ],
+      "colors": 18,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 76,
+      "name": "Medical Association",
+      "dir": "systems/076-medical-association",
+      "source": "style-76-medical-association.html",
+      "tags": [
+        "association",
+        "professional"
+      ],
+      "colors": 19,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 77,
+      "name": "Realtors Association",
+      "dir": "systems/077-realtors-association",
+      "source": "style-77-realtors-association.html",
+      "tags": [
+        "association",
+        "professional"
+      ],
+      "colors": 14,
+      "styles": 4,
+      "artifact": null
+    },
+    {
+      "num": 78,
+      "name": "Rotary Service Club",
+      "dir": "systems/078-rotary-service-club",
+      "source": "style-78-rotary-service.html",
+      "tags": [
+        "association"
+      ],
+      "colors": 20,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 79,
+      "name": "Credit Union League",
+      "dir": "systems/079-credit-union-league",
+      "source": "style-79-credit-union.html",
+      "tags": [
+        "association",
+        "professional"
+      ],
+      "colors": 12,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 80,
+      "name": "HOA Management",
+      "dir": "systems/080-hoa-management",
+      "source": "style-80-hoa.html",
+      "tags": [
+        "association"
+      ],
+      "colors": 16,
+      "styles": 8,
+      "artifact": null
+    },
+    {
+      "num": 81,
+      "name": "Teachers Union",
+      "dir": "systems/081-teachers-union",
+      "source": "style-81-teachers-union.html",
+      "tags": [
+        "association",
+        "professional"
+      ],
+      "colors": 17,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 82,
+      "name": "Nonprofit Alliance",
+      "dir": "systems/082-nonprofit-alliance",
+      "source": "style-82-nonprofit-alliance.html",
+      "tags": [
+        "association",
+        "professional"
+      ],
+      "colors": 14,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 83,
+      "name": "Sports League",
+      "dir": "systems/083-sports-league",
+      "source": "style-83-sports-league.html",
+      "tags": [
+        "association"
+      ],
+      "colors": 23,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 84,
+      "name": "Veterans Organization",
+      "dir": "systems/084-veterans-organization",
+      "source": "style-84-veterans-org.html",
+      "tags": [
+        "association",
+        "premium"
+      ],
+      "colors": 13,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 85,
+      "name": "Religious Denomination",
+      "dir": "systems/085-religious-denomination",
+      "source": "style-85-religious-denomination.html",
+      "tags": [
+        "association"
+      ],
+      "colors": 19,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 86,
+      "name": "Fraternal Organization",
+      "dir": "systems/086-fraternal-organization",
+      "source": "style-86-fraternal-org.html",
+      "tags": [
+        "association",
+        "premium"
+      ],
+      "colors": 13,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 87,
+      "name": "Industry Council",
+      "dir": "systems/087-industry-council",
+      "source": "style-87-industry-council.html",
+      "tags": [
+        "association",
+        "professional"
+      ],
+      "colors": 17,
+      "styles": 8,
+      "artifact": null
+    },
+    {
+      "num": 88,
+      "name": "Cooperative Association",
+      "dir": "systems/088-cooperative-association",
+      "source": "style-88-cooperative.html",
+      "tags": [
+        "association"
+      ],
+      "colors": 20,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 89,
+      "name": "Professional Network",
+      "dir": "systems/089-professional-network",
+      "source": "style-89-professional-network.html",
+      "tags": [
+        "association",
+        "professional"
+      ],
+      "colors": 19,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 90,
+      "name": "Membership Collective",
+      "dir": "systems/090-membership-collective",
+      "source": "style-90-membership-collective.html",
+      "tags": [
+        "association",
+        "creative"
+      ],
+      "colors": 17,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 91,
+      "name": "Enterprise SaaS",
+      "dir": "systems/091-enterprise-saas",
+      "source": "style-91-enterprise-saas.html",
+      "tags": [
+        "tech",
+        "professional"
+      ],
+      "colors": 41,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 92,
+      "name": "Nordic Minimal",
+      "dir": "systems/092-nordic-minimal",
+      "source": "style-92-nordic-minimal.html",
+      "tags": [
+        "creative",
+        "professional"
+      ],
+      "colors": 26,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 93,
+      "name": "Luxury Concierge",
+      "dir": "systems/093-luxury-concierge",
+      "source": "style-93-luxury-concierge.html",
+      "tags": [
+        "premium",
+        "hospitality"
+      ],
+      "colors": 21,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 94,
+      "name": "Cyber Command",
+      "dir": "systems/094-cyber-command",
+      "source": "style-94-cyber-command.html",
+      "tags": [
+        "tech"
+      ],
+      "colors": 25,
+      "styles": 3,
+      "artifact": null
+    },
+    {
+      "num": 95,
+      "name": "Organic Wellness",
+      "dir": "systems/095-organic-wellness",
+      "source": "style-95-organic-wellness.html",
+      "tags": [
+        "hospitality",
+        "creative"
+      ],
+      "colors": 22,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 96,
+      "name": "Investment Elite",
+      "dir": "systems/096-investment-elite",
+      "source": "style-96-investment-elite.html",
+      "tags": [
+        "premium",
+        "professional"
+      ],
+      "colors": 27,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 97,
+      "name": "Creative Studio",
+      "dir": "systems/097-creative-studio",
+      "source": "style-97-creative-studio.html",
+      "tags": [
+        "creative"
+      ],
+      "colors": 17,
+      "styles": 8,
+      "artifact": null
+    },
+    {
+      "num": 98,
+      "name": "Academic Research",
+      "dir": "systems/098-academic-research",
+      "source": "style-98-academic-research.html",
+      "tags": [
+        "academic",
+        "professional"
+      ],
+      "colors": 23,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 99,
+      "name": "Sports Premium",
+      "dir": "systems/099-sports-premium",
+      "source": "style-99-sports-premium.html",
+      "tags": [
+        "media",
+        "premium"
+      ],
+      "colors": 12,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 100,
+      "name": "Heritage Society",
+      "dir": "systems/100-heritage-society",
+      "source": "style-100-heritage-society.html",
+      "tags": [
+        "premium",
+        "academic"
+      ],
+      "colors": 17,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 101,
+      "name": "Quantum Lab",
+      "dir": "systems/101-quantum-lab",
+      "source": "style-101-quantum-lab.html",
+      "tags": [
+        "tech",
+        "academic"
+      ],
+      "colors": 18,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 102,
+      "name": "Maritime Guild",
+      "dir": "systems/102-maritime-guild",
+      "source": "style-102-maritime-guild.html",
+      "tags": [
+        "association",
+        "premium"
+      ],
+      "colors": 17,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 103,
+      "name": "Artisan Collective",
+      "dir": "systems/103-artisan-collective",
+      "source": "style-103-artisan-collective.html",
+      "tags": [
+        "creative",
+        "association"
+      ],
+      "colors": 17,
+      "styles": 8,
+      "artifact": null
+    },
+    {
+      "num": 104,
+      "name": "Aviation Elite",
+      "dir": "systems/104-aviation-elite",
+      "source": "style-104-aviation-elite.html",
+      "tags": [
+        "premium",
+        "tech"
+      ],
+      "colors": 21,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 105,
+      "name": "Music Conservatory",
+      "dir": "systems/105-music-conservatory",
+      "source": "style-105-music-conservatory.html",
+      "tags": [
+        "academic",
+        "creative"
+      ],
+      "colors": 15,
+      "styles": 8,
+      "artifact": null
+    },
+    {
+      "num": 106,
+      "name": "Green Energy",
+      "dir": "systems/106-green-energy",
+      "source": "style-106-green-energy.html",
+      "tags": [
+        "tech",
+        "association"
+      ],
+      "colors": 30,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 107,
+      "name": "Legal Summit",
+      "dir": "systems/107-legal-summit",
+      "source": "style-107-legal-summit.html",
+      "tags": [
+        "professional",
+        "association"
+      ],
+      "colors": 23,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 108,
+      "name": "Culinary Guild",
+      "dir": "systems/108-culinary-guild",
+      "source": "style-108-culinary-guild.html",
+      "tags": [
+        "hospitality",
+        "association"
+      ],
+      "colors": 21,
+      "styles": 9,
+      "artifact": null
+    },
+    {
+      "num": 109,
+      "name": "Architecture Forum",
+      "dir": "systems/109-architecture-forum",
+      "source": "style-109-architecture-forum.html",
+      "tags": [
+        "professional",
+        "creative"
+      ],
+      "colors": 18,
+      "styles": 8,
+      "artifact": null
+    },
+    {
+      "num": 110,
+      "name": "Philanthropy Circle",
+      "dir": "systems/110-philanthropy-circle",
+      "source": "style-110-philanthropy-circle.html",
+      "tags": [
+        "premium",
+        "association"
+      ],
+      "colors": 19,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 111,
+      "name": "eSports Arena",
+      "dir": "systems/111-esports-arena",
+      "source": "style-111-esports-arena.html",
+      "tags": [
+        "tech",
+        "media"
+      ],
+      "colors": 19,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 112,
+      "name": "Wine Society",
+      "dir": "systems/112-wine-society",
+      "source": "style-112-wine-society.html",
+      "tags": [
+        "premium",
+        "hospitality"
+      ],
+      "colors": 15,
+      "styles": 8,
+      "artifact": null
+    },
+    {
+      "num": 113,
+      "name": "Blockchain DAO",
+      "dir": "systems/113-blockchain-dao",
+      "source": "style-113-blockchain-dao.html",
+      "tags": [
+        "tech"
+      ],
+      "colors": 18,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 114,
+      "name": "Healthcare Network",
+      "dir": "systems/114-healthcare-network",
+      "source": "style-114-healthcare-network.html",
+      "tags": [
+        "professional",
+        "association"
+      ],
+      "colors": 18,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 115,
+      "name": "Fashion Council",
+      "dir": "systems/115-fashion-council",
+      "source": "style-115-fashion-council.html",
+      "tags": [
+        "creative",
+        "media"
+      ],
+      "colors": 10,
+      "styles": 8,
+      "artifact": null
+    },
+    {
+      "num": 116,
+      "name": "Motorsport Club",
+      "dir": "systems/116-motorsport-club",
+      "source": "style-116-motorsport-club.html",
+      "tags": [
+        "premium",
+        "association"
+      ],
+      "colors": 16,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 117,
+      "name": "Diplomatic Corps",
+      "dir": "systems/117-diplomatic-corps",
+      "source": "style-117-diplomatic-corps.html",
+      "tags": [
+        "professional"
+      ],
+      "colors": 23,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 118,
+      "name": "Startup Accelerator",
+      "dir": "systems/118-startup-accelerator",
+      "source": "style-118-startup-accelerator.html",
+      "tags": [
+        "tech",
+        "professional"
+      ],
+      "colors": 15,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 119,
+      "name": "Meditation Sangha",
+      "dir": "systems/119-meditation-sangha",
+      "source": "style-119-meditation-sangha.html",
+      "tags": [
+        "hospitality",
+        "creative"
+      ],
+      "colors": 17,
+      "styles": 8,
+      "artifact": null
+    },
+    {
+      "num": 120,
+      "name": "Space Pioneers",
+      "dir": "systems/120-space-pioneers",
+      "source": "style-120-space-pioneers.html",
+      "tags": [
+        "tech",
+        "academic"
+      ],
+      "colors": 16,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 121,
+      "name": "Civic Innovation Hub",
+      "dir": "systems/121-civic-innovation-hub",
+      "source": "style-121-civic-innovation-hub.html",
+      "tags": [
+        "professional",
+        "association"
+      ],
+      "colors": 18,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 122,
+      "name": "Democratic Transparency",
+      "dir": "systems/122-democratic-transparency",
+      "source": "style-122-democratic-transparency.html",
+      "tags": [
+        "professional",
+        "association"
+      ],
+      "colors": 18,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 123,
+      "name": "Public Service Excellence",
+      "dir": "systems/123-public-service-excellence",
+      "source": "style-123-public-service-excellence.html",
+      "tags": [
+        "premium",
+        "professional",
+        "association"
+      ],
+      "colors": 16,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 124,
+      "name": "Regulatory Modernization",
+      "dir": "systems/124-regulatory-modernization",
+      "source": "style-124-regulatory-modernization.html",
+      "tags": [
+        "professional",
+        "association"
+      ],
+      "colors": 18,
+      "styles": 4,
+      "artifact": null
+    },
+    {
+      "num": 125,
+      "name": "Impact Collective",
+      "dir": "systems/125-impact-collective",
+      "source": "style-125-impact-collective.html",
+      "tags": [
+        "creative",
+        "association"
+      ],
+      "colors": 30,
+      "styles": 8,
+      "artifact": null
+    },
+    {
+      "num": 126,
+      "name": "Philanthropic Legacy",
+      "dir": "systems/126-philanthropic-legacy",
+      "source": "style-126-philanthropic-legacy.html",
+      "tags": [
+        "premium",
+        "association"
+      ],
+      "colors": 20,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 127,
+      "name": "Community Catalyst",
+      "dir": "systems/127-community-catalyst",
+      "source": "style-127-community-catalyst.html",
+      "tags": [
+        "creative",
+        "association",
+        "hospitality"
+      ],
+      "colors": 20,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 128,
+      "name": "Advocacy Alliance",
+      "dir": "systems/128-advocacy-alliance",
+      "source": "style-128-advocacy-alliance.html",
+      "tags": [
+        "professional",
+        "association",
+        "media"
+      ],
+      "colors": 19,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 129,
+      "name": "Member Ecosystem",
+      "dir": "systems/129-member-ecosystem",
+      "source": "style-129-member-ecosystem.html",
+      "tags": [
+        "tech",
+        "association"
+      ],
+      "colors": 17,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 130,
+      "name": "Credential Authority",
+      "dir": "systems/130-credential-authority",
+      "source": "style-130-credential-authority.html",
+      "tags": [
+        "professional",
+        "association"
+      ],
+      "colors": 20,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 131,
+      "name": "Industry Council Evolution",
+      "dir": "systems/131-industry-council-evolution",
+      "source": "style-131-industry-council.html",
+      "tags": [
+        "tech",
+        "association",
+        "professional"
+      ],
+      "colors": 16,
+      "styles": 8,
+      "artifact": null
+    },
+    {
+      "num": 132,
+      "name": "Membership Renaissance",
+      "dir": "systems/132-membership-renaissance",
+      "source": "style-132-membership-renaissance.html",
+      "tags": [
+        "creative",
+        "premium",
+        "association"
+      ],
+      "colors": 14,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 133,
+      "name": "Professional Guild Modern",
+      "dir": "systems/133-professional-guild-modern",
+      "source": "style-133-professional-guild-modern.html",
+      "tags": [
+        "professional",
+        "association",
+        "creative"
+      ],
+      "colors": 12,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 134,
+      "name": "Association Intelligence",
+      "dir": "systems/134-association-intelligence",
+      "source": "style-134-association-intelligence.html",
+      "tags": [
+        "tech",
+        "association"
+      ],
+      "colors": 14,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 135,
+      "name": "Global Standards Body",
+      "dir": "systems/135-global-standards-body",
+      "source": "style-135-global-standards-body.html",
+      "tags": [
+        "premium",
+        "professional",
+        "association"
+      ],
+      "colors": 17,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 136,
+      "name": "Minimal Wellness",
+      "dir": "systems/136-minimal-wellness",
+      "source": "style-136-minimal-wellness.html",
+      "tags": [
+        "hospitality",
+        "creative"
+      ],
+      "colors": 22,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 137,
+      "name": "Heritage Modernist",
+      "dir": "systems/137-heritage-modernist",
+      "source": "style-137-heritage-modernist.html",
+      "tags": [
+        "premium",
+        "association"
+      ],
+      "colors": 14,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 138,
+      "name": "Eco-Luxury Refined",
+      "dir": "systems/138-eco-luxury-refined",
+      "source": "style-138-eco-luxury.html",
+      "tags": [
+        "premium",
+        "creative"
+      ],
+      "colors": 19,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 139,
+      "name": "Artisan Contemporary",
+      "dir": "systems/139-artisan-contemporary",
+      "source": "style-139-artisan-contemporary.html",
+      "tags": [
+        "creative",
+        "professional"
+      ],
+      "colors": 20,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 140,
+      "name": "Accessible Professional Plus",
+      "dir": "systems/140-accessible-professional-plus",
+      "source": "style-140-accessible-professional.html",
+      "tags": [
+        "professional",
+        "association"
+      ],
+      "colors": 15,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 141,
+      "name": "Art Nouveau Elegance",
+      "dir": "systems/141-art-nouveau-elegance",
+      "source": "style-141-art-nouveau-elegance.html",
+      "tags": [
+        "creative",
+        "premium"
+      ],
+      "colors": 21,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 142,
+      "name": "Gothic Revival Digital",
+      "dir": "systems/142-gothic-revival-digital",
+      "source": "style-142-gothic-revival-digital.html",
+      "tags": [
+        "premium",
+        "academic"
+      ],
+      "colors": 20,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 143,
+      "name": "Victorian Modernist",
+      "dir": "systems/143-victorian-modernist",
+      "source": "style-143-victorian-modernist.html",
+      "tags": [
+        "premium",
+        "professional"
+      ],
+      "colors": 21,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 144,
+      "name": "Rococo Digital Garden",
+      "dir": "systems/144-rococo-digital-garden",
+      "source": "style-144-rococo-digital-garden.html",
+      "tags": [
+        "creative",
+        "hospitality"
+      ],
+      "colors": 21,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 145,
+      "name": "Neoclassical Authority",
+      "dir": "systems/145-neoclassical-authority",
+      "source": "style-145-neoclassical-authority.html",
+      "tags": [
+        "professional",
+        "association"
+      ],
+      "colors": 13,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 146,
+      "name": "Renaissance Revival",
+      "dir": "systems/146-renaissance-revival",
+      "source": "style-146-renaissance-revival.html",
+      "tags": [
+        "premium",
+        "creative"
+      ],
+      "colors": 13,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 147,
+      "name": "Medieval Guild Hall",
+      "dir": "systems/147-medieval-guild-hall",
+      "source": "style-147-medieval-guild-hall.html",
+      "tags": [
+        "association",
+        "premium"
+      ],
+      "colors": 13,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 148,
+      "name": "Baroque Grandeur",
+      "dir": "systems/148-baroque-grandeur",
+      "source": "style-148-baroque-grandeur.html",
+      "tags": [
+        "premium",
+        "hospitality"
+      ],
+      "colors": 13,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 149,
+      "name": "Roman Empire Digital",
+      "dir": "systems/149-roman-empire-digital",
+      "source": "style-149-roman-empire-digital.html",
+      "tags": [
+        "professional",
+        "association"
+      ],
+      "colors": 27,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 150,
+      "name": "Ancient Egyptian Luxe",
+      "dir": "systems/150-ancient-egyptian-luxe",
+      "source": "style-150-ancient-egyptian-luxe.html",
+      "tags": [
+        "premium",
+        "creative"
+      ],
+      "colors": 31,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 151,
+      "name": "Byzantine Contemporary",
+      "dir": "systems/151-byzantine-contemporary",
+      "source": "style-151-byzantine-contemporary.html",
+      "tags": [
+        "premium",
+        "heritage"
+      ],
+      "colors": 31,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 152,
+      "name": "Colonial American Heritage",
+      "dir": "systems/152-colonial-american-heritage",
+      "source": "style-152-colonial-american-heritage.html",
+      "tags": [
+        "association",
+        "professional"
+      ],
+      "colors": 32,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 153,
+      "name": "Japanese Wabi-Sabi",
+      "dir": "systems/153-japanese-wabi-sabi",
+      "source": "style-153-japanese-wabi-sabi.html",
+      "tags": [
+        "creative",
+        "hospitality"
+      ],
+      "colors": 18,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 154,
+      "name": "Scandinavian Hygge",
+      "dir": "systems/154-scandinavian-hygge",
+      "source": "style-154-scandinavian-hygge.html",
+      "tags": [
+        "hospitality",
+        "creative"
+      ],
+      "colors": 18,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 155,
+      "name": "Moroccan Geometric",
+      "dir": "systems/155-moroccan-geometric",
+      "source": "style-155-moroccan-geometric.html",
+      "tags": [
+        "premium",
+        "hospitality"
+      ],
+      "colors": 18,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 156,
+      "name": "Indian Mughal Luxury",
+      "dir": "systems/156-indian-mughal-luxury",
+      "source": "style-156-indian-mughal-luxury.html",
+      "tags": [
+        "premium",
+        "creative"
+      ],
+      "colors": 18,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 157,
+      "name": "Chinese Imperial",
+      "dir": "systems/157-chinese-imperial",
+      "source": "style-157-chinese-imperial.html",
+      "tags": [
+        "premium",
+        "association"
+      ],
+      "colors": 21,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 158,
+      "name": "Greek Mediterranean",
+      "dir": "systems/158-greek-mediterranean",
+      "source": "style-158-greek-mediterranean.html",
+      "tags": [
+        "hospitality",
+        "creative"
+      ],
+      "colors": 25,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 159,
+      "name": "African Kente",
+      "dir": "systems/159-african-kente",
+      "source": "style-159-african-kente.html",
+      "tags": [
+        "creative",
+        "association"
+      ],
+      "colors": 23,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 160,
+      "name": "Celtic Heritage",
+      "dir": "systems/160-celtic-heritage",
+      "source": "style-160-celtic-heritage.html",
+      "tags": [
+        "heritage",
+        "association"
+      ],
+      "colors": 23,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 161,
+      "name": "Persian Carpet",
+      "dir": "systems/161-persian-carpet",
+      "source": "style-161-persian-carpet.html",
+      "tags": [
+        "premium",
+        "hospitality"
+      ],
+      "colors": 15,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 162,
+      "name": "Mexican Folk Art",
+      "dir": "systems/162-mexican-folk-art",
+      "source": "style-162-mexican-folk-art.html",
+      "tags": [
+        "creative",
+        "hospitality"
+      ],
+      "colors": 16,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 163,
+      "name": "Nordic Rune",
+      "dir": "systems/163-nordic-rune",
+      "source": "style-163-nordic-rune.html",
+      "tags": [
+        "heritage",
+        "association"
+      ],
+      "colors": 16,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 164,
+      "name": "Brazilian Carnival",
+      "dir": "systems/164-brazilian-carnival",
+      "source": "style-164-brazilian-carnival.html",
+      "tags": [
+        "creative",
+        "media"
+      ],
+      "colors": 18,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 165,
+      "name": "Flat Design 2.0",
+      "dir": "systems/165-flat-design-2-0",
+      "source": "style-165-flat-design-2.html",
+      "tags": [
+        "tech",
+        "professional"
+      ],
+      "colors": 18,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 166,
+      "name": "Skeuomorphic Revival",
+      "dir": "systems/166-skeuomorphic-revival",
+      "source": "style-166-skeuomorphic-revival.html",
+      "tags": [
+        "tech",
+        "premium"
+      ],
+      "colors": 23,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 167,
+      "name": "Isometric Illustration",
+      "dir": "systems/167-isometric-illustration",
+      "source": "style-167-isometric-illustration.html",
+      "tags": [
+        "tech",
+        "creative"
+      ],
+      "colors": 20,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 168,
+      "name": "Line Art Minimal",
+      "dir": "systems/168-line-art-minimal",
+      "source": "style-168-line-art-minimal.html",
+      "tags": [
+        "creative",
+        "professional"
+      ],
+      "colors": 10,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 169,
+      "name": "Gradient Mesh UI",
+      "dir": "systems/169-gradient-mesh-ui",
+      "source": "style-169-gradient-mesh-ui.html",
+      "tags": [
+        "creative",
+        "tech"
+      ],
+      "colors": 16,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 170,
+      "name": "Duotone Photography",
+      "dir": "systems/170-duotone-photography",
+      "source": "style-170-duotone-photography.html",
+      "tags": [
+        "media",
+        "creative"
+      ],
+      "colors": 14,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 171,
+      "name": "Low Poly 3D",
+      "dir": "systems/171-low-poly-3d",
+      "source": "style-171-low-poly-3d.html",
+      "tags": [
+        "tech",
+        "creative"
+      ],
+      "colors": 16,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 172,
+      "name": "Watercolor Digital",
+      "dir": "systems/172-watercolor-digital",
+      "source": "style-172-watercolor-digital.html",
+      "tags": [
+        "creative",
+        "hospitality"
+      ],
+      "colors": 14,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 173,
+      "name": "Comic Book Pop",
+      "dir": "systems/173-comic-book-pop",
+      "source": "style-173-comic-book-pop.html",
+      "tags": [
+        "creative",
+        "media"
+      ],
+      "colors": 12,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 174,
+      "name": "Pixel Art Retro",
+      "dir": "systems/174-pixel-art-retro",
+      "source": "style-174-pixel-art-retro.html",
+      "tags": [
+        "creative",
+        "tech"
+      ],
+      "colors": 12,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 175,
+      "name": "Sticker Playful",
+      "dir": "systems/175-sticker-playful",
+      "source": "style-175-sticker-playful.html",
+      "tags": [
+        "creative",
+        "hospitality"
+      ],
+      "colors": 14,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 176,
+      "name": "Blueprint Technical",
+      "dir": "systems/176-blueprint-technical",
+      "source": "style-176-blueprint-technical.html",
+      "tags": [
+        "tech",
+        "professional"
+      ],
+      "colors": 12,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 177,
+      "name": "1950s Diner",
+      "dir": "systems/177-1950s-diner",
+      "source": "style-177-1950s-diner.html",
+      "tags": [
+        "hospitality",
+        "creative"
+      ],
+      "colors": 10,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 178,
+      "name": "1960s Mod",
+      "dir": "systems/178-1960s-mod",
+      "source": "style-178-1960s-mod.html",
+      "tags": [
+        "creative",
+        "media"
+      ],
+      "colors": 9,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 179,
+      "name": "1970s Disco",
+      "dir": "systems/179-1970s-disco",
+      "source": "style-179-1970s-disco.html",
+      "tags": [
+        "creative",
+        "media"
+      ],
+      "colors": 10,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 180,
+      "name": "1980s Synthwave",
+      "dir": "systems/180-1980s-synthwave",
+      "source": "style-180-1980s-synthwave.html",
+      "tags": [
+        "creative",
+        "tech"
+      ],
+      "colors": 10,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 181,
+      "name": "1990s Grunge",
+      "dir": "systems/181-1990s-grunge",
+      "source": "style-181-1990s-grunge.html",
+      "tags": [
+        "creative",
+        "media"
+      ],
+      "colors": 12,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 182,
+      "name": "Y2K Millennium",
+      "dir": "systems/182-y2k-millennium",
+      "source": "style-182-y2k-millennium.html",
+      "tags": [
+        "tech",
+        "creative"
+      ],
+      "colors": 13,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 183,
+      "name": "Vintage Americana",
+      "dir": "systems/183-vintage-americana",
+      "source": "style-183-vintage-americana.html",
+      "tags": [
+        "hospitality",
+        "heritage"
+      ],
+      "colors": 14,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 184,
+      "name": "Art Deco Golden",
+      "dir": "systems/184-art-deco-golden",
+      "source": "style-184-art-deco-golden.html",
+      "tags": [
+        "premium",
+        "hospitality"
+      ],
+      "colors": 14,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 185,
+      "name": "Vintage Cinema",
+      "dir": "systems/185-vintage-cinema",
+      "source": "style-185-vintage-cinema.html",
+      "tags": [
+        "media",
+        "premium"
+      ],
+      "colors": 17,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 186,
+      "name": "Retro Computing",
+      "dir": "systems/186-retro-computing",
+      "source": "style-186-retro-computing.html",
+      "tags": [
+        "tech",
+        "creative"
+      ],
+      "colors": 17,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 187,
+      "name": "Victorian Steampunk",
+      "dir": "systems/187-victorian-steampunk",
+      "source": "style-187-victorian-steampunk.html",
+      "tags": [
+        "creative",
+        "premium"
+      ],
+      "colors": 18,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 188,
+      "name": "Mid-Century Modern",
+      "dir": "systems/188-mid-century-modern",
+      "source": "style-188-mid-century-modern.html",
+      "tags": [
+        "creative",
+        "professional"
+      ],
+      "colors": 18,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 189,
+      "name": "Paper Texture",
+      "dir": "systems/189-paper-texture",
+      "source": "style-189-paper-texture.html",
+      "tags": [
+        "creative",
+        "professional"
+      ],
+      "colors": 10,
+      "styles": 8,
+      "artifact": null
+    },
+    {
+      "num": 190,
+      "name": "Concrete Brutalist",
+      "dir": "systems/190-concrete-brutalist",
+      "source": "style-190-concrete-brutalist.html",
+      "tags": [
+        "creative",
+        "professional"
+      ],
+      "colors": 12,
+      "styles": 8,
+      "artifact": null
+    },
+    {
+      "num": 191,
+      "name": "Wood Grain Natural",
+      "dir": "systems/191-wood-grain-natural",
+      "source": "style-191-wood-grain-natural.html",
+      "tags": [
+        "hospitality",
+        "creative"
+      ],
+      "colors": 12,
+      "styles": 8,
+      "artifact": null
+    },
+    {
+      "num": 192,
+      "name": "Marble Luxury",
+      "dir": "systems/192-marble-luxury",
+      "source": "style-192-marble-luxury.html",
+      "tags": [
+        "premium",
+        "hospitality"
+      ],
+      "colors": 13,
+      "styles": 8,
+      "artifact": null
+    },
+    {
+      "num": 193,
+      "name": "Kinetic Typography",
+      "dir": "systems/193-kinetic-typography",
+      "source": "style-193-kinetic-typography.html",
+      "tags": [
+        "creative",
+        "media"
+      ],
+      "colors": 9,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 194,
+      "name": "Parallax Depth",
+      "dir": "systems/194-parallax-depth",
+      "source": "style-194-parallax-depth.html",
+      "tags": [
+        "tech",
+        "creative"
+      ],
+      "colors": 11,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 195,
+      "name": "Liquid Motion",
+      "dir": "systems/195-liquid-motion",
+      "source": "style-195-liquid-motion.html",
+      "tags": [
+        "creative",
+        "tech"
+      ],
+      "colors": 13,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 196,
+      "name": "Micro-Interaction Rich",
+      "dir": "systems/196-micro-interaction-rich",
+      "source": "style-196-micro-interaction-rich.html",
+      "tags": [
+        "tech",
+        "professional"
+      ],
+      "colors": 22,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 197,
+      "name": "RPG Fantasy",
+      "dir": "systems/197-rpg-fantasy",
+      "source": "style-197-rpg-fantasy.html",
+      "tags": [
+        "creative",
+        "tech"
+      ],
+      "colors": 14,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 198,
+      "name": "Sci-Fi HUD",
+      "dir": "systems/198-sci-fi-hud",
+      "source": "style-198-sci-fi-hud.html",
+      "tags": [
+        "tech",
+        "creative"
+      ],
+      "colors": 16,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 199,
+      "name": "Casual Mobile",
+      "dir": "systems/199-casual-mobile",
+      "source": "style-199-casual-mobile.html",
+      "tags": [
+        "creative",
+        "tech"
+      ],
+      "colors": 17,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 200,
+      "name": "Esports Arena",
+      "dir": "systems/200-esports-arena",
+      "source": "style-200-esports-arena.html",
+      "tags": [
+        "tech",
+        "media"
+      ],
+      "colors": 13,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 201,
+      "name": "Pure Light Minimal",
+      "dir": "systems/201-pure-light-minimal",
+      "source": "style-201-pure-light-minimal.html",
+      "tags": [
+        "professional",
+        "tech"
+      ],
+      "colors": 17,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 202,
+      "name": "Warm Light Natural",
+      "dir": "systems/202-warm-light-natural",
+      "source": "style-202-warm-light-natural.html",
+      "tags": [
+        "hospitality",
+        "creative"
+      ],
+      "colors": 22,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 203,
+      "name": "Cool Light Professional",
+      "dir": "systems/203-cool-light-professional",
+      "source": "style-203-cool-light-professional.html",
+      "tags": [
+        "professional",
+        "tech"
+      ],
+      "colors": 23,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 204,
+      "name": "True Dark Mode",
+      "dir": "systems/204-true-dark-mode",
+      "source": "style-204-true-dark-mode.html",
+      "tags": [
+        "tech",
+        "professional"
+      ],
+      "colors": 22,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 205,
+      "name": "Elevated Dark",
+      "dir": "systems/205-elevated-dark",
+      "source": "style-205-elevated-dark.html",
+      "tags": [
+        "tech",
+        "premium"
+      ],
+      "colors": 28,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 206,
+      "name": "AI Native Interface",
+      "dir": "systems/206-ai-native-interface",
+      "source": "style-206-ai-native-interface.html",
+      "tags": [
+        "tech",
+        "professional"
+      ],
+      "colors": 14,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 207,
+      "name": "Neural Network",
+      "dir": "systems/207-neural-network",
+      "source": "style-207-neural-network.html",
+      "tags": [
+        "tech",
+        "academic"
+      ],
+      "colors": 16,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 208,
+      "name": "Spatial Computing",
+      "dir": "systems/208-spatial-computing",
+      "source": "style-208-spatial-computing.html",
+      "tags": [
+        "tech",
+        "creative"
+      ],
+      "colors": 13,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 209,
+      "name": "Generative Art",
+      "dir": "systems/209-generative-art",
+      "source": "style-209-generative-art.html",
+      "tags": [
+        "creative",
+        "tech"
+      ],
+      "colors": 13,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 210,
+      "name": "Sustainable Digital",
+      "dir": "systems/210-sustainable-digital",
+      "source": "style-210-sustainable-digital.html",
+      "tags": [
+        "tech",
+        "creative"
+      ],
+      "colors": 13,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 211,
+      "name": "Metaverse Social",
+      "dir": "systems/211-metaverse-social",
+      "source": "style-211-metaverse-social.html",
+      "tags": [
+        "tech",
+        "creative"
+      ],
+      "colors": 15,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 212,
+      "name": "Biometric Identity",
+      "dir": "systems/212-biometric-identity",
+      "source": "style-212-biometric-identity.html",
+      "tags": [
+        "tech",
+        "professional"
+      ],
+      "colors": 14,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 213,
+      "name": "Voice Interface",
+      "dir": "systems/213-voice-interface",
+      "source": "style-213-voice-interface.html",
+      "tags": [
+        "tech",
+        "creative"
+      ],
+      "colors": 12,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 214,
+      "name": "Holographic Display",
+      "dir": "systems/214-holographic-display",
+      "source": "style-214-holographic-display.html",
+      "tags": [
+        "tech",
+        "creative"
+      ],
+      "colors": 11,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 215,
+      "name": "Neural Link",
+      "dir": "systems/215-neural-link",
+      "source": "style-215-neural-link.html",
+      "tags": [
+        "tech",
+        "academic"
+      ],
+      "colors": 12,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 216,
+      "name": "Autonomous Mobility",
+      "dir": "systems/216-autonomous-mobility",
+      "source": "style-216-autonomous-mobility.html",
+      "tags": [
+        "tech",
+        "professional"
+      ],
+      "colors": 11,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 217,
+      "name": "Climate Tech",
+      "dir": "systems/217-climate-tech",
+      "source": "style-217-climate-tech.html",
+      "tags": [
+        "tech",
+        "association"
+      ],
+      "colors": 19,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 218,
+      "name": "Digital Twin",
+      "dir": "systems/218-digital-twin",
+      "source": "style-218-digital-twin.html",
+      "tags": [
+        "tech",
+        "professional"
+      ],
+      "colors": 24,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 219,
+      "name": "Tokenized Community",
+      "dir": "systems/219-tokenized-community",
+      "source": "style-219-tokenized-community.html",
+      "tags": [
+        "tech",
+        "association"
+      ],
+      "colors": 29,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 220,
+      "name": "Zero Trust Security",
+      "dir": "systems/220-zero-trust-security",
+      "source": "style-220-zero-trust.html",
+      "tags": [
+        "tech",
+        "professional"
+      ],
+      "colors": 16,
+      "styles": 3,
+      "artifact": null
+    },
+    {
+      "num": 221,
+      "name": "K-Wave Digital",
+      "dir": "systems/221-k-wave-digital",
+      "source": "style-221-k-wave-digital.html",
+      "tags": [
+        "creative",
+        "media"
+      ],
+      "colors": 11,
+      "styles": 4,
+      "artifact": null
+    },
+    {
+      "num": 222,
+      "name": "Amazonian Heritage",
+      "dir": "systems/222-amazonian-heritage",
+      "source": "style-222-amazonian-heritage.html",
+      "tags": [
+        "association",
+        "creative"
+      ],
+      "colors": 20,
+      "styles": 4,
+      "artifact": null
+    },
+    {
+      "num": 223,
+      "name": "Arctic Aurora",
+      "dir": "systems/223-arctic-aurora",
+      "source": "style-223-arctic-aurora.html",
+      "tags": [
+        "creative",
+        "hospitality"
+      ],
+      "colors": 13,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 224,
+      "name": "Silk Road",
+      "dir": "systems/224-silk-road",
+      "source": "style-224-silk-road.html",
+      "tags": [
+        "premium",
+        "association"
+      ],
+      "colors": 17,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 225,
+      "name": "Pacific Rim",
+      "dir": "systems/225-pacific-rim",
+      "source": "style-225-pacific-rim.html",
+      "tags": [
+        "professional",
+        "association"
+      ],
+      "colors": 18,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 226,
+      "name": "Mediterranean Council",
+      "dir": "systems/226-mediterranean-council",
+      "source": "style-226-mediterranean.html",
+      "tags": [
+        "hospitality",
+        "association"
+      ],
+      "colors": 27,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 227,
+      "name": "Alpine Excellence",
+      "dir": "systems/227-alpine-excellence",
+      "source": "style-227-alpine-excellence.html",
+      "tags": [
+        "premium",
+        "hospitality"
+      ],
+      "colors": 27,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 228,
+      "name": "Saharan Oasis",
+      "dir": "systems/228-saharan-oasis",
+      "source": "style-228-saharan-oasis.html",
+      "tags": [
+        "premium",
+        "hospitality"
+      ],
+      "colors": 27,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 229,
+      "name": "Slavic Heritage",
+      "dir": "systems/229-slavic-heritage",
+      "source": "style-229-slavic-heritage.html",
+      "tags": [
+        "heritage",
+        "association"
+      ],
+      "colors": 12,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 230,
+      "name": "Polynesian Voyage",
+      "dir": "systems/230-polynesian-voyage",
+      "source": "style-230-polynesian-voyage.html",
+      "tags": [
+        "heritage",
+        "hospitality"
+      ],
+      "colors": 16,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 231,
+      "name": "Biohacker Collective",
+      "dir": "systems/231-biohacker-collective",
+      "source": "style-231-biohacker.html",
+      "tags": [
+        "tech",
+        "association"
+      ],
+      "colors": 20,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 232,
+      "name": "Slow Living",
+      "dir": "systems/232-slow-living",
+      "source": "style-232-slow-living.html",
+      "tags": [
+        "hospitality",
+        "creative"
+      ],
+      "colors": 17,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 233,
+      "name": "Artisan Makers",
+      "dir": "systems/233-artisan-makers",
+      "source": "style-233-artisan-makers.html",
+      "tags": [
+        "creative",
+        "association"
+      ],
+      "colors": 21,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 234,
+      "name": "Remote Nomad",
+      "dir": "systems/234-remote-nomad",
+      "source": "style-234-remote-nomad.html",
+      "tags": [
+        "tech",
+        "hospitality"
+      ],
+      "colors": 23,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 235,
+      "name": "Heritage Preservation",
+      "dir": "systems/235-heritage-preservation",
+      "source": "style-235-heritage-preservation.html",
+      "tags": [
+        "heritage",
+        "association"
+      ],
+      "colors": 16,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 236,
+      "name": "Citizen Science",
+      "dir": "systems/236-citizen-science",
+      "source": "style-236-citizen-science.html",
+      "tags": [
+        "academic",
+        "association"
+      ],
+      "colors": 17,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 237,
+      "name": "Urban Farming",
+      "dir": "systems/237-urban-farming",
+      "source": "style-237-urban-farming.html",
+      "tags": [
+        "association",
+        "creative"
+      ],
+      "colors": 19,
+      "styles": 5,
+      "artifact": null
+    },
+    {
+      "num": 238,
+      "name": "Memory Archive",
+      "dir": "systems/238-memory-archive",
+      "source": "style-238-memory-archive.html",
+      "tags": [
+        "heritage",
+        "creative"
+      ],
+      "colors": 14,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 239,
+      "name": "Future Elders",
+      "dir": "systems/239-future-elders",
+      "source": "style-239-future-elders.html",
+      "tags": [
+        "association",
+        "professional"
+      ],
+      "colors": 14,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 240,
+      "name": "Inclusive Design",
+      "dir": "systems/240-inclusive-design",
+      "source": "style-240-inclusive-design.html",
+      "tags": [
+        "professional",
+        "association"
+      ],
+      "colors": 11,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 241,
+      "name": "Quantum Finance",
+      "dir": "systems/241-quantum-finance",
+      "source": "style-241-quantum-finance.html",
+      "tags": [
+        "tech",
+        "premium",
+        "professional"
+      ],
+      "colors": 16,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 242,
+      "name": "Biotech Elite",
+      "dir": "systems/242-biotech-elite",
+      "source": "style-242-biotech-elite.html",
+      "tags": [
+        "tech",
+        "premium",
+        "academic"
+      ],
+      "colors": 16,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 243,
+      "name": "Space Commerce",
+      "dir": "systems/243-space-commerce",
+      "source": "style-243-space-commerce.html",
+      "tags": [
+        "tech",
+        "professional"
+      ],
+      "colors": 15,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 244,
+      "name": "Numismatic Society",
+      "dir": "systems/244-numismatic-society",
+      "source": "style-244-numismatic-society.html",
+      "tags": [
+        "heritage",
+        "premium"
+      ],
+      "colors": 16,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 245,
+      "name": "Antiquarian Books",
+      "dir": "systems/245-antiquarian-books",
+      "source": "style-245-antiquarian-books.html",
+      "tags": [
+        "heritage",
+        "academic"
+      ],
+      "colors": 16,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 246,
+      "name": "Horological Masters",
+      "dir": "systems/246-horological-masters",
+      "source": "style-246-horological-masters.html",
+      "tags": [
+        "premium",
+        "heritage"
+      ],
+      "colors": 16,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 247,
+      "name": "Haute Couture",
+      "dir": "systems/247-haute-couture",
+      "source": "style-247-haute-couture.html",
+      "tags": [
+        "creative",
+        "premium"
+      ],
+      "colors": 11,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 248,
+      "name": "Symphonic Orchestra",
+      "dir": "systems/248-symphonic-orchestra",
+      "source": "style-248-symphonic-orchestra.html",
+      "tags": [
+        "creative",
+        "premium"
+      ],
+      "colors": 12,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 249,
+      "name": "Master Sommelier",
+      "dir": "systems/249-master-sommelier",
+      "source": "style-249-master-sommelier.html",
+      "tags": [
+        "hospitality",
+        "premium"
+      ],
+      "colors": 12,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 250,
+      "name": "Supreme Court Bar",
+      "dir": "systems/250-supreme-court-bar",
+      "source": "style-250-supreme-court.html",
+      "tags": [
+        "professional",
+        "premium"
+      ],
+      "colors": 13,
+      "styles": 7,
+      "artifact": null
+    },
+    {
+      "num": 251,
+      "name": "Royal Academy",
+      "dir": "systems/251-royal-academy",
+      "source": "style-251-royal-academy.html",
+      "tags": [
+        "academic",
+        "premium"
+      ],
+      "colors": 13,
+      "styles": 8,
+      "artifact": null
+    },
+    {
+      "num": 252,
+      "name": "Diplomatic Summit",
+      "dir": "systems/252-diplomatic-summit",
+      "source": "style-252-diplomatic-summit.html",
+      "tags": [
+        "professional",
+        "premium"
+      ],
+      "colors": 14,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 253,
+      "name": "Polar Expedition",
+      "dir": "systems/253-polar-expedition",
+      "source": "style-253-polar-expedition.html",
+      "tags": [
+        "creative",
+        "association"
+      ],
+      "colors": 14,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 254,
+      "name": "Grand Prix Collectors",
+      "dir": "systems/254-grand-prix-collectors",
+      "source": "style-254-grand-prix.html",
+      "tags": [
+        "premium",
+        "association"
+      ],
+      "colors": 19,
+      "styles": 6,
+      "artifact": null
+    },
+    {
+      "num": 255,
+      "name": "Alpine Mountaineering",
+      "dir": "systems/255-alpine-mountaineering",
+      "source": "style-255-alpine-mountaineering.html",
+      "tags": [
+        "association",
+        "hospitality"
+      ],
+      "colors": 14,
+      "styles": 6,
+      "artifact": null
+    }
+  ]
+}

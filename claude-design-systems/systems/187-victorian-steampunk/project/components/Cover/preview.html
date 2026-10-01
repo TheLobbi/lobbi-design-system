@@ -1,0 +1,67 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&amp;family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&amp;display=swap">
+<style>
+body{margin:0;background:var(--page-bg);color:var(--page-text);}
+.cover{position:relative;width:960px;height:288px;overflow:hidden;background:var(--page-bg);}
+svg{position:absolute;inset:0;}
+.c-color-brass-gold{fill:var(--color-brass-gold);stroke:var(--color-brass-gold);stroke-width:0;}
+.c-color-leather-brown{fill:var(--color-leather-brown);stroke:var(--color-leather-brown);stroke-width:0;}
+.c-color-oxidized-green{fill:var(--color-oxidized-green);stroke:var(--color-oxidized-green);stroke-width:0;}
+.c-page-bg{fill:var(--page-bg);stroke:var(--page-bg);stroke-width:0;}
+.blk{rx:var(--radius-sm);}
+.tile{rx:var(--radius-sm);}
+.rule{stroke-width:1px;fill:none;}
+.name{position:absolute;left:40px;bottom:40px;max-width:440px;}
+.name h1 span{display:inline-block;white-space:nowrap;}
+.name h1{margin:0;font-family:var(--font-display);font-weight:400;font-size:87px;line-height:0.95;color:var(--page-text);letter-spacing:0;}
+.name p{margin:16px 0 0;font-family:var(--font-body);font-size:14px;line-height:1.5;color:var(--color-text-secondary);}
+</style></head>
+<body><div class="cover">
+<svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+<!--
+  blocks: color-brass-gold 6×13 steps, color-leather-brown 4×11 steps, color-oxidized-green 3×13 steps
+  arrangement: strip of unequal bands bleeding off the top
+  pattern: tiles — geometric, modular dashboard layouts → tiles cut by the radius tokens
+  scales: step space-md (24px), gap 8px, radius radius-sm (2px)
+-->
+<rect class="c-color-brass-gold blk" x="816" y="-24" width="136" height="312"/>
+<rect class="c-color-leather-brown blk" x="720" y="48" width="88" height="264"/>
+<rect class="c-color-oxidized-green blk" x="648" y="-24" width="64" height="312"/>
+<rect class="c-page-bg tile" x="828" y="12" width="30" height="30"/>
+<rect class="c-page-bg tile" x="866" y="12" width="30" height="30"/>
+<rect class="c-page-bg tile" x="904" y="12" width="30" height="30"/>
+<rect class="c-page-bg tile" x="828" y="50" width="68" height="30"/>
+<rect class="c-page-bg tile" x="904" y="50" width="30" height="30"/>
+<rect class="c-page-bg tile" x="828" y="88" width="30" height="30"/>
+<rect class="c-page-bg tile" x="866" y="88" width="30" height="30"/>
+<rect class="c-page-bg tile" x="904" y="88" width="30" height="30"/>
+<rect class="c-page-bg tile" x="828" y="126" width="68" height="30"/>
+<rect class="c-page-bg tile" x="904" y="126" width="30" height="30"/>
+<rect class="c-page-bg tile" x="828" y="164" width="30" height="30"/>
+<rect class="c-page-bg tile" x="866" y="164" width="30" height="30"/>
+<rect class="c-page-bg tile" x="904" y="164" width="30" height="30"/>
+<rect class="c-page-bg tile" x="828" y="202" width="68" height="30"/>
+<rect class="c-page-bg tile" x="904" y="202" width="30" height="30"/>
+<rect class="c-page-bg tile" x="828" y="240" width="30" height="30"/>
+<rect class="c-page-bg tile" x="866" y="240" width="30" height="30"/>
+<rect class="c-page-bg tile" x="904" y="240" width="30" height="30"/>
+</svg>
+<div class="name"><h1><span>Victorian</span><br><span>Steampunk</span></h1><p>Steampunk 55% + Victorian Industrial 25% + Brass Machinery 20%</p></div>
+</div>
+<script>
+// Real faces run wider or narrower than the estimate: shrink the name until each line fits its zone.
+(function () {
+  var h = document.querySelector('.name h1'), max = 440, min = 48;
+  var lines = h.querySelectorAll('span');
+  function fit() {
+    var s = parseFloat(getComputedStyle(h).fontSize);
+    for (var i = 0; i < lines.length; i++) while (s > min && lines[i].getBoundingClientRect().width > max) { s -= 2; h.style.fontSize = s + 'px'; }
+  }
+  fit();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>
+</body></html>

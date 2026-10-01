@@ -1,0 +1,57 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:var(--page-bg);color:var(--page-text);}
+.cover{position:relative;width:960px;height:288px;overflow:hidden;background:var(--page-bg);}
+svg{position:absolute;inset:0;}
+.c-aurora-2{fill:var(--aurora-2);stroke:var(--aurora-2);stroke-width:0;}
+.c-aurora-3{fill:var(--aurora-3);stroke:var(--aurora-3);stroke-width:0;}
+.c-aurora-1{fill:var(--aurora-1);stroke:var(--aurora-1);stroke-width:0;}
+.c-aurora-4{fill:var(--aurora-4);stroke:var(--aurora-4);stroke-width:0;}
+.c-page-bg{fill:var(--page-bg);stroke:var(--page-bg);stroke-width:0;}
+.blk{rx:var(--radius-6);}
+.rule{stroke-width:1px;fill:none;}
+.name{position:absolute;left:40px;bottom:40px;max-width:440px;}
+.name h1 span{display:inline-block;white-space:nowrap;}
+.name h1{margin:0;font-family:var(--font-display);font-weight:700;font-size:95px;line-height:0.95;color:var(--page-text);letter-spacing:0;}
+.name p{margin:16px 0 0;font-family:var(--font-body);font-size:14px;line-height:1.5;color:var(--gray-500);}
+</style></head>
+<body><div class="cover">
+<svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+<!--
+  blocks: aurora-2 19×4 steps, aurora-3 16×4 steps, aurora-1 13×4 steps, aurora-4 10×4 steps
+  arrangement: staggered stack bleeding off the right edge
+  pattern: discs — soft, large-radius shapes → discs and pills cut from the radius scale
+  scales: step space-24 (24px), gap 8px, radius radius-6 (6px)
+-->
+<rect class="c-aurora-2 blk" x="528" y="24" width="456" height="96"/>
+<rect class="c-aurora-3 blk" x="600" y="77" width="384" height="96"/>
+<rect class="c-aurora-1 blk" x="672" y="130" width="312" height="96"/>
+<rect class="c-aurora-4 blk" x="744" y="182" width="240" height="96"/>
+<circle class="c-page-bg" cx="558" cy="54" r="18"/>
+<circle class="c-page-bg" cx="606" cy="54" r="18"/>
+<circle class="c-page-bg" cx="654" cy="54" r="18"/>
+<circle class="c-page-bg" cx="702" cy="54" r="18"/>
+<circle class="c-page-bg" cx="750" cy="54" r="18"/>
+<circle class="c-page-bg" cx="798" cy="54" r="18"/>
+<circle class="c-page-bg" cx="846" cy="54" r="18"/>
+<circle class="c-page-bg" cx="894" cy="54" r="18"/>
+</svg>
+<div class="name"><h1><span>Swiss +</span><br><span>Aurora</span></h1><p>Swiss 80% + Aurora UI 20%</p></div>
+</div>
+<script>
+// Real faces run wider or narrower than the estimate: shrink the name until each line fits its zone.
+(function () {
+  var h = document.querySelector('.name h1'), max = 440, min = 48;
+  var lines = h.querySelectorAll('span');
+  function fit() {
+    var s = parseFloat(getComputedStyle(h).fontSize);
+    for (var i = 0; i < lines.length; i++) while (s > min && lines[i].getBoundingClientRect().width > max) { s -= 2; h.style.fontSize = s + 'px'; }
+  }
+  fit();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>
+</body></html>

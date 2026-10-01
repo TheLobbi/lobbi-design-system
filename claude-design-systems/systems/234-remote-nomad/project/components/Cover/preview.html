@@ -1,0 +1,60 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&amp;family=DM+Sans:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:var(--page-bg);color:var(--page-text);}
+.cover{position:relative;width:960px;height:288px;overflow:hidden;background:var(--page-bg);}
+svg{position:absolute;inset:0;}
+.c-sunset-orange-light{fill:var(--sunset-orange-light);stroke:var(--sunset-orange-light);stroke-width:0;}
+.c-passport-blue-light{fill:var(--passport-blue-light);stroke:var(--passport-blue-light);stroke-width:0;}
+.c-sunset-orange-dark{fill:var(--sunset-orange-dark);stroke:var(--sunset-orange-dark);stroke-width:0;}
+.c-wifi-green-dark{fill:var(--wifi-green-dark);stroke:var(--wifi-green-dark);stroke-width:0;}
+.c-page-bg{fill:var(--page-bg);stroke:var(--page-bg);stroke-width:0;}
+.blk{rx:var(--radius-sm);}
+.rule{stroke-width:1px;fill:none;}
+.name{position:absolute;left:40px;bottom:40px;max-width:440px;}
+.name h1 span{display:inline-block;white-space:nowrap;}
+.name h1{margin:0;font-family:var(--font-display);font-weight:700;font-size:98px;line-height:0.95;color:var(--page-text);letter-spacing:0;}
+.name p{margin:16px 0 0;font-family:var(--font-body);font-size:14px;line-height:1.5;color:var(--luggage-gray);}
+</style></head>
+<body><div class="cover">
+<svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+<!--
+  blocks: sunset-orange-light 8×13 steps, passport-blue-light 9×4 steps, sunset-orange-dark 9×3 steps, wifi-green-dark 9×4 steps
+  arrangement: one tall slab with satellites
+  pattern: stripes — loud, low-formality (4/10) voice → stripes at a spacing pitch
+  scales: step space-lg (24px), gap 8px, radius radius-sm (0.5rem)
+-->
+<rect class="c-sunset-orange-light blk" x="552" y="-24" width="192" height="312"/>
+<rect class="c-passport-blue-light blk" x="752" y="24" width="208" height="96"/>
+<rect class="c-sunset-orange-dark blk" x="752" y="128" width="208" height="72"/>
+<rect class="c-wifi-green-dark blk" x="752" y="208" width="208" height="96"/>
+<rect class="c-page-bg" x="564" y="12" width="168" height="12"/>
+<rect class="c-page-bg" x="564" y="36" width="168" height="12"/>
+<rect class="c-page-bg" x="564" y="60" width="168" height="12"/>
+<rect class="c-page-bg" x="564" y="84" width="168" height="12"/>
+<rect class="c-page-bg" x="564" y="108" width="168" height="12"/>
+<rect class="c-page-bg" x="564" y="132" width="168" height="12"/>
+<rect class="c-page-bg" x="564" y="156" width="168" height="12"/>
+<rect class="c-page-bg" x="564" y="180" width="168" height="12"/>
+<rect class="c-page-bg" x="564" y="204" width="168" height="12"/>
+<rect class="c-page-bg" x="564" y="228" width="168" height="12"/>
+</svg>
+<div class="name"><h1><span>Remote</span><br><span>Nomad</span></h1><p>For Digital Nomads and Remote Work Communities</p></div>
+</div>
+<script>
+// Real faces run wider or narrower than the estimate: shrink the name until each line fits its zone.
+(function () {
+  var h = document.querySelector('.name h1'), max = 440, min = 48;
+  var lines = h.querySelectorAll('span');
+  function fit() {
+    var s = parseFloat(getComputedStyle(h).fontSize);
+    for (var i = 0; i < lines.length; i++) while (s > min && lines[i].getBoundingClientRect().width > max) { s -= 2; h.style.fontSize = s + 'px'; }
+  }
+  fit();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>
+</body></html>
