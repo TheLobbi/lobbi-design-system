@@ -1,6 +1,6 @@
 {
   "type": "https://claude.ai/code/artifact/23336be2-ea67-47fa-abc1-ead8c645a326",
-  "note": "One Claude Design System artifact per Lobbi style. artifact = its claude.ai URL (null until published).",
+  "note": "One Claude Design System artifact per Lobbi style. status: published | created-empty (artifact exists, files not yet published) | pending (no artifact yet).",
   "systems": [
     {
       "num": 1,
@@ -13,7 +13,8 @@
       ],
       "colors": 17,
       "styles": 6,
-      "artifact": "https://claude.ai/artifact/GQ9H7fiGMSHCtJXXksTVTj"
+      "artifact": "https://claude.ai/artifact/GQ9H7fiGMSHCtJXXksTVTj",
+      "status": "published"
     },
     {
       "num": 2,
@@ -25,7 +26,8 @@
       ],
       "colors": 13,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/NwsDCghP6Ki7ezvpbHa9yt",
+      "status": "published"
     },
     {
       "num": 3,
@@ -37,7 +39,8 @@
       ],
       "colors": 15,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/7FC1s1xQ68ka1dsK8122gW",
+      "status": "published"
     },
     {
       "num": 4,
@@ -49,7 +52,8 @@
       ],
       "colors": 17,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/2MBYHb3R5fz6reEtbLBi8N",
+      "status": "published"
     },
     {
       "num": 5,
@@ -61,7 +65,8 @@
       ],
       "colors": 17,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/QL5CQEa2gb2Kyw9ZBNttEP",
+      "status": "published"
     },
     {
       "num": 6,
@@ -73,7 +78,8 @@
       ],
       "colors": 18,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/BicMccxMqnygBSzjFtDitx",
+      "status": "published"
     },
     {
       "num": 7,
@@ -85,7 +91,8 @@
       ],
       "colors": 9,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/GgrWxUVZo2CqNEPkpNopGL",
+      "status": "published"
     },
     {
       "num": 8,
@@ -97,7 +104,8 @@
       ],
       "colors": 11,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/QRdcGYFGb2a6eEZA2ESoe2",
+      "status": "published"
     },
     {
       "num": 9,
@@ -110,7 +118,8 @@
       ],
       "colors": 21,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/9z1Us7pRZJF3iB5Jaa8q18",
+      "status": "published"
     },
     {
       "num": 10,
@@ -122,7 +131,8 @@
       ],
       "colors": 11,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/4G1DPdeEY9h7aCPzXgEgpr",
+      "status": "published"
     },
     {
       "num": 11,
@@ -134,7 +144,8 @@
       ],
       "colors": 21,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/3zFHwpwX1Y5skBDds4R3Mb",
+      "status": "published"
     },
     {
       "num": 12,
@@ -146,7 +157,8 @@
       ],
       "colors": 14,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/Xi3LcUCwgNf1Ztrxi5jovj",
+      "status": "published"
     },
     {
       "num": 13,
@@ -159,7 +171,8 @@
       ],
       "colors": 17,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/2k1aH1YLHojzimtziBJQ7u",
+      "status": "published"
     },
     {
       "num": 14,
@@ -172,7 +185,8 @@
       ],
       "colors": 14,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/T5Gdu7NE4xLNW6MEWXzrtk",
+      "status": "published"
     },
     {
       "num": 15,
@@ -185,7 +199,8 @@
       ],
       "colors": 13,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/LVMTdNbgXpQ6VfVXUK6xgX",
+      "status": "published"
     },
     {
       "num": 16,
@@ -197,7 +212,8 @@
       ],
       "colors": 11,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/R8eexipJtEG9YVTD6xKVrT",
+      "status": "published"
     },
     {
       "num": 17,
@@ -209,7 +225,8 @@
       ],
       "colors": 19,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/FRZgeKwjt1cRDNCW9uH8a9",
+      "status": "published"
     },
     {
       "num": 18,
@@ -222,7 +239,8 @@
       ],
       "colors": 20,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/A1xPk52bEWKb8BWHLuWmSu",
+      "status": "published"
     },
     {
       "num": 19,
@@ -235,7 +253,8 @@
       ],
       "colors": 18,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/EfvCCLwbe4rCXeBenGdanq",
+      "status": "published"
     },
     {
       "num": 20,
@@ -248,7 +267,8 @@
       ],
       "colors": 17,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/7GhwH8EbELMzpNRQ39VAVo",
+      "status": "created-empty"
     },
     {
       "num": 21,
@@ -261,7 +281,8 @@
       ],
       "colors": 13,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 22,
@@ -274,7 +295,8 @@
       ],
       "colors": 25,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/QQjvxsjkQZZkHBVFM34Nqj",
+      "status": "published"
     },
     {
       "num": 23,
@@ -287,7 +309,8 @@
       ],
       "colors": 13,
       "styles": 4,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/77UwqDL5Wmxr51nCiQBa5Q",
+      "status": "published"
     },
     {
       "num": 24,
@@ -299,7 +322,8 @@
       ],
       "colors": 15,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/R29s6CmLjMakojHJqhjSKT",
+      "status": "published"
     },
     {
       "num": 25,
@@ -312,7 +336,8 @@
       ],
       "colors": 16,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/5DBqWmDHCtcvbM845nC1Zr",
+      "status": "published"
     },
     {
       "num": 26,
@@ -325,7 +350,8 @@
       ],
       "colors": 8,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 27,
@@ -337,7 +363,8 @@
       ],
       "colors": 15,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 28,
@@ -350,7 +377,8 @@
       ],
       "colors": 16,
       "styles": 5,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 29,
@@ -362,7 +390,8 @@
       ],
       "colors": 13,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 30,
@@ -375,7 +404,8 @@
       ],
       "colors": 12,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 31,
@@ -388,7 +418,8 @@
       ],
       "colors": 14,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 32,
@@ -400,7 +431,8 @@
       ],
       "colors": 18,
       "styles": 5,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 33,
@@ -412,7 +444,8 @@
       ],
       "colors": 22,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 34,
@@ -425,7 +458,8 @@
       ],
       "colors": 20,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 35,
@@ -438,7 +472,8 @@
       ],
       "colors": 19,
       "styles": 8,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 36,
@@ -451,7 +486,8 @@
       ],
       "colors": 12,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 37,
@@ -463,7 +499,8 @@
       ],
       "colors": 16,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 38,
@@ -476,7 +513,8 @@
       ],
       "colors": 11,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 39,
@@ -488,7 +526,8 @@
       ],
       "colors": 13,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 40,
@@ -500,7 +539,8 @@
       ],
       "colors": 22,
       "styles": 8,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 41,
@@ -512,7 +552,8 @@
       ],
       "colors": 11,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 42,
@@ -525,7 +566,8 @@
       ],
       "colors": 11,
       "styles": 8,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/3sR1Ro2xw3DcUAm1i4rpCF",
+      "status": "published"
     },
     {
       "num": 43,
@@ -538,7 +580,8 @@
       ],
       "colors": 15,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/WMzLJs7CFq8o9a9jzLPatF",
+      "status": "published"
     },
     {
       "num": 44,
@@ -551,7 +594,8 @@
       ],
       "colors": 25,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/B5Qc3owp1Ku1XS3w84m66p",
+      "status": "published"
     },
     {
       "num": 45,
@@ -564,7 +608,8 @@
       ],
       "colors": 19,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/4b6r73tb9sw3JRWwLPyBvG",
+      "status": "published"
     },
     {
       "num": 46,
@@ -576,7 +621,8 @@
       ],
       "colors": 24,
       "styles": 5,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/9PJtqDdiBw3CpHsLKca42p",
+      "status": "published"
     },
     {
       "num": 47,
@@ -589,7 +635,8 @@
       ],
       "colors": 18,
       "styles": 4,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/DYYquw2jsDaFuSHPiXgG7U",
+      "status": "published"
     },
     {
       "num": 48,
@@ -601,7 +648,8 @@
       ],
       "colors": 27,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/QagdMZo1CGVSdMvGnLriYX",
+      "status": "published"
     },
     {
       "num": 49,
@@ -613,7 +661,8 @@
       ],
       "colors": 14,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/TnzsF7TEMZwwxUiHT7Jbw1",
+      "status": "published"
     },
     {
       "num": 50,
@@ -626,7 +675,8 @@
       ],
       "colors": 17,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/PhS4TET6g4LzThVucYM9Ea",
+      "status": "published"
     },
     {
       "num": 51,
@@ -639,7 +689,8 @@
       ],
       "colors": 12,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/4BeANzJBZj6YkX9JLNm7Kj",
+      "status": "published"
     },
     {
       "num": 52,
@@ -652,7 +703,8 @@
       ],
       "colors": 10,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/XoKfsYE2Bmkf3CXiNETR7V",
+      "status": "published"
     },
     {
       "num": 53,
@@ -665,7 +717,8 @@
       ],
       "colors": 10,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 54,
@@ -678,7 +731,8 @@
       ],
       "colors": 11,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 55,
@@ -691,7 +745,8 @@
       ],
       "colors": 16,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 56,
@@ -704,7 +759,8 @@
       ],
       "colors": 9,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 57,
@@ -717,7 +773,8 @@
       ],
       "colors": 17,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 58,
@@ -730,7 +787,8 @@
       ],
       "colors": 12,
       "styles": 5,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 59,
@@ -743,7 +801,8 @@
       ],
       "colors": 16,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 60,
@@ -755,7 +814,8 @@
       ],
       "colors": 13,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 61,
@@ -768,7 +828,8 @@
       ],
       "colors": 19,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 62,
@@ -780,7 +841,8 @@
       ],
       "colors": 19,
       "styles": 8,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/NZHKNRuWLwTRiJLNc1nbb1",
+      "status": "published"
     },
     {
       "num": 63,
@@ -793,7 +855,8 @@
       ],
       "colors": 23,
       "styles": 5,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/ND5R7fhakiQQMPbgMRxHvn",
+      "status": "published"
     },
     {
       "num": 64,
@@ -806,7 +869,8 @@
       ],
       "colors": 15,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/NEg6QP4NYmdyP2647mxwBn",
+      "status": "published"
     },
     {
       "num": 65,
@@ -819,7 +883,8 @@
       ],
       "colors": 14,
       "styles": 5,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/S5HPQtn7HK3zBGXacL2tQR",
+      "status": "published"
     },
     {
       "num": 66,
@@ -831,7 +896,8 @@
       ],
       "colors": 14,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/KLtknebuRUnYwvhsjpyaTS",
+      "status": "published"
     },
     {
       "num": 67,
@@ -843,7 +909,8 @@
       ],
       "colors": 14,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/8dgpicfxwatVFfPLF4Sk9i",
+      "status": "published"
     },
     {
       "num": 68,
@@ -856,7 +923,8 @@
       ],
       "colors": 16,
       "styles": 5,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/CNrAG6qnq3t9m3cGuRqrtV",
+      "status": "published"
     },
     {
       "num": 69,
@@ -869,7 +937,8 @@
       ],
       "colors": 22,
       "styles": 8,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/4z9mgmMT7urecncJVBwZ9m",
+      "status": "published"
     },
     {
       "num": 70,
@@ -882,7 +951,8 @@
       ],
       "colors": 16,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/Qji22i9CpbEn3yy139wSAJ",
+      "status": "published"
     },
     {
       "num": 71,
@@ -895,7 +965,8 @@
       ],
       "colors": 15,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/UfzU5XU3Z3qmamQrXNMrhQ",
+      "status": "published"
     },
     {
       "num": 72,
@@ -908,7 +979,8 @@
       ],
       "colors": 32,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/LoTmnaNV3JoYqTQ5xqeCfm",
+      "status": "published"
     },
     {
       "num": 73,
@@ -921,7 +993,8 @@
       ],
       "colors": 18,
       "styles": 5,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/4QcMhZpDckYm9qTdc8YKTk",
+      "status": "published"
     },
     {
       "num": 74,
@@ -934,7 +1007,8 @@
       ],
       "colors": 17,
       "styles": 8,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/4ddV5Ax5yzm6dCLxJ3PvQE",
+      "status": "published"
     },
     {
       "num": 75,
@@ -947,7 +1021,8 @@
       ],
       "colors": 18,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 76,
@@ -960,7 +1035,8 @@
       ],
       "colors": 19,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 77,
@@ -973,7 +1049,8 @@
       ],
       "colors": 14,
       "styles": 4,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 78,
@@ -985,7 +1062,8 @@
       ],
       "colors": 20,
       "styles": 5,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 79,
@@ -998,7 +1076,8 @@
       ],
       "colors": 12,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 80,
@@ -1010,7 +1089,8 @@
       ],
       "colors": 16,
       "styles": 8,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 81,
@@ -1023,7 +1103,8 @@
       ],
       "colors": 17,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 82,
@@ -1036,7 +1117,8 @@
       ],
       "colors": 14,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/FeBvEc9mixtRCfAESC7EzK",
+      "status": "published"
     },
     {
       "num": 83,
@@ -1048,7 +1130,8 @@
       ],
       "colors": 23,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/DQQSGh3rwj8pFMeRh36qLs",
+      "status": "published"
     },
     {
       "num": 84,
@@ -1061,7 +1144,8 @@
       ],
       "colors": 13,
       "styles": 5,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/DtK6GaW3XhPERfHdX7rScM",
+      "status": "published"
     },
     {
       "num": 85,
@@ -1073,7 +1157,8 @@
       ],
       "colors": 19,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/8iPDsw4bTf52kWNSV9dumh",
+      "status": "published"
     },
     {
       "num": 86,
@@ -1086,7 +1171,8 @@
       ],
       "colors": 13,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/BwzhYKCYzNLY2PxLyQKCQB",
+      "status": "published"
     },
     {
       "num": 87,
@@ -1099,7 +1185,8 @@
       ],
       "colors": 17,
       "styles": 8,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 88,
@@ -1111,7 +1198,8 @@
       ],
       "colors": 20,
       "styles": 5,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 89,
@@ -1124,7 +1212,8 @@
       ],
       "colors": 19,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 90,
@@ -1137,7 +1226,8 @@
       ],
       "colors": 17,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 91,
@@ -1150,7 +1240,8 @@
       ],
       "colors": 41,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 92,
@@ -1163,7 +1254,8 @@
       ],
       "colors": 26,
       "styles": 5,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 93,
@@ -1176,7 +1268,8 @@
       ],
       "colors": 21,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 94,
@@ -1188,7 +1281,8 @@
       ],
       "colors": 25,
       "styles": 3,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 95,
@@ -1201,7 +1295,8 @@
       ],
       "colors": 22,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 96,
@@ -1214,7 +1309,8 @@
       ],
       "colors": 27,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 97,
@@ -1226,7 +1322,8 @@
       ],
       "colors": 17,
       "styles": 8,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 98,
@@ -1239,7 +1336,8 @@
       ],
       "colors": 23,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 99,
@@ -1252,7 +1350,8 @@
       ],
       "colors": 12,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 100,
@@ -1265,7 +1364,8 @@
       ],
       "colors": 17,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 101,
@@ -1278,7 +1378,8 @@
       ],
       "colors": 18,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 102,
@@ -1291,7 +1392,8 @@
       ],
       "colors": 17,
       "styles": 5,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/RCVLkoPyf6NSboPK9AvEy2",
+      "status": "published"
     },
     {
       "num": 103,
@@ -1304,7 +1406,8 @@
       ],
       "colors": 17,
       "styles": 8,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/NYTgSZ6ezZKXo8T2AWtv7c",
+      "status": "published"
     },
     {
       "num": 104,
@@ -1317,7 +1420,8 @@
       ],
       "colors": 21,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/WEppR1UF2F3JJ345f5m7od",
+      "status": "published"
     },
     {
       "num": 105,
@@ -1330,7 +1434,8 @@
       ],
       "colors": 15,
       "styles": 8,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 106,
@@ -1343,7 +1448,8 @@
       ],
       "colors": 30,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 107,
@@ -1356,7 +1462,8 @@
       ],
       "colors": 23,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 108,
@@ -1369,7 +1476,8 @@
       ],
       "colors": 21,
       "styles": 9,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 109,
@@ -1382,7 +1490,8 @@
       ],
       "colors": 18,
       "styles": 8,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 110,
@@ -1395,7 +1504,8 @@
       ],
       "colors": 19,
       "styles": 5,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 111,
@@ -1408,7 +1518,8 @@
       ],
       "colors": 19,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 112,
@@ -1421,7 +1532,8 @@
       ],
       "colors": 15,
       "styles": 8,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 113,
@@ -1433,7 +1545,8 @@
       ],
       "colors": 18,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 114,
@@ -1446,7 +1559,8 @@
       ],
       "colors": 18,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 115,
@@ -1459,7 +1573,8 @@
       ],
       "colors": 10,
       "styles": 8,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 116,
@@ -1472,7 +1587,8 @@
       ],
       "colors": 16,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 117,
@@ -1484,7 +1600,8 @@
       ],
       "colors": 23,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 118,
@@ -1497,7 +1614,8 @@
       ],
       "colors": 15,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 119,
@@ -1510,7 +1628,8 @@
       ],
       "colors": 17,
       "styles": 8,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 120,
@@ -1523,7 +1642,8 @@
       ],
       "colors": 16,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 121,
@@ -1536,7 +1656,8 @@
       ],
       "colors": 18,
       "styles": 5,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 122,
@@ -1549,7 +1670,8 @@
       ],
       "colors": 18,
       "styles": 5,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/L2q3kv85n8eT3J7pANBfWU",
+      "status": "published"
     },
     {
       "num": 123,
@@ -1563,7 +1685,8 @@
       ],
       "colors": 16,
       "styles": 5,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/GNRY9PmTRK1D2nvRXctcKc",
+      "status": "published"
     },
     {
       "num": 124,
@@ -1576,7 +1699,8 @@
       ],
       "colors": 18,
       "styles": 4,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/KyHShKfNdaCF9eRNHEXLCh",
+      "status": "published"
     },
     {
       "num": 125,
@@ -1589,7 +1713,8 @@
       ],
       "colors": 30,
       "styles": 8,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/MA3KrrbDpdZXvn5ndXGbR9",
+      "status": "published"
     },
     {
       "num": 126,
@@ -1602,7 +1727,8 @@
       ],
       "colors": 20,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/SxuR7dCuxZVxUMwdL82kwa",
+      "status": "published"
     },
     {
       "num": 127,
@@ -1616,7 +1742,8 @@
       ],
       "colors": 20,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/A7SnZmAiXhurHzdthCm2dD",
+      "status": "published"
     },
     {
       "num": 128,
@@ -1630,7 +1757,8 @@
       ],
       "colors": 19,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 129,
@@ -1643,7 +1771,8 @@
       ],
       "colors": 17,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 130,
@@ -1656,7 +1785,8 @@
       ],
       "colors": 20,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 131,
@@ -1670,7 +1800,8 @@
       ],
       "colors": 16,
       "styles": 8,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 132,
@@ -1684,7 +1815,8 @@
       ],
       "colors": 14,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 133,
@@ -1698,7 +1830,8 @@
       ],
       "colors": 12,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 134,
@@ -1711,7 +1844,8 @@
       ],
       "colors": 14,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 135,
@@ -1725,7 +1859,8 @@
       ],
       "colors": 17,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 136,
@@ -1738,7 +1873,8 @@
       ],
       "colors": 22,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 137,
@@ -1751,7 +1887,8 @@
       ],
       "colors": 14,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 138,
@@ -1764,7 +1901,8 @@
       ],
       "colors": 19,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 139,
@@ -1777,7 +1915,8 @@
       ],
       "colors": 20,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 140,
@@ -1790,7 +1929,8 @@
       ],
       "colors": 15,
       "styles": 5,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 141,
@@ -1803,7 +1943,8 @@
       ],
       "colors": 21,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 142,
@@ -1816,7 +1957,8 @@
       ],
       "colors": 20,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/H6X1ky4BziKDuScnKU94Qo",
+      "status": "published"
     },
     {
       "num": 143,
@@ -1829,7 +1971,8 @@
       ],
       "colors": 21,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/8ahB28G7LuB4okfdir9agT",
+      "status": "published"
     },
     {
       "num": 144,
@@ -1842,7 +1985,8 @@
       ],
       "colors": 21,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/W3tSDRVLvNheZ8tn4ekCLS",
+      "status": "published"
     },
     {
       "num": 145,
@@ -1855,7 +1999,8 @@
       ],
       "colors": 13,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 146,
@@ -1868,7 +2013,8 @@
       ],
       "colors": 13,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 147,
@@ -1881,7 +2027,8 @@
       ],
       "colors": 13,
       "styles": 5,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 148,
@@ -1894,7 +2041,8 @@
       ],
       "colors": 13,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 149,
@@ -1907,7 +2055,8 @@
       ],
       "colors": 27,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 150,
@@ -1920,7 +2069,8 @@
       ],
       "colors": 31,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 151,
@@ -1933,7 +2083,8 @@
       ],
       "colors": 31,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 152,
@@ -1946,7 +2097,8 @@
       ],
       "colors": 32,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 153,
@@ -1959,7 +2111,8 @@
       ],
       "colors": 18,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 154,
@@ -1972,7 +2125,8 @@
       ],
       "colors": 18,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 155,
@@ -1985,7 +2139,8 @@
       ],
       "colors": 18,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 156,
@@ -1998,7 +2153,8 @@
       ],
       "colors": 18,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 157,
@@ -2011,7 +2167,8 @@
       ],
       "colors": 21,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 158,
@@ -2024,7 +2181,8 @@
       ],
       "colors": 25,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 159,
@@ -2037,7 +2195,8 @@
       ],
       "colors": 23,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 160,
@@ -2050,7 +2209,8 @@
       ],
       "colors": 23,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 161,
@@ -2063,7 +2223,8 @@
       ],
       "colors": 15,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 162,
@@ -2076,7 +2237,8 @@
       ],
       "colors": 16,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/C63G8MLQD4JoGrixg8WKEi",
+      "status": "published"
     },
     {
       "num": 163,
@@ -2089,7 +2251,8 @@
       ],
       "colors": 16,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/YScqinRFUZwRUGg51pKYok",
+      "status": "published"
     },
     {
       "num": 164,
@@ -2102,7 +2265,8 @@
       ],
       "colors": 18,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/QR5o1rxurw9wnWo2huXTzf",
+      "status": "published"
     },
     {
       "num": 165,
@@ -2115,7 +2279,8 @@
       ],
       "colors": 18,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/GiAqLRUvsCGLbB96TKERCc",
+      "status": "published"
     },
     {
       "num": 166,
@@ -2128,7 +2293,8 @@
       ],
       "colors": 23,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/Bjgk9osHPqTvHmGLKTFGh5",
+      "status": "published"
     },
     {
       "num": 167,
@@ -2141,7 +2307,8 @@
       ],
       "colors": 20,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/HBjAk4UXEuMjdPimBXPXRJ",
+      "status": "published"
     },
     {
       "num": 168,
@@ -2154,7 +2321,8 @@
       ],
       "colors": 10,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/546kRrNf5imJkcWFxNB4kR",
+      "status": "published"
     },
     {
       "num": 169,
@@ -2167,7 +2335,8 @@
       ],
       "colors": 16,
       "styles": 5,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/HP9RVmwBjp2pgaB6tQw8Kj",
+      "status": "published"
     },
     {
       "num": 170,
@@ -2180,7 +2349,8 @@
       ],
       "colors": 14,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/KHtWAF85vxJjiETWa45Z3Z",
+      "status": "published"
     },
     {
       "num": 171,
@@ -2193,7 +2363,8 @@
       ],
       "colors": 16,
       "styles": 5,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/WkdsQdQrFMDuA4pi4nL4oT",
+      "status": "published"
     },
     {
       "num": 172,
@@ -2206,7 +2377,8 @@
       ],
       "colors": 14,
       "styles": 5,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 173,
@@ -2219,7 +2391,8 @@
       ],
       "colors": 12,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 174,
@@ -2232,7 +2405,8 @@
       ],
       "colors": 12,
       "styles": 5,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 175,
@@ -2245,7 +2419,8 @@
       ],
       "colors": 14,
       "styles": 5,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 176,
@@ -2258,7 +2433,8 @@
       ],
       "colors": 12,
       "styles": 5,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 177,
@@ -2271,7 +2447,8 @@
       ],
       "colors": 10,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 178,
@@ -2284,7 +2461,8 @@
       ],
       "colors": 9,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 179,
@@ -2297,7 +2475,8 @@
       ],
       "colors": 10,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 180,
@@ -2310,7 +2489,8 @@
       ],
       "colors": 10,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 181,
@@ -2323,7 +2503,8 @@
       ],
       "colors": 12,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 182,
@@ -2336,7 +2517,8 @@
       ],
       "colors": 13,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/JYX53dy12S5oVoTkfiHq5H",
+      "status": "published"
     },
     {
       "num": 183,
@@ -2349,7 +2531,8 @@
       ],
       "colors": 14,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/CmrhhHNb6h1zKEHbWPoJtM",
+      "status": "published"
     },
     {
       "num": 184,
@@ -2362,7 +2545,8 @@
       ],
       "colors": 14,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/PeG8yqe9fq5kCExAKkf8Ru",
+      "status": "published"
     },
     {
       "num": 185,
@@ -2375,7 +2559,8 @@
       ],
       "colors": 17,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/HGRErtKhpYBRmUjwAepZLt",
+      "status": "published"
     },
     {
       "num": 186,
@@ -2388,7 +2573,8 @@
       ],
       "colors": 17,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 187,
@@ -2401,7 +2587,8 @@
       ],
       "colors": 18,
       "styles": 5,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 188,
@@ -2414,7 +2601,8 @@
       ],
       "colors": 18,
       "styles": 5,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 189,
@@ -2427,7 +2615,8 @@
       ],
       "colors": 10,
       "styles": 8,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 190,
@@ -2440,7 +2629,8 @@
       ],
       "colors": 12,
       "styles": 8,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 191,
@@ -2453,7 +2643,8 @@
       ],
       "colors": 12,
       "styles": 8,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 192,
@@ -2466,7 +2657,8 @@
       ],
       "colors": 13,
       "styles": 8,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 193,
@@ -2479,7 +2671,8 @@
       ],
       "colors": 9,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 194,
@@ -2492,7 +2685,8 @@
       ],
       "colors": 11,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 195,
@@ -2505,7 +2699,8 @@
       ],
       "colors": 13,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 196,
@@ -2518,7 +2713,8 @@
       ],
       "colors": 22,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 197,
@@ -2531,7 +2727,8 @@
       ],
       "colors": 14,
       "styles": 5,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 198,
@@ -2544,7 +2741,8 @@
       ],
       "colors": 16,
       "styles": 5,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 199,
@@ -2557,7 +2755,8 @@
       ],
       "colors": 17,
       "styles": 5,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 200,
@@ -2570,7 +2769,8 @@
       ],
       "colors": 13,
       "styles": 5,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 201,
@@ -2583,7 +2783,8 @@
       ],
       "colors": 17,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 202,
@@ -2596,7 +2797,8 @@
       ],
       "colors": 22,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/39irBh1WCX8cTchRQcyofs",
+      "status": "published"
     },
     {
       "num": 203,
@@ -2609,7 +2811,8 @@
       ],
       "colors": 23,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/JEp1Fq71RGMx8eQFYj5V3V",
+      "status": "published"
     },
     {
       "num": 204,
@@ -2622,7 +2825,8 @@
       ],
       "colors": 22,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/Bnj6bcD1oCGtyXx5jYSWhv",
+      "status": "published"
     },
     {
       "num": 205,
@@ -2635,7 +2839,8 @@
       ],
       "colors": 28,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 206,
@@ -2648,7 +2853,8 @@
       ],
       "colors": 14,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 207,
@@ -2661,7 +2867,8 @@
       ],
       "colors": 16,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 208,
@@ -2674,7 +2881,8 @@
       ],
       "colors": 13,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 209,
@@ -2687,7 +2895,8 @@
       ],
       "colors": 13,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 210,
@@ -2700,7 +2909,8 @@
       ],
       "colors": 13,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 211,
@@ -2713,7 +2923,8 @@
       ],
       "colors": 15,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 212,
@@ -2726,7 +2937,8 @@
       ],
       "colors": 14,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 213,
@@ -2739,7 +2951,8 @@
       ],
       "colors": 12,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 214,
@@ -2752,7 +2965,8 @@
       ],
       "colors": 11,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 215,
@@ -2765,7 +2979,8 @@
       ],
       "colors": 12,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 216,
@@ -2778,7 +2993,8 @@
       ],
       "colors": 11,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 217,
@@ -2791,7 +3007,8 @@
       ],
       "colors": 19,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 218,
@@ -2804,7 +3021,8 @@
       ],
       "colors": 24,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 219,
@@ -2817,7 +3035,8 @@
       ],
       "colors": 29,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 220,
@@ -2830,7 +3049,8 @@
       ],
       "colors": 16,
       "styles": 3,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 221,
@@ -2843,7 +3063,8 @@
       ],
       "colors": 11,
       "styles": 4,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 222,
@@ -2856,7 +3077,8 @@
       ],
       "colors": 20,
       "styles": 4,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/XXG6rXzWxafLXWYzPfUZ6u",
+      "status": "published"
     },
     {
       "num": 223,
@@ -2869,7 +3091,8 @@
       ],
       "colors": 13,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/4KmFCSWY5Hh2k3BHt27dZP",
+      "status": "published"
     },
     {
       "num": 224,
@@ -2882,7 +3105,8 @@
       ],
       "colors": 17,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/LF7kUZQaLqWaUhDHztBkb3",
+      "status": "published"
     },
     {
       "num": 225,
@@ -2895,7 +3119,8 @@
       ],
       "colors": 18,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/B835wHaReN8cM8XwMMudWn",
+      "status": "published"
     },
     {
       "num": 226,
@@ -2908,7 +3133,8 @@
       ],
       "colors": 27,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/Sy9RS9tPmxCeAwcCr9n82d",
+      "status": "published"
     },
     {
       "num": 227,
@@ -2921,7 +3147,8 @@
       ],
       "colors": 27,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/KepbEecNo24SS3uoF3RWMD",
+      "status": "published"
     },
     {
       "num": 228,
@@ -2934,7 +3161,8 @@
       ],
       "colors": 27,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/RCJTGcgJip4zyRYiKyNcmJ",
+      "status": "published"
     },
     {
       "num": 229,
@@ -2947,7 +3175,8 @@
       ],
       "colors": 12,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/RXJjRAU8NimV6JzTKRS69x",
+      "status": "published"
     },
     {
       "num": 230,
@@ -2960,7 +3189,8 @@
       ],
       "colors": 16,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/LzWvJo1X9qQuQagxYLRGQG",
+      "status": "published"
     },
     {
       "num": 231,
@@ -2973,7 +3203,8 @@
       ],
       "colors": 20,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/Eej4fJFiAaoCecajqumDMR",
+      "status": "created-empty"
     },
     {
       "num": 232,
@@ -2986,7 +3217,8 @@
       ],
       "colors": 17,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 233,
@@ -2999,7 +3231,8 @@
       ],
       "colors": 21,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 234,
@@ -3012,7 +3245,8 @@
       ],
       "colors": 23,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 235,
@@ -3025,7 +3259,8 @@
       ],
       "colors": 16,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 236,
@@ -3038,7 +3273,8 @@
       ],
       "colors": 17,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 237,
@@ -3051,7 +3287,8 @@
       ],
       "colors": 19,
       "styles": 5,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 238,
@@ -3064,7 +3301,8 @@
       ],
       "colors": 14,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 239,
@@ -3077,7 +3315,8 @@
       ],
       "colors": 14,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 240,
@@ -3090,7 +3329,8 @@
       ],
       "colors": 11,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 241,
@@ -3104,7 +3344,8 @@
       ],
       "colors": 16,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 242,
@@ -3118,7 +3359,8 @@
       ],
       "colors": 16,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/WTzeZDfjRgpficP6cQD6JL",
+      "status": "published"
     },
     {
       "num": 243,
@@ -3131,7 +3373,8 @@
       ],
       "colors": 15,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/G9PTEmh2q9YMCtWW538uTV",
+      "status": "published"
     },
     {
       "num": 244,
@@ -3144,7 +3387,8 @@
       ],
       "colors": 16,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/6KRHWN1yTXWDsAzFLDMXS9",
+      "status": "published"
     },
     {
       "num": 245,
@@ -3157,7 +3401,8 @@
       ],
       "colors": 16,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/1AVh4uq9zpzzkZXVxL4rLi",
+      "status": "published"
     },
     {
       "num": 246,
@@ -3170,7 +3415,8 @@
       ],
       "colors": 16,
       "styles": 7,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/Cr7SEDKqh9mgfJYdqNieLf",
+      "status": "published"
     },
     {
       "num": 247,
@@ -3183,7 +3429,8 @@
       ],
       "colors": 11,
       "styles": 6,
-      "artifact": null
+      "artifact": "https://claude.ai/artifact/Ls5Q665PqAddyb3jmCj1VF",
+      "status": "published"
     },
     {
       "num": 248,
@@ -3196,7 +3443,8 @@
       ],
       "colors": 12,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 249,
@@ -3209,7 +3457,8 @@
       ],
       "colors": 12,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 250,
@@ -3222,7 +3471,8 @@
       ],
       "colors": 13,
       "styles": 7,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 251,
@@ -3235,7 +3485,8 @@
       ],
       "colors": 13,
       "styles": 8,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 252,
@@ -3248,7 +3499,8 @@
       ],
       "colors": 14,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 253,
@@ -3261,7 +3513,8 @@
       ],
       "colors": 14,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 254,
@@ -3274,7 +3527,8 @@
       ],
       "colors": 19,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     },
     {
       "num": 255,
@@ -3287,7 +3541,8 @@
       ],
       "colors": 14,
       "styles": 6,
-      "artifact": null
+      "artifact": null,
+      "status": "pending"
     }
   ]
 }

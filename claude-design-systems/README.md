@@ -67,3 +67,8 @@ files to the same `artifact` URL: `root` = the system folder, `file_path` = its
 paths. A new style gets a new artifact: create it from the type with the
 style's name as title, publish its folder, and record the URL in
 `registry.json`.
+
+`registry.json` → `status` tracks each system: `published`, `created-empty`
+(the artifact exists, so publish its files to that URL without creating another),
+or `pending` (no artifact yet). Artifact publishing is capped at 200 a day
+per account (resets 00:00 UTC), so a full run spans more than one day.

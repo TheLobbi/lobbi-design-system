@@ -710,10 +710,10 @@ const REG = path.join(ROOT, 'registry.json');
 const prevReg = fs.existsSync(REG) ? JSON.parse(fs.readFileSync(REG, 'utf8')) : { systems: [] };
 const urlOf = Object.fromEntries(prevReg.systems.map((r) => [r.num, r.artifact]));
 const merged = Object.fromEntries(prevReg.systems.map((r) => [r.num, r]));
-for (const r of registry) merged[r.num] = { ...r, artifact: urlOf[r.num] || null };
+for (const r of registry) merged[r.num] = { ...r, artifact: urlOf[r.num] || null, status: merged[r.num]?.status || 'pending' };
 fs.writeFileSync(REG, JSON.stringify({
   type: 'https://claude.ai/code/artifact/23336be2-ea67-47fa-abc1-ead8c645a326',
-  note: 'One Claude Design System artifact per Lobbi style. artifact = its claude.ai URL (null until published).',
+  note: prevReg.note || 'One Claude Design System artifact per Lobbi style. status: published | created-empty | pending.',
   systems: Object.values(merged).sort((a, b) => a.num - b.num),
 }, null, 2) + '\n');
 console.log(`\nbuilt ${registry.length}`);
