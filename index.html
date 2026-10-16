@@ -707,6 +707,44 @@
 
         .style-card {
             animation: fadeInUp 0.4s ease-out backwards;
+            content-visibility: auto;
+            contain-intrinsic-size: 360px;
+        }
+
+        .load-more-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            padding: 2rem 0 0.5rem;
+        }
+
+        .load-more-wrap[hidden] {
+            display: none;
+        }
+
+        .load-more-btn {
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            padding: 0.75rem 1.25rem;
+            font: inherit;
+            font-size: 0.875rem;
+            cursor: pointer;
+            transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+        }
+
+        .load-more-btn:hover,
+        .load-more-btn:focus-visible {
+            border-color: var(--accent);
+            background: var(--bg-tertiary);
+            transform: translateY(-1px);
+        }
+
+        .load-more-count {
+            color: var(--text-muted);
+            font-size: 0.75rem;
         }
 
         /* Staggered card animations */
@@ -3800,6 +3838,11 @@
             <!-- Styles will be dynamically generated -->
         </div>
 
+        <div class="load-more-wrap" id="loadMoreWrap" hidden>
+            <button class="load-more-btn" id="loadMoreStyles" type="button">Load more styles</button>
+            <span class="load-more-count" id="loadMoreCount" aria-live="polite"></span>
+        </div>
+
         <div class="no-results" id="noResults" style="display: none;">
             <h3>No styles found</h3>
             <p>Try adjusting your search or filters</p>
@@ -5041,23 +5084,12 @@
             previewContainers.forEach(container => iframeObserver.observe(container));
         }
 
-        function renderStyles(filteredStyles) {
-            const grid = document.getElementById('styleGrid');
-            const noResults = document.getElementById('noResults');
-            const resultCount = document.getElementById('resultCount');
+        const STYLE_BATCH_SIZE = 48;
+        let activeFilteredStyles = [];
+        let renderedStyleCount = 0;
 
-            if (filteredStyles.length === 0) {
-                grid.style.display = 'none';
-                noResults.style.display = 'block';
-                resultCount.textContent = '0';
-                return;
-            }
-
-            grid.style.display = 'grid';
-            noResults.style.display = 'none';
-            resultCount.textContent = filteredStyles.length;
-
-            grid.innerHTML = filteredStyles.map(style => `
+        function styleCardMarkup(style) {
+            return `
                 <a href="${style.file}" class="style-card" data-tags="${style.tags.join(' ')}" data-num="${style.num}" tabindex="0" aria-label="View ${style.name} - Style ${style.num}">
                     <div class="card-preview ${style.preview}">
                         <button class="copy-link-btn" 
@@ -5146,17 +5178,66 @@
                         </div>
                     </div>
                 </a>
-            `).join('');
+            `;
+        }
 
-            // Update performance metrics
-            updateStylesRenderedCount(filteredStyles.length);
-            perfMetrics.totalIframes = filteredStyles.length;
+        function updateLoadMoreState() {
+            const loadMoreWrap = document.getElementById('loadMoreWrap');
+            const loadMoreCount = document.getElementById('loadMoreCount');
+            const remaining = activeFilteredStyles.length - renderedStyleCount;
+
+            loadMoreWrap.hidden = remaining <= 0;
+            loadMoreCount.textContent = remaining > 0
+                ? `${remaining} more ${remaining === 1 ? 'style' : 'styles'}`
+                : '';
+        }
+
+        function appendMoreStyles() {
+            const grid = document.getElementById('styleGrid');
+            const nextStyles = activeFilteredStyles.slice(
+                renderedStyleCount,
+                renderedStyleCount + STYLE_BATCH_SIZE
+            );
+
+            if (nextStyles.length === 0) return;
+
+            grid.insertAdjacentHTML('beforeend', nextStyles.map(styleCardMarkup).join(''));
+            renderedStyleCount += nextStyles.length;
+
+            // Track the rendered batch, not the entire catalog.
+            updateStylesRenderedCount(renderedStyleCount);
+            perfMetrics.totalIframes = renderedStyleCount;
             iframeLoadCount = 0;
             document.getElementById('perfIframesLoaded').textContent =
                 '0/' + perfMetrics.totalIframes;
 
-            // Lazy load iframes using Intersection Observer
+            updateLoadMoreState();
             initLazyIframes();
+        }
+
+        function renderStyles(filteredStyles) {
+            const grid = document.getElementById('styleGrid');
+            const noResults = document.getElementById('noResults');
+            const resultCount = document.getElementById('resultCount');
+
+            activeFilteredStyles = filteredStyles;
+            renderedStyleCount = 0;
+            grid.innerHTML = '';
+
+            if (filteredStyles.length === 0) {
+                grid.style.display = 'none';
+                noResults.style.display = 'block';
+                resultCount.textContent = '0';
+                updateLoadMoreState();
+                updateStylesRenderedCount(0);
+                return;
+            }
+
+            grid.style.display = 'grid';
+            noResults.style.display = 'none';
+            resultCount.textContent = filteredStyles.length;
+            appendMoreStyles();
+
         }
 
         function filterAndSort() {
@@ -5305,6 +5386,8 @@
         }
 
         document.getElementById('searchInput').addEventListener('input', debouncedSearch);
+
+        document.getElementById('loadMoreStyles').addEventListener('click', appendMoreStyles);
 
         document.getElementById('gridView').addEventListener('click', () => {
             document.getElementById('styleGrid').classList.remove('list-view');
