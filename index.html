@@ -4999,25 +4999,38 @@
                 iframeObserver.disconnect();
             }
 
-            const iframes = document.querySelectorAll('.preview-iframe[data-src]');
+            const previewContainers = document.querySelectorAll('.preview-iframe-container[data-preview-src]');
+
+            const loadPreview = (container) => {
+                if (container.querySelector('.preview-iframe')) return;
+
+                const iframe = document.createElement('iframe');
+                iframe.className = 'preview-iframe';
+                iframe.loading = 'lazy';
+                iframe.scrolling = 'no';
+                iframe.src = container.dataset.previewSrc;
+                iframe.onload = () => {
+                    // Hide loading spinner when loaded
+                    const loading = container.closest('.card-preview').querySelector('.preview-loading');
+                    if (loading) loading.style.display = 'none';
+                    iframe.classList.add('is-loaded');
+                    // Track iframe load for performance metrics
+                    trackIframeLoad();
+                };
+                container.appendChild(iframe);
+            };
+
+            // Keep previews usable in older browsers without IntersectionObserver.
+            if (!('IntersectionObserver' in window)) {
+                previewContainers.forEach(loadPreview);
+                return;
+            }
 
             iframeObserver = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        const iframe = entry.target;
-                        const src = iframe.getAttribute('data-src');
-                        if (src && !iframe.src) {
-                            iframe.src = src;
-                            iframe.onload = () => {
-                                // Hide loading spinner when loaded
-                                const loading = iframe.closest('.card-preview').querySelector('.preview-loading');
-                                if (loading) loading.style.display = 'none';
-                                iframe.classList.add('is-loaded');
-                                // Track iframe load for performance metrics
-                                trackIframeLoad();
-                            };
-                        }
-                        iframeObserver.unobserve(iframe);
+                        loadPreview(entry.target);
+                        iframeObserver.unobserve(entry.target);
                     }
                 });
             }, {
@@ -5025,7 +5038,7 @@
                 threshold: 0.1
             });
 
-            iframes.forEach(iframe => iframeObserver.observe(iframe));
+            previewContainers.forEach(container => iframeObserver.observe(container));
         }
 
         function renderStyles(filteredStyles) {
@@ -5083,9 +5096,7 @@
                             </svg>
                         </button>
                         <div class="preview-loading"></div>
-                        <div class="preview-iframe-container">
-                            <iframe class="preview-iframe" data-src="${style.file}" loading="lazy" scrolling="no"></iframe>
-                        </div>
+                        <div class="preview-iframe-container" data-preview-src="${style.file}" aria-hidden="true"></div>
                         <div class="card-preview-overlay">
                             <span class="preview-btn">View Style</span>
                         </div>
@@ -5209,7 +5220,8 @@
                 searchFiltered = searchFiltered.filter(s =>
                     s.name.toLowerCase().includes(searchTerm) ||
                     s.blend.toLowerCase().includes(searchTerm) ||
-                    s.tags.some(t => t.includes(searchTerm))
+                    s.tags.some(t => t.includes(searchTerm)) ||
+                    (s.perfectFor || []).some(p => p.toLowerCase().includes(searchTerm))
                 );
             }
 
