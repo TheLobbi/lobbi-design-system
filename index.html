@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lobbi Design System - 255 Style Gallery</title>
+    <title>Lobbi Design System — 255 curated visual directions</title>
+    <meta name="description" content="Explore 255 curated visual directions for member platforms, associations, and ambitious digital products.">
+    <meta name="theme-color" content="#0b1020">
+    <meta property="og:title" content="Lobbi Design System — 255 curated visual directions">
+    <meta property="og:description" content="Find the feeling your product needs. Explore 255 visual directions with tokens, components, and full-page references.">
+    <meta property="og:type" content="website">
+    <link rel="manifest" href="app.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -653,7 +659,13 @@
             width: 100%;
             height: 100%;
             border: none;
-            background: white;
+            background: transparent;
+            opacity: 0;
+            transition: opacity .35s ease;
+        }
+
+        .preview-iframe.is-loaded {
+            opacity: 1;
         }
 
         .preview-loading {
@@ -3345,6 +3357,201 @@
             outline: 2px solid var(--accent);
             outline-offset: 2px;
         }
+
+        /* === PRODUCT LANDING LAYER === */
+        :root {
+            --ink-900: #0b1020;
+            --ink-700: #34405c;
+            --paper: #f6f8fc;
+            --line-soft: rgba(148, 163, 184, 0.2);
+            --electric: #7c5cff;
+            --mint: #50e3c2;
+        }
+
+        .header {
+            background: rgba(11, 16, 32, 0.78);
+            border-bottom-color: rgba(148, 163, 184, 0.16);
+        }
+
+        .hero {
+            position: relative;
+            overflow: hidden;
+            max-width: 1800px;
+            margin: 0 auto;
+            padding: clamp(3.5rem, 8vw, 7.5rem) clamp(1rem, 4vw, 4rem) clamp(3rem, 6vw, 5rem);
+            isolation: isolate;
+        }
+
+        .hero::before,
+        .hero::after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            border-radius: 999px;
+            filter: blur(2px);
+            pointer-events: none;
+        }
+
+        .hero::before {
+            width: min(52vw, 620px);
+            height: min(52vw, 620px);
+            top: -30%;
+            right: -8%;
+            background: radial-gradient(circle, rgba(124,92,255,.33), rgba(124,92,255,0) 68%);
+        }
+
+        .hero::after {
+            width: min(42vw, 500px);
+            height: min(42vw, 500px);
+            bottom: -35%;
+            left: -8%;
+            background: radial-gradient(circle, rgba(80,227,194,.16), rgba(80,227,194,0) 70%);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.1fr) minmax(320px, .9fr);
+            gap: clamp(2rem, 6vw, 6rem);
+            align-items: center;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: .55rem;
+            margin-bottom: 1.5rem;
+            color: var(--mint);
+            font-size: .72rem;
+            font-weight: 700;
+            letter-spacing: .16em;
+            text-transform: uppercase;
+        }
+
+        .eyebrow::before {
+            content: "";
+            width: 2rem;
+            height: 1px;
+            background: currentColor;
+        }
+
+        .hero h1 {
+            max-width: 760px;
+            margin: 0;
+            color: #fff;
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: clamp(3rem, 7vw, 7.2rem);
+            font-weight: 500;
+            letter-spacing: -.055em;
+            line-height: .96;
+        }
+
+        .hero h1 em {
+            color: var(--mint);
+            font-style: normal;
+        }
+
+        .hero-copy {
+            max-width: 570px;
+            margin: 1.8rem 0 2rem;
+            color: #aab6ce;
+            font-size: clamp(1rem, 1.5vw, 1.2rem);
+            line-height: 1.7;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .75rem;
+            align-items: center;
+        }
+
+        .hero-action {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 48px;
+            padding: .75rem 1.15rem;
+            border: 1px solid rgba(255,255,255,.18);
+            border-radius: 999px;
+            color: #fff;
+            background: rgba(255,255,255,.07);
+            font-size: .85rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: transform .2s ease, background .2s ease, border-color .2s ease;
+        }
+
+        .hero-action.primary {
+            border-color: transparent;
+            color: #0b1020;
+            background: var(--mint);
+            box-shadow: 0 12px 30px rgba(80,227,194,.16);
+        }
+
+        .hero-action:hover { transform: translateY(-2px); border-color: rgba(255,255,255,.4); background: rgba(255,255,255,.13); }
+        .hero-action.primary:hover { background: #73f0d2; }
+
+        .hero-proof {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+            padding-top: 1.4rem;
+            border-top: 1px solid rgba(255,255,255,.13);
+        }
+
+        .hero-proof strong { display: block; color: #fff; font-size: 1.1rem; }
+        .hero-proof span { display: block; margin-top: .15rem; color: #8491aa; font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; }
+
+        .hero-showcase {
+            position: relative;
+            min-height: 360px;
+            border: 1px solid rgba(255,255,255,.16);
+            border-radius: 1.4rem;
+            padding: 1rem;
+            background: linear-gradient(145deg, rgba(255,255,255,.12), rgba(255,255,255,.025));
+            box-shadow: 0 30px 70px rgba(0,0,0,.26);
+            transform: rotate(2deg);
+        }
+
+        .showcase-label { display: flex; justify-content: space-between; align-items: center; margin: .25rem .25rem .8rem; color: #aab6ce; font-size: .68rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+        .showcase-label span:last-child { color: var(--mint); }
+
+        .showcase-window {
+            position: relative;
+            overflow: hidden;
+            min-height: 285px;
+            border-radius: 1rem;
+            padding: 1.4rem;
+            background: linear-gradient(140deg, #131d3a 0%, #302268 52%, #0a2d4d 100%);
+        }
+
+        .showcase-window::before { content: ""; position: absolute; width: 220px; height: 220px; top: -80px; right: -50px; border-radius: 50%; background: rgba(80,227,194,.22); filter: blur(8px); }
+        .showcase-kicker { position: relative; color: #9deede; font-size: .66rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+        .showcase-window h2 { position: relative; max-width: 240px; margin: 3rem 0 1rem; color: #fff; font-family: 'Playfair Display', Georgia, serif; font-size: clamp(2rem, 4vw, 3.3rem); font-weight: 500; line-height: .98; }
+        .showcase-window p { position: relative; max-width: 240px; color: #bac7e2; font-size: .78rem; line-height: 1.55; }
+        .showcase-chip { position: absolute; right: 1.25rem; bottom: 1.25rem; border: 1px solid rgba(255,255,255,.2); border-radius: 999px; padding: .5rem .7rem; color: #fff; background: rgba(11,16,32,.24); font-size: .66rem; }
+
+        .section-intro {
+            max-width: 1800px;
+            margin: 0 auto;
+            padding: 0 clamp(1rem, 4vw, 4rem) 1.2rem;
+        }
+
+        .section-intro h2 { color: var(--text-primary); font-size: clamp(1.45rem, 2vw, 2rem); letter-spacing: -.035em; }
+        .section-intro p { max-width: 560px; margin-top: .4rem; color: var(--text-secondary); font-size: .92rem; }
+
+        @media (max-width: 860px) {
+            .hero-grid { grid-template-columns: 1fr; }
+            .hero-showcase { max-width: 620px; transform: rotate(1deg); }
+        }
+
+        @media (max-width: 540px) {
+            .hero { padding-top: 3rem; }
+            .hero h1 { font-size: clamp(2.8rem, 15vw, 4.5rem); }
+            .hero-showcase { min-height: 300px; }
+            .showcase-window { min-height: 235px; }
+        }
     </style>
 </head>
 <body>
@@ -3403,6 +3610,39 @@
             </button>
         </div>
     </header>
+
+    <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-grid">
+            <div>
+                <div class="eyebrow">The Lobbi visual library</div>
+                <h1 id="hero-title">Find the feeling your <em>product</em> needs.</h1>
+                <p class="hero-copy">A living collection of 255 visual directions for member platforms, associations, and teams building something people want to return to.</p>
+                <div class="hero-actions">
+                    <a class="hero-action primary" href="#styleGrid">Explore the library <span aria-hidden="true">&nbsp;→</span></a>
+                    <button class="hero-action" type="button" onclick="getRandomStyle()">Surprise me <span aria-hidden="true">&nbsp;↗</span></button>
+                </div>
+                <div class="hero-proof" aria-label="Library highlights">
+                    <div><strong>255</strong><span>Curated styles</span></div>
+                    <div><strong>13</strong><span>Design worlds</span></div>
+                    <div><strong>2–5</strong><span>Influences per blend</span></div>
+                </div>
+            </div>
+            <a class="hero-showcase" href="style-93-luxury-concierge.html" aria-label="Open featured style: Luxury Concierge">
+                <div class="showcase-label"><span>Featured direction</span><span>93 / 255</span></div>
+                <div class="showcase-window">
+                    <div class="showcase-kicker">Five-star hospitality × editorial calm</div>
+                    <h2>Luxury, with a pulse.</h2>
+                    <p>A composed visual language for brands that want to feel considered, human, and quietly unforgettable.</p>
+                    <span class="showcase-chip">Luxury Concierge&nbsp; →</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <div class="section-intro" id="libraryIntro">
+        <h2>Browse the visual library</h2>
+        <p>Start with a mood, a category, or a use case. Every direction includes tokens, components, and a full-page reference.</p>
+    </div>
 
     <div class="controls-bar">
         <div class="controls-inner">
@@ -4772,6 +5012,7 @@
                                 // Hide loading spinner when loaded
                                 const loading = iframe.closest('.card-preview').querySelector('.preview-loading');
                                 if (loading) loading.style.display = 'none';
+                                iframe.classList.add('is-loaded');
                                 // Track iframe load for performance metrics
                                 trackIframeLoad();
                             };
@@ -4805,7 +5046,7 @@
 
             grid.innerHTML = filteredStyles.map(style => `
                 <a href="${style.file}" class="style-card" data-tags="${style.tags.join(' ')}" data-num="${style.num}" tabindex="0" aria-label="View ${style.name} - Style ${style.num}">
-                    <div class="card-preview">
+                    <div class="card-preview ${style.preview}">
                         <button class="copy-link-btn" 
                                 onclick="copyStyleLink('${style.file}', ${style.num}, event)"
                                 aria-label="Copy link to style"
@@ -5695,11 +5936,9 @@
 
         // Show walkthrough for first-time visitors
         function checkFirstVisit() {
-            const hasSeenWalkthrough = localStorage.getItem(WALKTHROUGH_KEY);
-            if (!hasSeenWalkthrough) {
-                // Slight delay to let page render first
-                setTimeout(showWalkthrough, 500);
-            }
+            // Keep the first visit focused on discovery; the full walkthrough remains
+            // available from the floating help control for users who want it.
+            return Boolean(localStorage.getItem(WALKTHROUGH_KEY));
         }
 
         // === NEW QUALITY OF LIFE FEATURES ===
