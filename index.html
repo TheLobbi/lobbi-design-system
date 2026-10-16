@@ -3591,6 +3591,26 @@
             .showcase-window { min-height: 235px; }
         }
     </style>
+<style id="developer-tool-redesign">
+/* Developer-tool shell: dense, task-oriented, and optimized for scanning. */
+:root{--app-bg:#0d0f14;--app-panel:#151821;--app-panel-2:#1b1f2a;--app-line:#2b3140;--app-text:#eef1f6;--app-muted:#9da6b6;--app-accent:#7c9cff}
+html,body{background:var(--app-bg)!important;color:var(--app-text)!important}
+body{font-family:Inter,ui-sans-serif,system-ui,sans-serif}
+.header{position:sticky!important;top:0;z-index:30;background:rgba(13,15,20,.94)!important;border-bottom:1px solid var(--app-line)!important;box-shadow:0 8px 24px rgba(0,0,0,.22)!important;backdrop-filter:blur(16px)}
+.header-inner{max-width:1600px!important;padding:10px 22px!important;grid-template-columns:auto minmax(260px,620px) auto auto!important;gap:18px!important}
+.logo{color:var(--app-text)!important;font-size:.88rem!important;font-weight:750!important;letter-spacing:-.02em!important}.logo-badge{color:var(--app-accent)!important;border-color:var(--app-accent)!important;background:rgba(124,156,255,.08)!important;border-radius:5px!important;font-size:.65rem!important}
+.search-box{background:var(--app-panel)!important;border:1px solid var(--app-line)!important;border-radius:7px!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.03)!important}.search-input{color:var(--app-text)!important}.search-input::placeholder{color:var(--app-muted)!important}.search-icon{color:var(--app-muted)!important}
+.stats-bar{gap:14px!important}.stat-item{padding-left:12px;border-left:1px solid var(--app-line)}.stat-value{color:var(--app-text)!important;font-size:1rem!important}.stat-label{color:var(--app-muted)!important;font-size:.58rem!important}.theme-toggle{border-color:var(--app-line)!important;background:var(--app-panel)!important;color:var(--app-text)!important;border-radius:7px!important}
+.hero{padding:38px 22px 30px!important;background:var(--app-bg)!important;border-bottom:1px solid var(--app-line)}.hero-grid{max-width:1600px!important;margin:auto;grid-template-columns:minmax(0,1fr) minmax(320px,470px)!important;gap:30px!important}.eyebrow{color:var(--app-accent)!important;font-size:.66rem!important;letter-spacing:.12em!important}.hero h1{color:var(--app-text)!important;font-size:clamp(2.3rem,5vw,4.6rem)!important;line-height:.94!important;letter-spacing:-.065em!important}.hero h1 em{color:var(--app-text)!important;font-style:normal}.hero-copy{color:var(--app-muted)!important;max-width:580px!important;font-size:.95rem!important;line-height:1.55!important}.hero-actions{margin-top:20px!important}.hero-action{border-radius:6px!important;padding:10px 13px!important;box-shadow:none!important}.hero-action.primary{background:var(--app-accent)!important;color:#0d0f14!important}.hero-proof{margin-top:24px!important;padding-top:15px!important;border-color:var(--app-line)!important;gap:22px!important}.hero-proof strong{color:var(--app-text)!important;font-size:1.35rem!important}.hero-proof span{color:var(--app-muted)!important;font-size:.58rem!important;text-transform:uppercase;letter-spacing:.08em}
+.hero-showcase{min-height:260px!important;transform:none!important;border:1px solid var(--app-line)!important;border-radius:9px!important;box-shadow:none!important;background:linear-gradient(140deg,#20283a,#182133 50%,#27314c)!important;padding:14px!important}.hero-showcase:hover{transform:translateY(-2px)!important;box-shadow:0 14px 30px rgba(0,0,0,.24)!important}.showcase-label{color:var(--app-muted)!important;font-size:.6rem!important;letter-spacing:.1em}.showcase-window{min-height:190px!important;border-radius:6px!important;border:1px solid rgba(255,255,255,.12)!important;background:linear-gradient(140deg,#2d3b59,#1a2436)!important;padding:20px!important}.showcase-kicker{color:#9fb5ff!important;font-size:.6rem!important}.showcase-window h2{color:var(--app-text)!important;font-size:1.7rem!important}.showcase-window p{color:var(--app-muted)!important;font-size:.78rem!important}.showcase-chip{border-radius:5px!important;background:var(--app-accent)!important;color:#0d0f14!important;font-size:.6rem!important}
+.section-intro{max-width:1600px!important;margin:auto!important;padding:28px 22px 16px!important}.section-intro h2{color:var(--app-text)!important;font-size:1.3rem!important;font-weight:700!important;letter-spacing:-.02em}.section-intro p{color:var(--app-muted)!important;font-size:.82rem!important}
+.controls-bar{background:var(--app-panel)!important;border-top:1px solid var(--app-line)!important;border-bottom:1px solid var(--app-line)!important}.controls-inner{max-width:1600px!important;padding:10px 22px!important}.filter-tabs{gap:5px!important}.filter-tab{border:1px solid transparent!important;border-radius:5px!important;background:transparent!important;color:var(--app-muted)!important;padding:7px 9px!important;font-size:.72rem!important}.filter-tab.active,.filter-tab:hover{background:var(--app-panel-2)!important;border-color:var(--app-line)!important;color:var(--app-text)!important}.view-controls .action-btn,.compare-toggle,.quick-jump-input{border-radius:5px!important;border-color:var(--app-line)!important;background:var(--app-panel-2)!important;color:var(--app-text)!important}
+.breadcrumb{max-width:1600px!important;margin:auto!important;padding:16px 22px 0!important;color:var(--app-muted)!important;font-size:.72rem!important}.results-bar{max-width:1600px!important;margin:auto!important;padding:12px 22px!important;color:var(--app-muted)!important;font-size:.72rem!important}
+#styleGrid{max-width:1600px!important;margin:auto!important;padding:0 22px 70px!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:14px!important}.style-card{border:1px solid var(--app-line)!important;border-radius:7px!important;background:var(--app-panel)!important;box-shadow:none!important}.style-card:hover{border-color:var(--app-accent)!important;box-shadow:0 8px 22px rgba(0,0,0,.24)!important;transform:translateY(-2px)!important}.style-card .card-title{color:var(--app-text)!important;font-size:1rem!important}.style-card .card-description,.style-card .card-meta{color:var(--app-muted)!important;font-size:.72rem!important}.style-card .card-number{color:var(--app-accent)!important}
+@media(max-width:1100px){.header-inner{grid-template-columns:auto minmax(240px,1fr) auto!important}.stats-bar{display:none}#styleGrid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+@media(max-width:720px){.header-inner{grid-template-columns:1fr auto!important}.search-container{grid-column:1/-1;grid-row:2}.hero-grid{grid-template-columns:1fr!important}.hero-showcase{display:none}#styleGrid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.hero{padding-top:30px!important}}
+@media(max-width:480px){#styleGrid{grid-template-columns:1fr!important}.filter-tabs{overflow-x:auto}.hero h1{font-size:2.8rem!important}}
+</style>
 </head>
 <body>
     <!-- Skip to Content Link -->
@@ -3653,8 +3673,8 @@
         <div class="hero-grid">
             <div>
                 <div class="eyebrow">The Lobbi visual library</div>
-                <h1 id="hero-title">Find the feeling your <em>product</em> needs.</h1>
-                <p class="hero-copy">A living collection of 261 visual directions for member platforms, associations, and teams building something people want to return to.</p>
+                <h1 id="hero-title">Inspect, compare, and ship a visual direction.</h1>
+                <p class="hero-copy">A fast reference tool for exploring 261 visual languages, tokens, and full-page examples.</p>
                 <div class="hero-actions">
                     <a class="hero-action primary" href="#styleGrid">Explore the library <span aria-hidden="true">&nbsp;→</span></a>
                     <button class="hero-action" type="button" onclick="getRandomStyle()">Surprise me <span aria-hidden="true">&nbsp;↗</span></button>
@@ -3678,8 +3698,8 @@
     </section>
 
     <div class="section-intro" id="libraryIntro">
-        <h2>Browse the visual library</h2>
-        <p>Start with a mood, a category, or a use case. Every direction includes tokens, components, and a full-page reference.</p>
+        <h2>Style workspace</h2>
+        <p>Search by movement, mood, category, or use case. Open any direction for its full reference page.</p>
     </div>
 
     <div class="controls-bar">
