@@ -1,3 +1,4 @@
 .claude/settings.local.json
 claude-design-systems/build/
 node_modules/
+.vercel
