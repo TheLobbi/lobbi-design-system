@@ -1,98 +1,17 @@
-/* Shared polish layer for every style detail page. Individual pages retain
-   their own palette and typography while sharing the same interaction finish. */
-:where(html) {
-    scroll-behavior: smooth;
-}
-
-:where(body) {
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-}
-
+/* Neutral shared runtime layer for detail pages.
+   It provides accessibility and motion behavior only; each page owns its
+   typography, geometry, palette, density, cards, controls, and navigation. */
+:where(html) { scroll-behavior: smooth; }
+:where(body) { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
 :where(button, a, input, select, textarea):focus-visible {
     outline: 3px solid color-mix(in srgb, currentColor 65%, transparent);
     outline-offset: 3px;
 }
-
-:where(.gallery-nav) {
-    backdrop-filter: blur(18px) saturate(130%);
-    -webkit-backdrop-filter: blur(18px) saturate(130%);
-    border-bottom: 1px solid color-mix(in srgb, currentColor 16%, transparent);
-    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.12);
-}
-
-:where(.gallery-nav a, .gallery-nav button, .gallery-nav-arrow, .gallery-nav-toggle) {
-    transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease, opacity 180ms ease;
-}
-
-:where(.gallery-nav a:hover, .gallery-nav button:hover, .gallery-nav-arrow:hover, .gallery-nav-toggle:hover) {
-    transform: translateY(-1px);
-}
-
-:where(.card, .content-card, .stat-card, .similar-style-card, .export-panel, .table-container) {
-    border-radius: 18px;
-    transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
-}
-
-:where(.card, .content-card, .stat-card, .similar-style-card):hover {
-    transform: translateY(-3px);
-    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.12);
-}
-
-:where(.btn, .export-btn, button[type="submit"], button[type="button"]) {
-    border-radius: 999px;
-    transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
-}
-
-:where(.btn:hover, .export-btn:hover, button[type="submit"]:hover, button[type="button"]:hover) {
-    transform: translateY(-1px);
-    filter: saturate(1.08);
-}
-
-:where(.form-input, .form-select, .form-textarea, input, select, textarea) {
-    border-radius: 12px;
-    transition: border-color 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
-}
-
-:where(.form-input:focus, .form-select:focus, .form-textarea:focus, input:focus, select:focus, textarea:focus) {
-    box-shadow: 0 0 0 4px color-mix(in srgb, currentColor 14%, transparent);
-}
-
-:where(.similar-styles-section, .export-panel) {
-    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
-}
-
-:where(.similar-preview) {
-    border-radius: 12px;
-    overflow: hidden;
-}
-
-:where(.footer-link, .nav-link) {
-    transition: color 180ms ease, opacity 180ms ease, transform 180ms ease;
-}
-
-:where(.footer-link:hover, .nav-link:hover) {
-    transform: translateX(2px);
-}
-
 @media (prefers-reduced-motion: reduce) {
-    :where(html) {
-        scroll-behavior: auto;
-    }
-
+    :where(html) { scroll-behavior: auto; }
     :where(*, *::before, *::after) {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
-    }
-}
-
-@media (max-width: 720px) {
-    :where(.gallery-nav) {
-        padding-inline: 0.75rem;
-    }
-
-    :where(.card, .content-card, .stat-card, .similar-style-card, .export-panel) {
-        border-radius: 14px;
     }
 }
