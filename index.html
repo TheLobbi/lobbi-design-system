@@ -3591,65 +3591,6 @@
             .showcase-window { min-height: 235px; }
         }
     </style>
-<style id="editorial-redesign">
-/* Editorial archive redesign: the catalog remains data-driven, but the surface now
-   behaves like a visual reference publication rather than an admin dashboard. */
-:root { --paper:#f3f0e8; --ink:#171717; --signal:#d83a2e; --muted:#6c6a63; --hair:rgba(23,23,23,.16); }
-html, body { background:var(--paper) !important; color:var(--ink) !important; }
-body { font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
-body::before { content:""; position:fixed; inset:0; z-index:-1; pointer-events:none; opacity:.34; background-image:radial-gradient(rgba(23,23,23,.12) .7px,transparent .7px); background-size:5px 5px; mix-blend-mode:multiply; }
-.header { position:sticky !important; top:0; z-index:20; background:rgba(243,240,232,.9) !important; border-bottom:1px solid var(--hair) !important; box-shadow:none !important; backdrop-filter:blur(14px); }
-.header-inner { max-width:1440px !important; padding:14px clamp(20px,4vw,64px) !important; grid-template-columns:auto minmax(240px,520px) auto auto !important; gap:26px !important; }
-.logo { color:var(--ink) !important; font-family:Georgia,serif !important; font-size:1.06rem !important; letter-spacing:-.045em !important; }
-.logo-badge { color:var(--signal) !important; border:1px solid var(--signal) !important; background:transparent !important; border-radius:0 !important; letter-spacing:.12em; }
-.search-box { border:1px solid var(--ink) !important; background:rgba(255,255,255,.35) !important; border-radius:0 !important; box-shadow:none !important; }
-.search-input { color:var(--ink) !important; }
-.search-input::placeholder { color:var(--muted) !important; }
-.stats-bar { gap:18px !important; }
-.stat-item { border-left:1px solid var(--hair); padding-left:14px; }
-.stat-value { color:var(--ink) !important; font-family:Georgia,serif; }
-.stat-label { color:var(--muted) !important; }
-.theme-toggle { border-color:var(--ink) !important; color:var(--ink) !important; border-radius:50% !important; }
-.hero { max-width:none !important; background:var(--paper) !important; border-bottom:1px solid var(--hair); padding:clamp(72px,10vw,150px) clamp(20px,7vw,120px) clamp(70px,9vw,130px) !important; }
-.hero-grid { max-width:1440px !important; margin:auto; grid-template-columns:minmax(0,1.15fr) minmax(360px,.85fr) !important; gap:clamp(40px,8vw,140px) !important; }
-.eyebrow { color:var(--signal) !important; font-size:.68rem !important; letter-spacing:.2em !important; font-weight:800; }
-.hero h1 { color:var(--ink) !important; font-family:Georgia,serif !important; font-size:clamp(4rem,9.5vw,10.5rem) !important; font-weight:400 !important; letter-spacing:-.09em !important; line-height:.84 !important; max-width:920px !important; }
-.hero h1 em { color:var(--signal) !important; font-style:italic; }
-.hero-copy { color:var(--muted) !important; max-width:540px; font-size:1.08rem !important; line-height:1.65 !important; }
-.hero-action { border-radius:0 !important; border:1px solid var(--ink) !important; color:var(--ink) !important; background:transparent !important; box-shadow:none !important; }
-.hero-action.primary { background:var(--ink) !important; color:var(--paper) !important; }
-.hero-proof { border-top:1px solid var(--hair); padding-top:20px; margin-top:40px !important; gap:34px !important; }
-.hero-proof strong { color:var(--ink) !important; font-family:Georgia,serif; font-size:2rem !important; }
-.hero-proof span { color:var(--muted) !important; text-transform:uppercase; letter-spacing:.1em; font-size:.62rem !important; }
-.hero-showcase { border:1px solid var(--ink) !important; border-radius:0 !important; transform:rotate(2deg); box-shadow:14px 14px 0 var(--signal); background:#1c1d23 !important; min-height:500px !important; }
-.hero-showcase:hover { transform:rotate(0deg) translateY(-6px) !important; box-shadow:20px 20px 0 var(--signal); }
-.showcase-label { color:#fff !important; letter-spacing:.15em; }
-.showcase-window { border:1px solid rgba(255,255,255,.5) !important; border-radius:0 !important; background:linear-gradient(145deg,#d7c4a8,#6e5361 48%,#172738) !important; min-height:390px !important; padding:30px !important; display:flex; flex-direction:column; justify-content:flex-end; }
-.showcase-kicker { color:#fff !important; letter-spacing:.15em; }
-.showcase-window h2 { color:#fff !important; font-family:Georgia,serif; font-size:3.4rem !important; line-height:.9; max-width:380px; }
-.showcase-window p { color:rgba(255,255,255,.8) !important; }
-.showcase-chip { border-radius:0 !important; background:var(--signal) !important; }
-.section-intro { max-width:1440px !important; margin:0 auto !important; padding:80px clamp(20px,7vw,120px) 32px !important; display:flex; justify-content:space-between; align-items:end; gap:30px; }
-.section-intro h2 { color:var(--ink) !important; font-family:Georgia,serif; font-weight:400; font-size:clamp(2.6rem,5vw,5rem) !important; letter-spacing:-.08em; line-height:.9; }
-.section-intro p { color:var(--muted) !important; max-width:420px; line-height:1.55; }
-.controls-bar { background:var(--paper) !important; border-top:1px solid var(--hair) !important; border-bottom:1px solid var(--hair) !important; }
-.controls-inner { max-width:1440px !important; padding:16px clamp(20px,7vw,120px) !important; }
-.filter-tabs { gap:7px !important; }
-.filter-tab { border:1px solid var(--hair) !important; border-radius:0 !important; background:transparent !important; color:var(--muted) !important; }
-.filter-tab.active, .filter-tab:hover { color:var(--paper) !important; background:var(--ink) !important; border-color:var(--ink) !important; }
-.view-controls .action-btn, .compare-toggle, .quick-jump-input { border-radius:0 !important; border-color:var(--hair) !important; background:transparent !important; color:var(--ink) !important; }
-.breadcrumb { max-width:1440px !important; margin:0 auto !important; padding:25px clamp(20px,7vw,120px) 0 !important; color:var(--muted) !important; }
-.results-bar { max-width:1440px !important; margin:0 auto !important; padding-inline:clamp(20px,7vw,120px) !important; color:var(--muted) !important; }
-#styleGrid { max-width:1440px !important; margin:0 auto !important; padding:0 clamp(20px,7vw,120px) 100px !important; grid-template-columns:repeat(3,minmax(0,1fr)) !important; gap:26px !important; }
-.style-card { border:1px solid var(--hair) !important; border-radius:0 !important; background:rgba(255,255,255,.45) !important; box-shadow:none !important; }
-.style-card:hover { border-color:var(--ink) !important; box-shadow:8px 8px 0 var(--signal) !important; transform:translateY(-5px) !important; }
-.style-card .card-content { background:transparent !important; }
-.style-card .card-title { color:var(--ink) !important; font-family:Georgia,serif; font-size:1.45rem !important; letter-spacing:-.05em; }
-.style-card .card-description, .style-card .card-meta { color:var(--muted) !important; }
-.style-card .card-number { color:var(--signal) !important; }
-@media(max-width:900px){.header-inner{grid-template-columns:1fr auto !important}.search-container{grid-column:1/-1;grid-row:2}.stats-bar{display:none}.hero-grid{grid-template-columns:1fr !important}.hero-showcase{max-width:620px;width:100%}#styleGrid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}.section-intro{display:block}}
-@media(max-width:560px){.hero h1{font-size:clamp(3.4rem,17vw,6rem) !important}.hero-showcase{min-height:380px}.showcase-window{min-height:300px}.section-intro{padding-top:56px}#styleGrid{grid-template-columns:1fr !important}}
-</style>
 </head>
 <body>
     <!-- Skip to Content Link -->
@@ -3712,8 +3653,8 @@ body::before { content:""; position:fixed; inset:0; z-index:-1; pointer-events:n
         <div class="hero-grid">
             <div>
                 <div class="eyebrow">The Lobbi visual library</div>
-                <h1 id="hero-title">A visual archive for <em>products people remember.</em></h1>
-                <p class="hero-copy">261 studied visual languages for member platforms, associations, and ambitious digital products. Browse by attitude, discipline, or instinct.</p>
+                <h1 id="hero-title">Find the feeling your <em>product</em> needs.</h1>
+                <p class="hero-copy">A living collection of 261 visual directions for member platforms, associations, and teams building something people want to return to.</p>
                 <div class="hero-actions">
                     <a class="hero-action primary" href="#styleGrid">Explore the library <span aria-hidden="true">&nbsp;→</span></a>
                     <button class="hero-action" type="button" onclick="getRandomStyle()">Surprise me <span aria-hidden="true">&nbsp;↗</span></button>
@@ -3737,8 +3678,8 @@ body::before { content:""; position:fixed; inset:0; z-index:-1; pointer-events:n
     </section>
 
     <div class="section-intro" id="libraryIntro">
-        <h2>Choose a visual language</h2>
-        <p>Each direction is a point of view: a palette, a rhythm, a type system, and a way to make people feel at home.</p>
+        <h2>Browse the visual library</h2>
+        <p>Start with a mood, a category, or a use case. Every direction includes tokens, components, and a full-page reference.</p>
     </div>
 
     <div class="controls-bar">
