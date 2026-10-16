@@ -30,12 +30,15 @@ This interface embodies the intellectual rigor and cutting-edge innovation of pr
 
 - `display` — Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif
 
-Faces are hosted on Google Fonts (Inter); load them with:
+Faces are hosted on Google Fonts (Inter, Roboto); load them with:
 
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
 ```
+
+The reference page names Roboto without loading it, so it shows a fallback face; the last link above loads the intended face.
 
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
 - Uppercase is reserved for small labels (`label`), always with the letter-spacing given.
@@ -80,6 +83,10 @@ Timing values: `--transition-base` all 0.2s ease, `--transition-slow` all 0.3s e
 
 - `page-text` on `page-bg` measures 9.4:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `color-neural-blue` 3.3:1, `change-negative-text` 3.4:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `color-white` 1.1:1, `color-medium-gray` 2.3:1, `color-success` 2.3:1, `color-warning` 2.0:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA compliant contrast ratios (4.5:1 minimum)
 - Semantic HTML structure supporting screen readers

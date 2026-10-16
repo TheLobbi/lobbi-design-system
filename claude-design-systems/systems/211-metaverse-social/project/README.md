@@ -15,7 +15,7 @@ This interface bridges physical and virtual realms, celebrating the convergence 
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is dark.
-- Identity colours: `color-void`, `color-electric-cyan`, `color-holographic-pink`, `color-magenta`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `color-electric-cyan`, `color-holographic-pink`, `color-magenta`. Lead with the first; use the rest for accents and emphasis.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
 ### Palette rationale
@@ -92,8 +92,11 @@ Timing values: `--transition-fast` 200ms cubic-bezier(0.4, 0, 0.2, 1), `--transi
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 19.2:1.
+- `page-text` on `page-bg` measures 9.5:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `color-void` 1.1:1, `color-glass-white` 1.3:1, `color-glass-border` 1.8:1, `glass-bg` 1.1:1, `glass-border` 1.3:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA compliant contrast despite neon colors
 - Text maintains readability on glass backgrounds

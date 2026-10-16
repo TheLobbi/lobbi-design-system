@@ -73,8 +73,8 @@ Faces are hosted on Google Fonts (Lora, Source Sans 3); load them with:
 - CONTRAST RATIOS (WCAG 2.1 AA+ Compliance):
 - Primary text on cream: 12.8:1 (AAA)
 - White text on Aegean blue: 7.2:1 (AA+)
-- Text on terracotta: 6.5:1 (AA)
-- Olive green text on white: 5.8:1 (AA)
+- Text on terracotta: ~~6.5:1~~ (AA) — **measured 1.1–1.5:1** (not for body text)
+- Olive green text on white: ~~5.8:1~~ (AA) — **measured 3.0–3.1:1** (not for body text)
 - Navy text on limestone: 14.1:1 (AAA)
 
 ## States and motion
@@ -96,8 +96,12 @@ Timing values: `--transition-fast` 150ms ease-in-out, `--transition-base` 250ms 
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 13.4:1.
+- `page-text` on `page-bg` measures 4.6:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `terracotta-light` 3.4:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `olive-green` 2.9:1, `white` 1.0:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - High contrast pairings throughout all components
 - Clear focus indicators with blue outline (3px, high visibility)
@@ -121,8 +125,8 @@ The reference page composes these patterns from the tokens above:
 - CONTRAST RATIOS (WCAG 2.1 AA+ Compliance):
 - Primary text on cream: 12.8:1 (AAA)
 - White text on Aegean blue: 7.2:1 (AA+)
-- Text on terracotta: 6.5:1 (AA)
-- Olive green text on white: 5.8:1 (AA)
+- Text on terracotta: ~~6.5:1~~ (AA) — **measured 1.1–1.5:1** (not for body text)
+- Olive green text on white: ~~5.8:1~~ (AA) — **measured 3.0–3.1:1** (not for body text)
 - Navy text on limestone: 14.1:1 (AAA)
 
 ## Further guidance

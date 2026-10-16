@@ -20,6 +20,14 @@ Academic Research: University Library 60% + Scientific Publishing 25% + Dark Aca
 ## Typography
 
 - `display` — "Crimson Text", Baskerville, Georgia, serif
+- `body` — "Source Sans Pro", "Helvetica Neue", sans-serif
+- `source-code-pro` — "Source Code Pro", monospace
+
+Faces are hosted on Google Fonts (Crimson Text, Source Sans Pro, Source Code Pro); load them with:
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+Pro:wght@300;400;600;700&family=Source+Code+Pro:wght@400;500&display=swap">
+```
 
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
 - Uppercase is reserved for small labels (`label`), always with the letter-spacing given.
@@ -43,8 +51,9 @@ Timing values: `--transition-fast` 150ms cubic-bezier(0.4, 0, 0.2, 1), `--transi
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 11.3:1.
+- `page-text` on `page-bg` measures 5.6:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `cream` 1.3:1, `aged-paper` 1.1:1, `gold` 2.2:1, `gold-light` 1.5:1, `text-muted` 2.8:1, `text-inverse` 1.3:1, `category-tag-bg` 1.5:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Not synced
 

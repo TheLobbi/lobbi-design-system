@@ -15,7 +15,7 @@ Gothic Revival Digital: Gothic Architecture 55% + Dark Academia 25% + Editorial 
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is light.
-- Identity colours: `burgundy-primary`, `gold-accent`, `parchment`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `burgundy-primary`, `gold-accent`. Lead with the first; use the rest for accents and emphasis.
 - Status colours (`color-success`, `color-warning`, `color-error`, `color-info`) always travel with a word or icon; never signal state by hue alone.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
@@ -55,6 +55,8 @@ Timing values: `--transition-base` 0.25s ease.
 
 - `page-text` on `page-bg` measures 12.2:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `stone-gray` 3.0:1, `color-success` 4.0:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `gold-accent` 2.0:1, `gold-light` 1.6:1, `parchment` 1.0:1, `parchment-dark` 1.1:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Not synced
 

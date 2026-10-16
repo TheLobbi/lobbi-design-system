@@ -1,0 +1,25 @@
+{
+  "v": 3,
+  "layout": "files",
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-10-01T03:27:15Z"
+  },
+  "title": "Lobbi Design System",
+  "namespace": "Lobbi",
+  "libraries": [],
+  "sections": {},
+  "groups": [],
+  "assetGroups": {},
+  "blobs": {},
+  "docs": {
+    "readme": "project/README.md",
+    "sections": []
+  },
+  "lastChange": {
+    "by": "Markus Ahling",
+    "at": "2026-10-01T07:24:58Z",
+    "via": "GitHub · thelobbi/lobbi-design-system@d6456bd",
+    "note": "Merged 255 styles into one system with a Style Switcher"
+  }
+}

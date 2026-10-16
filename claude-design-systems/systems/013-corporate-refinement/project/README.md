@@ -15,7 +15,7 @@ Corporate Refinement: Quiet Luxury 80% + Corporate 20%.
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is light.
-- Identity colours: `cream-50`, `gold-subtle`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `gold-subtle`. Lead with the first; use the rest for accents and emphasis.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
 ## Typography
@@ -43,8 +43,10 @@ Faces are hosted on Google Fonts (Cormorant Garamond, Inter); load them with:
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 11.6:1.
+- `page-text` on `page-bg` measures 7.4:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `warm-600` 4.1:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `cream-100` 1.0:1, `warm-400` 1.8:1, `warm-500` 2.6:1, `gold-subtle` 2.3:1, `gold-muted` 2.7:1, `category-tag-bg` 1.0:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Not synced
 

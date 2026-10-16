@@ -87,20 +87,20 @@ Faces are hosted on Google Fonts (Press Start 2P, VT323); load them with:
 - COLOR PSYCHOLOGY & SEMANTICS
 
 - Primary Palette - Classic 8-Bit (NES-inspired):
-- Pixel Red (#E74C3C)          - Alerts, primary actions (5.1:1 contrast)
-- Pixel Blue (#3498DB)         - Links, info states (4.7:1 contrast)
-- Pixel Green (#2ECC71)        - Success, progress (4.9:1 contrast)
-- Pixel Yellow (#F39C12)       - Warnings, highlights (3.8:1 on white)
-- Pixel Purple (#9B59B6)       - Special items, premium (6.2:1)
-- Screen Black (#0E0E0E)       - Text, outlines (18.5:1 contrast)
-- Screen White (#F0F0F0)       - Backgrounds, light areas (19:1)
-- Screen Gray (#7F8C8D)        - Disabled states, borders (4.6:1)
+- Pixel Red (#E74C3C)          - Alerts, primary actions (~~5.1:1~~ contrast) — **measured 3.4:1** (not for body text)
+- Pixel Blue (#3498DB)         - Links, info states (~~4.7:1~~ contrast) — **measured 2.8:1** (not for body text)
+- Pixel Green (#2ECC71)        - Success, progress (~~4.9:1~~ contrast) — **measured 1.8:1** (not for body text)
+- Pixel Yellow (#F39C12)       - Warnings, highlights (~~3.8:1~~ on white) — **measured 1.9:1** (not for body text)
+- Pixel Purple (#9B59B6)       - Special items, premium (~~6.2:1~~) — **measured 4.1:1** (not for body text)
+- Screen Black (#0E0E0E)       - Text, outlines (~~18.5:1~~ contrast) — **measured 16.9:1**
+- Screen White (#F0F0F0)       - Backgrounds, light areas (~~19:1~~) — **measured 1.0:1** (not for body text)
+- Screen Gray (#7F8C8D)        - Disabled states, borders (~~4.6:1~~) — **measured 3.1:1** (not for body text)
 
 - Secondary Palette - Accent Colors:
-- Power-Up Orange (#E67E22)    - Call-to-action highlights (4.5:1)
-- Coin Gold (#F1C40F)          - Value indicators (2.9:1, large text only)
-- Health Pink (#FF6B9D)        - Life/health displays (4.2:1)
-- Mana Cyan (#1ABC9C)          - Energy/mana indicators (4.8:1)
+- Power-Up Orange (#E67E22)    - Call-to-action highlights (~~4.5:1~~) — **measured 2.5:1** (not for body text)
+- Coin Gold (#F1C40F)          - Value indicators (~~2.9:1~~, large text only) — **measured 1.5:1** (not for body text)
+- Health Pink (#FF6B9D)        - Life/health displays (~~4.2:1~~) — **measured 2.3:1** (not for body text)
+- Mana Cyan (#1ABC9C)          - Energy/mana indicators (~~4.8:1~~) — **measured 2.1:1** (not for body text)
 
 - Dithering Patterns:
 - 50% opacity dither: Checkerboard pattern (alternating pixels)
@@ -374,6 +374,8 @@ Timing values: `--transition-instant` 0s, `--transition-fast` 0.1s linear.
 
 - `page-text` on `page-bg` measures 16.9:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `color-pixel-red` 3.4:1, `color-screen-gray` 3.1:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `color-pixel-blue` 2.8:1, `color-pixel-green` 1.8:1, `color-pixel-yellow` 1.9:1, `color-screen-white` 1.0:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Not synced
 

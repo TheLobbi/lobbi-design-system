@@ -15,12 +15,20 @@ Blockchain DAO: Web3/Crypto 60% + Governance Platform 25% + Community Hub 15%.
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is dark.
-- Identity colours: `bg-primary`, `bg-tertiary`, `electric-blue`, `electric-blue-light`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `bg-primary`, `electric-blue`, `electric-blue-light`. Lead with the first; use the rest for accents and emphasis.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
 ## Typography
 
 - `display` — -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif
+
+Faces are hosted on Google Fonts (Roboto); load them with:
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+```
+
+The reference page names Roboto without loading it, so it shows a fallback face; the last link above loads the intended face.
 
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
 - Uppercase is reserved for small labels (`label`), always with the letter-spacing given.
@@ -38,7 +46,7 @@ Blockchain DAO: Web3/Crypto 60% + Governance Platform 25% + Community Hub 15%.
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 20.0:1.
+- `page-text` on `page-bg` measures 19.2:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
 
 ## Not synced

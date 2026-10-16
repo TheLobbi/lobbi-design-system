@@ -85,13 +85,17 @@ Faces are hosted on Google Fonts (Abril Fatface, Nunito); load them with:
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 17.2:1.
+- `page-text` on `page-bg` measures 17.5:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `turquoise-600` 3.6:1, `pink-500` 3.5:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `turquoise-500` 2.4:1, `yellow-400` 1.5:1, `white-pure` 1.0:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA minimum contrast ratios
-- Turquoise on white: 4.8:1 contrast ratio
-- Pink on white: 4.7:1 contrast ratio
-- Cobalt on cream: 9.1:1 contrast ratio
+- Turquoise on white: ~~4.8:1~~ contrast ratio — **measured 2.4–5.4:1** (under 4.5:1, so not for body text: `turquoise-500`, `turquoise-600`)
+- Pink on white: ~~4.7:1~~ contrast ratio — **measured 3.5–4.6:1** (under 4.5:1, so not for body text: `pink-500`)
+- Cobalt on cream: ~~9.1:1~~ contrast ratio — **measured 8.4–10.0:1**
 - Yellow text avoided on white (use as backgrounds/accents only)
 - High-contrast mode support
 - Focus indicators with 4px width for clarity

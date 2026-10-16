@@ -15,7 +15,7 @@ Pacific Rim: Pan-Asian Fusion 55% + Ocean Commerce 30% + Tech Innovation 15%.
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is light.
-- Identity colours: `pacific-blue`, `rising-sun-coral`, `jade-green`, `wave-white`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `rising-sun-coral`, `jade-green`, `wave-white`. Lead with the first; use the rest for accents and emphasis.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
 ### Palette rationale
@@ -67,7 +67,7 @@ Faces are hosted on Google Fonts (Zen Kaku Gothic New, Plus Jakarta Sans); load 
 
 ## Spacing, shape and elevation
 
-- Spacing steps: `space-6.4` 6.4px, `space-8` 8px, `space-14` 14px, `space-16` 16px, `space-24` 24px, `space-32` 32px. Pad cards and sections from these steps only.
+- Spacing steps: `space-6-4` 6.4px, `space-8` 8px, `space-14` 14px, `space-16` 16px, `space-24` 24px, `space-32` 32px. Pad cards and sections from these steps only.
 - Corners: `radius-8` 8px, `radius-12` 12px, `radius-full` 9999px.
 - Elevation: `shadow-1`, `shadow-2`, `shadow-3`, lowest first for resting cards, higher for hover and overlays.
 
@@ -85,9 +85,9 @@ Faces are hosted on Google Fonts (Zen Kaku Gothic New, Plus Jakarta Sans); load 
 - Body text: Minimum 7:1 contrast ratio (AAA)
 - Large text: Minimum 4.5:1 contrast ratio (AAA)
 - UI elements: Minimum 3:1 contrast ratio (AA)
-- Pacific Blue #0077b6 on white: 8.1:1 (AAA)
-- Deep Navy #0c4a6e on white: 10.2:1 (AAA)
-- Jade Green #10b981 on white: 5.8:1 (AA large text, AAA small text)
+- Pacific Blue #0077b6 on white: ~~8.1:1~~ (AAA) — **measured 4.5:1**
+- Deep Navy #0c4a6e on white: ~~10.2:1~~ (AAA) — **measured 8.8:1**
+- Jade Green #10b981 on white: ~~5.8:1~~ (AA large text, AAA small text) — **measured 2.3:1** (not for body text)
 
 - Honour `prefers-reduced-motion`: drop lifts and transitions to instant state changes.
 
@@ -98,8 +98,12 @@ Faces are hosted on Google Fonts (Zen Kaku Gothic New, Plus Jakarta Sans); load 
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 9.0:1.
+- `page-text` on `page-bg` measures 8.8:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `lotus-pink` 3.3:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `rising-sun-coral` 2.6:1, `jade-green` 2.3:1, `wave-white` 1.0:1, `footer-section-text` 1.3:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - Font sizes larger than typical Western sites (CJK readability)
 - Line-height generous for complex scripts

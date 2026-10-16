@@ -15,18 +15,19 @@ Wine Society: Vineyard Estate 60% + Sommelier Certification 25% + Collector's Cl
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is light.
-- Identity colours: `burgundy-dark`, `gold-dark`, `gold-light`, `cream-dark`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `burgundy-dark`, `gold-dark`, `gold-light`. Lead with the first; use the rest for accents and emphasis.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
 ## Typography
 
 - `display` — Garamond, Georgia, serif
+- `body` — Arial, sans-serif
 
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
 
 ## Spacing, shape and elevation
 
-- Spacing steps: `space-4.8` 4.8px, `space-8` 8px, `space-12` 12px, `space-16` 16px, `space-24` 24px, `space-32` 32px. Pad cards and sections from these steps only.
+- Spacing steps: `space-4-8` 4.8px, `space-8` 8px, `space-12` 12px, `space-16` 16px, `space-24` 24px, `space-32` 32px. Pad cards and sections from these steps only.
 - Corners: `radius-8` 8px, `radius-10` 10px, `radius-15` 15px, `radius-full` 50%.
 - Elevation: `shadow-1`, `shadow-2`, lowest first for resting cards, higher for hover and overlays.
 
@@ -37,8 +38,9 @@ Wine Society: Vineyard Estate 60% + Sommelier Certification 25% + Collector's Cl
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 16.8:1.
+- `page-text` on `page-bg` measures 8.5:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `gold-dark` 2.9:1, `gold-medium` 1.9:1, `gold-light` 1.5:1, `cream-dark` 1.1:1, `cream-light` 1.1:1, `category-tag-bg` 1.1:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Not synced
 

@@ -73,10 +73,14 @@ Timing values: `--transition-fast` 150ms ease-out, `--transition-base` 250ms eas
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 14.0:1.
+- `page-text` on `page-bg` measures 14.4:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `color-blue` 3.6:1, `color-purple-medium` 4.2:1, `color-mint-dark` 3.7:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `color-purple` 2.7:1, `color-mint` 1.9:1, `color-mint-medium` 2.5:1, `color-yellow` 1.6:1, `color-white` 1.0:1, `color-gray-200` 1.2:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
-- Text uses Deep Navy (#1E293B) on white backgrounds (14.8:1 ratio)
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
+
+- Text uses Deep Navy (#1E293B) on white backgrounds (~~14.8:1~~ ratio) — **measured 14.4:1**
 - Large text can use Electric Blue (4.89:1 ratio)
 - Interactive elements minimum 44x44px touch target
 - Color + shape convey meaning (not color alone)
@@ -182,7 +186,7 @@ The reference page composes these patterns from the tokens above:
 - CONTRAST RATIOS (WCAG AA Compliant):
 - Deep Navy on White: 14.8:1 (AAA compliant)
 - Electric Blue on White: 4.89:1 (AA compliant)
-- Purple on White: 3.27:1 (AA for large text, graphics)
+- Purple on White: ~~3.27:1~~ (AA for large text, graphics) — **measured 2.7–5.7:1**
 - Mint on White: 2.04:1 (Decorative only, not for text)
 - All critical text uses Deep Navy for accessibility
 

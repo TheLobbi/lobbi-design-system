@@ -15,13 +15,13 @@ K-Wave Digital Collective captures the explosive energy of Korean pop culture, b
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is dark.
-- Identity colours: `pop-pink`, `seoul-neon-blue`, `idol-purple`, `deep-purple-background`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `pop-pink`, `seoul-neon-blue`, `idol-purple`. Lead with the first; use the rest for accents and emphasis.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
 ## Typography
 
 - `display` — "Noto Sans KR", sans-serif
-- `body` — Quicksand, "Noto Sans KR", sans-serif
+- `body` — Quicksand, sans-serif
 
 Faces are hosted on Google Fonts (Noto Sans KR, Quicksand); load them with:
 
@@ -46,7 +46,7 @@ Faces are hosted on Google Fonts (Noto Sans KR, Quicksand); load them with:
 
 ## Spacing, shape and elevation
 
-- Spacing steps: `space-6` 6px, `space-7.5` 7.5px, `space-10` 10px, `space-16` 16px, `space-20` 20px, `space-24` 24px. Pad cards and sections from these steps only.
+- Spacing steps: `space-6` 6px, `space-7-5` 7.5px, `space-10` 10px, `space-16` 16px, `space-20` 20px, `space-24` 24px. Pad cards and sections from these steps only.
 - Corners: `radius-16` 16px, `radius-20` 20px, `radius-25` 25px, `radius-full` 50%.
 - Elevation: `shadow-1`, `shadow-2`, `shadow-3`, lowest first for resting cards, higher for hover and overlays.
 
@@ -72,8 +72,10 @@ Faces are hosted on Google Fonts (Noto Sans KR, Quicksand); load them with:
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 18.6:1.
+- `page-text` on `page-bg` measures 17.6:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - Despite vibrant colors, text maintains 4.5:1 contrast minimum
 - Gradients never used for text backgrounds (text is white/black)

@@ -15,7 +15,7 @@ This interface visualizes the concept of interconnected neural networks - repres
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is dark.
-- Identity colours: `color-deep-blue`, `color-cyan`, `color-purple`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `color-cyan`, `color-purple`. Lead with the first; use the rest for accents and emphasis.
 - Status colours (`badge-error-bg`, `badge-warning-bg`) always travel with a word or icon; never signal state by hue alone.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
@@ -92,6 +92,10 @@ Timing values: `--transition-fast` 150ms ease-in-out, `--transition-base` 250ms 
 
 - `page-text` on `page-bg` measures 20.2:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `color-gray-light` 4.2:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `color-darker-blue` 1.0:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA compliant contrast ratios (minimum 4.5:1)
 - High contrast dark mode optimized for accessibility

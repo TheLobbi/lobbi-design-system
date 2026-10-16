@@ -53,8 +53,10 @@ Timing values: `--transition-fast` 150ms ease-in-out, `--transition-base` 250ms 
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 8.1:1.
+- `page-text` on `page-bg` measures 5.8:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `color-success` 3.4:1, `color-error` 3.4:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `color-primary` 2.8:1, `color-background` 1.0:1, `color-text-tertiary` 2.8:1, `color-warning` 2.2:1, `color-info` 2.8:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Not synced
 

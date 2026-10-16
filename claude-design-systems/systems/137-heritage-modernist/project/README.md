@@ -52,8 +52,10 @@ Timing values: `--transition-fast` 150ms cubic-bezier(0.4, 0, 0.2, 1), `--transi
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 14.2:1.
+- `page-text` on `page-bg` measures 11.1:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `bronze-medium` 4.2:1, `aged-copper` 4.3:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `pure-white` 1.1:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Further guidance
 
@@ -183,13 +185,13 @@ Timing values: `--transition-fast` 150ms cubic-bezier(0.4, 0, 0.2, 1), `--transi
 - ACCESSIBILITY COMPLIANCE (WCAG 2.1 AA)
 
 - ✓ Color Contrast Ratios:
-- Primary text (#2d2419) on cream: 12.5:1 (AAA)
+- Primary text (#2d2419) on cream: ~~12.5:1~~ (AAA) — **measured 14.2:1**
 - Secondary text (#5a4a42) on cream: 7.8:1 (AA+)
-- Link text (#5a4a42) on white: 8.9:1 (AAA)
+- Link text (#5a4a42) on white: ~~8.9:1~~ (AAA) — **measured 7.9:1**
 - Button text (white) on primary: 11.2:1 (AAA)
 
 - ✓ Typography:
-- Base font size: 18px (above 16px minimum)
+- Base font size: 18px (above 16px minimum) — **the reference page sets running text at 15px**
 - Line height: 1.618 (above 1.5 minimum)
 - Paragraph width: <75 characters for readability
 

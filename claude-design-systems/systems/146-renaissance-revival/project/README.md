@@ -56,7 +56,7 @@ Faces are hosted on Google Fonts (Cormorant, Spectral); load them with:
 
 ## Spacing, shape and elevation
 
-- Spacing steps: `space-8` 8px, `space-14` 14px, `space-20` 20px, `space-25.888` 25.888px, `space-32` 32px, `space-41.888` 41.888px. Pad cards and sections from these steps only.
+- Spacing steps: `space-8` 8px, `space-14` 14px, `space-20` 20px, `space-25-888` 25.888px, `space-32` 32px, `space-41-888` 41.888px. Pad cards and sections from these steps only.
 - Corners: `radius-6` 6px, `radius-8` 8px, `radius-full` 50px.
 - Elevation: `shadow-1`, `shadow-2`, `shadow-3`, lowest first for resting cards, higher for hover and overlays.
 
@@ -86,11 +86,15 @@ Faces are hosted on Google Fonts (Cormorant, Spectral); load them with:
 
 - `page-text` on `page-bg` measures 12.8:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `terracotta` 3.0:1, `terracotta-deep` 4.2:1, `gold-deep` 3.2:1, `forest-sage` 4.4:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `ivory` 1.0:1, `category-tag-bg` 1.1:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA minimum contrast ratios
 - Umber on ivory: 12.8:1 contrast ratio
-- Forest-green on cream: 7.4:1 contrast ratio
-- Gold-deep on terracotta: 4.6:1 contrast ratio
+- Forest-green on cream: ~~7.4:1~~ contrast ratio — **measured 8.1:1**
+- Gold-deep on terracotta: ~~4.6:1~~ contrast ratio — **measured 1.0–1.6:1** (not for body text)
 - Focus visible states with 3px gold borders
 - Semantic HTML with ARIA landmarks
 - Alt text for all decorative elements

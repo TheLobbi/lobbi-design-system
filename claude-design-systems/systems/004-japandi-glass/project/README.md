@@ -43,8 +43,10 @@ Faces are hosted on Google Fonts (Outfit, Noto Sans JP); load them with:
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 9.4:1.
+- `page-text` on `page-bg` measures 7.8:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `stone-500` 3.6:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `stone-50` 1.3:1, `sage-500` 2.4:1, `terracotta` 2.5:1, `glass-white` 1.2:1, `glass-border` 1.1:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Not synced
 

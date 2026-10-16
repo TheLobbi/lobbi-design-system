@@ -1,6 +1,12 @@
 # Claude Design Systems
 
-The Lobbi library of **Claude Design System** artifacts. There is one system per
+The Lobbi library of **Claude Design System** artifacts.
+
+**Start here: `lobbi/project/`, the Lobbi Design System.** One system holds all
+the styles as `styles/<id>.json` and has a live **Style Switcher** preview: pick any style and a
+sample member dashboard re-themes in its colours, type, radii and spacing.
+Build it with `npm run ds:lobbi` (default style: 9, Dark Academia). The per-style systems below
+are its sources. There is one system per
 style in this repository (`style-*.html`, 255 today). Each one is a
 `project/` folder in the shape the claude.ai Design System type reads, so
 Claude (chat, Claude Code, Cowork) can build on-brand UI from it.

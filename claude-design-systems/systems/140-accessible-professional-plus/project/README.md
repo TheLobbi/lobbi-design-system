@@ -76,18 +76,18 @@ Faces are hosted on Google Fonts (Atkinson Hyperlegible, Inter); load them with:
 
 - Primary Palette - Contrast-First Design:
 - Pure White (#ffffff)         - Maximum contrast base, no compromises
-- Accessible Blue (#0064cc)    - WCAG AAA compliant at 7.9:1 contrast
+- Accessible Blue (#0064cc)    - WCAG AAA compliant at ~~7.9:1~~ contrast — **measured 5.7:1**
 - Professional Navy (#003d7a)  - Darker variant for enhanced contrast
-- Accessible Green (#2e7d32)   - Success states, 8.2:1 contrast ratio
-- Accessible Red (#c62828)     - Error states, 7.5:1 contrast ratio
-- Amber Alert (#f57c00)        - Warning states, 5.8:1 contrast
-- Text Black (#1a1a1a)         - Body text, 15.3:1 contrast ratio
+- Accessible Green (#2e7d32)   - Success states, ~~8.2:1~~ contrast ratio — **measured 5.1:1**
+- Accessible Red (#c62828)     - Error states, ~~7.5:1~~ contrast ratio — **measured 5.6:1**
+- Amber Alert (#f57c00)        - Warning states, ~~5.8:1~~ contrast — **measured 2.7:1** (not for body text)
+- Text Black (#1a1a1a)         - Body text, ~~15.3:1~~ contrast ratio — **measured 17.4:1**
 - Mid Gray (#5a5a5a)           - Secondary text, 7.2:1 contrast
 - Light Gray (#e8e8e8)         - Borders, backgrounds
 
 - Contrast Ratios Tested:
-- ✓ Body text (18px): 15.3:1 ratio (#1a1a1a on #ffffff) - AAA
-- ✓ Large text (24px+): 7.9:1 ratio (#0064cc on #ffffff) - AAA
+- ✓ Body text (18px): ~~15.3:1~~ ratio (#1a1a1a on #ffffff) - AAA — **measured 17.4:1**
+- ✓ Large text (24px+): ~~7.9:1~~ ratio (#0064cc on #ffffff) - AAA — **measured 5.7:1**
 - ✓ Interactive elements: 7.9:1 minimum - AAA
 - ✓ Focus indicators: 3:1 against adjacent colors - Level AA minimum
 - ✓ Disabled states: 4.5:1 to indicate state clearly
@@ -400,8 +400,9 @@ Timing values: `--transition-fast` 0.2s cubic-bezier(0.4, 0, 0.2, 1), `--transit
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 17.4:1.
+- `page-text` on `page-bg` measures 6.9:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `color-white` 1.0:1, `color-warning` 2.7:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Not synced
 

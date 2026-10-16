@@ -38,7 +38,7 @@ Faces are hosted on Google Fonts (Inter, JetBrains Mono); load them with:
 ```
 
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
-- Uppercase is reserved for small labels (`heading-4`, `body`, `label`), always with the letter-spacing given.
+- Uppercase is reserved for small labels (`heading-4`, `label`), always with the letter-spacing given.
 
 ## Spacing, shape and elevation
 
@@ -68,6 +68,7 @@ Timing values: `--transition` 250ms cubic-bezier(0.4, 0, 0.2, 1).
 
 - `page-text` on `page-bg` measures 17.1:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `hologram-cyan` 1.7:1, `slate-400` 2.5:1, `header-bg` 1.0:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Further guidance
 

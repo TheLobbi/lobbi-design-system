@@ -39,8 +39,9 @@ Meditation Sangha: Zen Minimalism 60% + Retreat Center 25% + Practice Tracking 1
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 8.1:1.
+- `page-text` on `page-bg` measures 4.8:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `sage-primary` 2.7:1, `sage-light` 2.0:1, `sand-light` 1.0:1, `sand-medium` 1.3:1, `warning` 2.2:1, `social-icon-bg` 1.1:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Not synced
 

@@ -15,7 +15,7 @@
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is light.
-- Identity colours: `cream-base`, `gold-renaissance`, `rose-floral`, `terracotta`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `gold-renaissance`, `rose-floral`, `terracotta`. Lead with the first; use the rest for accents and emphasis.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
 ### Palette rationale
@@ -40,7 +40,7 @@ Faces are hosted on Google Fonts (Cormorant Garamond, Montserrat); load them wit
 ```
 
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
-- Uppercase is reserved for small labels (`body`, `label`), always with the letter-spacing given.
+- Uppercase is reserved for small labels (`label`), always with the letter-spacing given.
 
 ## Spacing, shape and elevation
 
@@ -70,6 +70,8 @@ Timing values: `--transition-base` 250ms cubic-bezier(0.4, 0, 0.2, 1), `--transi
 
 - `page-text` on `page-bg` measures 13.4:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `soft-gray` 3.5:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `gold-renaissance` 2.3:1, `category-tag-bg` 1.0:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Further guidance
 

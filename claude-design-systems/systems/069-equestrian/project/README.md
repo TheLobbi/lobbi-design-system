@@ -15,7 +15,7 @@ Elite Equestrian Heritage. ━━━━━━━━━━━━━━━━━�
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is light.
-- Identity colours: `color-racing-green`, `color-saddle-brown`, `color-cream`, `color-vintage-tan`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `color-saddle-brown`, `color-cream`, `color-vintage-tan`. Lead with the first; use the rest for accents and emphasis.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
 ### Palette rationale
@@ -28,8 +28,8 @@ Elite Equestrian Heritage. ━━━━━━━━━━━━━━━━━�
 ## Typography
 
 - `display` — "Libre Baskerville", Georgia, serif
-- `body` — Lato, "Helvetica Neue", sans-serif
-- `crimson-pro` — "Crimson Pro", serif
+- `body` — "Crimson Pro", "Times New Roman", serif
+- `lato` — "Lato", sans-serif
 
 Faces are hosted on Google Fonts (Libre Baskerville, Crimson Pro, Lato); load them with:
 
@@ -39,7 +39,6 @@ Faces are hosted on Google Fonts (Libre Baskerville, Crimson Pro, Lato); load th
 ```
 
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
-- Uppercase is reserved for small labels (`body`), always with the letter-spacing given.
 
 ### Type rationale
 
@@ -76,11 +75,14 @@ Timing values: `--transition-fast` 150ms cubic-bezier(0.4, 0.0, 0.2, 1), `--tran
 
 - `page-text` on `page-bg` measures 11.9:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `color-cream` 1.0:1, `color-gold` 2.2:1, `color-bronze` 2.9:1, `color-surface` 1.1:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - Racing green (#1e4d2b) on cream (#faf6eb): 10.2:1 (AAA)
-- Saddle brown (#8b4513) on cream: 5.8:1 (AA+)
+- Saddle brown (#8b4513) on cream: ~~5.8:1~~ (AA+) — **measured 6.6:1**
 - Gold (#c9a227) used only for non-essential accents
-- Body text minimum 16px, data tables 14px
+- Body text minimum 16px, data tables 14px — **the reference page sets running text at 14px**
 
 ## Further guidance
 

@@ -53,6 +53,7 @@ Timing values: `--transition-smooth` all 0.3s cubic-bezier(0.4, 0, 0.2, 1).
 
 - `page-text` on `page-bg` measures 14.6:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `brand-red` 3.8:1, `accent-blue` 4.0:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
 
 ## Further guidance
 

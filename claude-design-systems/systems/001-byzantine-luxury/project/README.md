@@ -15,7 +15,7 @@ Imperial Opulence & Sacred Authority. Inspired by: Byzantine Empire aesthetics, 
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is dark.
-- Identity colours: `burgundy-600`, `burgundy-900`, `gold-400`, `gold-600`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `burgundy-600`, `gold-400`, `gold-600`. Lead with the first; use the rest for accents and emphasis.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
 ### Palette rationale
@@ -81,12 +81,15 @@ Faces are hosted on Google Fonts (Playfair Display, Inter); load them with:
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 16.5:1.
+- `page-text` on `page-bg` measures 10.5:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `stone-900` 1.0:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA minimum contrast ratios
-- Gold on burgundy: 7.2:1 contrast ratio
-- Paper on stone: 12.4:1 contrast ratio
+- Gold on burgundy: ~~7.2:1~~ contrast ratio — **measured 1.8–6.5:1** (under 4.5:1, so not for body text: `gold-400`, `gold-500`, `gold-600`)
+- Paper on stone: ~~12.4:1~~ contrast ratio — **measured 16.5:1**
 - Focus visible states on all interactive elements
 - Semantic HTML structure with proper heading hierarchy
 

@@ -43,7 +43,7 @@ Faces are hosted on Google Fonts (Playfair Display, Cormorant Garamond, Montserr
 ```
 
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
-- Uppercase is reserved for small labels (`body`, `label`, `button`), always with the letter-spacing given.
+- Uppercase is reserved for small labels (`label`, `button`), always with the letter-spacing given.
 
 ### Type rationale
 
@@ -96,8 +96,11 @@ Timing values: `--transition-luxury` 0.4s cubic-bezier(0.4, 0, 0.2, 1).
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 17.8:1.
+- `page-text` on `page-bg` measures 10.2:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `diamond-white` 1.0:1, `gold` 2.0:1, `rose` 1.7:1, `shadow-soft` 1.2:1, `shadow-medium` 1.3:1, `category-tag-bg` 1.1:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 - WCAG AA contrast: Black/white (19.6:1), Gold/white (4.7:1) ✓

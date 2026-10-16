@@ -21,7 +21,15 @@ Fashion Council: High Fashion 60% + Industry Network 25% + Trend Forecasting 15%
 ## Typography
 
 - `display` — "Playfair Display", Didot, serif
-- `body` — "Cormorant Garamond", serif
+- `body` — Inter, "Helvetica Neue", sans-serif
+
+Faces are hosted on Google Fonts (Playfair Display, Inter); load them with:
+
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap">
+```
+
+The reference page names Playfair Display, Inter without loading them, so it shows a fallback face; the last link above loads the intended face.
 
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
 - Uppercase is reserved for small labels (`heading-4`, `label`, `button`), always with the letter-spacing given.
@@ -44,8 +52,9 @@ Timing values: `--transition-fast` 0.2s ease, `--transition-smooth` 0.4s cubic-b
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 21.0:1.
+- `page-text` on `page-bg` measures 5.7:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `color-blanc` 1.0:1, `color-blush` 1.5:1, `color-blush-light` 1.2:1, `color-blush-dark` 2.0:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Not synced
 

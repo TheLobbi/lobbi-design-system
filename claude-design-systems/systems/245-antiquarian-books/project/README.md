@@ -50,7 +50,7 @@ This interface embodies the sacred reverence of rare book collecting, where weat
 ## Typography
 
 - `display` — "EB Garamond", Garamond, Georgia, serif
-- `source-sans-pro` — "Source Sans Pro", sans-serif
+- `body` — "Source Sans Pro", -apple-system, BlinkMacSystemFont, sans-serif
 
 Faces are hosted on Google Fonts (EB Garamond, Source Sans Pro); load them with:
 
@@ -120,12 +120,16 @@ Timing values: `--transition-base` 350ms cubic-bezier(0.4, 0, 0.2, 1).
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 13.3:1.
+- `page-text` on `page-bg` measures 13.2:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `color-dust-gray` 4.4:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `color-gilded-gold` 2.0:1, `color-bright-gold` 1.4:1, `color-foxed-cream` 1.0:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - Leather brown (#78350f) on cream (#fef3c7): 5.8:1 contrast (AA compliance)
 - Ink black (#111827) on vellum white (#fafafa): 16.2:1 contrast (AAA)
-- Library green (#065f46) on cream: 6.4:1 contrast (AA+)
+- Library green (#065f46) on cream: ~~6.4:1~~ contrast (AA+) — **measured 6.9:1**
 - Book images include alt text with title, author, date, edition statement
 - Bibliographic abbreviations expanded on hover (8vo = Octavo format)
 - Catalog tables with proper scope and headers for screen readers

@@ -74,13 +74,16 @@ Timing values: `--transition-fast` 200ms ease-out, `--transition-base` 300ms eas
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 10.2:1.
+- `page-text` on `page-bg` measures 6.6:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `color-terminal-black` 1.0:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - Amber on Black: 12.8:1 (AAA) - Optimal readability
-- Green on Black: 15.3:1 (AAA) - High visibility
-- Dim Amber on Black: 8.2:1 (AA) - Secondary content
-- White on Black: 21:1 (AAA) - Maximum contrast
+- Green on Black: ~~15.3:1~~ (AAA) - High visibility — **measured 14.2:1**
+- Dim Amber on Black: ~~8.2:1~~ (AA) - Secondary content — **measured 6.6:1**
+- White on Black: ~~21:1~~ (AAA) - Maximum contrast — **measured 19.4:1**
 
 ## Component inventory
 

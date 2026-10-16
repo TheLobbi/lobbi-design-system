@@ -43,8 +43,9 @@ Timing values: `--transition-smooth` all 0.4s cubic-bezier(0.4, 0, 0.2, 1), `--t
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 11.3:1.
+- `page-text` on `page-bg` measures 8.0:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `sage-calm` 2.6:1, `terra-warm` 2.4:1, `water-blue` 1.6:1, `pebble-gray` 2.4:1, `eco-green` 2.3:1, `btn-bg` 1.2:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Not synced
 

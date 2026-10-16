@@ -70,6 +70,10 @@ Timing values: `--transition-fast` 150ms ease-in-out, `--transition-base` 250ms 
 
 - `page-text` on `page-bg` measures 11.4:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `color-primary` 3.5:1, `color-gray-600` 3.8:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `color-secondary` 2.6:1, `color-success` 1.9:1, `color-white` 1.0:1, `color-gray-300` 1.4:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - All text meets minimum contrast ratios (4.5:1 for body, 3:1 for large)
 - Focus indicators visible and high contrast (3:1 minimum)
@@ -154,7 +158,7 @@ The reference page composes these patterns from the tokens above:
 
 - CONTRAST RATIOS (WCAG AA Compliant):
 - Blue on White: 4.89:1 (AA compliant for large text, AAA for graphics)
-- Charcoal on White: 11.58:1 (AAA compliant)
+- Charcoal on White: ~~11.58:1~~ (AAA compliant) — **measured 12.0:1**
 - White on Blue: 4.89:1 (AA compliant)
 - Coral on White: 3.68:1 (AA compliant for large text)
 - Mint on White: 1.82:1 (Used only for decorative elements, not text)

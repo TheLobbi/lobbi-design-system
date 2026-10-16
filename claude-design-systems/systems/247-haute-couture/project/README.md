@@ -36,8 +36,8 @@ This interface embodies the pinnacle of fashion design systems, where every pixe
 ## Typography
 
 - `display` — Didot, "Cormorant Garamond", Georgia, serif
-- `body` — "Cormorant Garamond", Georgia, serif
-- `helvetica-neue` — "Helvetica Neue", sans-serif
+- `body` — "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif
+- `cormorant-garamond` — "Cormorant Garamond", serif
 
 Faces are hosted on Google Fonts (Didot, Cormorant Garamond, Helvetica Neue); load them with:
 
@@ -47,7 +47,7 @@ Faces are hosted on Google Fonts (Didot, Cormorant Garamond, Helvetica Neue); lo
 ```
 
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
-- Uppercase is reserved for small labels (`body`, `label`), always with the letter-spacing given.
+- Uppercase is reserved for small labels (`label`), always with the letter-spacing given.
 
 ### Type rationale
 
@@ -110,12 +110,15 @@ Timing values: `--transition-slow` 400ms cubic-bezier(0.4, 0, 0.2, 1), `--transi
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 16.7:1.
+- `page-text` on `page-bg` measures 4.6:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `color-runway-white` 1.0:1, `color-rose-gold` 1.9:1, `color-rose-gold-dark` 2.6:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - Black (#0a0a0a) on white (#fafafa): 19.8:1 contrast (exceeds AAA)
 - Rose gold used as accent only, never sole indicator
-- 16px minimum body text (Helvetica Neue)
+- 16px minimum body text (Helvetica Neue) — **the reference page sets running text at 14px**
 - 48px minimum touch targets on interactive elements
 - Focus indicators use 1px rose gold outline plus background shift
 - Semantic HTML5 structure throughout

@@ -30,7 +30,7 @@ Faces are hosted on Google Fonts (Orbitron, Rajdhani); load them with:
 ```
 
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
-- Uppercase is reserved for small labels (`display`, `heading-2`, `heading-3`, `body`, `label`, `button`), always with the letter-spacing given.
+- Uppercase is reserved for small labels (`display`, `heading-2`, `heading-3`, `label`, `button`), always with the letter-spacing given.
 
 ## Spacing, shape and elevation
 
@@ -46,6 +46,7 @@ Faces are hosted on Google Fonts (Orbitron, Rajdhani); load them with:
 
 - `page-text` on `page-bg` measures 16.2:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `void` 1.0:1, `chrome` 2.3:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Not synced
 

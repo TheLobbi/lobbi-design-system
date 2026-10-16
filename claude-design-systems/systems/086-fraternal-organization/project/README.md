@@ -14,7 +14,7 @@ Fraternal Organization: Fraternal Order 80% + Brotherhood Heritage 20%.
 ## Color
 
 - Set the page on `page-bg` with body text in `page-text`. The theme is light.
-- Identity colours: `lodge-blue`, `ceremonial-gold`, `parchment-cream`, `royal-purple`. Lead with the first; use the rest for accents and emphasis.
+- Identity colours: `page-surface`, `ceremonial-gold`, `parchment-cream`, `royal-purple`. Lead with the first; use the rest for accents and emphasis.
 - Each token's note says where the reference page uses it and, for text colours, its contrast on `page-bg`. Keep body text at 4.5:1 or better.
 
 ### Palette rationale
@@ -27,7 +27,7 @@ Fraternal Organization: Fraternal Order 80% + Brotherhood Heritage 20%.
 ## Typography
 
 - `display` — "Libre Baskerville", serif
-- `body` — "Crimson Text", serif
+- `crimson-text` — "Crimson Text", serif
 
 Faces are hosted on Google Fonts (Libre Baskerville, Crimson Text); load them with:
 
@@ -72,6 +72,7 @@ Faces are hosted on Google Fonts (Libre Baskerville, Crimson Text); load them wi
 
 - `page-text` on `page-bg` measures 13.4:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `ceremonial-gold` 2.2:1, `nav-link-bg` 1.1:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Further guidance
 

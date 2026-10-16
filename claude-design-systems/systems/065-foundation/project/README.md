@@ -68,7 +68,7 @@ Legacy Foundations - Generational Impact Architecture. This design embodies the 
 ## Typography
 
 - `display` — "Libre Baskerville", serif
-- `crimson-text` — "Crimson Text", serif
+- `body` — "Crimson Text", serif
 
 Faces are hosted on Google Fonts (Libre Baskerville, Crimson Text); load them with:
 
@@ -78,7 +78,7 @@ Faces are hosted on Google Fonts (Libre Baskerville, Crimson Text); load them wi
 ```
 
 - Set titles in `display`, sections in `heading-2` and running text in `body`.
-- Uppercase is reserved for small labels (`heading-3`, `body`), always with the letter-spacing given.
+- Uppercase is reserved for small labels (`heading-3`), always with the letter-spacing given.
 
 ## Spacing, shape and elevation
 
@@ -139,6 +139,9 @@ Timing values: `--transition-standard` 400ms ease.
 
 - `page-text` on `page-bg` measures 14.0:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `cream` 1.0:1, `gold` 2.2:1, `gold-light` 1.3:1, `category-tag-bg` 1.1:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 Level AA (Minimum Standards):
 - ├─ Color Contrast: 7:1 (charcoal on cream) - AAA level

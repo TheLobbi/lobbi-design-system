@@ -37,8 +37,9 @@ Architecture Forum: Architect Portfolio 60% + Professional Network 25% + Urban P
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 14.0:1.
+- `page-text` on `page-bg` measures 4.6:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- These fall under 3:1 on `page-bg`: `light-concrete` 2.4:1, `accent-blue` 2.4:1, `white` 1.0:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Not synced
 

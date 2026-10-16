@@ -44,7 +44,7 @@ Faces are hosted on Google Fonts (Source Sans Pro); load them with:
 - 300 Light: Supporting text, metadata, timestamps
 
 - Accessibility Considerations:
-- Minimum 16px base font size for body text
+- Minimum 16px base font size for body text — **the reference page sets running text at 14px**
 - 1.6 line-height for comfortable reading
 - Adequate letter-spacing for clarity
 - Clear contrast ratios meeting WCAG AA standards
@@ -162,6 +162,8 @@ Faces are hosted on Google Fonts (Source Sans Pro); load them with:
 
 - `page-text` on `page-bg` measures 13.3:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `patient-details-text-2` 4.4:1, `logo-bg` 3.7:1, `provider-avatar-bg` 4.1:1, `status-badge-text` 3.4:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `trustworthy-medical-blue` 2.5:1, `soft-green` 2.3:1, `pure-white` 1.1:1, `stat-icon-text` 2.0:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
 
 ## Further guidance
 

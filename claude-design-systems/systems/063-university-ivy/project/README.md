@@ -126,12 +126,16 @@ Timing values: `--transition-normal` 300ms ease, `--transition-slow` 400ms ease.
 
 ## Accessibility
 
-- `page-text` on `page-bg` measures 11.4:1.
+- `page-text` on `page-bg` measures 6.5:1.
 - Every interactive element shows a visible focus state at 3:1 or better against its surface.
+- Measured on `page-bg`, these text colours reach 3:1 but not 4.5:1: `gold-accent` 3.2:1, `text-tertiary` 4.3:1. Use them on `page-bg` only for large text (24px+, or bold 19px+), whatever the design notes below claim.
+- These fall under 3:1 on `page-bg`: `ivory-base` 1.0:1, `gold-light` 2.2:1, `background-primary` 1.0:1, `category-tag-bg` 1.0:1. Never set text in them on `page-bg`, at any size; use them as text only on a fill whose measured pairing meets 4.5:1 (3:1 for large text).
+
+From the style's design notes (ratios checked against the tokens; a **bold** measurement replaces a claim that does not hold):
 
 - WCAG 2.1 AA minimum (AAA for most text)
-- Navy on ivory: 12.6:1 contrast ratio
-- Crimson on ivory: 7.8:1 contrast ratio
+- Navy on ivory: ~~12.6:1~~ contrast ratio — **measured 7.9–14.4:1**
+- Crimson on ivory: ~~7.8:1~~ contrast ratio — **measured 5.1–10.7:1**
 - Keyboard navigation fully supported
 - Screen reader semantic structure
 - Readable font sizes for all ages
